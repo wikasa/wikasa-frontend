@@ -1,0 +1,128 @@
+/** ----------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.NAV.COURSES.PRIMARY
+ *  
+ *  Nav Courses Primary Object.
+ *  @author Bangsawan & Silvi
+ *  @version 0.0.0
+ *  Copyright 2013. Free licensed.
+ ** ----------------------------------------------------------------- */
+
+.cards {
+	@include clearfix;
+	margin: 24px 0 0 0;
+}
+
+.card {
+	@include border-radius(6px);
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0 0 24px 24px;
+	max-width: 280px;
+	max-height: 360px;
+	width: 280px;
+	height: 360px;
+	background-color: $white;
+	font-size: 14px;
+	line-height: $leadpx;
+}
+
+.c-cover {
+	width: 100%;
+	height: 168px;
+	overflow: hidden;
+}
+
+.c-authors {
+	@include clearfix;
+	position: relative;
+	margin: -24px 0 12px 0;
+	padding: 0 12px;
+
+	.ca-photos {
+		@include border-radius(50%);
+		position: relative;
+		display: block;
+		float: left;
+		overflow: hidden;
+		width: $leadpx * 2;
+		height: $leadpx * 2;
+		border: 2px solid $white;
+	}
+
+	.ca-texts {
+		width: 208px;
+		height: 100%;
+		float: right;
+		padding: 0 0 0 12px;
+	}
+	.ca-name {
+		font-size: 14px;
+		color: $white;
+	}
+	.ca-tagline {
+		font-size: 12px;
+		color: $gray2;
+		font-family: $ff-sans-lightitalic;
+	}
+}
+
+
+.c-overview {
+	padding: 0 12px;
+	font-size: 12px;
+	line-height: 24px;
+	max-height: $leadpx * 3;
+	overflow: hidden;
+	margin: 0 0 12px 0;
+
+	* {
+		font-size: inherit;
+		line-height: inherit;
+	}
+}
+
+.c-metas {
+	@include clearfix;
+	width: 280px;
+	height: $leadpx * 3;
+	overflow: hidden;
+	padding: 12px 12px 0 12px;
+	border-top: 1px solid $whiteDark1;
+}
+.c-meta {
+	width: 33.333%;
+	height: $leadpx * 3;
+	float: left;
+
+	& > * { margin: 0; }
+
+	.cmeta-label {
+		font-size: 9px;
+		line-height: 24px;
+		color: $gray2;
+		margin: 0;
+	}
+
+	.cmeta-price {
+		font-size: 14px;
+		line-height: 24px;
+		color: $green;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	.cmeta-ratings {
+		font-size: 12px;
+		line-height: 24px;
+		color: $gray2;
+
+		.cmeta-rating.active { color: $red; }
+	}
+
+	.cmeta-cat {
+		color: $black;
+		font-size: 12px;
+		line-height: 24px;
+	}
+}

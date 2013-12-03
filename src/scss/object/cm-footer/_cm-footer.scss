@@ -1,0 +1,53 @@
+/** ----------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.FOOTER
+ *  
+ *  Footer Object.
+ *  @author Bangsawan & Rianti
+ *  @version 0.0.0
+ *  Copyright 2013. Free licensed.
+ ** ----------------------------------------------------------------- */
+
+.footers {
+	position: relative;
+	width: 100%;
+	height: $leadpx * 1.5;
+	background-color: $black;
+}
+
+.footer {
+	@include clearfix;
+	@extend %cn-full;
+	background-color: $black;
+	color: $white;
+	height: $leadpx * 1.5;
+
+	.footer-navs {
+		margin: 0;
+		padding: 0;
+		list-style: none outside none;
+
+		li {
+			float: left;
+			height: 100%;
+		}
+	}
+
+	.footer-nav {
+		margin: 0 0 0 12px;
+		color: $whiteDark1;
+		text-decoration: none;
+		font-size: 12px;
+		line-height: $leadpx * 1.5;
+
+		&:hover { color: $green; }
+	}
+
+	.copyright {
+		color: $whiteDark1;
+		font-size: 12px;
+		line-height: $leadpx * 1.5;
+		text-align: right;
+		float: right;
+		padding: 0 12px 0 0;
+	}
+}

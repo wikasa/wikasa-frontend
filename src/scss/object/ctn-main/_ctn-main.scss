@@ -1,0 +1,13 @@
+/** ----------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.MAIN-CONTENT
+ *  
+ *  Main content object.
+ *  @author Aardbei & XLV
+ *  @version 0.0.0
+ *  Copyright 2013. Free licensed.
+ ** ----------------------------------------------------------------- */
+
+.ctn-main {
+	@extend %cn-main;
+	float: left;
+}

@@ -1,0 +1,113 @@
+/** ----------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.NAV.COURSES.PRIMARY
+ *  
+ *  Nav Courses Primary Object.
+ *  @author Bangsawan & Silvi
+ *  @version 0.0.0
+ *  Copyright 2013. Free licensed.
+ ** ----------------------------------------------------------------- */
+
+.nav-crs-pris {
+	@include border-radius(6px);
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: 268px;
+	background-color: $whiteDark1;
+	margin: 24px 0 0 0;
+}
+
+.ncp-head,
+.ncp-sort {
+	padding: 0 24px;
+	background-color: $black;
+	color: $white;
+}
+
+.ncp-head {
+	display: block;
+	margin: 0;
+	width: 100%;
+	height: 48px;
+	font-weight: 400;
+	font-size: 16px;
+	font-family: $ff-sans-regular;
+	line-height: 48px;
+}
+
+.ncp-sort {
+	display: block;
+	margin: 0;
+	width: 100%;
+	height: 36px;
+	border-top: 1px solid $whiteDark1;
+	color: $green;
+	font-size: 14px;
+	line-height: 36px;
+	&:hover {
+		background-color: $green;
+		color: $white;
+	}
+
+	.fa {
+		display: none;
+		float: left;
+		width: $leadpx;
+		line-height: $leadpx * 1.5;
+	}
+
+	&.sort-featured.active {
+		background-color: $orange;
+		color: $white;
+
+		.fa {
+			display: block;
+		}
+	}
+
+	&.sort-trend.active {
+		background-color: $green;
+		color: $white;
+	}
+}
+
+.ncp-courselist {
+	margin: 0;
+	padding: 0;
+	list-style: none outside none;
+
+	li {
+		display: block;
+		height: $leadpx * 1.5;
+		width: 100%;
+	}
+
+	.ncp {
+		display: block;
+		padding: 0 24px;
+		width: 100%;
+		height: $leadpx * 1.5;
+		border-top: 1px solid $whiteDark1;
+		background-color: $whiteDark2;
+		color: $black;
+		font-size: 14px;
+		line-height: $leadpx * 1.5;
+
+		.fa {
+			display: none;
+			float: left;
+			width: $leadpx;
+			line-height: $leadpx * 1.5;
+		}
+
+		&:hover {
+			background-color: $green;
+			color: $white;
+		}
+		&.active {
+			background-color: $orange;
+			color: $white;
+			.fa { display: block; }
+		}
+	}
+}
