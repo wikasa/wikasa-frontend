@@ -9,7 +9,7 @@
 
 .home-tools {
 	// @include clearfix;
-	width: $leadpx * 37;
+	width: $leadpx * 32;
 	height: $leadpx * 2;
 	background-color: #FFF;
 	margin: 0 0 0 24px;
@@ -24,12 +24,13 @@
 		display: block;
 		float: left;
 		margin: 0;
-		width: 140px;
+		width: 120px;
 		height: $leadpx * 2;
 		background-color: $gray;
 		color: $white;
 		text-align: center;
 		line-height: $leadpx * 2;
+		font-size: 14px;
 
 		&:hover { background-color: $green; }
 		&.active {
@@ -53,7 +54,7 @@
 	.ht-sort {
 		display: block;
 		float: left;
-		width: 140px;
+		width: 120px;
 		height: $leadpx * 2;
 		border-left: 1px solid $whiteDark1;
 		color: $black;
@@ -62,7 +63,7 @@
 		font-size: 14px;
 
 		&:hover {
-			background-color: $whiteDark1;
+			background-color: $whiteDark2;
 		}
 
 		.label {
@@ -75,14 +76,16 @@
 	}
 
 	.ht-sort-dds {
+		@include border-radius(6px);
+		@include single-box-shadow;
 		position: absolute;
-		display: none;
 		top: 100%;
+		display: none;
 		margin: 12px 0 0 0;
 		padding: 6px 12px;
-		width: 140px;
+		width: 120px;
 		background-color: $white;
-		@include border-radius(6px);
+		z-index: 1003;
 
 		&:after {
 			@extend %cm-triangle-bottom;

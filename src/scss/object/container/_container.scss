@@ -8,8 +8,8 @@
  ** ----------------------------------------------------------------- */
 
 %cn-full {
-	max-width: 1180px;
-	min-width: 1180px;
+	max-width: $leadpx * 43;
+	min-width: $leadpx * 43;
 	width: 100%;
 	position: relative;
 	margin: 0 auto;
@@ -17,7 +17,7 @@
 
 %cn-main {
 	padding: $leadpx 0 0 0;
-	width: $leadpx * 38;
+	width: $leadpx * 33;
 	position: relative;
 }
 

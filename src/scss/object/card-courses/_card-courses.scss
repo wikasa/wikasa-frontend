@@ -13,14 +13,14 @@
 }
 
 .card {
-	@include border-radius(6px);
+	@include border-radius(3px);
 	position: relative;
 	float: left;
 	overflow: hidden;
 	margin: 0 0 24px 24px;
-	max-width: 280px;
+	max-width: $leadpx * 10;
 	max-height: 360px;
-	width: 280px;
+	width: $leadpx * 10;
 	height: 360px;
 	background-color: $white;
 	font-size: 14px;
@@ -47,13 +47,14 @@
 		overflow: hidden;
 		width: $leadpx * 2;
 		height: $leadpx * 2;
+		margin: 0 12px 0 0;
 		border: 2px solid $white;
 	}
 
 	.ca-texts {
-		width: 208px;
+		// width: 208px;
 		height: 100%;
-		float: right;
+		// float: right;
 		padding: 0 0 0 12px;
 	}
 	.ca-name {
@@ -84,7 +85,7 @@
 
 .c-metas {
 	@include clearfix;
-	width: 280px;
+	width: $leadpx * 10;
 	height: $leadpx * 3;
 	overflow: hidden;
 	padding: 12px 12px 0 12px;
@@ -95,7 +96,11 @@
 	height: $leadpx * 3;
 	float: left;
 
-	& > * { margin: 0; }
+	& > * {
+		margin: 0;
+		padding: 0 3px;
+		overflow: hidden;
+	}
 
 	.cmeta-label {
 		font-size: 9px;
@@ -105,7 +110,7 @@
 	}
 
 	.cmeta-price {
-		font-size: 14px;
+		font-size: 11px;
 		line-height: 24px;
 		color: $green;
 		text-transform: uppercase;
@@ -113,7 +118,7 @@
 	}
 
 	.cmeta-ratings {
-		font-size: 12px;
+		font-size: 11px;
 		line-height: 24px;
 		color: $gray2;
 
@@ -122,7 +127,7 @@
 
 	.cmeta-cat {
 		color: $black;
-		font-size: 12px;
+		font-size: 11px;
 		line-height: 24px;
 	}
 }
