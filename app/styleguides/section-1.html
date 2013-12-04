@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>kss-node Styleguide</title>
+    <meta name="description" content="" />
+    <meta name="generator" content="kss-node" />
+    <link rel="stylesheet" href="public/kss.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+  <body id="kss-node">
+    <div class="kss-wrapper">
+      <div class="kss-sidebar">
+        <div class="kss-sidebar-inner">
+          <header class="kss-header">
+            <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
+          </header>
+          <nav class="kss-nav">
+            <ul class="kss-menu" data-kss-ref="1">
+              <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Common Header.</span></a></li>
+              
+              <li class="kss-menu-item"><a href="section-2.html"><span class="kss-ref">2</span><span class="kss-name">Common Footer.</span></a></li>
+              
+            </ul>
+            
+            <ul class="kss-menu-child">
+              
+              
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-1.1"><span class="kss-ref">1.1</span><span class="kss-name">Nav Courses Secondary.</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-1.1.1"><span class="kss-ref">1.1.1</span><span class="kss-name">NCS Dropdown.</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-1.2"><span class="kss-ref">1.2</span><span class="kss-name">Header tools.</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-1.2.1"><span class="kss-ref">1.2.1</span><span class="kss-name">Search.</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-1.2.2"><span class="kss-ref">1.2.2</span><span class="kss-name">Message.</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-1.2.3"><span class="kss-ref">1.2.3</span><span class="kss-name">Nav My Courses.</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-1.2.4"><span class="kss-ref">1.2.4</span><span class="kss-name">Notification.</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-1.2.5"><span class="kss-ref">1.2.5</span><span class="kss-name">User Tools.</span></a></li>
+              
+              
+              
+              <li class="kss-menu-item"><a href="#section-1.2.6"><span class="kss-ref">1.2.6</span><span class="kss-name">User Tools Dropdown.</span></a></li>
+              
+              
+            </ul>
+            
+          </nav>
+        </div>
+      </div>
+      <div class="kss-content">
+        <article class="kss-article">
+          
+          
+          <section id="section-1" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">1</span> Common Header.</h1>
+            
+            
+            <div class="kss-description">
+              <p>Header Bar appears on every page.
+
+</p>
+<p><em>Authored by Bangsawan &amp; Silvi.</em></p>
+
+            </div>
+            
+            
+          </section>
+          
+          <section id="section-1.1" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">1.1</span> Nav Courses Secondary.</h1>
+            
+            
+            <div class="kss-description">
+              <p>Interface to navigate through courses.
+
+</p>
+<p>Main Class: <code>nav-crs-secs</code></p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="cm-headers">
+  <div class="cm-header">
+    <div class="nav-crs-secs">
+      <a href="#" class="ncs">Browse Courses&nbsp;<i class="fa fa-angle-down"></i></a>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;cm-headers&quot;&gt;
+  &lt;div class=&quot;cm-header&quot;&gt;
+    &lt;div class=&quot;nav-crs-secs&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;ncs&quot;&gt;Browse Courses&nbsp;&lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-1.1.1" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.1.1</span> NCS Dropdown.</h1>
+            
+            
+            <div class="kss-description">
+              <p>Dropdown UI triggered on <code>a.nav-crs-secs</code> click. Then adding class &apos;open&apos;.
+
+</p>
+<p>Main Class: <code>.ncs-dds</code></p>
+
+            </div>
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="cm-headers">
+  <div class="cm-header">
+    <div class="ncs-dds open">
+      <ul class="ncs-cat1">
+        <li><a href="#" class="cat">Academy</a></li>
+        <li><a href="#" class="cat">Featured</a></li>
+        <li><a href="#" class="cat">Trending</a></li>
+      </ul>
+      <ul class="ncs-cat2">
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+        <li><a href="#" class="crs">Courses</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;cm-headers&quot;&gt;
+  &lt;div class=&quot;cm-header&quot;&gt;
+    &lt;div class=&quot;ncs-dds open&quot;&gt;
+      &lt;ul class=&quot;ncs-cat1&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;cat&quot;&gt;Academy&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;cat&quot;&gt;Featured&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;cat&quot;&gt;Trending&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ul class=&quot;ncs-cat2&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;crs&quot;&gt;Courses&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-1.2" class="kss-section kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">1.2</span> Header tools.</h1>
+            
+            
+            <div class="kss-description">
+              <p>Collection of buttons with specific function.</p>
+
+            </div>
+            
+            
+          </section>
+          
+          <section id="section-1.2.1" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.2.1</span> Search.</h1>
+            
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="cm-headers">
+  <div class="cm-header">
+      <div class="header-tools">
+        <div class="header-tool sch open" id="sch">
+          <form>
+            <input class="sch-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+            <input class="sch-submit" type="submit" value="">
+            <span class="sch-icon fa fa-search"></span>
+          </form>
+        </div>
+  </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;cm-headers&quot;&gt;
+  &lt;div class=&quot;cm-header&quot;&gt;
+      &lt;div class=&quot;header-tools&quot;&gt;
+        &lt;div class=&quot;header-tool sch open&quot; id=&quot;sch&quot;&gt;
+          &lt;form&gt;
+            &lt;input class=&quot;sch-input&quot; placeholder=&quot;Enter your search term...&quot; type=&quot;search&quot; value=&quot;&quot; name=&quot;search&quot; id=&quot;search&quot;&gt;
+            &lt;input class=&quot;sch-submit&quot; type=&quot;submit&quot; value=&quot;&quot;&gt;
+            &lt;span class=&quot;sch-icon fa fa-search&quot;&gt;&lt;/span&gt;
+          &lt;/form&gt;
+        &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-1.2.2" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.2.2</span> Message.</h1>
+            
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="cm-headers">
+  <div class="cm-header">
+      <div class="header-tools">
+        <a href="#" class="header-tool msg"><i class="fa fa-envelope"></i></a>
+      </div>
+  </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;cm-headers&quot;&gt;
+  &lt;div class=&quot;cm-header&quot;&gt;
+      &lt;div class=&quot;header-tools&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;header-tool msg&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-1.2.3" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.2.3</span> Nav My Courses.</h1>
+            
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="cm-headers">
+  <div class="cm-header">
+      <div class="header-tools">
+        <a href="#" class="nav-myc-pri">My Courses</a>
+      </div>
+  </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;cm-headers&quot;&gt;
+  &lt;div class=&quot;cm-header&quot;&gt;
+      &lt;div class=&quot;header-tools&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-myc-pri&quot;&gt;My Courses&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-1.2.4" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.2.4</span> Notification.</h1>
+            
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="cm-headers">
+  <div class="cm-header">
+      <div class="header-tools">
+        <a href="#" class="header-tool ntf"><i class="fa fa-bell-o"></i></a>
+      </div>
+  </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;cm-headers&quot;&gt;
+  &lt;div class=&quot;cm-header&quot;&gt;
+      &lt;div class=&quot;header-tools&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;header-tool ntf&quot;&gt;&lt;i class=&quot;fa fa-bell-o&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-1.2.5" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.2.5</span> User Tools.</h1>
+            
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="cm-headers">
+  <div class="cm-header">
+    <div class="nav-unm-pris">
+      <a href="#" class="nav-unm-pri">
+        <span class="unm">User Name</span>
+        <span class="uim"><img src="../img/png/UIM-120120.png" alt="User Image"></span>
+        <i class="fa fa-angle-down"></i>
+      </a>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;cm-headers&quot;&gt;
+  &lt;div class=&quot;cm-header&quot;&gt;
+    &lt;div class=&quot;nav-unm-pris&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;nav-unm-pri&quot;&gt;
+        &lt;span class=&quot;unm&quot;&gt;User Name&lt;/span&gt;
+        &lt;span class=&quot;uim&quot;&gt;&lt;img src=&quot;../img/png/UIM-120120.png&quot; alt=&quot;User Image&quot;&gt;&lt;/span&gt;
+        &lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          <section id="section-1.2.6" class="kss-section kss-depth-3">
+            <h1 class="kss-title"><span class="kss-ref">1.2.6</span> User Tools Dropdown.</h1>
+            
+            
+            <div class="kss-modifier-block">
+              <div class="kss-modifier kss-modifier-original">
+                <div class="kss-modifier-example">
+                  <div class="cm-headers">
+  <div class="cm-header">
+    <div class="nav-unm-pris">
+      <a href="#" class="nav-unm-pri active">
+        <span class="unm">User Name</span>
+        <span class="uim"><img src="../img/png/UIM-120120.png" alt="User Image"></span>
+        <i class="fa fa-angle-down"></i>
+      </a>
+      <div class="nup-dds open">
+        <ul class="nup-tools">
+          <li><a href="#" class="nup-tool"><i class="fa fa-user"></i>&nbsp;View Profile</a></li>
+          <li><a href="#" class="nup-tool"><i class="fa fa-cog"></i>&nbsp;User Settings</a></li>
+          <li><a href="#" class="nup-tool"><i class="fa fa-wrench"></i>&nbsp;Account Settings</a></li>
+          <li><a href="#" class="nup-tool btn-logout">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+              </div>
+              
+              <div class="kss-markup">
+                <pre><code data-language="html">&lt;div class=&quot;cm-headers&quot;&gt;
+  &lt;div class=&quot;cm-header&quot;&gt;
+    &lt;div class=&quot;nav-unm-pris&quot;&gt;
+      &lt;a href=&quot;#&quot; class=&quot;nav-unm-pri active&quot;&gt;
+        &lt;span class=&quot;unm&quot;&gt;User Name&lt;/span&gt;
+        &lt;span class=&quot;uim&quot;&gt;&lt;img src=&quot;../img/png/UIM-120120.png&quot; alt=&quot;User Image&quot;&gt;&lt;/span&gt;
+        &lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;
+      &lt;/a&gt;
+      &lt;div class=&quot;nup-dds open&quot;&gt;
+        &lt;ul class=&quot;nup-tools&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nup-tool&quot;&gt;&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;&nbsp;View Profile&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nup-tool&quot;&gt;&lt;i class=&quot;fa fa-cog&quot;&gt;&lt;/i&gt;&nbsp;User Settings&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nup-tool&quot;&gt;&lt;i class=&quot;fa fa-wrench&quot;&gt;&lt;/i&gt;&nbsp;Account Settings&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;nup-tool btn-logout&quot;&gt;Log Out&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            
+          </section>
+          
+          
+        </article>
+        <footer class="kss-footer">
+          <div>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and <a href="https://github.com/htanjo/kss-node-template">kss-node-template</a>.</div>
+        </footer>
+      </div>
+    </div>
+    <script src="public/kss.js"></script>
+    <script src="public/jquery-1.9.1.min.js"></script>
+    <!--[if gt IE 8]><!-->
+    <script src="public/rainbow.min.js"></script>
+    <!--<![endif]-->
+    <script src="public/main.js"></script>
+  </body>
+</html>

@@ -1,12 +1,31 @@
-/** ----------------------------------------------------------------- *\
- *  WIKASA.OBJECT.FOOTER
- *  
- *  Footer Object.
- *  @author Bangsawan & Rianti
- *  @version 0.0.0
- *  Copyright 2013. Free licensed.
- ** ----------------------------------------------------------------- */
+/*
+Common Footer.
 
+Footer Bar appears on every page.
+
+Authored by Bangsawan & Silvi.
+
+Markup:
+<div class="footers">
+    <div class="footer">
+        <ul class="footer-navs">
+            <li>
+                <a href="#" class="footer-nav">About Us</a>
+                <a href="#" class="footer-nav">Blogs</a>
+                <a href="#" class="footer-nav">Categories</a>
+                <a href="#" class="footer-nav">Instructors</a>
+                <a href="#" class="footer-nav">Affiliates</a>
+                <a href="#" class="footer-nav">Support</a>
+                <a href="#" class="footer-nav">Terms of Use</a>
+                <a href="#" class="footer-nav">Privacy</a>
+            </li>
+        </ul>
+        <p class="copyright">&copy; 2013 Wikasa.com</p>
+    </div>
+</div>
+
+Styleguide 2
+*/
 .footers {
 	position: relative;
 	width: 100%;
