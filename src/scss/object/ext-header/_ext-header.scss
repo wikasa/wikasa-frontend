@@ -1,0 +1,116 @@
+.ext-head {
+	@extend %full-width;
+	background-color: $black;
+	color: $white;
+}
+
+.xh-media {
+	position: relative;
+	float: left;
+	padding: $leadpx 0;
+	width: $leadpx * 22;
+	height: $leadpx * 17;
+	background-color: $black;
+
+	.media-std1 {
+		margin: 0 auto;
+	}
+}
+
+.crs-meta-lab {
+	font-size: 12px;
+	line-height: $leadpx;
+}
+
+.xh-ctn {
+	float: right;
+	padding: $leadpx 0;
+	width: $leadpx * 21;
+	height: $leadpx * 17;
+
+	.crs-title,
+	.crs-overview,
+	.crs-meta,
+	.crs-go {
+		margin: 0 $leadpx $leadpx;
+	}
+
+	.crs-title {
+		font-size: 28px;
+		line-height: $leadpx * 1.5;
+		max-height: $leadpx * 3;
+		height: $leadpx * 3;
+		overflow: hidden;
+		font-weight: 400;
+		max-width: $leadpx * 19;
+		width: $leadpx * 19;
+	}
+
+	.crs-overview {
+		font-size: 12px;
+		line-height: $leadpx;
+		color: $white;
+		max-height: $leadpx * 3;
+		height: $leadpx * 3;
+		max-width: 75%;
+		width: 75%;
+
+		* {
+			font-size: inherit;
+			line-height: inherit;
+		}
+	}
+
+	.crs-meta {
+		max-width: $leadpx * 19;
+		width: $leadpx * 19;
+
+		.crs-meta-uim {
+			@include border-radius(50%);
+			display: block;
+			width: $leadpx * 2;
+			height: $leadpx * 2;
+			border: 2px solid $white;
+			overflow: hidden;
+			margin: ($leadpx / 2) 0;
+		}
+	}
+
+	.crs-go {
+		max-width: $leadpx * 19;
+
+		.crs-go-btn {
+			@include border-radius(2px);
+			display: block;
+			float: left;
+			overflow: hidden;
+			margin: 0 6px 0 0;
+			max-width: $leadpx * 6;
+			max-height: $leadpx * 1.5;
+			width: $leadpx * 6;
+			height: $leadpx * 2;
+			color: $white;
+			font-size: 16px;
+			line-height: $leadpx * 1.5;
+			text-align: center;
+
+			&.start {
+				background-color: $orange;
+			}
+
+			&.wish {
+				background-color: $green;
+
+				.fa {
+					display: block;
+					width: $leadpx * 1.5;
+					height: $leadpx * 1.5;
+					line-height: $leadpx * 1.5;
+					border-right: 1px solid $black;
+					float: left;
+					color: $white;
+				}
+			}
+		}
+	}
+}

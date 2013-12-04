@@ -2420,9 +2420,21 @@ body {
   position: relative;
 }
 
+.cm-headers, .ext-head {
+  width: 100%;
+  z-index: 1100;
+}
+
 .page {
   overflow: hidden;
   *zoom: 1;
+}
+
+.media-std1 {
+  display: block;
+  width: 480px;
+  height: 360px;
+  background-color: #FFF;
 }
 
 /** ----------------------------------------------------------------- *\
@@ -2481,11 +2493,9 @@ Styleguide 1
 }
 
 .cm-headers {
-  width: 100%;
   background-color: #FFF;
   color: #2d3e51;
   margin: 0 0 12px 0;
-  z-index: 1100;
 }
 
 .cm-header {
@@ -3453,6 +3463,118 @@ Styleguide 2
   color: #2b2f3a;
   font-size: 11px;
   line-height: 24px;
+}
+
+.ext-head {
+  background-color: #2b2f3a;
+  color: white;
+}
+
+.xh-media {
+  position: relative;
+  float: left;
+  padding: 24px 0;
+  width: 528px;
+  height: 408px;
+  background-color: #2b2f3a;
+}
+.xh-media .media-std1 {
+  margin: 0 auto;
+}
+
+.crs-meta-lab {
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.xh-ctn {
+  float: right;
+  padding: 24px 0;
+  width: 504px;
+  height: 408px;
+}
+.xh-ctn .crs-title,
+.xh-ctn .crs-overview,
+.xh-ctn .crs-meta,
+.xh-ctn .crs-go {
+  margin: 0 24px 24px;
+}
+.xh-ctn .crs-title {
+  font-size: 28px;
+  line-height: 36px;
+  max-height: 72px;
+  height: 72px;
+  overflow: hidden;
+  font-weight: 400;
+  max-width: 456px;
+  width: 456px;
+}
+.xh-ctn .crs-overview {
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+  max-height: 72px;
+  height: 72px;
+  max-width: 75%;
+  width: 75%;
+}
+.xh-ctn .crs-overview * {
+  font-size: inherit;
+  line-height: inherit;
+}
+.xh-ctn .crs-meta {
+  max-width: 456px;
+  width: 456px;
+}
+.xh-ctn .crs-meta .crs-meta-uim {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid white;
+  overflow: hidden;
+  margin: 12px 0;
+}
+.xh-ctn .crs-go {
+  max-width: 456px;
+}
+.xh-ctn .crs-go .crs-go-btn {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 0 6px 0 0;
+  max-width: 144px;
+  max-height: 36px;
+  width: 144px;
+  height: 48px;
+  color: white;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+}
+.xh-ctn .crs-go .crs-go-btn.start {
+  background-color: #ea6b53;
+}
+.xh-ctn .crs-go .crs-go-btn.wish {
+  background-color: #64afb2;
+}
+.xh-ctn .crs-go .crs-go-btn.wish .fa {
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-right: 1px solid #2b2f3a;
+  float: left;
+  color: white;
 }
 
 .sg-nav {

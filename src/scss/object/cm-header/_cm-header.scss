@@ -31,11 +31,10 @@ $brandUnit: 60px; // Depends on image dimension.
 }
 
 .cm-headers {
-	width: 100%;
+	@extend %full-width;
 	background-color: #FFF;
 	color: $blackLite;
 	margin: 0 0 12px 0;
-	z-index: 1100;
 }
 .cm-header {
 	@extend %cn-full;
