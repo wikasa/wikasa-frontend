@@ -297,6 +297,7 @@ $brandUnit: 60px; // Depends on image dimension.
 
 	&.active {
 		background-color: $green;
+		color: $white;
 	}
 
 	& > * {

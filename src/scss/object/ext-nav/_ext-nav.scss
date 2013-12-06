@@ -1,0 +1,133 @@
+.ext-nav {
+	@extend %cn-main;
+	// background-color: $green;
+
+	a, p, li {
+		color: $white;
+		text-decoration: none;
+		margin: 0;
+		padding: 0;
+		display: block;
+		font-family: $ff-sans-light;
+	}
+
+	ul {
+		list-style: none outside none;
+		margin: 0;
+	}
+}
+
+.xn-sections {
+	display: block;
+	position: relative;
+	width: 100%;
+	padding: 0;
+	background-color: $white;
+
+	& > li {
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.xn-section {
+		overflow: hidden;
+		padding: 0 $leadpx;
+		max-height: $leadpx * 2;
+		width: 100%;
+		height: $leadpx * 1.5;
+		background-color: $black;
+		font-size: 14px;
+		line-height: $leadpx * 1.5;
+		margin: 0 0 ($leadpx * 0.5) 0;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			width: $leadpx * 1.5;
+			height: $leadpx * 1.5;
+			color: inherit;
+			content: "\f106"; // Font Awesome "Angle Down"
+			font-weight: normal;
+			font-style: normal;
+			font-family: $ff-iconfont;
+			line-height: $leadpx * 1.5;
+		}
+
+		&.open:after {
+			content: "\f107"; // Font Awesome "Angle Down"
+		}
+	}
+}
+
+.xn-lessons {
+	@include clearfix;
+	position: relative;
+	display: block;
+	padding: 0 $leadpx;
+	width: 100%;
+
+	li {
+		display: block;
+		float: left;
+		overflow: hidden;
+		margin: 0 0 $leadpx $leadpx;
+		width: $leadpx * 9;
+		height: $leadpx * 3;
+		background-color: $whiteDark1;
+	}
+
+	.xn-lesson {
+		@include clearfix;
+		font-size: 12px;
+
+		.xnl-thumb {
+			position: relative;
+			width: $leadpx * 3;
+			height: $leadpx * 3;
+			background-color: $black;
+			float: left;
+		}
+
+		.xnl-thumb-img {
+			display: block;
+			position: absolute;
+			width: $leadpx * 3;
+			height: $leadpx * 3;
+			line-height: $leadpx * 3;
+			text-align: center;
+			z-index: 10;
+		}
+
+		.xnl-thumb-info {
+			position: absolute;
+			bottom: 0;
+			z-index: 11;
+			display: block;
+			width: $leadpx * 3;
+			height: $leadpx * 1;
+			text-align: center;
+			font-size: 11px;
+			line-height: $leadpx * 1;
+		}
+
+		.xnl-ctn {
+			color: $black;
+			float: left;
+			width: $leadpx * 6;
+			height: 60px;
+			padding: 0 12px;
+			margin: 6px 0;
+			overflow: hidden;
+		}
+
+		.xnl-label,
+		.xnl-title {
+			color: $black;
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+}

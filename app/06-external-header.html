@@ -37,19 +37,31 @@ Remove this if you use the .htaccess -->
     <div class="ext-head">
         <div class="page">
             <div class="xh-media">
-                <div class="media-std1"></div>
+                <!-- <div class="media-std1"></div> -->
+                <video class="media-std1" controls="controls" poster="img/png/vid-poster/poster-0.png" width="480" height="270">
+                  <source src="vid/sample/sample.mp4" type="video/mp4" />
+                  <source src="vid/sample/sample.webm" type="video/webm" />
+                  <source src="vid/sample/sample.ogv" type="video/ogg" />
+                  <object type="application/x-shockwave-flash" data="http://player.longtailvideo.com/player.swf" width="480" height="270">
+                    <param name="movie" value="http://player.longtailvideo.com/player.swf" />
+                    <param name="allowFullScreen" value="true" />
+                    <param name="wmode" value="transparent" />
+                    <param name="flashVars" value="controlbar=over&amp;image=img%2Fpng%2Fvid-poster%2Fposter-0.png&amp;file=sample.mp4" />
+                    <img alt="Play" src="img/png/vid-poster/poster-0.png" width="480" height="270" title="No video playback capabilities, please download the video below" />
+                  </object>
+                </video>
             </div>
             <div class="xh-ctn">
                 <h1 class="crs-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, molestiae!</h1>
                 <div class="crs-overview">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, rerum sapiente pariatur quis architecto error facere quisquam corrupti enim distinctio voluptas libero illo at?</p>
                 </div>
-                <div class="crs-meta">
+                <!-- <div class="crs-meta">
                     <p class="crs-meta-lab">Course by:</p>
                     <a href="#" class="crs-meta-uim">
                         <img src="img/png/UIM-120120.png" alt="User Image">
                     </a>
-                </div>
+                </div>-->
                 <div class="crs-go">
                     <p class="crs-meta-lab">Start learning now</p>
                     <a href="#" class="crs-go-btn start">IDR 30.000</a>

@@ -7,9 +7,9 @@
 .xh-media {
 	position: relative;
 	float: left;
-	padding: $leadpx 0;
+	padding: $leadpx 0 18px 0;
 	width: $leadpx * 22;
-	height: $leadpx * 17;
+	height: $leadpx * 13;
 	background-color: $black;
 
 	.media-std1 {
@@ -23,15 +23,15 @@
 }
 
 .xh-ctn {
-	float: right;
-	padding: $leadpx 0;
+	position: relative;
+	float: left;
+	padding: $leadpx 0 18px 0;
 	width: $leadpx * 21;
-	height: $leadpx * 17;
+	height: $leadpx * 13;
 
 	.crs-title,
 	.crs-overview,
-	.crs-meta,
-	.crs-go {
+	.crs-meta {
 		margin: 0 $leadpx $leadpx;
 	}
 
@@ -52,6 +52,7 @@
 		color: $white;
 		max-height: $leadpx * 3;
 		height: $leadpx * 3;
+		overflow: hidden;
 		max-width: 75%;
 		width: 75%;
 
@@ -78,6 +79,9 @@
 
 	.crs-go {
 		max-width: $leadpx * 19;
+		position: absolute;
+		bottom: 0;
+		margin: 0 $leadpx 18px $leadpx;
 
 		.crs-go-btn {
 			@include border-radius(2px);

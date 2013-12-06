@@ -1,0 +1,43 @@
+.ext-sums {
+	@extend %cn-main;
+	@include clearfix;
+	padding: 0 $leadpx;
+	height: $leadpx * 10;
+	margin: $leadpx 0 0 0;
+
+	& > * {
+		margin: 0;
+		color: $green;
+		font-family: $ff-sans-light;
+	}
+}
+
+.ext-sum {
+	@include border-radius(3px);
+	overflow: hidden;
+	width: $leadpx * 9;
+	height: $leadpx * 10;
+	background-color: #FFF;
+	float: left;
+	margin: 0 0 0 $leadpx;
+}
+
+.es-title {
+	overflow: hidden;
+	margin: 0;
+	padding: 0 $leadpx * 0.5;
+	height: $leadpx * 2;
+	background-color: $black;
+	line-height: $leadpx * 2;
+	text-align: center;
+	font-size: 14px;
+}
+
+.es-content {
+	padding: 0 $leadpx * 0.5;
+	height: $leadpx * 8;
+	font-size: 12px;
+	p {
+		margin: $leadpx 0 0 0;
+	}
+}
