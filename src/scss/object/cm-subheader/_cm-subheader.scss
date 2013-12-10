@@ -6,10 +6,13 @@
 	margin: 0 0 0 24px;
 	padding: ($leadpx * 0.5) 0;
 	border-bottom: 1px solid $gray;
+	position: relative;
 }
 
 .cms-texts {
-	position: relative;
+	position: absolute;
+	top: $leadpx * 0.5;
+	left: 0;
 	width: 120px;
 
 	.cms-text {
@@ -21,59 +24,78 @@
 }
 
 .cms-sorts {
-	float: right;
-	position: relative;
+	position: absolute;
+	top: $leadpx * 0.5;
+	right: 0;
 }
 
-.cms-sort {
+.cms-sort-btn {
 	display: block;
-	float: left;
-	width: 120px;
+	width: $leadpx * 3;
 	height: $leadpx;
-	border-left: 1px solid $whiteDark1;
-	color: $black;
-	line-height: $leadpx * 2;
+	font-size: 12px;
+	line-height: $leadpx;
 	text-align: center;
-	font-size: 14px;
 
-	&:hover {
-		background-color: $whiteDark2;
+	&.open:after {
+		content: "\f106"; // Font Awesome "Angle Down"
+	}
+	&.close:after {
+		content: "\f107"; // Font Awesome "Angle Up"
 	}
 
-	.cms-sort-dds {
-		@include border-radius(6px);
-		@include single-box-shadow;
+	&.open:after,
+	&.close:after {
 		position: absolute;
-		top: 100%;
-		display: none;
-		margin: 12px 0 0 0;
-		padding: 6px 12px;
-		width: 120px;
-		background-color: $white;
-		z-index: 1003;
+		top: 0;
+		right: 0;
+		display: block;
+		width: $leadpx;
+		height: $leadpx;
+		color: inherit;
+		font-weight: normal;
+		font-style: normal;
+		font-family: $ff-iconfont;
+		line-height: $leadpx;
+	}
+}
+
+.cms-sort-dds {
+	@include border-radius(3px);
+	@include single-box-shadow;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 1100;
+	display: none;
+	margin: $leadpx 0 0 0;
+	padding: ($leadpx * 0.5) 0;
+	width: $leadpx * 3;
+	background-color: $white;
+
+	&.open { display: block; }
+
+	.cms-subsort {
+		display: block;
+		width: 100%;
+		height: $leadpx;
+		color: $black;
+		font-size: 12px;
+		line-height: $leadpx;
+		text-align: center;
+		padding: 0 $leadpx;
+		margin: 0;
+
+		&:hover {
+			color: $green;
+		}
 
 		&:after {
 			@extend %cm-triangle-bottom;
 			bottom: 100%;
-			left: 24px;
+			left: 50%;
+			margin: 0 0 0 -6px;
 			border-color: transparent transparent #FFF;
-		}
-
-		&.open { display: block; }
-
-		.cms-subsort {
-			display: block;
-			margin: 0;
-			height: 32px;
-			color: $black;
-			text-align: left;
-			font-size: 12px;
-			line-height: 32px;
-			&:last-child {
-				border-top: 1px solid $whiteDark1;
-			}
-
-			&:hover { color: $green; }
 		}
 	}
 }
