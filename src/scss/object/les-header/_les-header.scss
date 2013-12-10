@@ -37,9 +37,7 @@
 	.lh-title {
 		font-size: 32px;
 		line-height: $leadpx * 2;
-		max-height: $leadpx * 2;
-		height: $leadpx * 2;
-		overflow: hidden;
+		min-height: $leadpx * 2;
 		margin: 0;
 	}
 }
@@ -83,9 +81,7 @@
 		line-height: $leadpx;
 		background-color: $green;
 
-		&:hover {
-			background-color: $gray;
-		}
+		&:hover { background-color: $gray; }
 	}
 
 	.lns-prev-btn {
@@ -125,9 +121,75 @@
 	}
 }
 
+.lw-tools {
+	@include clearfix;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: ($leadpx * 2.5) 0 0 $leadpx;
+	width: $leadpx * 6;
+	height: $leadpx * 10.5;
+	border-bottom: 1px solid $gray;
+
+	.lw-tool {
+		position: relative;
+		display: block;
+		padding: ($leadpx * 0.5) 0;
+		width: 100%;
+		height: $leadpx * 3.5;
+		border-top: 1px solid $gray;
+		color: $black;
+		font-size: 14px;
+		margin: 0;
+
+		.lwt-icon {
+			@include border-radius(50%);
+			position: absolute;
+			top: 0;
+			left: 50%;
+			margin: ($leadpx * 0.5) 0 0 (-$leadpx * 0.5);
+			width: $leadpx;
+			height: $leadpx;
+			background-color: $black;
+			color: $white;
+
+			.fa {
+				color: $white;
+				display: block;
+				width: 16px;
+				height: $leadpx;
+				line-height: $leadpx;
+				text-align: center;
+				margin: 0 auto;
+				font-size: 11px;
+			}
+		}
+
+		.lwt-text {
+			text-align: center;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			margin: 0 0 ($leadpx * 0.5) 0;
+
+			p {
+				margin: 0;
+				font-size: 12px;
+				font-family: $ff-sans-light;
+			}
+		}
+
+		&:hover {
+			color: $green;
+			.lwt-icon { background-color: $green; }
+		}
+	}
+}
+
 .les-overview {
 	padding: 0 $leadpx;
 	width: $leadpx * 27;
+	float: left;
 
 	.lo-label {
 		margin: 0 0 ($leadpx * 0.5) 0;
@@ -140,5 +202,61 @@
 	.lo-ctn {
 		font-family: $ff-sans-light;
 		font-size: 14px;
+	}
+}
+
+.les-widgets {
+	position: relative;
+	float: right;
+	// background-color: #FFF;
+	width: $leadpx * 6;
+
+	.les-widget-title {
+		margin: ($leadpx * 0.5) 0;
+		width: 100%;
+		height: $leadpx;
+		border-bottom: 1px solid $gray;
+		color: $green;
+		font-size: 12px;
+		line-height: $leadpx;
+	}
+
+	.les-resources {
+		@include clearfix;
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin: 0;
+			height: $leadpx;
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+
+		.les-resource {
+			margin: 0;
+			width: 100%;
+			height: $leadpx;
+			color: $black;
+			font-size: 12px;
+			line-height: $leadpx;
+			font-family: $ff-sans-light;
+		}
+
+		.lr-download {
+			&:after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: block;
+				width: $leadpx;
+				height: $leadpx;
+				color: $gray;
+				content: "\f0ed";
+				font-family: $ff-iconfont;
+			}
+		}
 	}
 }
