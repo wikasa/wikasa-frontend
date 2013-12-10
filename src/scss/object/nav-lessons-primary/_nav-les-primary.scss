@@ -1,0 +1,280 @@
+.les-tools {
+	@include clearfix;
+	float: left;
+	overflow: hidden;
+	min-width: $leadpx * 8;
+	min-height: $leadpx * 40;
+	width: $leadpx * 8;
+	height: 100%;
+}
+
+.lt-header {
+	@include clearfix;
+	position: relative;
+	padding: 0 0 ($leadpx * 2) 0;
+	background-color: $black;
+	color: $white;
+	z-index: 50;
+
+	.lth-label {
+		padding: 0 ($leadpx / 2);
+		width: 100%;
+		height: $leadpx;
+		color: $gray;
+		font-size: 12px;
+		font-family: $ff-sans-light;
+	}
+
+	.lth-title {
+		
+		h1 {
+			margin: 0;
+			padding: 0 ($leadpx / 2);
+			min-width: $leadpx * 2;
+			width: 100%;
+			font-size: 14px;
+			line-height: $leadpx;
+
+			& + & { margin: 0 0 $leadpx 0; }
+		}
+	}
+}
+
+// TODO: REFACTOR. MAKE IT DRY.
+.lt-user {
+	position: relative;
+	z-index: 60;
+	display: block;
+	padding: 0 0 $leadpx 0;
+	width: 100%;
+	background-color: $green;
+
+	.ltu-photo {
+		@include border-radius(50%);
+		position: relative;
+		top: -$leadpx;
+		display: block;
+		overflow: hidden;
+		margin: 0 auto;
+		width: $leadpx * 2;
+		height: $leadpx * 2;
+		border: 2px solid $white;
+	}
+
+	.ltu-label {
+		position: relative;
+		top: -$leadpx;
+		margin: 0 auto;
+		padding: 0 ($leadpx * 0.5);
+		width: 100%;
+		color: $white;
+		text-align: center;
+		font-size: 12px;
+		font-family: $ff-sans-light;
+		line-height: $leadpx;
+	}
+
+	.ltu-name {
+		position: relative;
+		top: -$leadpx;
+		margin: 0 auto;
+		padding: 0 ($leadpx * 0.5);
+		width: 100%;
+		color: $black;
+		text-align: center;
+		font-size: 14px;
+		font-family: $ff-sans-bold;
+	}
+}
+
+.lt-track {
+	position: relative;
+	z-index: 70;
+	width: 100%;
+	height: $leadpx * 3;
+	background-color: #A1C8D2;
+
+	.ltt-number {
+		@include border-radius(50%);
+		position: relative;
+		top: -$leadpx;
+		display: block;
+		overflow: hidden;
+		margin: 0 auto;
+		width: $leadpx * 2;
+		height: $leadpx * 2;
+		background-color: $black;
+		color: $white;
+		text-align: center;
+		font-size: 14px;
+		line-height: $leadpx * 2;
+	}
+
+	.ltt-graph {
+		@include border-radius(12px);
+		position: relative;
+		top: -$leadpx / 2;
+		overflow: hidden;
+		margin: 0 auto;
+		width: $leadpx * 6;
+		height: $leadpx / 2;
+		background-color: #FFF;
+
+		.ltt-graphbar {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50%;
+			height: 100%;
+			background-color: $black;
+		}
+	}
+}
+
+.nav-les-pris {
+	width: $leadpx * 8;
+	margin: 0;
+	padding: 0;
+	list-style: none outside none;
+
+	li {
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+
+	.nav-les-pri {
+		display: block;
+		padding: ($leadpx / 2);
+		width: 100%;
+		background-color: $gray;
+		color: $white;
+		font-size: 12px;
+		font-family: $ff-sans-light;
+		line-height: $leadpx;
+
+		.nlp-label {
+			margin: 0;
+		}
+
+		.nlp-title p {
+			margin: 0;
+		}
+
+		&.open:after {
+			content: "\f106"; // Font Awesome "Angle Down"
+		}
+		&.close:after {
+			content: "\f107"; // Font Awesome "Angle Up"
+		}
+
+		&.open:after,
+		&.close:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			width: $leadpx * 1.5;
+			height: $leadpx * 1.5;
+			color: inherit;
+			font-weight: normal;
+			font-style: normal;
+			font-family: $ff-iconfont;
+			line-height: $leadpx * 1.5;
+		}
+
+		&:hover {
+			background-color: $orange;
+		}
+	}
+}
+
+.subnav-les-pris {
+	width: $leadpx * 8;
+	margin: 0;
+	padding: 0;
+	list-style: none outside none;
+
+	&.close { display: none; }
+
+	li {
+		@include clearfix;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		background-color: $whiteDark2;
+
+		&:before {
+			content: "";
+			z-index: 70;
+			position: absolute;
+			width: $leadpx;
+			height: 100%;
+			border-left: 1px solid $orange;
+			margin: 0 0 0 18px;
+		}
+	}
+
+	.subnav-les-pri {
+		display: block;
+		padding: ($leadpx / 2);
+		width: 100%;
+		color: $black;
+		font-size: 12px;
+		font-family: $ff-sans-light;
+		line-height: $leadpx;
+
+		.slp-icon {
+			@include border-radius(50%);
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			display: block;
+			float: left;
+			z-index: 80;
+			background-color: $black;
+			// border:2px solid $whiteDark2;
+			top: 12px;
+			left: 9px;
+
+			.fa {
+				position: absolute;
+				display: block;
+				width: 18px;
+				height: 18px;
+				text-align: center;
+				font-size: 8px;
+				line-height: 18px;
+				top: 0;
+				left: 0;
+				color: $white;
+			}
+		}
+
+		.slp-title {
+			position: relative;
+			margin: 0 0 0 $leadpx;
+		}
+
+		&:hover {
+			color: $green;
+
+			.slp-icon {
+				// background-color: $whiteDark2;
+				// color: $green;
+			}
+		}
+
+		&.active {
+			.slp-icon {
+				background-color: $orange;
+			}
+		}
+
+		&.watched {
+			.slp-icon {
+				background-color: $green;
+			}
+		}
+	}
+}

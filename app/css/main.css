@@ -2429,6 +2429,12 @@ body {
   position: relative;
 }
 
+.ctn-watch {
+  padding: 24px 0 0 0;
+  width: 840px;
+  position: relative;
+}
+
 .cm-headers, .ext-head {
   width: 100%;
   z-index: 1100;
@@ -2437,6 +2443,14 @@ body {
 .page {
   overflow: hidden;
   *zoom: 1;
+}
+
+.ctn-main {
+  float: left;
+}
+
+.ctn-watch {
+  float: left;
 }
 
 .media-std1 {
@@ -3038,18 +3052,6 @@ Styleguide 1.2.6
 }
 
 /** ----------------------------------------------------------------- *\
- *  WIKASA.OBJECT.MAIN-CONTENT
- *  
- *  Main content object.
- *  @author Aardbei & XLV
- *  @version 0.0.0
- *  Copyright 2013. Free licensed.
- ** ----------------------------------------------------------------- */
-.ctn-main {
-  float: left;
-}
-
-/** ----------------------------------------------------------------- *\
  *  WIKASA.OBJECT.HOME.TOOLS.
  *  
  *  Home Tools object.
@@ -3468,7 +3470,7 @@ Styleguide 2
   color: #6f6f6f;
 }
 .c-meta .cmeta-ratings .cmeta-rating.active {
-  color: #ef4b4b;
+  color: #64afb2;
 }
 .c-meta .cmeta-cat {
   color: #2b2f3a;
@@ -3756,6 +3758,409 @@ Styleguide 2
 }
 .es-content p {
   margin: 24px 0 0 0;
+}
+
+.watch {
+  width: 840px;
+}
+
+.les-nav-pri-shame {
+  min-width: 192px;
+  width: 192px;
+  min-height: 960px;
+  height: 100%;
+  overflow: hidden;
+  overflow: hidden;
+  *zoom: 1;
+  float: left;
+}
+
+.les-header {
+  position: relative;
+  width: 100%;
+}
+
+.les-titles {
+  overflow: hidden;
+  width: 672px;
+  height: 72px;
+  margin: 0 0 24px 0;
+  padding: 0 24px;
+}
+.les-titles .lh-label {
+  overflow: hidden;
+  width: 100%;
+  height: 24px;
+  font-size: 12px;
+  font-family: SansLight, Arial, sans-serif;
+  line-height: 24px;
+}
+.les-titles .lh-title {
+  font-size: 32px;
+  line-height: 48px;
+  max-height: 48px;
+  height: 48px;
+  overflow: hidden;
+  margin: 0;
+}
+
+.les-watch {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 0 24px 0;
+}
+
+.les-media {
+  width: 648px;
+  height: 360px;
+  margin: 0 0 0 24px;
+  position: relative;
+  float: left;
+}
+
+.lm-player {
+  width: 640px;
+  height: 360px;
+  background-color: #000;
+}
+
+.les-nav-sec {
+  overflow: hidden;
+  *zoom: 1;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0 0 24px 24px;
+  width: 144px;
+  height: 24px;
+}
+.les-nav-sec .lns-btn {
+  display: block;
+  float: left;
+  margin: 0;
+  color: white;
+  font-size: 12px;
+  line-height: 24px;
+  background-color: #64afb2;
+}
+.les-nav-sec .lns-btn:hover {
+  background-color: #c4c4c4;
+}
+.les-nav-sec .lns-prev-btn {
+  width: 24px;
+  height: 24px;
+  border-right: 1px solid #f3f3f3;
+}
+.les-nav-sec .lns-prev-btn:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: "\f104";
+  text-align: center;
+  font-family: IconFont;
+}
+.les-nav-sec .lns-next-btn {
+  padding: 0 0 0 6px;
+  width: 120px;
+  height: 24px;
+}
+.les-nav-sec .lns-next-btn:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: "\f105";
+  text-align: center;
+  font-family: IconFont;
+}
+
+.les-overview {
+  padding: 0 24px;
+  width: 648px;
+}
+.les-overview .lo-label {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  height: 36px;
+  line-height: 36px;
+  font-family: SansBold, Arial, sans-serif;
+}
+.les-overview .lo-ctn {
+  font-family: SansLight, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.les-tools {
+  overflow: hidden;
+  *zoom: 1;
+  float: left;
+  overflow: hidden;
+  min-width: 192px;
+  min-height: 960px;
+  width: 192px;
+  height: 100%;
+}
+
+.lt-header {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  padding: 0 0 48px 0;
+  background-color: #2b2f3a;
+  color: white;
+  z-index: 50;
+}
+.lt-header .lth-label {
+  padding: 0 12px;
+  width: 100%;
+  height: 24px;
+  color: #c4c4c4;
+  font-size: 12px;
+  font-family: SansLight, Arial, sans-serif;
+}
+.lt-header .lth-title h1 {
+  margin: 0;
+  padding: 0 12px;
+  min-width: 48px;
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+}
+.lt-header .lth-title h1 + .lt-header .lth-title h1 {
+  margin: 0 0 24px 0;
+}
+
+.lt-user {
+  position: relative;
+  z-index: 60;
+  display: block;
+  padding: 0 0 24px 0;
+  width: 100%;
+  background-color: #64afb2;
+}
+.lt-user .ltu-photo {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  top: -24px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 48px;
+  height: 48px;
+  border: 2px solid white;
+}
+.lt-user .ltu-label {
+  position: relative;
+  top: -24px;
+  margin: 0 auto;
+  padding: 0 12px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-family: SansLight, Arial, sans-serif;
+  line-height: 24px;
+}
+.lt-user .ltu-name {
+  position: relative;
+  top: -24px;
+  margin: 0 auto;
+  padding: 0 12px;
+  width: 100%;
+  color: #2b2f3a;
+  text-align: center;
+  font-size: 14px;
+  font-family: SansBold, Arial, sans-serif;
+}
+
+.lt-track {
+  position: relative;
+  z-index: 70;
+  width: 100%;
+  height: 72px;
+  background-color: #A1C8D2;
+}
+.lt-track .ltt-number {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+  top: -24px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 48px;
+  height: 48px;
+  background-color: #2b2f3a;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 48px;
+}
+.lt-track .ltt-graph {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  position: relative;
+  top: -12px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 144px;
+  height: 12px;
+  background-color: #FFF;
+}
+.lt-track .ltt-graph .ltt-graphbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #2b2f3a;
+}
+
+.nav-les-pris {
+  width: 192px;
+  margin: 0;
+  padding: 0;
+  list-style: none outside none;
+}
+.nav-les-pris li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.nav-les-pris .nav-les-pri {
+  display: block;
+  padding: 12px;
+  width: 100%;
+  background-color: #c4c4c4;
+  color: white;
+  font-size: 12px;
+  font-family: SansLight, Arial, sans-serif;
+  line-height: 24px;
+}
+.nav-les-pris .nav-les-pri .nlp-label {
+  margin: 0;
+}
+.nav-les-pris .nav-les-pri .nlp-title p {
+  margin: 0;
+}
+.nav-les-pris .nav-les-pri.open:after {
+  content: "\f106";
+}
+.nav-les-pris .nav-les-pri.close:after {
+  content: "\f107";
+}
+.nav-les-pris .nav-les-pri.open:after, .nav-les-pris .nav-les-pri.close:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 36px;
+  height: 36px;
+  color: inherit;
+  font-weight: normal;
+  font-style: normal;
+  font-family: IconFont;
+  line-height: 36px;
+}
+.nav-les-pris .nav-les-pri:hover {
+  background-color: #ea6b53;
+}
+
+.subnav-les-pris {
+  width: 192px;
+  margin: 0;
+  padding: 0;
+  list-style: none outside none;
+}
+.subnav-les-pris.close {
+  display: none;
+}
+.subnav-les-pris li {
+  overflow: hidden;
+  *zoom: 1;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea;
+}
+.subnav-les-pris li:before {
+  content: "";
+  z-index: 70;
+  position: absolute;
+  width: 24px;
+  height: 100%;
+  border-left: 1px solid #ea6b53;
+  margin: 0 0 0 18px;
+}
+.subnav-les-pris .subnav-les-pri {
+  display: block;
+  padding: 12px;
+  width: 100%;
+  color: #2b2f3a;
+  font-size: 12px;
+  font-family: SansLight, Arial, sans-serif;
+  line-height: 24px;
+}
+.subnav-les-pris .subnav-les-pri .slp-icon {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: block;
+  float: left;
+  z-index: 80;
+  background-color: #2b2f3a;
+  top: 12px;
+  left: 9px;
+}
+.subnav-les-pris .subnav-les-pri .slp-icon .fa {
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font-size: 8px;
+  line-height: 18px;
+  top: 0;
+  left: 0;
+  color: white;
+}
+.subnav-les-pris .subnav-les-pri .slp-title {
+  position: relative;
+  margin: 0 0 0 24px;
+}
+.subnav-les-pris .subnav-les-pri:hover {
+  color: #64afb2;
+}
+.subnav-les-pris .subnav-les-pri.active .slp-icon {
+  background-color: #ea6b53;
+}
+.subnav-les-pris .subnav-les-pri.watched .slp-icon {
+  background-color: #64afb2;
 }
 
 .sg-nav {

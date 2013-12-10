@@ -1,0 +1,144 @@
+.watch {
+	width: $leadpx * 35;
+}
+
+.les-nav-pri-shame {
+	min-width: $leadpx * 8;
+	width: $leadpx * 8;
+	min-height: $leadpx * 40;
+	height: 100%;
+	overflow: hidden;
+	@include clearfix;
+	float: left;
+	// background-color: #FFF;
+}
+
+.les-header {
+	position: relative;
+	width: 100%;
+}
+
+.les-titles {
+	overflow: hidden;
+	width: $leadpx * 28;
+	height: $leadpx * 3;
+	margin: 0 0 $leadpx 0;
+	padding: 0 $leadpx;
+
+	.lh-label {
+		overflow: hidden;
+		width: 100%;
+		height: $leadpx;
+		font-size: 12px;
+		font-family: $ff-sans-light;
+		line-height: $leadpx;
+	}
+
+	.lh-title {
+		font-size: 32px;
+		line-height: $leadpx * 2;
+		max-height: $leadpx * 2;
+		height: $leadpx * 2;
+		overflow: hidden;
+		margin: 0;
+	}
+}
+
+.les-watch {
+	@include clearfix;
+	margin: 0 0 $leadpx 0;
+}
+
+.les-media {
+	width: $leadpx * 27;
+	height: $leadpx * 15;
+	margin: 0 0 0 $leadpx;
+	position: relative;
+
+	float: left;
+}
+
+.lm-player {
+	width: 640px;
+	height: $leadpx * 15;
+	background-color: #000;
+}
+
+.les-nav-sec {
+	@include clearfix;
+	@include border-radius(3px);
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0 0 $leadpx $leadpx;
+	width: $leadpx * 6;
+	height: $leadpx * 1;
+
+	.lns-btn {
+		display: block;
+		float: left;
+		margin: 0;
+		color: $white;
+		font-size: 12px;
+		line-height: $leadpx;
+		background-color: $green;
+
+		&:hover {
+			background-color: $gray;
+		}
+	}
+
+	.lns-prev-btn {
+		width: $leadpx;
+		height: $leadpx;
+		border-right: 1px solid $whiteDark1;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: $leadpx;
+			height: $leadpx;
+			content: "\f104";
+			text-align: center;
+			font-family: $ff-iconfont;
+		}
+	}
+
+	.lns-next-btn {
+		padding: 0 0 0 6px;
+		width: $leadpx * 5;
+		height: $leadpx;
+
+		&:after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			display: block;
+			width: $leadpx;
+			height: $leadpx;
+			content: "\f105";
+			text-align: center;
+			font-family: $ff-iconfont;
+		}
+	}
+}
+
+.les-overview {
+	padding: 0 $leadpx;
+	width: $leadpx * 27;
+
+	.lo-label {
+		margin: 0 0 ($leadpx * 0.5) 0;
+		font-size: 16px;
+		height: $leadpx * 1.5;
+		line-height: $leadpx * 1.5;
+		font-family: $ff-sans-bold;
+	}
+
+	.lo-ctn {
+		font-family: $ff-sans-light;
+		font-size: 14px;
+	}
+}

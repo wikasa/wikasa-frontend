@@ -21,6 +21,12 @@
 	position: relative;
 }
 
+%cn-watch {
+	padding: $leadpx 0 0 0;
+	width: $leadpx * 35;
+	position: relative;
+}
+
 %full-width {
 	width: 100%;
 	z-index: 1100;
@@ -29,4 +35,14 @@
 .page {
 	@extend %cn-full;
 	@include clearfix;
+}
+
+.ctn-main {
+	@extend %cn-main;
+	float: left;
+}
+
+.ctn-watch {
+	@extend %cn-watch;
+	float: left;
 }

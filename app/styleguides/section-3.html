@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <title>KSS: Living Styleguide</title>
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+
+  <meta name="viewport" content="width=device-width">
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="public/kss.css">
+  <link rel="stylesheet" href="public/style.css">
+
+</head>
+<body><div id="kss-wrapper">
+  <div id="kss-nav">
+    <header id="kss-header">
+      <hgroup><h1>kss-node Styleguide</h1></hgroup>
+    </header>
+    <aside>
+      <nav><ul>
+        <li><a href="index.html">0.0: Overview</a></li>
+        
+          <li><a href="section-1.html">1.0: Common Header.</a></li>
+        
+          <li><a href="section-2.html">2.0: Common Footer.</a></li>
+        
+          <li><a href="section-3.html">3.0: Card Courses.</a></li>
+        
+      </ul></nav>
+    </aside>
+  </div>
+  <div role="main" id="kss-main">
+    <article id="kss-content">
+      
+
+        
+        
+          
+            <h1 class="kss-title"><span class="kss-ref">3.0</span> - Card Courses.</h1>
+          
+            
+                
+                  <p>Card for every course appears on page.
+
+</p>
+<p><em>Authored by Bangsawan &amp; Silvi.</em></p>
+
+                
+            
+           
+        
+          
+           <section class="kss-depth-2">
+            <h1 class="kss-title"><span class="kss-ref">3.1</span> - Card Courses.</h1>
+          
+            
+                <div class="kss-box"><p>Interface to navigate to Course Page
+
+</p>
+<p>Main Class: &apos;.card.c-crs&apos;</p>
+</div>
+                <table class="kss-mod-list">
+                  <tr class="kss-mod-desc-group">
+                    <td class="kss-mod-desc"><p>Default styling</p></td>
+                    <td class="kss-mod-name"></td>
+                  </tr>
+                  <tr class="kss-mod-example">
+                    <td colspan="2">div class="page">
+    <div class="cards">
+        <div class="card c-crs">
+            <div class="c-cover">
+                <img src="../img/png/CCover-280168.png" alt="Card">
+            </div>
+            <div class="c-authors">
+                <a href="#" class="ca-photos">
+                    <img src="../img/png/UIM-120120.png" alt="User">
+                </a>
+                <div class="ca-texts">
+                    <a class="ca-name" href="#">Author Name</a>
+                    <p class="ca-tagline">This is author's tagline</p>
+                </div>
+            </div>
+            <div class="c-overview">
+                <p>Lorem ipsum dolor sit amet, consec te tur adipisicing elit. Nam ad sint assum enda iusto at nulla quibusdam.</p>
+            </div>
+            <div class="c-metas">
+                <div class="c-meta">
+                    <p class="cmeta-label">Price</p>
+                    <p class="cmeta-price">IDR 180.000</p>
+                </div>
+                <div class="c-meta">
+                    <p class="cmeta-label">Rating</p>
+                    <p class="cmeta-ratings">
+                        <i class="cmeta-rating active fa fa-circle-o"></i>
+                        <i class="cmeta-rating active fa fa-circle-o"></i>
+                        <i class="cmeta-rating fa fa-circle-o"></i>
+                        <i class="cmeta-rating fa fa-circle-o"></i>
+                        <i class="cmeta-rating fa fa-circle-o"></i>
+                    </p>
+                </div>
+                <div class="c-meta">
+                    <p class="cmeta-label">Categories</p>
+                    <p class="cmeta-cat">Cat.Name</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></td>
+                  </tr>
+                
+                </table>
+                <div class="kss-markup">
+                  <pre class="prettyprint lang-html">div class=&quot;page&quot;&gt;
+    &lt;div class=&quot;cards&quot;&gt;
+        &lt;div class=&quot;card c-crs&quot;&gt;
+            &lt;div class=&quot;c-cover&quot;&gt;
+                &lt;img src=&quot;../img/png/CCover-280168.png&quot; alt=&quot;Card&quot;&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;c-authors&quot;&gt;
+                &lt;a href=&quot;#&quot; class=&quot;ca-photos&quot;&gt;
+                    &lt;img src=&quot;../img/png/UIM-120120.png&quot; alt=&quot;User&quot;&gt;
+                &lt;/a&gt;
+                &lt;div class=&quot;ca-texts&quot;&gt;
+                    &lt;a class=&quot;ca-name&quot; href=&quot;#&quot;&gt;Author Name&lt;/a&gt;
+                    &lt;p class=&quot;ca-tagline&quot;&gt;This is author&#x27;s tagline&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;c-overview&quot;&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consec te tur adipisicing elit. Nam ad sint assum enda iusto at nulla quibusdam.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;c-metas&quot;&gt;
+                &lt;div class=&quot;c-meta&quot;&gt;
+                    &lt;p class=&quot;cmeta-label&quot;&gt;Price&lt;/p&gt;
+                    &lt;p class=&quot;cmeta-price&quot;&gt;IDR 180.000&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;c-meta&quot;&gt;
+                    &lt;p class=&quot;cmeta-label&quot;&gt;Rating&lt;/p&gt;
+                    &lt;p class=&quot;cmeta-ratings&quot;&gt;
+                        &lt;i class=&quot;cmeta-rating active fa fa-circle-o&quot;&gt;&lt;/i&gt;
+                        &lt;i class=&quot;cmeta-rating active fa fa-circle-o&quot;&gt;&lt;/i&gt;
+                        &lt;i class=&quot;cmeta-rating fa fa-circle-o&quot;&gt;&lt;/i&gt;
+                        &lt;i class=&quot;cmeta-rating fa fa-circle-o&quot;&gt;&lt;/i&gt;
+                        &lt;i class=&quot;cmeta-rating fa fa-circle-o&quot;&gt;&lt;/i&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;c-meta&quot;&gt;
+                    &lt;p class=&quot;cmeta-label&quot;&gt;Categories&lt;/p&gt;
+                    &lt;p class=&quot;cmeta-cat&quot;&gt;Cat.Name&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+                </div>
+            
+          
+            </section>
+          
+        
+      
+    </article>
+  </div>
+  <footer>
+    
+  </footer>
+  <!-- SCRIPTS -->
+  <script src="public/kss.js"></script>
+  <script src="public/prettify.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var sidebarAdjust = function() {
+        // Match footer/body height
+        var height = Math.max($(window).height(), $('#kss-main').height());
+
+        if ($(window).width() <= 768) {
+          $('#kss-main, #kss-nav').height('auto');
+        } else {
+          $('#kss-main, #kss-nav').height(height);
+        }
+      };
+
+      $(window).resize(sidebarAdjust);
+      $(window).scroll(sidebarAdjust);
+      sidebarAdjust();
+
+      // Ensure code blocks are highlighted properly...
+      $('pre>code').addClass('prettyprint');
+      prettyPrint();
+
+    });
+  </script>
+
+  
+  
+</div></body>
+</html>
