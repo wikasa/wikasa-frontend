@@ -133,6 +133,81 @@ Styleguide 3
 	}
 }
 
+.c-myc-btns {
+	@include clearfix;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: $leadpx 0;
+	min-height: $leadpx * 3;
+	width: 100%;
+	height: $leadpx * 3;
+	border-top: 1px solid $whiteDark1;
+	color: $white;
+
+	&.enter {
+		text-align: center;
+		background-color: $green;
+	}
+
+	&.track {
+		background-color: $black;
+		padding: 0 $leadpx;
+	}
+
+	&:hover {
+		background-color: $orange;
+		cursor: pointer;
+	}
+
+	.trackbar-num {
+		@include border-radius(12px 0 0 12px);
+		display: block;
+		float: left;
+		margin: $leadpx 0;
+		width: $leadpx * 2;
+		height: $leadpx;
+		background-color: $orange;
+		text-align: center;
+		font-size: 12px;
+		line-height: $leadpx;
+	}
+
+	.trackbar-graphs {
+		@include border-radius(0 12px 12px 0);
+		position: relative;
+		display: block;
+		float: left;
+		overflow: hidden;
+		margin: $leadpx 0;
+		padding: 0 ($leadpx * 0.5);
+		min-width: $leadpx * 6;
+		min-height: $leadpx;
+		width: $leadpx * 4;
+		height: $leadpx;
+		background-color: $green;
+
+		.trackbar-graph {
+			@include border-radius(2px);
+			@include clearfix;
+			width: $leadpx * 5;
+			height: 4px;
+			background-color: $white;
+			margin: 10px 0;
+			position: relative;
+		}
+
+		.tg-part {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 25%;
+			height: 100%;
+			background-color: $black;
+		}
+	}
+}
+
 /*
 Card Courses.
 
