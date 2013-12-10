@@ -3672,6 +3672,19 @@ Styleguide 3
   background-color: #2b2f3a;
 }
 
+.c-acme-titles {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 144px;
+}
+.c-acme-titles .c-acme-title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
 /*
 Card Courses.
 

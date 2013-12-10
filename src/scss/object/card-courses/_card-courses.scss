@@ -224,6 +224,20 @@ Styleguide 3
 	}
 }
 
+.c-acme-titles {
+	position: absolute;
+	top: $leadpx * 0.5;
+	left: $leadpx * 0.5;
+	width: $leadpx * 6;
+
+	.c-acme-title {
+		margin: 0;
+		font-size: 16px;
+		line-height: $leadpx;
+		color: $white;
+	}
+}
+
 /*
 Card Courses.
 
