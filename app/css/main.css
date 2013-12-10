@@ -3479,6 +3479,91 @@ Styleguide 3
   line-height: 24px;
 }
 
+.c-myc-btns {
+  overflow: hidden;
+  *zoom: 1;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 24px 0;
+  min-height: 72px;
+  width: 100%;
+  height: 72px;
+  border-top: 1px solid #f3f3f3;
+  color: white;
+}
+.c-myc-btns.enter {
+  text-align: center;
+  background-color: #64afb2;
+}
+.c-myc-btns.track {
+  background-color: #2b2f3a;
+  padding: 0 24px;
+}
+.c-myc-btns:hover {
+  background-color: #ea6b53;
+  cursor: pointer;
+}
+.c-myc-btns .trackbar-num {
+  -webkit-border-radius: 12px 0 0 12px;
+  -moz-border-radius: 12px 0 0 12px;
+  -ms-border-radius: 12px 0 0 12px;
+  -o-border-radius: 12px 0 0 12px;
+  border-radius: 12px 0 0 12px;
+  display: block;
+  float: left;
+  margin: 24px 0;
+  width: 48px;
+  height: 24px;
+  background-color: #ea6b53;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+}
+.c-myc-btns:hover .trackbar-num {
+  background-color: #64afb2;
+}
+.c-myc-btns .trackbar-graphs {
+  -webkit-border-radius: 0 12px 12px 0;
+  -moz-border-radius: 0 12px 12px 0;
+  -ms-border-radius: 0 12px 12px 0;
+  -o-border-radius: 0 12px 12px 0;
+  border-radius: 0 12px 12px 0;
+  position: relative;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 24px 0;
+  padding: 0 12px;
+  min-width: 144px;
+  min-height: 24px;
+  width: 96px;
+  height: 24px;
+  background-color: #64afb2;
+}
+.c-myc-btns .trackbar-graphs .trackbar-graph {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+  *zoom: 1;
+  width: 120px;
+  height: 4px;
+  background-color: white;
+  margin: 10px 0;
+  position: relative;
+}
+.c-myc-btns .trackbar-graphs .tg-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #2b2f3a;
+}
+
 /*
 Card Courses.
 
@@ -4334,6 +4419,102 @@ Styleguide 3.1
 }
 .subnav-les-pris .subnav-les-pri.watched .slp-icon {
   background-color: #64afb2;
+}
+
+.nav-myc-pris {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 240px;
+  background-color: #c4c4c4;
+  margin: 24px 0 0 0;
+}
+
+.nmph-covers {
+  background-color: #2b2f3a;
+  height: 168px;
+  margin: 0;
+  width: 240px;
+}
+
+.nmph-users {
+  display: block;
+  margin: 0;
+  width: 240px;
+  height: 96px;
+  background-color: #64afb2;
+  color: white;
+}
+.nmph-users > * {
+  position: relative;
+  top: -24px;
+  left: 0;
+  margin: 0 auto;
+}
+
+.nmph-user-photos {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 2px solid white;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.nmph-user-metas {
+  width: 100%;
+}
+.nmph-user-metas .nmph-user-name,
+.nmph-user-metas .nmph-user-tagline {
+  text-align: center;
+  line-height: 24px;
+  margin: 0;
+}
+.nmph-user-metas .nmph-user-name {
+  font-size: 14px;
+  font-family: SansBold, Arial, sans-serif;
+}
+.nmph-user-metas .nmph-user-tagline {
+  font-size: 12px;
+  font-family: SansLightItalic, Arial, sans-serif;
+}
+
+.nmph-sorts {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  list-style: none outside none;
+}
+.nmph-sorts li {
+  display: block;
+  width: 100%;
+  height: 36px;
+  overflow: hidden;
+  border-top: 1px solid #f3f3f3;
+}
+.nmph-sorts .nmph-sort {
+  display: block;
+  width: 100%;
+  height: 36px;
+  color: white;
+  font-size: 12px;
+  font-family: SansLight, Arial, sans-serif;
+  line-height: 36px;
+  text-align: center;
+}
+.nmph-sorts .nmph-sort:hover, .nmph-sorts .nmph-sort.active {
+  background-color: #ea6b53;
 }
 
 .sg-nav {

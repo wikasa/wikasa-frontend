@@ -1,0 +1,96 @@
+.nav-myc-pris {
+	@include border-radius(6px);
+	position: relative;
+	float: left;
+	overflow: hidden;
+	width: $leadpx * 10;
+	// min-height: $leadpx * 20;
+	background-color: $gray;
+	margin: 24px 0 0 0;
+}
+
+.nmph-covers {
+	background-color: $black;
+	height: $leadpx * 7;
+	margin: 0;
+	width: $leadpx * 10;
+}
+
+.nmph-users {
+	display: block;
+	margin: 0;
+	width: $leadpx * 10;
+	height: $leadpx * 4;
+	background-color: $green;
+	color: $white;
+
+	& > * {
+		position: relative;
+		top: -$leadpx;
+		left: 0;
+		margin: 0 auto;
+	}
+}
+
+.nmph-user-photos {
+	@include border-radius(50%);
+	display: block;
+	width: $leadpx * 2;
+	height: $leadpx * 2;
+	border: 2px solid $white;
+	overflow: hidden;
+	margin-bottom: ($leadpx * 0.5);
+}
+
+.nmph-user-metas {
+	width: 100%;
+
+	.nmph-user-name,
+	.nmph-user-tagline {
+		text-align: center;
+		line-height: $leadpx;
+		margin: 0;
+	}
+
+	.nmph-user-name {
+		font-size: 14px;
+		font-family: $ff-sans-bold;
+	}
+
+	.nmph-user-tagline {
+		font-size: 12px;
+		font-family: $ff-sans-lightitalic;
+	}
+}
+
+.nmph-sorts {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100%;
+	list-style: none outside none;
+
+	li {
+		display: block;
+		width: 100%;
+		height: $leadpx * 1.5;
+		overflow: hidden;
+		border-top: 1px solid $whiteDark1;
+	}
+
+	.nmph-sort {
+		display: block;
+		width: 100%;
+		height: $leadpx * 1.5;
+		color: $white;
+		font-size: 12px;
+		font-family: $ff-sans-light;
+		line-height: $leadpx * 1.5;
+		text-align: center;
+
+		&:hover,
+		&.active {
+			background-color: $orange;
+		}
+	}
+}
