@@ -1,11 +1,12 @@
-/** ----------------------------------------------------------------- *\
- *  WIKASA.OBJECT.NAV.COURSES.PRIMARY
- *  
- *  Nav Courses Primary Object.
- *  @author Bangsawan & Silvi
- *  @version 0.0.0
- *  Copyright 2013. Free licensed.
- ** ----------------------------------------------------------------- */
+/* 
+Card Courses.
+
+Card for every course appears on page.
+
+*Authored by Bangsawan & Silvi.*
+
+Styleguide 3
+*/
 
 .cards {
 	@include clearfix;
@@ -131,3 +132,56 @@
 		line-height: 24px;
 	}
 }
+
+/*
+Card Courses.
+
+Interface to navigate to Course Page
+
+Main Class: '.card.c-crs'
+
+Markup:
+div class="page">
+    <div class="cards">
+        <div class="card c-crs">
+            <div class="c-cover">
+                <img src="../img/png/CCover-280168.png" alt="Card">
+            </div>
+            <div class="c-authors">
+                <a href="#" class="ca-photos">
+                    <img src="../img/png/UIM-120120.png" alt="User">
+                </a>
+                <div class="ca-texts">
+                    <a class="ca-name" href="#">Author Name</a>
+                    <p class="ca-tagline">This is author's tagline</p>
+                </div>
+            </div>
+            <div class="c-overview">
+                <p>Lorem ipsum dolor sit amet, consec te tur adipisicing elit. Nam ad sint assum enda iusto at nulla quibusdam.</p>
+            </div>
+            <div class="c-metas">
+                <div class="c-meta">
+                    <p class="cmeta-label">Price</p>
+                    <p class="cmeta-price">IDR 180.000</p>
+                </div>
+                <div class="c-meta">
+                    <p class="cmeta-label">Rating</p>
+                    <p class="cmeta-ratings">
+                        <i class="cmeta-rating active fa fa-circle-o"></i>
+                        <i class="cmeta-rating active fa fa-circle-o"></i>
+                        <i class="cmeta-rating fa fa-circle-o"></i>
+                        <i class="cmeta-rating fa fa-circle-o"></i>
+                        <i class="cmeta-rating fa fa-circle-o"></i>
+                    </p>
+                </div>
+                <div class="c-meta">
+                    <p class="cmeta-label">Categories</p>
+                    <p class="cmeta-cat">Cat.Name</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 3.1
+*/
