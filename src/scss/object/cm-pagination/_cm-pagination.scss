@@ -1,0 +1,41 @@
+.cm-paginations {
+	@include border-radius(6px);
+	@include clearfix;
+	margin: 0 auto;
+	padding: $leadpx 0 0 $leadpx;
+	width: $leadpx * 11;
+	height: $leadpx * 2;
+	list-style: none outside none;
+
+	li {
+		display: block;
+		position: relative;
+		float: left;
+		margin: 0;
+		padding: 0;
+		border-left: 1px solid $whiteDark1;
+
+		&:first-child {
+			border-left: 0 solid transparent;
+		}
+	}
+
+	.cm-pagination {
+		display: block;
+		width: $leadpx;
+		height: $leadpx;
+		margin: 0;
+		font-size: 12px;
+		line-height: $leadpx;
+		background-color: $gray;
+		color: $white;
+		text-align: center;
+
+		&.cmp-first,
+		&.cmp-last {
+			width: $leadpx * 1.25;
+		}
+
+		&:hover { background-color: $orange; }
+	}
+}

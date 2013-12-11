@@ -3052,6 +3052,7 @@ Styleguide 1.2.6
 }
 
 .cms-sort-btn {
+  color: #2b2f3a;
   display: block;
   width: 72px;
   height: 24px;
@@ -3148,6 +3149,49 @@ Styleguide 1.2.6
   max-height: 40px;
   width: 40px;
   height: 40px;
+}
+
+.cm-paginations {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 auto;
+  padding: 24px 0 0 24px;
+  width: 264px;
+  height: 48px;
+  list-style: none outside none;
+}
+.cm-paginations li {
+  display: block;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid #f3f3f3;
+}
+.cm-paginations li:first-child {
+  border-left: 0 solid transparent;
+}
+.cm-paginations .cm-pagination {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 24px;
+  background-color: #c4c4c4;
+  color: white;
+  text-align: center;
+}
+.cm-paginations .cm-pagination.cmp-first, .cm-paginations .cm-pagination.cmp-last {
+  width: 30px;
+}
+.cm-paginations .cm-pagination:hover {
+  background-color: #ea6b53;
 }
 
 /** ----------------------------------------------------------------- *\
