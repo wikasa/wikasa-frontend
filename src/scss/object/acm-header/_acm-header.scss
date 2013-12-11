@@ -1,0 +1,146 @@
+.acm-headers {
+	@extend %full-width;
+	&.acmh-titles { background-color: $black; }
+	&.acmh-contents { background-color: $whiteDark2; }
+}
+
+.acm-header {
+	@extend %cn-full;
+	height: $leadpx * 10;
+
+	.acm-headers.acmh-titles & { background-color: $black; }
+	.acm-headers.acmh-contents & { background-color: $whiteDark2; }
+}
+
+.acmh-title {
+	position: relative;
+	max-width: $leadpx * 15;
+	width: $leadpx * 15;
+	height: 100%;
+	
+	& > * {
+		position: absolute;
+		bottom: 0;
+		left: $leadpx * 3;
+		margin: 0 0 $leadpx 0;
+		color: $white;
+		font-weight: 400;
+		font-size: 60px;
+		font-family: $ff-sans-light;
+		line-height: $leadpx * 3;
+	}
+}
+
+.acmh-users {
+	width: 100%;
+	position: relative;
+	padding: ($leadpx * 2) 0 0 0;
+
+	.acmh-photos {
+		@include border-radius(50%);
+		display: block;
+		overflow: hidden;
+		width: $leadpx * 2;
+		height: $leadpx * 2;
+		border: 2px solid $white;
+		position: absolute;
+		top: -$leadpx;
+		left: 0;
+	}
+}
+
+.acmh-overviews {
+	@include clearfix();
+	float: left;
+	max-width: $leadpx * 20;
+	max-height: 100%;
+	width: $leadpx * 20;
+	height: 100%;
+
+	.acmh-overview-more { color: $green; }
+
+	.acmh-overview {
+		display: block;
+		float: left;
+		width: 100%;
+		font-size: 12px;
+		line-height: $leadpx;
+	}
+}
+
+.acmh-authors {
+	@include clearfix;
+	margin: 0 0 0 ($leadpx * 2);
+	padding: 0;
+	position: relative;
+	list-style: none outside none;
+	float: left;
+	height: $leadpx * 3;
+	width: $leadpx * 13;
+
+	li {
+		display: block;
+		float: left;
+		position: relative;
+		margin: $leadpx 0 0 0;
+		padding: 0;
+
+		&.acmh-authors-label {
+			width: 100%;
+			height: $leadpx;
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: $orange;
+			font-size: 12px;
+			line-height: $leadpx;
+			margin: 0;
+		}
+	}
+
+	.acmh-author {
+		display: block;
+		width: $leadpx * 2;
+		height: $leadpx * 2;
+		margin: 0 ($leadpx * 0.5) 0 0;
+	}
+
+	.acmh-author-photos {
+		@include border-radius(50%);
+		border: 2px solid $white;
+		width: $leadpx * 2;
+		height: $leadpx * 2;
+		overflow: hidden;
+	}
+
+	&:after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: block;
+		width: $leadpx;
+		height: $leadpx * 2;
+		color: $gray;
+		content: "\f107";
+		text-align: center;
+		font-size: 12px;
+		font-family: $ff-iconfont;
+		line-height: $leadpx * 2;
+		margin: $leadpx 0 0 0;
+	}
+}
+
+.acmh-metas {
+	width: 100%;
+	margin: $leadpx 0 0 0;
+	float: left;
+}
+
+.acmh-addresss {
+	display: block;
+	height: $leadpx;
+	color: $black;
+	text-decoration: underline;
+	font-size: 12px;
+	line-height: $leadpx;
+}

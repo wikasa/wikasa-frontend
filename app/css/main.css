@@ -2415,7 +2415,7 @@ body {
  *  @version 0.0.0
  *  Copyright 2013. Free licensed.
  ** ----------------------------------------------------------------- */
-.page, .cm-header, .footer {
+.page, .cm-header, .footer, .acm-header {
   max-width: 1032px;
   min-width: 1032px;
   width: 100%;
@@ -2435,7 +2435,7 @@ body {
   position: relative;
 }
 
-.cm-headers, .ext-head {
+.cm-headers, .ext-head, .acm-headers {
   width: 100%;
   z-index: 1100;
 }
@@ -4636,6 +4636,159 @@ Styleguide 3.1
 }
 .nmph-sorts .nmph-sort:hover, .nmph-sorts .nmph-sort.active {
   background-color: #ea6b53;
+}
+
+.acm-headers.acmh-titles {
+  background-color: #2b2f3a;
+}
+.acm-headers.acmh-contents {
+  background-color: #eaeaea;
+}
+
+.acm-header {
+  height: 240px;
+}
+.acm-headers.acmh-titles .acm-header {
+  background-color: #2b2f3a;
+}
+.acm-headers.acmh-contents .acm-header {
+  background-color: #eaeaea;
+}
+
+.acmh-title {
+  position: relative;
+  max-width: 360px;
+  width: 360px;
+  height: 100%;
+}
+.acmh-title > * {
+  position: absolute;
+  bottom: 0;
+  left: 72px;
+  margin: 0 0 24px 0;
+  color: white;
+  font-weight: 400;
+  font-size: 60px;
+  font-family: SansLight, Arial, sans-serif;
+  line-height: 72px;
+}
+
+.acmh-users {
+  width: 100%;
+  position: relative;
+  padding: 48px 0 0 0;
+}
+.acmh-users .acmh-photos {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  width: 48px;
+  height: 48px;
+  border: 2px solid white;
+  position: absolute;
+  top: -24px;
+  left: 0;
+}
+
+.acmh-overviews {
+  overflow: hidden;
+  *zoom: 1;
+  float: left;
+  max-width: 480px;
+  max-height: 100%;
+  width: 480px;
+  height: 100%;
+}
+.acmh-overviews .acmh-overview-more {
+  color: #64afb2;
+}
+.acmh-overviews .acmh-overview {
+  display: block;
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.acmh-authors {
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 0 0 48px;
+  padding: 0;
+  position: relative;
+  list-style: none outside none;
+  float: left;
+  height: 72px;
+  width: 312px;
+}
+.acmh-authors li {
+  display: block;
+  float: left;
+  position: relative;
+  margin: 24px 0 0 0;
+  padding: 0;
+}
+.acmh-authors li.acmh-authors-label {
+  width: 100%;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ea6b53;
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+}
+.acmh-authors .acmh-author {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 12px 0 0;
+}
+.acmh-authors .acmh-author-photos {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+}
+.acmh-authors:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 24px;
+  height: 48px;
+  color: #c4c4c4;
+  content: "\f107";
+  text-align: center;
+  font-size: 12px;
+  font-family: IconFont;
+  line-height: 48px;
+  margin: 24px 0 0 0;
+}
+
+.acmh-metas {
+  width: 100%;
+  margin: 24px 0 0 0;
+  float: left;
+}
+
+.acmh-addresss {
+  display: block;
+  height: 24px;
+  color: #2b2f3a;
+  text-decoration: underline;
+  font-size: 12px;
+  line-height: 24px;
 }
 
 .sg-nav {
