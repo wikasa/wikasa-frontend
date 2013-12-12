@@ -5102,6 +5102,33 @@ Styleguide 3.1
   text-align: center;
 }
 
+.lan-navs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none outside none;
+}
+.lan-navs li {
+  display: block;
+  float: left;
+  height: 60px;
+}
+.lan-navs .lan-nav {
+  display: block;
+  font-size: 14px;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 12px;
+  color: #2b2f3a;
+  background-color: white;
+}
+.lan-navs .lan-nav:hover {
+  background-color: #eaeaea;
+}
+
 .sg-nav {
   display: block;
 }
