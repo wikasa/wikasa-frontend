@@ -1,0 +1,124 @@
+.form {
+	font-size: 12px;
+	line-height: $leadpx;
+	color: $black;
+	margin: 0 0 $leadpx 0;
+}
+
+.form-group { margin: 0 0 $leadpx 0; }
+
+.form-control {
+	@include border-radius(3px);
+	display: block;
+	padding: ($leadpx/2) 12px;
+	width: 100%;
+	height: $leadpx * 1.5;
+	border: 1px solid $gray;
+	background-color: $white;
+	background-image: none;
+	color: $gray2;
+	font-size: 14px;
+	font-family: $ff-sans-light;
+	line-height: $leadpx * 1.5;
+	// transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+	vertical-align: middle;
+
+	&::-webkit-input-placeholder,
+	&::-moz-placeholder,
+	&:-ms-input-placeholder {
+	  height: $leadpx;
+	  color: $gray;
+	  font-size: 12px;
+	  font-family: $ff-sans-light;
+	  font-weight: 400;
+	  line-height: $leadpx;
+	  opacity: 1;
+	}
+}
+
+.help-block {
+  color: $black;
+  display: block;
+  margin-top: $leadpx / 2;
+  margin-bottom: $leadpx / 2;
+  font-size: 14px;
+  line-height: $leadpx;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="file"] {
+  display: block;
+  font-size: 12px;
+  line-height: $leadpx;
+  height: $leadpx;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, select {
+  text-transform: none;
+}
+
+.btn-default {
+  background-color: $orange;
+  border-color: $orange;
+  color: $white;
+}
+
+.btn {
+  @include border-radius(3px);
+  display: inline-block;
+  margin: 0;
+  padding: 6px 12px;
+  border: 1px solid $orange;
+  background-image: none;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: $leadpx;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.radio, .checkbox {
+  display: block;
+  margin: ($leadpx / 2) 0;
+  min-height: $leadpx;
+  vertical-align: middle;
+}
+
+label {
+	display: inline-block;
+	font-weight: bold;
+	// margin-bottom: $leadpx / 2;
+	margin-bottom: 0;
+	font-size: 12px;
+	line-height: $leadpx;
+	height: $leadpx;
+}
