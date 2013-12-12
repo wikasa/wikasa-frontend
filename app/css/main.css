@@ -2415,7 +2415,7 @@ body {
  *  @version 0.0.0
  *  Copyright 2013. Free licensed.
  ** ----------------------------------------------------------------- */
-.page, .cm-header, .footer, .acm-header {
+.page, .cm-header, .footer, .acm-header, .lan-headers .lan-header {
   max-width: 1032px;
   min-width: 1032px;
   width: 100%;
@@ -2435,7 +2435,7 @@ body {
   position: relative;
 }
 
-.cm-headers, .ext-head, .acm-headers {
+.cm-headers, .ext-head, .acm-headers, .lan-headers {
   width: 100%;
   z-index: 1100;
 }
@@ -4963,6 +4963,57 @@ Styleguide 3.1
   text-decoration: underline;
   font-size: 12px;
   line-height: 24px;
+}
+
+.lan-headers {
+  position: relative;
+  background-color: #2b2f3a;
+}
+.lan-headers .lan-header {
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #2b2f3a;
+  color: white;
+  text-align: center;
+  min-height: 384px;
+}
+
+.lan-brands {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 168px;
+  height: 288px;
+  padding: 24px 0;
+  margin: 0 0 0 -84px;
+}
+.lan-brands .lan-brand-img {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.lan-wordings {
+  position: absolute;
+  width: 100%;
+  height: 24px 5;
+  bottom: 0;
+  margin: 0 0 24px 0;
+}
+.lan-wordings .lan-wording-pri,
+.lan-wordings .lan-wording-sec {
+  color: white;
+  text-align: center;
+}
+.lan-wordings .lan-wording-pri {
+  font-size: 23px;
+  line-height: 36px;
+  margin: 0 auto;
+}
+.lan-wordings .lan-wording-sec {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 auto;
 }
 
 .sg-nav {

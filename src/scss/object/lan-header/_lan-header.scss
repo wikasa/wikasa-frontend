@@ -1,0 +1,56 @@
+.lan-headers {
+	@extend %full-width;
+	position: relative;
+	background-color: $black;
+
+	.lan-header {
+		@extend %cn-full;
+		@include clearfix;
+		background-color: $black;
+		color: $white;
+		text-align: center;
+		min-height: $leadpx * 16;
+	}
+}
+
+.lan-brands {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: $leadpx * 7;
+	height: $leadpx * 12;
+	padding: $leadpx 0;
+	margin: 0 0 0 ($leadpx * -7 / 2);
+
+	.lan-brand-img {
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+}
+
+.lan-wordings {
+	position: absolute;
+	width: 100%;
+	height: $leadpx 5;
+	bottom: 0;
+	margin: 0 0 $leadpx 0;
+
+	.lan-wording-pri,
+	.lan-wording-sec {
+		color: $white;
+		text-align: center;
+	}
+
+	.lan-wording-pri {
+		font-size: 23px;
+		line-height: $leadpx * 1.5;
+		margin: 0 auto;
+	}
+
+	.lan-wording-sec {
+		font-size: 14px;
+		line-height: $leadpx;
+		margin: 0 auto;
+	}
+}
