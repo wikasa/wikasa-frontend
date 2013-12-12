@@ -2415,7 +2415,7 @@ body {
  *  @version 0.0.0
  *  Copyright 2013. Free licensed.
  ** ----------------------------------------------------------------- */
-.page, .cm-header, .footer, .acm-header, .lan-headers .lan-header {
+.page, .cm-header, .footer, .acm-header, .lan-headers .lan-header, .lan-main {
   max-width: 1032px;
   min-width: 1032px;
   width: 100%;
@@ -5016,10 +5016,16 @@ Styleguide 3.1
   margin: 0 auto;
 }
 
-.lan-wordings {
-  width: 100%;
+.lan-main {
   position: relative;
+}
+
+.lan-wordings {
+  position: relative;
+  margin: 0 auto;
   padding: 72px 0;
+  min-width: 100%;
+  width: 100%;
 }
 
 .lw-overview {
@@ -5049,6 +5055,51 @@ Styleguide 3.1
   height: 24px;
   margin: 0 6px;
   float: left;
+}
+
+.lan-featurettes {
+  position: relative;
+  margin-top: 144px;
+  width: 100%;
+}
+
+.lan-featurette {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  float: left;
+  height: 240px;
+  border: 1px solid #f3f3f3;
+  background-color: #c4c4c4;
+  position: relative;
+}
+.lan-featurette.lf-lo-full {
+  width: 100%;
+}
+.lan-featurette.lf-lo-half {
+  width: 50%;
+}
+.lan-featurette .lf-ill {
+  position: absolute;
+  top: -168px;
+  left: 50%;
+  margin: 0 0 0 -96px;
+}
+.lan-featurette .lf-wording {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin: -12px 0 0 -144px;
+  width: 288px;
+  max-height: 72px;
+  height: 72px;
+  font-size: 14px;
+  font-family: SansLight, Arial, sans-serif;
+  line-height: 24px;
+  text-align: center;
 }
 
 .sg-nav {

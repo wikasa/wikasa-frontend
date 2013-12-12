@@ -54,38 +54,3 @@
 		margin: 0 auto;
 	}
 }
-
-.lan-wordings {
-	width: 100%;
-	position: relative;
-	padding: ($leadpx * 3) 0;
-}
-
-.lw-overview {
-	font-size: 14px;
-	line-height: $leadpx;
-	text-align: center;
-	max-width: $leadpx * 31;
-	font-family: $ff-sans-light;
-	color: $black;
-	margin: 0 auto;
-}
-
-.lw-icons {
-	@include clearfix;
-	display: block;
-	text-align: center;
-	width: 144px;
-	height: $leadpx * 2;
-	padding: ($leadpx * 0.5) 0;
-	margin: $leadpx auto 0;
-	border-bottom: 1px solid $gray;
-
-	.lw-icon {
-		display: block;
-		width: $leadpx;
-		height: $leadpx;
-		margin: 0 6px;
-		float: left;
-	}
-}
