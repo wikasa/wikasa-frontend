@@ -39,9 +39,9 @@ $legacy-support-for-ie6: false !default; // Override default set in Compass' Sup
 $legacy-support-for-ie7: false !default; // Override default set in Compass' Support partial.
 
 // After the default variables are set, import the required Compass partials.
-@import "compass/support";
-@import "compass/css3/box-sizing";
-@import "compass/typography/vertical_rhythm";
+// @import "compass/support";
+// @import "compass/css3/box-sizing";
+// @import "compass/typography/vertical_rhythm";
 
 
 /* ==========================================================================
