@@ -29,28 +29,63 @@
 	}
 }
 
-.lan-wordings {
+.lh-wordings {
 	position: absolute;
 	width: 100%;
 	height: $leadpx 5;
 	bottom: 0;
 	margin: 0 0 $leadpx 0;
 
-	.lan-wording-pri,
-	.lan-wording-sec {
+	.lh-wording-pri,
+	.lh-wording-sec {
 		color: $white;
 		text-align: center;
 	}
 
-	.lan-wording-pri {
+	.lh-wording-pri {
 		font-size: 23px;
 		line-height: $leadpx * 1.5;
 		margin: 0 auto;
 	}
 
-	.lan-wording-sec {
+	.lh-wording-sec {
 		font-size: 14px;
 		line-height: $leadpx;
 		margin: 0 auto;
+	}
+}
+
+.lan-wordings {
+	width: 100%;
+	position: relative;
+	padding: ($leadpx * 3) 0;
+}
+
+.lw-overview {
+	font-size: 14px;
+	line-height: $leadpx;
+	text-align: center;
+	max-width: $leadpx * 31;
+	font-family: $ff-sans-light;
+	color: $black;
+	margin: 0 auto;
+}
+
+.lw-icons {
+	@include clearfix;
+	display: block;
+	text-align: center;
+	width: 144px;
+	height: $leadpx * 2;
+	padding: ($leadpx * 0.5) 0;
+	margin: $leadpx auto 0;
+	border-bottom: 1px solid $gray;
+
+	.lw-icon {
+		display: block;
+		width: $leadpx;
+		height: $leadpx;
+		margin: 0 6px;
+		float: left;
 	}
 }
