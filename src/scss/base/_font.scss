@@ -17,6 +17,6 @@ $ff-sans-regular: SansRegular, Arial, sans-serif;
 $ff-sans-light: SansLight, Arial, sans-serif;
 $ff-sans-lightitalic: SansLightItalic, Arial, sans-serif;
 
-@include rb-font-face( 'IconFont', 'fontawesome-webfont' );
+// @include rb-font-face( 'IconFont', 'fontawesome-webfont' );
 
-$ff-iconfont: IconFont;
+$ff-iconfont: FontAwesome;

@@ -1794,15 +1794,6 @@
   font-stretch: normal;
 }
 
-@font-face {
-  font-family: "IconFont";
-  src: url('../fonts/fontawesome-webfont.eot');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/fontawesome-webfont.woff') format("woff"), url('../fonts/fontawesome-webfont.ttf') format("truetype"), url('../fonts/fontawesome-webfont.svg#IconFont') format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-}
-
 /** ----------------------------------------------------------------- *\
  *  WIKASA.BASE.SETTING
  *  
@@ -3206,7 +3197,7 @@ Styleguide 1.2.6
   color: inherit;
   font-weight: normal;
   font-style: normal;
-  font-family: IconFont;
+  font-family: FontAwesome;
   line-height: 24px;
 }
 
@@ -4074,7 +4065,7 @@ Styleguide 3.1
   content: "\f106";
   font-weight: normal;
   font-style: normal;
-  font-family: IconFont;
+  font-family: FontAwesome;
   line-height: 36px;
 }
 .xn-sections .xn-section.open:after {
@@ -4296,7 +4287,7 @@ Styleguide 3.1
   height: 24px;
   content: "\f104";
   text-align: center;
-  font-family: IconFont;
+  font-family: FontAwesome;
 }
 .les-nav-sec .lns-next-btn {
   padding: 0 0 0 6px;
@@ -4312,7 +4303,7 @@ Styleguide 3.1
   height: 24px;
   content: "\f105";
   text-align: center;
-  font-family: IconFont;
+  font-family: FontAwesome;
 }
 
 .lw-tools {
@@ -4444,7 +4435,7 @@ Styleguide 3.1
   height: 24px;
   color: #c4c4c4;
   content: "\f0ed";
-  font-family: IconFont;
+  font-family: FontAwesome;
 }
 
 .les-tools {
@@ -4629,7 +4620,7 @@ Styleguide 3.1
   color: inherit;
   font-weight: normal;
   font-style: normal;
-  font-family: IconFont;
+  font-family: FontAwesome;
   line-height: 36px;
 }
 .nav-les-pris .nav-les-pri:hover {
@@ -4945,7 +4936,7 @@ Styleguide 3.1
   content: "\f107";
   text-align: center;
   font-size: 12px;
-  font-family: IconFont;
+  font-family: FontAwesome;
   line-height: 48px;
   margin: 24px 0 0 0;
 }
