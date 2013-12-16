@@ -3402,6 +3402,14 @@ Styleguide 2
 .home-tools .ht-sort .fa:last-child {
   margin-left: 12px;
 }
+.home-tools .ht-sort-btn {
+  display: block;
+  margin: 0;
+  height: 48px;
+  line-height: 48px;
+  color: #2b2f3a;
+  font-size: 12px;
+}
 .home-tools .ht-sort-dds {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -5097,7 +5105,7 @@ Markup:
 Styleguide 9.2.3
 */
 /*
-Course Primary Navigation
+Course Primary Navigation.
 
 Primary navigation for course page.
 

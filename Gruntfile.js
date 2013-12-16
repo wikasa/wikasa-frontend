@@ -40,6 +40,10 @@ module.exports = function (grunt) {
         '<%= config.src %>/scss/main.scss'
       ],
       js: [
+        '<%= config.src %>/js/lib/classie/classie.js',
+        '<%= config.src %>/js/lib/jquery/jquery.js',
+        '<%= config.src %>/js/lib/responsejs/response.js',
+        '<%= config.src %>/js/lib/flowplayer/lin/flowplayer.js',
         '<%= config.src %>/js/*.js'
       ]
     },
@@ -121,7 +125,7 @@ module.exports = function (grunt) {
       },
       dev: {
         files: {
-          '<%= config.app %>/js/main.min.js': '<%= config.js %>'
+          '<%= config.app %>/js/application.js': '<%= config.js %>'
         }
       }
     },
@@ -259,7 +263,7 @@ module.exports = function (grunt) {
     'sass:dev',
     'csslint',
     // 'jshint',
-    // 'concat:dev',
+    'concat:dev',
     'connect:livereload',
     'open',
     'watch'

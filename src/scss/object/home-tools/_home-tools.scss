@@ -107,6 +107,15 @@ Styleguide 2
 		}
 	}
 
+	.ht-sort-btn {
+		display: block;
+		margin: 0;
+		height: $leadpx * 2;
+		line-height: $leadpx * 2;
+		color: $black;
+		font-size: 12px;
+	}
+
 	.ht-sort-dds {
 		@include border-radius(6px);
 		@include single-box-shadow;
