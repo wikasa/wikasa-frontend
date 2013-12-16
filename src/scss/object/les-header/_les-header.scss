@@ -1,3 +1,76 @@
+/*
+Course Header.
+
+Header for course page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.ctn-watch'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-header">
+        <div class="les-titles">
+          <p class="lh-label">Lesson 2</p>
+          <h1 class="lh-title">Lorem ipsum dolor sit amet consectetur.</h1>
+        </div>
+        <div class="les-watch">
+            <div class="les-media">
+                <div class="lm-player"></div>
+            </div>
+            <div class="les-nav-sec">
+                <a href="#" class="lns-prev-btn lns-btn"></a>
+                <a href="#" class="lns-next-btn lns-btn">Next Lesson</a>
+            </div>
+            <div class="lw-tools">
+              <a href="#" class="lw-tool">
+                <div class="lwt-icon">
+                  <i class="fa fa-check-circle"></i>
+                </div>
+                <div class="lwt-text">
+                  <p>Mark as complete</p>
+                </div>
+              </a>
+              <a href="#" class="lw-tool">
+                <div class="lwt-icon">
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="lwt-text">
+                  <p>Add to favourites</p>
+                </div>
+              </a>
+              <a href="#" class="lw-tool">
+                <div class="lwt-icon">
+                  <i class="fa fa-share"></i>
+                </div>
+                <div class="lwt-text">
+                  <p>Share</p>
+                </div>
+              </a>
+            </div>
+        </div>
+        <div class="les-overview">
+            <h3 class="lo-label">Author's description</h3>
+            <div class="lo-ctn">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, qui, quibusdam distinctio sed itaque culpa cupiditate voluptatibus eveniet repudiandae incidunt quas soluta est vero vel doloremque. Voluptatum, quo tempore laboriosam quisquam vero earum dolorum quis sed numquam consequatur doloremque molestiae culpa. Quas, recusandae cupiditate dignissimos consequuntur! In, eaque, quibusdam, ratione corporis soluta a magni delectus voluptates nihil rerum voluptatibus repellendus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quibusdam labore placeat ratione saepe fugiat repellat totam harum quaerat explicabo esse odit hic alias earum laudantium vero distinctio qui! Eligendi.</p>
+            </div>
+        </div>
+        <div class="les-widgets">
+            <p class="les-widget-title">Resources</p>
+            <ul class="les-resources">
+                <li><a href="#" class="les-resource lr-download">attachment1.pdf</a></li>
+                <li><a href="#" class="les-resource lr-download">attachment2.pdf</a></li>
+                <li><a href="#" class="les-resource lr-link">link1</a></li>
+                <li><a href="#" class="les-resource lr-link">link2</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+Styleguide 9
+*/
+
 .watch {
 	width: $leadpx * 35;
 }
@@ -260,3 +333,153 @@
 		}
 	}
 }
+
+/*
+Course Header Title.
+
+Header title for course page.
+
+Main Class: '.ctn-watch'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-header">
+        <div class="les-titles">
+          <p class="lh-label">Lesson 2</p>
+          <h1 class="lh-title">Lorem ipsum dolor sit amet consectetur.</h1>
+        </div>
+    </div>
+</div>
+
+Styleguide 9.1
+*/
+
+/*
+Course Header Content.
+
+Header content for course page.
+
+Main Class: '.les-watch'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-watch">
+	    <div class="les-media">
+	        <div class="lm-player"></div>
+	    </div>
+	    <div class="les-nav-sec">
+	        <a href="#" class="lns-prev-btn lns-btn"></a>
+	        <a href="#" class="lns-next-btn lns-btn">Next Lesson</a>
+	    </div>
+	    <div class="lw-tools">
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-check-circle"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Mark as complete</p>
+	        </div>
+	      </a>
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-star"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Add to favourites</p>
+	        </div>
+	      </a>
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-share"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Share</p>
+	        </div>
+	      </a>
+	    </div>
+	</div>
+</div>
+
+Styleguide 9.2
+*/
+
+/*
+Course Header Media Content.
+
+Header media content for course page.
+
+Main Class: '.les-media'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-watch">
+	    <div class="les-media">
+	        <div class="lm-player"></div>
+	    </div>
+	</div>
+</div>
+
+Styleguide 9.2.1
+*/
+
+/*
+Course Header Content Navigation Section.
+
+Header content navigation section for course page.
+
+Main Class: '.les-nav-sec'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-watch">
+	    <div class="les-nav-sec">
+	        <a href="#" class="lns-prev-btn lns-btn"></a>
+	        <a href="#" class="lns-next-btn lns-btn">Next Lesson</a>
+	    </div>
+	</div>
+</div>
+
+Styleguide 9.2.2
+*/
+
+/*
+Course Header Content Tools.
+
+Header content tools for course page.
+
+Main Class: '.lw-tools'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-watch">
+	    <div class="lw-tools">
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-check-circle"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Mark as complete</p>
+	        </div>
+	      </a>
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-star"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Add to favourites</p>
+	        </div>
+	      </a>
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-share"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Share</p>
+	        </div>
+	      </a>
+	    </div>
+	</div>
+</div>
+
+Styleguide 9.2.3
+*/

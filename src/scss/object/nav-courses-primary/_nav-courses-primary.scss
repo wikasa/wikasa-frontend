@@ -1,11 +1,31 @@
-/** ----------------------------------------------------------------- *\
- *  WIKASA.OBJECT.NAV.COURSES.PRIMARY
- *  
- *  Nav Courses Primary Object.
- *  @author Bangsawan & Silvi
- *  @version 0.0.0
- *  Copyright 2013. Free licensed.
- ** ----------------------------------------------------------------- */
+/* 
+Navigation.
+
+Interface to navigate course cards.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.nav-crs-pris'
+
+Markup:
+<div class="page">
+        <nav class="nav-crs-pris">
+            <h1 class="ncp-head">CATEGORIES</h1>
+            <a href="#" class="ncp-sort sort-featured"><i class="fa fa-arrow-right"></i>Featured</a>
+            <a href="#" class="ncp-sort sort-trend">Trending Courses</a>
+            <ul class="ncp-courselist">
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+            </ul>
+        </nav>
+    </div>
+
+Styleguide 3
+*/
 
 .nav-crs-pris {
 	@include border-radius(6px);

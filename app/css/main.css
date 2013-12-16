@@ -2444,6 +2444,61 @@ body {
   float: left;
 }
 
+/*
+Common Form
+
+Form on every page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.form-group'
+
+Markup:
+<div class="page">
+  <form role="form">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputBio">Short Bio</label>
+      <textarea rows="3" class="form-control" id="exampleInputBio"></textarea>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Check me out
+      </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+<div class="page">
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputPassword2">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-default">Sign in</button>
+  </form>
+</div>
+
+Styleguide 13
+*/
 .form {
   font-size: 12px;
   line-height: 24px;
@@ -2614,6 +2669,62 @@ Common Header.
 Header Bar appears on every page.
 
 *Authored by Bangsawan & Silvi.*
+
+Main Class: '.cm-headers'
+
+Markup:
+<div class="cm-headers">
+  <div class="cm-header">
+      <a href="index.html" class="brand-pri"><img src="../img/svg/brand-6060.svg" alt="W."></a>
+      <div class="nav-crs-secs">
+        <a href="#" class="ncs">Browse Courses&nbsp;<i class="fa fa-angle-down"></i></a>
+        <div class="ncs-dds">
+          <ul class="ncs-cat1">
+            <li><a href="#" class="cat">Academy</a></li>
+            <li><a href="#" class="cat">Featured</a></li>
+            <li><a href="#" class="cat">Trending</a></li>
+          </ul>
+          <ul class="ncs-cat2">
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-tools">
+        <div class="header-tool sch" id="sch">
+          <form>
+            <input class="sch-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+            <input class="sch-submit" type="submit" value="">
+            <span class="sch-icon fa fa-search"></span>
+          </form>
+        </div><a href="#" class="header-tool msg"><i class="fa fa-envelope"></i></a><a href="#" class="nav-myc-pri">My Courses</a><a href="#" class="header-tool ntf"><i class="fa fa-bell-o"></i></a><div class="nav-unm-pris">
+           <a href="#" class="nav-unm-pri">
+            <span class="unm">User Name</span>
+            <span class="uim"><img src="../img/png/UIM-120120.png" alt="User Image"></span>
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="nup-dds">
+            <ul class="nup-tools">
+              <li><a href="#" class="nup-tool"><i class="fa fa-user"></i>&nbsp;View Profile</a></li>
+              <li><a href="#" class="nup-tool"><i class="fa fa-cog"></i>&nbsp;User Settings</a></li>
+              <li><a href="#" class="nup-tool"><i class="fa fa-wrench"></i>&nbsp;Account Settings</a></li>
+              <li><a href="#" class="nup-tool btn-logout">Log Out</a></li>
+            </ul>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
 
 Styleguide 1
 */
@@ -2978,172 +3089,6 @@ Styleguide 1
   border-radius: 0 0 6px 6px;
 }
 
-/*
-Nav Courses Secondary.
-
-Interface to navigate through courses.
-
-Main Class: `nav-crs-secs`
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-    <div class="nav-crs-secs">
-      <a href="#" class="ncs">Browse Courses&nbsp;<i class="fa fa-angle-down"></i></a>
-    </div>
-  </div>
-</div>
-
-Styleguide 1.1
-*/
-/*
-NCS Dropdown.
-
-Dropdown UI triggered on `a.nav-crs-secs` click. Then adding class 'open'.
-
-Main Class: `.ncs-dds`
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-    <div class="ncs-dds open">
-      <ul class="ncs-cat1">
-        <li><a href="#" class="cat">Academy</a></li>
-        <li><a href="#" class="cat">Featured</a></li>
-        <li><a href="#" class="cat">Trending</a></li>
-      </ul>
-      <ul class="ncs-cat2">
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-Styleguide 1.1.1
-*/
-/*
-Header tools.
-
-Collection of buttons with specific function.
-
-Styleguide 1.2
-*/
-/* 
-Search.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-      <div class="header-tools">
-        <div class="header-tool sch open" id="sch">
-          <form>
-            <input class="sch-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
-            <input class="sch-submit" type="submit" value="">
-            <span class="sch-icon fa fa-search"></span>
-          </form>
-        </div>
-  </div>
-</div>
-
-Styleguide 1.2.1
-*/
-/*
-Message.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-      <div class="header-tools">
-        <a href="#" class="header-tool msg"><i class="fa fa-envelope"></i></a>
-      </div>
-  </div>
-</div>
-
-Styleguide 1.2.2
-*/
-/*
-Nav My Courses.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-      <div class="header-tools">
-        <a href="#" class="nav-myc-pri">My Courses</a>
-      </div>
-  </div>
-</div>
-
-Styleguide 1.2.3
-*/
-/*
-Notification.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-      <div class="header-tools">
-        <a href="#" class="header-tool ntf"><i class="fa fa-bell-o"></i></a>
-      </div>
-  </div>
-</div>
-
-Styleguide 1.2.4
-*/
-/*
-User Tools.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-    <div class="nav-unm-pris">
-      <a href="#" class="nav-unm-pri">
-        <span class="unm">User Name</span>
-        <span class="uim"><img src="../img/png/UIM-120120.png" alt="User Image"></span>
-        <i class="fa fa-angle-down"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-Styleguide 1.2.5
-*/
-/*
-User Tools Dropdown.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-    <div class="nav-unm-pris">
-      <a href="#" class="nav-unm-pri active">
-        <span class="unm">User Name</span>
-        <span class="uim"><img src="../img/png/UIM-120120.png" alt="User Image"></span>
-        <i class="fa fa-angle-down"></i>
-      </a>
-      <div class="nup-dds open">
-        <ul class="nup-tools">
-          <li><a href="#" class="nup-tool"><i class="fa fa-user"></i>&nbsp;View Profile</a></li>
-          <li><a href="#" class="nup-tool"><i class="fa fa-cog"></i>&nbsp;User Settings</a></li>
-          <li><a href="#" class="nup-tool"><i class="fa fa-wrench"></i>&nbsp;Account Settings</a></li>
-          <li><a href="#" class="nup-tool btn-logout">Log Out</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-Styleguide 1.2.6
-*/
 .cm-subheaders {
   width: 768px;
   height: 48px;
@@ -3272,6 +3217,34 @@ Styleguide 1.2.6
   height: 40px;
 }
 
+/*
+Common Pagination
+
+Pagination on every page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.cm-paginations'
+
+Markup:
+<div class="page">
+    <div class="cards">
+        <ul class="cm-paginations">
+            <li><a href="#" class="cm-pagination cmp-first"><i class="fa fa-angle-left"></i></a></li>
+            <li><a href="#" class="cm-pagination">1</a></li>
+            <li><a href="#" class="cm-pagination">2</a></li>
+            <li><a href="#" class="cm-pagination">3</a></li>
+            <li><a href="#" class="cm-pagination">…</a></li>
+            <li><a href="#" class="cm-pagination">4</a></li>
+            <li><a href="#" class="cm-pagination">5</a></li>
+            <li><a href="#" class="cm-pagination">6</a></li>
+            <li><a href="#" class="cm-pagination cmp-last"><i class="fa fa-angle-right"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+Styleguide 12
+*/
 .cm-paginations {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -3315,14 +3288,59 @@ Styleguide 1.2.6
   background-color: #ea6b53;
 }
 
-/** ----------------------------------------------------------------- *\
- *  WIKASA.OBJECT.HOME.TOOLS.
- *  
- *  Home Tools object.
- *  @author Aardbei & XLV
- *  @version 0.0.0
- *  Copyright 2013. Free licensed.
- ** ----------------------------------------------------------------- */
+/*
+Common Pagination
+
+Pagination on every page.
+
+Main Class: '.cm-pagination'
+
+Markup:
+<div class="page">
+    <div class="cards">
+        <ul class="cm-paginations">
+            <li><a href="#" class="cm-pagination">1</a></li>
+        </ul>
+    </div>
+</div>
+
+Styleguide 12.1
+*/
+/* 
+Home Tools.
+
+Tools for homepage.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.home-tools'
+
+Markup:
+<div class="home-tools">
+  <div class="ht-tabs">
+      <a href="#" class="ht-tab active">Courses</a>
+      <a href="#" class="ht-tab">Academy</a>
+  </div>
+  <div class="ht-sorts">
+      <div class="ht-sort">
+          <a href="#" class="ht-sort-btn">Paid<i class="fa fa-angle-down"></i></a>
+          <div class="ht-sort-dds">
+              <a href="#" class="ht-subsort">Free Courses</a>
+              <a href="#" class="ht-subsort">Paid Courses</a>
+          </div>
+      </div>
+      <div class="ht-sort">
+          <a href="#" class="ht-sort-btn">Popular<i class="fa fa-angle-down"></i></a>
+          <div class="ht-sort-dds">
+              <a href="#" class="ht-subsort">Popular</a>
+              <a href="#" class="ht-subsort">Latest</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+Styleguide 2
+*/
 .home-tools {
   width: 768px;
   height: 48px;
@@ -3425,14 +3443,34 @@ Styleguide 1.2.6
   color: #64afb2;
 }
 
-/** ----------------------------------------------------------------- *\
- *  WIKASA.OBJECT.NAV.COURSES.PRIMARY
- *  
- *  Nav Courses Primary Object.
- *  @author Bangsawan & Silvi
- *  @version 0.0.0
- *  Copyright 2013. Free licensed.
- ** ----------------------------------------------------------------- */
+/* 
+Navigation.
+
+Interface to navigate course cards.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.nav-crs-pris'
+
+Markup:
+<div class="page">
+        <nav class="nav-crs-pris">
+            <h1 class="ncp-head">CATEGORIES</h1>
+            <a href="#" class="ncp-sort sort-featured"><i class="fa fa-arrow-right"></i>Featured</a>
+            <a href="#" class="ncp-sort sort-trend">Trending Courses</a>
+            <ul class="ncp-courselist">
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+                <li><a href="#" class="ncp"><i class="fa fa-arrow-right"></i>Course</a></li>
+            </ul>
+        </nav>
+    </div>
+
+Styleguide 3
+*/
 .nav-crs-pris {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -3541,7 +3579,9 @@ Common Footer.
 
 Footer Bar appears on every page.
 
-Authored by Bangsawan & Silvi.
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.footers'
 
 Markup:
 <div class="footers">
@@ -3562,7 +3602,7 @@ Markup:
     </div>
 </div>
 
-Styleguide 2
+Styleguide 4
 */
 .footers {
   position: relative;
@@ -3608,13 +3648,13 @@ Styleguide 2
 }
 
 /* 
-Card Courses.
+Cards.
 
 Card for every course appears on page.
 
 *Authored by Bangsawan & Silvi.*
 
-Styleguide 3
+Styleguide 5
 */
 .cards {
   overflow: hidden;
@@ -3858,7 +3898,7 @@ Interface to navigate to Course Page
 Main Class: '.card.c-crs'
 
 Markup:
-div class="page">
+<div class="page">
     <div class="cards">
         <div class="card c-crs">
             <div class="c-cover">
@@ -3900,7 +3940,152 @@ div class="page">
     </div>
 </div>
 
-Styleguide 3.1
+Styleguide 5.1
+*/
+/*
+Card "My Courses".
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+Main Class: '.card.c-myc'
+
+Markup:
+<div class="card c-myc">
+    <div class="c-cover">
+        <img src="../img/png/CCover-280168.png" alt="Card">
+    </div>
+    <div class="c-authors">
+        <a href="#" class="ca-photos">
+            <img src="../img/png/UIM-120120.png" alt="User">
+        </a>
+        <div class="ca-texts">
+            <a class="ca-name" href="#">Author Name</a>
+            <p class="ca-tagline">This is author's tagline</p>
+        </div>
+    </div>
+    <div class="c-overview">
+        <p>Lorem ipsum dolor sit amet, consec te tur adipisicing elit. Nam ad sint assum enda iusto at nulla quibusdam.</p>
+    </div>
+    <a class="c-crs-btn enter">Begin the course now <i class="fa fa-arrow-right"></i></a>
+</div>
+
+Styleguide 5.2
+*/
+/*
+Card "My Courses".
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+Main Class: '.card.c-myc'
+
+Markup:
+<div class="card c-myc">
+    <div class="c-cover">
+        <img src="../img/png/CCover-280168.png" alt="Card">
+    </div>
+    <div class="c-authors">
+        <a href="#" class="ca-photos">
+            <img src="../img/png/UIM-120120.png" alt="User">
+        </a>
+        <div class="ca-texts">
+            <a class="ca-name" href="#">Author Name</a>
+            <p class="ca-tagline">This is author's tagline</p>
+        </div>
+    </div>
+    <div class="c-overview">
+        <p>Lorem ipsum dolor sit amet, consec te tur adipisicing elit. Nam ad sint assum enda iusto at nulla quibusdam.</p>
+    </div>
+    <a class="c-crs-btn track">
+        <div class="trackbar-num">25%</div>
+        <div class="trackbar-graphs">
+            <div class="trackbar-graph">
+                <div class="tg-part"></div>
+            </div>
+        </div>
+    </a>
+</div>
+
+Styleguide 5.3
+*/
+/*
+Card Academy.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+Main Class: '.card.c-acm'
+
+Markup:
+<div class="card c-acm">
+    <div class="c-cover">
+        <img src="../img/png/CCover-280168.png" alt="Card">
+    </div>
+    <div class="c-acme-titles">
+        <h1 class="c-acme-title">Bina Nusantara University</h1>
+    </div>
+    <div class="c-authors">
+        <a href="#" class="ca-photos">
+            <img src="../img/png/UIM-120120.png" alt="User">
+        </a>
+        <div class="ca-texts">
+            <p class="c-crs-nums"><span class="c-crs-num">88</span> Courses Available</p>
+        </div>
+    </div>
+    <div class="c-overview">
+        <p>Lorem ipsum dolor sit amet, consec te tur adipisicing elit. Nam ad sint assum enda iusto at nulla quibusdam.</p>
+    </div>
+    <a class="c-crs-btn enter">Visit Academy <i class="fa fa-arrow-right"></i></a>
+</div>
+
+Styleguide 5.4
+*/
+/*
+External Header.
+
+Header for external page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.ext-head'
+
+Markup:
+<div class="ext-head">
+    <div class="page">
+        <div class="xh-media">
+            <!-- <div class="media-std1"></div> -->
+            <video class="media-std1" controls="controls" poster="../img/png/vid-poster/poster-0.png" width="480" height="270">
+              <source src="../vid/sample/sample.mp4" type="video/mp4">
+              <source src="../vid/sample/sample.webm" type="video/webm">
+              <source src="../vid/sample/sample.ogv" type="video/ogg">
+              <object type="application/x-shockwave-flash" data="http://player.longtailvideo.com/player.swf" width="480" height="270">
+                <param name="movie" value="http://player.longtailvideo.com/player.swf">
+                <param name="allowFullScreen" value="true">
+                <param name="wmode" value="transparent">
+                <param name="flashVars" value="controlbar=over&amp;image=..%2Fimg%2Fpng%2Fvid-poster%2Fposter-0.png&amp;file=sample.mp4">
+                <img alt="Play" src="../img/png/vid-poster/poster-0.png" width="480" height="270" title="No video playback capabilities, please download the video below">
+              </object>
+            </video>
+        </div>
+        <div class="xh-ctn">
+            <h1 class="crs-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, molestiae!</h1>
+            <div class="crs-overview">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, rerum sapiente pariatur quis architecto error facere quisquam corrupti enim distinctio voluptas libero illo at?</p>
+            </div>
+            <!-- <div class="crs-meta">
+                <p class="crs-meta-lab">Course by:</p>
+                <a href="#" class="crs-meta-uim">
+                    <img src="../img/png/UIM-120120.png" alt="User Image">
+                </a>
+            </div>-->
+            <div class="crs-go">
+                <p class="crs-meta-lab">Start learning now</p>
+                <a href="#" class="crs-go-btn start">IDR 30.000</a>
+                <a href="#" class="crs-go-btn wish"><i class="fa fa-plus-circle"></i>Wishlist</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 6
 */
 .ext-head {
   background-color: #2b2f3a;
@@ -4018,6 +4203,162 @@ Styleguide 3.1
   color: white;
 }
 
+/*
+External Header Video.
+
+Video for external page header.
+
+Main Class: '.xh-media'
+
+Markup:
+<div class="ext-head">
+    <div class="page">
+        <div class="xh-media">
+            <!-- <div class="media-std1"></div> -->
+            <video class="media-std1" controls="controls" poster="../img/png/vid-poster/poster-0.png" width="480" height="270">
+              <source src="../vid/sample/sample.mp4" type="video/mp4">
+              <source src="../vid/sample/sample.webm" type="video/webm">
+              <source src="../vid/sample/sample.ogv" type="video/ogg">
+              <object type="application/x-shockwave-flash" data="http://player.longtailvideo.com/player.swf" width="480" height="270">
+                <param name="movie" value="http://player.longtailvideo.com/player.swf">
+                <param name="allowFullScreen" value="true">
+                <param name="wmode" value="transparent">
+                <param name="flashVars" value="controlbar=over&amp;image=..%2Fimg%2Fpng%2Fvid-poster%2Fposter-0.png&amp;file=sample.mp4">
+                <img alt="Play" src="../img/png/vid-poster/poster-0.png" width="480" height="270" title="No video playback capabilities, please download the video below">
+              </object>
+            </video>
+        </div>
+    </div>
+</div>
+
+Styleguide 6.1
+*/
+/*
+External Header Content.
+
+Content for external page header.
+
+Main Class: '.xh-ctn'
+
+Markup:
+<div class="ext-head">
+    <div class="page">
+        <div class="xh-ctn">
+            <h1 class="crs-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, molestiae!</h1>
+            <div class="crs-overview">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, rerum sapiente pariatur quis architecto error facere quisquam corrupti enim distinctio voluptas libero illo at?</p>
+            </div>
+            <!-- <div class="crs-meta">
+                <p class="crs-meta-lab">Course by:</p>
+                <a href="#" class="crs-meta-uim">
+                    <img src="../img/png/UIM-120120.png" alt="User Image">
+                </a>
+            </div>-->
+            <div class="crs-go">
+                <p class="crs-meta-lab">Start learning now</p>
+                <a href="#" class="crs-go-btn start">IDR 30.000</a>
+                <a href="#" class="crs-go-btn wish"><i class="fa fa-plus-circle"></i>Wishlist</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+Styleguide 6.2
+*/
+/*
+External Navigation.
+
+Navigation for external page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.ext-nav'
+
+Markup:
+<div class="ext-nav">
+    <ul class="xn-sections">
+        <li>
+            <a href="#" class="xn-section">Section 1: Lorem ipsum dolor</a>
+            <ul class="xn-lessons">
+                <li>
+                    <a href="#" class="xn-lesson">
+                        <div class="xnl-thumb">
+                            <i class="fa fa-play-circle-o xnl-thumb-img"></i>
+                            <p class="xnl-thumb-meta xnl-thumb-info">1:23</p>
+                        </div>
+                        <div class="xnl-ctn">
+                            <p class="xnl-label">Lesson 1</p>
+                            <p class="xnl-title">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="xn-lesson">
+                        <div class="xnl-thumb">
+                            <i class="fa fa-file-o xnl-thumb-img"></i>
+                            <p class="xnl-thumb-meta xnl-thumb-info">1:23</p>
+                        </div>
+                        <div class="xnl-ctn">
+                            <p class="xnl-label">Lesson 2</p>
+                            <p class="xnl-title">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="xn-lesson">
+                        <div class="xnl-thumb">
+                            <i class="fa fa-pencil xnl-thumb-img"></i>
+                            <p class="xnl-thumb-meta xnl-thumb-info">1:23</p>
+                        </div>
+                        <div class="xnl-ctn">
+                            <p class="xnl-label">Lesson 3</p>
+                            <p class="xnl-title">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="xn-lesson">
+                        <div class="xnl-thumb">
+                            <i class="fa fa-play-circle-o xnl-thumb-img"></i>
+                            <p class="xnl-thumb-meta xnl-thumb-info">1:23</p>
+                        </div>
+                        <div class="xnl-ctn">
+                            <p class="xnl-label">Lesson 4:</p>
+                            <p class="xnl-title">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="xn-lesson">
+                        <div class="xnl-thumb">
+                            <i class="fa fa-volume-up xnl-thumb-img"></i>
+                            <p class="xnl-thumb-meta xnl-thumb-info">1:23</p>
+                        </div>
+                        <div class="xnl-ctn">
+                            <p class="xnl-label">Lesson 5:</p>
+                            <p class="xnl-title">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="xn-lesson">
+                        <div class="xnl-thumb">
+                            <i class="fa fa-play-circle-o xnl-thumb-img"></i>
+                            <p class="xnl-thumb-meta xnl-thumb-info">1:23</p>
+                        </div>
+                        <div class="xnl-ctn">
+                            <p class="xnl-label">Lesson 6:</p>
+                            <p class="xnl-title">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+Styleguide 7
+*/
 .ext-nav a, .ext-nav p, .ext-nav li {
   color: white;
   text-decoration: none;
@@ -4137,6 +4478,58 @@ Styleguide 3.1
   line-height: 20px;
 }
 
+/*
+External Navigation Lesson.
+
+Lesson navigation for external page.
+
+Main Class: '.xn-lesson'
+
+Markup:
+<div class="ext-nav">
+    <ul class="xn-sections">
+        <li>
+            <ul class="xn-lessons">
+                <li>
+                    <a href="#" class="xn-lesson">
+                        <div class="xnl-thumb">
+                            <i class="fa fa-play-circle-o xnl-thumb-img"></i>
+                            <p class="xnl-thumb-meta xnl-thumb-info">1:23</p>
+                        </div>
+                        <div class="xnl-ctn">
+                            <p class="xnl-label">Lesson 1</p>
+                            <p class="xnl-title">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+Styleguide 7.1
+*/
+/*
+External Summary.
+
+Summary for external page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.ext-sum'
+
+Markup:
+<div class="ext-sums">
+    <div class="ext-sum">
+        <h3 class="es-title">Class Summary</h3>
+        <div class="es-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, doloribus sequi architecto tempora incidunt voluptatibus facere eaque ad illo minima.</p>
+        </div>
+    </div>
+</div>
+
+Styleguide 8
+*/
 .ext-sums {
   overflow: hidden;
   *zoom: 1;
@@ -4184,6 +4577,78 @@ Styleguide 3.1
   margin: 24px 0 0 0;
 }
 
+/*
+Course Header.
+
+Header for course page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.ctn-watch'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-header">
+        <div class="les-titles">
+          <p class="lh-label">Lesson 2</p>
+          <h1 class="lh-title">Lorem ipsum dolor sit amet consectetur.</h1>
+        </div>
+        <div class="les-watch">
+            <div class="les-media">
+                <div class="lm-player"></div>
+            </div>
+            <div class="les-nav-sec">
+                <a href="#" class="lns-prev-btn lns-btn"></a>
+                <a href="#" class="lns-next-btn lns-btn">Next Lesson</a>
+            </div>
+            <div class="lw-tools">
+              <a href="#" class="lw-tool">
+                <div class="lwt-icon">
+                  <i class="fa fa-check-circle"></i>
+                </div>
+                <div class="lwt-text">
+                  <p>Mark as complete</p>
+                </div>
+              </a>
+              <a href="#" class="lw-tool">
+                <div class="lwt-icon">
+                  <i class="fa fa-star"></i>
+                </div>
+                <div class="lwt-text">
+                  <p>Add to favourites</p>
+                </div>
+              </a>
+              <a href="#" class="lw-tool">
+                <div class="lwt-icon">
+                  <i class="fa fa-share"></i>
+                </div>
+                <div class="lwt-text">
+                  <p>Share</p>
+                </div>
+              </a>
+            </div>
+        </div>
+        <div class="les-overview">
+            <h3 class="lo-label">Author's description</h3>
+            <div class="lo-ctn">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, qui, quibusdam distinctio sed itaque culpa cupiditate voluptatibus eveniet repudiandae incidunt quas soluta est vero vel doloremque. Voluptatum, quo tempore laboriosam quisquam vero earum dolorum quis sed numquam consequatur doloremque molestiae culpa. Quas, recusandae cupiditate dignissimos consequuntur! In, eaque, quibusdam, ratione corporis soluta a magni delectus voluptates nihil rerum voluptatibus repellendus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quibusdam labore placeat ratione saepe fugiat repellat totam harum quaerat explicabo esse odit hic alias earum laudantium vero distinctio qui! Eligendi.</p>
+            </div>
+        </div>
+        <div class="les-widgets">
+            <p class="les-widget-title">Resources</p>
+            <ul class="les-resources">
+                <li><a href="#" class="les-resource lr-download">attachment1.pdf</a></li>
+                <li><a href="#" class="les-resource lr-download">attachment2.pdf</a></li>
+                <li><a href="#" class="les-resource lr-link">link1</a></li>
+                <li><a href="#" class="les-resource lr-link">link2</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+Styleguide 9
+*/
 .watch {
   width: 840px;
 }
@@ -4438,6 +4903,291 @@ Styleguide 3.1
   font-family: FontAwesome;
 }
 
+/*
+Course Header Title.
+
+Header title for course page.
+
+Main Class: '.ctn-watch'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-header">
+        <div class="les-titles">
+          <p class="lh-label">Lesson 2</p>
+          <h1 class="lh-title">Lorem ipsum dolor sit amet consectetur.</h1>
+        </div>
+    </div>
+</div>
+
+Styleguide 9.1
+*/
+/*
+Course Header Content.
+
+Header content for course page.
+
+Main Class: '.les-watch'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-watch">
+	    <div class="les-media">
+	        <div class="lm-player"></div>
+	    </div>
+	    <div class="les-nav-sec">
+	        <a href="#" class="lns-prev-btn lns-btn"></a>
+	        <a href="#" class="lns-next-btn lns-btn">Next Lesson</a>
+	    </div>
+	    <div class="lw-tools">
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-check-circle"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Mark as complete</p>
+	        </div>
+	      </a>
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-star"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Add to favourites</p>
+	        </div>
+	      </a>
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-share"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Share</p>
+	        </div>
+	      </a>
+	    </div>
+	</div>
+</div>
+
+Styleguide 9.2
+*/
+/*
+Course Header Media Content.
+
+Header media content for course page.
+
+Main Class: '.les-media'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-watch">
+	    <div class="les-media">
+	        <div class="lm-player"></div>
+	    </div>
+	</div>
+</div>
+
+Styleguide 9.2.1
+*/
+/*
+Course Header Content Navigation Section.
+
+Header content navigation section for course page.
+
+Main Class: '.les-nav-sec'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-watch">
+	    <div class="les-nav-sec">
+	        <a href="#" class="lns-prev-btn lns-btn"></a>
+	        <a href="#" class="lns-next-btn lns-btn">Next Lesson</a>
+	    </div>
+	</div>
+</div>
+
+Styleguide 9.2.2
+*/
+/*
+Course Header Content Tools.
+
+Header content tools for course page.
+
+Main Class: '.lw-tools'
+
+Markup:
+<div class="ctn-watch">
+    <div class="les-watch">
+	    <div class="lw-tools">
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-check-circle"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Mark as complete</p>
+	        </div>
+	      </a>
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-star"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Add to favourites</p>
+	        </div>
+	      </a>
+	      <a href="#" class="lw-tool">
+	        <div class="lwt-icon">
+	          <i class="fa fa-share"></i>
+	        </div>
+	        <div class="lwt-text">
+	          <p>Share</p>
+	        </div>
+	      </a>
+	    </div>
+	</div>
+</div>
+
+Styleguide 9.2.3
+*/
+/*
+Course Primary Navigation
+
+Primary navigation for course page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.les-tools'
+
+Markup:
+<div class="page">
+  <div class="les-tools">
+    <div class="lt-header">
+      <p class="lth-label">Course</p>
+      <div class="lth-title">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+      </div>
+    </div>
+    <a href="#" class="lt-user">
+      <div class="ltu-photo">
+        <img src="../img/png/UIM-120120.png" alt="Author">
+      </div>
+      <p class="ltu-label">Course by</p>
+      <p class="ltu-name">Author Name</p>
+    </a>
+    <div class="lt-track">
+      <p class="ltt-number">50%</p>
+      <div class="ltt-graph">
+        <div class="ltt-graphbar"></div>
+      </div>
+    </div>
+    <ul class="nav-les-pris">
+      <li>
+        <a href="#" class="nav-les-pri open">
+          <p class="nlp-label">Section 1</p>
+          <div class="nlp-title">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </a>
+        <ul class="subnav-les-pris">
+          <li>
+            <a href="#" class="subnav-les-pri watched">
+              <div class="slp-icon"><i class="fa fa-check"></i></div>
+              <div class="slp-title">
+                <p>Quibusdam, ilique, nesciunt assumenda quidem cumque iste aliquam impedit</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="subnav-les-pri active">
+              <div class="slp-icon"><i class="fa fa-play"></i></div>
+              <div class="slp-title">
+                <p>Nesciunt assumenda quidem cumque iste aliquam impedit</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="subnav-les-pri">
+              <div class="slp-icon"><i class="fa"></i></div>
+              <div class="slp-title">
+                <p>Assumenda quidem cumque</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="nav-les-pri close">
+          <p class="nlp-label">Section 2</p>
+          <div class="nlp-title">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </a>
+        <ul class="subnav-les-pris close">
+          <li>
+            <a href="#" class="subnav-les-pri watched">
+              <div class="slp-icon"><i class="fa fa-check"></i></div>
+              <div class="slp-title">
+                <p>Quibusdam, ilique, nesciunt assumenda quidem cumque iste aliquam impedit</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="subnav-les-pri active">
+              <div class="slp-icon"><i class="fa fa-play"></i></div>
+              <div class="slp-title">
+                <p>Nesciunt assumenda quidem cumque iste aliquam impedit</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="subnav-les-pri">
+              <div class="slp-icon"><i class="fa"></i></div>
+              <div class="slp-title">
+                <p>Assumenda quidem cumque</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="nav-les-pri close">
+          <p class="nlp-label">Section 3</p>
+          <div class="nlp-title">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+          </div>
+        </a>
+        <ul class="subnav-les-pris close">
+          <li>
+            <a href="#" class="subnav-les-pri watched">
+              <div class="slp-icon"><i class="fa fa-check"></i></div>
+              <div class="slp-title">
+                <p>Quibusdam, ilique, nesciunt assumenda quidem cumque iste aliquam impedit</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="subnav-les-pri active">
+              <div class="slp-icon"><i class="fa fa-play"></i></div>
+              <div class="slp-title">
+                <p>Nesciunt assumenda quidem cumque iste aliquam impedit</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="subnav-les-pri">
+              <div class="slp-icon"><i class="fa"></i></div>
+              <div class="slp-title">
+                <p>Assumenda quidem cumque</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+Styleguide 10
+*/
 .les-tools {
   overflow: hidden;
   *zoom: 1;
@@ -4803,6 +5553,82 @@ Styleguide 3.1
   background-color: #ea6b53;
 }
 
+/*
+Academy Header
+
+Header for academy page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.acm-headers'
+
+Markup:
+<div class="acm-headers acmh-titles">
+	<div class="acm-header">
+	  <div class="acmh-title">
+	    <h1>Academyname Printedhere.</h1>
+	  </div>
+	</div>
+	</div>
+	<div class="acm-headers acmh-contents">
+	<div class="acm-header">
+	  <div class="acmh-users">
+	    <div class="acmh-photos">
+	      <img src="../img/png/UIM-120120.png" alt="Card">
+	    </div>
+	    <div class="acmh-overviews">
+	      <p class="acmh-overview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, natus, veritatis, totam beatae necessitatibus modi hic molestias iste magnam sunt sed neque explicabo sequi!</p>
+	      <p class="acmh-overview">Totam beatae necessitatibus modi Consectetur adipisicing elit. Iste, natus illo quam consequuntur deserunt iure assumenda. <a href="#" class="acmh-overview-more">Read More ... </a> </p>
+	    </div>
+	    <ul class="acmh-authors">
+	      <li class="acmh-authors-label">
+	        Authors • 55
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	    </ul>
+	    <div class="acmh-metas">
+	      <a href="#" class="acmh-addresss">www.academy-website.ed</a>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+Styleguide 11
+*/
 .acm-headers.acmh-titles {
   background-color: #2b2f3a;
 }
@@ -4956,6 +5782,91 @@ Styleguide 3.1
   line-height: 24px;
 }
 
+/*
+Academy Header Title
+
+Header title for academy page.
+
+Main Class: '.acm-headers.acmh-titles'
+
+Markup:
+<div class="acm-headers acmh-titles">
+    <div class="acm-header">
+      <div class="acmh-title">
+        <h1>Academyname Printedhere.</h1>
+      </div>
+    </div>
+  </div>
+
+Styleguide 11.1
+*/
+/*
+Academy Header Content
+
+Header content for academy page.
+
+Main Class: '.acm-headers.acmh-contents'
+
+Markup:
+<div class="acm-headers acmh-contents">
+	<div class="acm-header">
+	  <div class="acmh-users">
+	    <div class="acmh-photos">
+	      <img src="../img/png/UIM-120120.png" alt="Card">
+	    </div>
+	    <div class="acmh-overviews">
+	      <p class="acmh-overview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, natus, veritatis, totam beatae necessitatibus modi hic molestias iste magnam sunt sed neque explicabo sequi!</p>
+	      <p class="acmh-overview">Totam beatae necessitatibus modi Consectetur adipisicing elit. Iste, natus illo quam consequuntur deserunt iure assumenda. <a href="#" class="acmh-overview-more">Read More ... </a> </p>
+	    </div>
+	    <ul class="acmh-authors">
+	      <li class="acmh-authors-label">
+	        Authors • 55
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	    </ul>
+	    <div class="acmh-metas">
+	      <a href="#" class="acmh-addresss">www.academy-website.ed</a>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+Styleguide 11.2
+*/
 .lan-headers {
   position: relative;
   background-color: #2b2f3a;

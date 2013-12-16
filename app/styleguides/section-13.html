@@ -20,7 +20,7 @@
             <h1 class="kss-doc-title"><a href="./">kss-node Styleguide</a></h1>
           </header>
           <nav class="kss-nav">
-            <ul class="kss-menu" data-kss-ref="2">
+            <ul class="kss-menu" data-kss-ref="13">
               <li class="kss-menu-item"><a href="./"><span class="kss-ref">0</span><span class="kss-name">Overview</span></a></li>
               
               <li class="kss-menu-item"><a href="section-1.html"><span class="kss-ref">1</span><span class="kss-name">Common Header.</span></a></li>
@@ -65,71 +65,92 @@
         <article class="kss-article">
           
           
-          <section id="section-2" class="kss-section kss-depth-1">
-            <h1 class="kss-title"><span class="kss-ref">2</span> Home Tools.</h1>
+          <section id="section-13" class="kss-section kss-depth-1">
+            <h1 class="kss-title"><span class="kss-ref">13</span> Common Form</h1>
             
             
             <div class="kss-description">
-              <p>Tools for homepage.
+              <p>Form on every page.
 
 </p>
 <p><em>Authored by Bangsawan &amp; Silvi.</em>
 
 </p>
-<p>Main Class: &apos;.home-tools&apos;</p>
+<p>Main Class: &apos;.form-group&apos;
 
+</p>
+<div class="page">
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputPassword2">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-default">Sign in</button>
+  </form>
+</div>
             </div>
             
             <div class="kss-modifier-block">
               <div class="kss-modifier kss-modifier-original">
                 <div class="kss-modifier-example">
-                  <div class="home-tools">
-  <div class="ht-tabs">
-      <a href="#" class="ht-tab active">Courses</a>
-      <a href="#" class="ht-tab">Academy</a>
-  </div>
-  <div class="ht-sorts">
-      <div class="ht-sort">
-          <a href="#" class="ht-sort-btn">Paid<i class="fa fa-angle-down"></i></a>
-          <div class="ht-sort-dds">
-              <a href="#" class="ht-subsort">Free Courses</a>
-              <a href="#" class="ht-subsort">Paid Courses</a>
-          </div>
-      </div>
-      <div class="ht-sort">
-          <a href="#" class="ht-sort-btn">Popular<i class="fa fa-angle-down"></i></a>
-          <div class="ht-sort-dds">
-              <a href="#" class="ht-subsort">Popular</a>
-              <a href="#" class="ht-subsort">Latest</a>
-          </div>
-      </div>
-  </div>
+                  <div class="page">
+  <form role="form">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      <p class="help-block">Example block-level help text here.</p>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputBio">Short Bio</label>
+      <textarea rows="3" class="form-control" id="exampleInputBio"></textarea>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Check me out
+      </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
 </div>
                 </div>
               </div>
               
               <div class="kss-markup">
-                <pre><code data-language="html">&lt;div class=&quot;home-tools&quot;&gt;
-  &lt;div class=&quot;ht-tabs&quot;&gt;
-      &lt;a href=&quot;#&quot; class=&quot;ht-tab active&quot;&gt;Courses&lt;/a&gt;
-      &lt;a href=&quot;#&quot; class=&quot;ht-tab&quot;&gt;Academy&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;ht-sorts&quot;&gt;
-      &lt;div class=&quot;ht-sort&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;ht-sort-btn&quot;&gt;Paid&lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-          &lt;div class=&quot;ht-sort-dds&quot;&gt;
-              &lt;a href=&quot;#&quot; class=&quot;ht-subsort&quot;&gt;Free Courses&lt;/a&gt;
-              &lt;a href=&quot;#&quot; class=&quot;ht-subsort&quot;&gt;Paid Courses&lt;/a&gt;
-          &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;ht-sort&quot;&gt;
-          &lt;a href=&quot;#&quot; class=&quot;ht-sort-btn&quot;&gt;Popular&lt;i class=&quot;fa fa-angle-down&quot;&gt;&lt;/i&gt;&lt;/a&gt;
-          &lt;div class=&quot;ht-sort-dds&quot;&gt;
-              &lt;a href=&quot;#&quot; class=&quot;ht-subsort&quot;&gt;Popular&lt;/a&gt;
-              &lt;a href=&quot;#&quot; class=&quot;ht-subsort&quot;&gt;Latest&lt;/a&gt;
-          &lt;/div&gt;
-      &lt;/div&gt;
-  &lt;/div&gt;
+                <pre><code data-language="html">&lt;div class=&quot;page&quot;&gt;
+  &lt;form role=&quot;form&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;
+      &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; placeholder=&quot;Enter email&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+      &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;&gt;
+      &lt;p class=&quot;help-block&quot;&gt;Example block-level help text here.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+      &lt;label for=&quot;exampleInputBio&quot;&gt;Short Bio&lt;/label&gt;
+      &lt;textarea rows=&quot;3&quot; class=&quot;form-control&quot; id=&quot;exampleInputBio&quot;&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;checkbox&quot;&gt;
+      &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot;&gt; Check me out
+      &lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+  &lt;/form&gt;
 &lt;/div&gt;</code></pre>
               </div>
             </div>

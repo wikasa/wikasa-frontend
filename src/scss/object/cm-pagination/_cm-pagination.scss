@@ -1,3 +1,32 @@
+/*
+Common Pagination
+
+Pagination on every page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.cm-paginations'
+
+Markup:
+<div class="page">
+    <div class="cards">
+        <ul class="cm-paginations">
+            <li><a href="#" class="cm-pagination cmp-first"><i class="fa fa-angle-left"></i></a></li>
+            <li><a href="#" class="cm-pagination">1</a></li>
+            <li><a href="#" class="cm-pagination">2</a></li>
+            <li><a href="#" class="cm-pagination">3</a></li>
+            <li><a href="#" class="cm-pagination">…</a></li>
+            <li><a href="#" class="cm-pagination">4</a></li>
+            <li><a href="#" class="cm-pagination">5</a></li>
+            <li><a href="#" class="cm-pagination">6</a></li>
+            <li><a href="#" class="cm-pagination cmp-last"><i class="fa fa-angle-right"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+Styleguide 12
+*/
+
 .cm-paginations {
 	@include border-radius(6px);
 	@include clearfix;
@@ -39,3 +68,22 @@
 		&:hover { background-color: $orange; }
 	}
 }
+
+/*
+Common Pagination
+
+Pagination on every page.
+
+Main Class: '.cm-pagination'
+
+Markup:
+<div class="page">
+    <div class="cards">
+        <ul class="cm-paginations">
+            <li><a href="#" class="cm-pagination">1</a></li>
+        </ul>
+    </div>
+</div>
+
+Styleguide 12.1
+*/

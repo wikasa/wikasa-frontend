@@ -1,11 +1,38 @@
-/** ----------------------------------------------------------------- *\
- *  WIKASA.OBJECT.HOME.TOOLS.
- *  
- *  Home Tools object.
- *  @author Aardbei & XLV
- *  @version 0.0.0
- *  Copyright 2013. Free licensed.
- ** ----------------------------------------------------------------- */
+/* 
+Home Tools.
+
+Tools for homepage.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.home-tools'
+
+Markup:
+<div class="home-tools">
+  <div class="ht-tabs">
+      <a href="#" class="ht-tab active">Courses</a>
+      <a href="#" class="ht-tab">Academy</a>
+  </div>
+  <div class="ht-sorts">
+      <div class="ht-sort">
+          <a href="#" class="ht-sort-btn">Paid<i class="fa fa-angle-down"></i></a>
+          <div class="ht-sort-dds">
+              <a href="#" class="ht-subsort">Free Courses</a>
+              <a href="#" class="ht-subsort">Paid Courses</a>
+          </div>
+      </div>
+      <div class="ht-sort">
+          <a href="#" class="ht-sort-btn">Popular<i class="fa fa-angle-down"></i></a>
+          <div class="ht-sort-dds">
+              <a href="#" class="ht-subsort">Popular</a>
+              <a href="#" class="ht-subsort">Latest</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+Styleguide 2
+*/
 
 .home-tools {
 	// @include clearfix;
