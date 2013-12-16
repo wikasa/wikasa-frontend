@@ -1,11 +1,11 @@
 /* 
-Card Courses.
+Cards.
 
 Card for every course appears on page.
 
 *Authored by Bangsawan & Silvi.*
 
-Styleguide 3
+Styleguide 5
 */
 
 .cards {
@@ -288,5 +288,104 @@ Markup:
     </div>
 </div>
 
-Styleguide 3.1
+Styleguide 5.1
+*/
+
+/*
+Card "My Courses".
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+Main Class: '.card.c-myc'
+
+Markup:
+<div class="card c-myc">
+    <div class="c-cover">
+        <img src="../img/png/CCover-280168.png" alt="Card">
+    </div>
+    <div class="c-authors">
+        <a href="#" class="ca-photos">
+            <img src="../img/png/UIM-120120.png" alt="User">
+        </a>
+        <div class="ca-texts">
+            <a class="ca-name" href="#">Author Name</a>
+            <p class="ca-tagline">This is author's tagline</p>
+        </div>
+    </div>
+    <div class="c-overview">
+        <p>Lorem ipsum dolor sit amet, consec te tur adipisicing elit. Nam ad sint assum enda iusto at nulla quibusdam.</p>
+    </div>
+    <a class="c-crs-btn enter">Begin the course now <i class="fa fa-arrow-right"></i></a>
+</div>
+
+Styleguide 5.2
+*/
+
+/*
+Card "My Courses".
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+Main Class: '.card.c-myc'
+
+Markup:
+<div class="card c-myc">
+    <div class="c-cover">
+        <img src="../img/png/CCover-280168.png" alt="Card">
+    </div>
+    <div class="c-authors">
+        <a href="#" class="ca-photos">
+            <img src="../img/png/UIM-120120.png" alt="User">
+        </a>
+        <div class="ca-texts">
+            <a class="ca-name" href="#">Author Name</a>
+            <p class="ca-tagline">This is author's tagline</p>
+        </div>
+    </div>
+    <div class="c-overview">
+        <p>Lorem ipsum dolor sit amet, consec te tur adipisicing elit. Nam ad sint assum enda iusto at nulla quibusdam.</p>
+    </div>
+    <a class="c-crs-btn track">
+        <div class="trackbar-num">25%</div>
+        <div class="trackbar-graphs">
+            <div class="trackbar-graph">
+                <div class="tg-part"></div>
+            </div>
+        </div>
+    </a>
+</div>
+
+Styleguide 5.3
+*/
+
+/*
+Card Academy.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+Main Class: '.card.c-acm'
+
+Markup:
+<div class="card c-acm">
+    <div class="c-cover">
+        <img src="../img/png/CCover-280168.png" alt="Card">
+    </div>
+    <div class="c-acme-titles">
+        <h1 class="c-acme-title">Bina Nusantara University</h1>
+    </div>
+    <div class="c-authors">
+        <a href="#" class="ca-photos">
+            <img src="../img/png/UIM-120120.png" alt="User">
+        </a>
+        <div class="ca-texts">
+            <p class="c-crs-nums"><span class="c-crs-num">88</span> Courses Available</p>
+        </div>
+    </div>
+    <div class="c-overview">
+        <p>Lorem ipsum dolor sit amet, consec te tur adipisicing elit. Nam ad sint assum enda iusto at nulla quibusdam.</p>
+    </div>
+    <a class="c-crs-btn enter">Visit Academy <i class="fa fa-arrow-right"></i></a>
+</div>
+
+Styleguide 5.4
 */

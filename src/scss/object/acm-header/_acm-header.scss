@@ -1,3 +1,80 @@
+/*
+Academy Header
+
+Header for academy page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.acm-headers'
+
+Markup:
+<div class="acm-headers acmh-titles">
+	<div class="acm-header">
+	  <div class="acmh-title">
+	    <h1>Academyname Printedhere.</h1>
+	  </div>
+	</div>
+	</div>
+	<div class="acm-headers acmh-contents">
+	<div class="acm-header">
+	  <div class="acmh-users">
+	    <div class="acmh-photos">
+	      <img src="../img/png/UIM-120120.png" alt="Card">
+	    </div>
+	    <div class="acmh-overviews">
+	      <p class="acmh-overview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, natus, veritatis, totam beatae necessitatibus modi hic molestias iste magnam sunt sed neque explicabo sequi!</p>
+	      <p class="acmh-overview">Totam beatae necessitatibus modi Consectetur adipisicing elit. Iste, natus illo quam consequuntur deserunt iure assumenda. <a href="#" class="acmh-overview-more">Read More ... </a> </p>
+	    </div>
+	    <ul class="acmh-authors">
+	      <li class="acmh-authors-label">
+	        Authors • 55
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	    </ul>
+	    <div class="acmh-metas">
+	      <a href="#" class="acmh-addresss">www.academy-website.ed</a>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+Styleguide 11
+*/
+
 .acm-headers {
 	@extend %full-width;
 	&.acmh-titles { background-color: $black; }
@@ -144,3 +221,90 @@
 	font-size: 12px;
 	line-height: $leadpx;
 }
+
+/*
+Academy Header Title
+
+Header title for academy page.
+
+Main Class: '.acm-headers.acmh-titles'
+
+Markup:
+<div class="acm-headers acmh-titles">
+    <div class="acm-header">
+      <div class="acmh-title">
+        <h1>Academyname Printedhere.</h1>
+      </div>
+    </div>
+  </div>
+
+Styleguide 11.1
+*/
+
+/*
+Academy Header Content
+
+Header content for academy page.
+
+Main Class: '.acm-headers.acmh-contents'
+
+Markup:
+<div class="acm-headers acmh-contents">
+	<div class="acm-header">
+	  <div class="acmh-users">
+	    <div class="acmh-photos">
+	      <img src="../img/png/UIM-120120.png" alt="Card">
+	    </div>
+	    <div class="acmh-overviews">
+	      <p class="acmh-overview">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, natus, veritatis, totam beatae necessitatibus modi hic molestias iste magnam sunt sed neque explicabo sequi!</p>
+	      <p class="acmh-overview">Totam beatae necessitatibus modi Consectetur adipisicing elit. Iste, natus illo quam consequuntur deserunt iure assumenda. <a href="#" class="acmh-overview-more">Read More ... </a> </p>
+	    </div>
+	    <ul class="acmh-authors">
+	      <li class="acmh-authors-label">
+	        Authors • 55
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	      <li>
+	        <a href="#" class="acmh-author">
+	          <div class="acmh-author-photos">
+	            <img class="acmh-author-photo" src="../img/png/UIM-120120.png" alt="User Image">
+	          </div>
+	        </a>
+	      </li>
+	    </ul>
+	    <div class="acmh-metas">
+	      <a href="#" class="acmh-addresss">www.academy-website.ed</a>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+Styleguide 11.2
+*/

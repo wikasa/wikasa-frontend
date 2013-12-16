@@ -1,3 +1,25 @@
+/*
+External Summary.
+
+Summary for external page.
+
+*Authored by Bangsawan & Silvi.*
+
+Main Class: '.ext-sum'
+
+Markup:
+<div class="ext-sums">
+    <div class="ext-sum">
+        <h3 class="es-title">Class Summary</h3>
+        <div class="es-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, doloribus sequi architecto tempora incidunt voluptatibus facere eaque ad illo minima.</p>
+        </div>
+    </div>
+</div>
+
+Styleguide 8
+*/
+
 .ext-sums {
 	@extend %cn-main;
 	@include clearfix;

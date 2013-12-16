@@ -5,6 +5,62 @@ Header Bar appears on every page.
 
 *Authored by Bangsawan & Silvi.*
 
+Main Class: '.cm-headers'
+
+Markup:
+<div class="cm-headers">
+  <div class="cm-header">
+      <a href="index.html" class="brand-pri"><img src="../img/svg/brand-6060.svg" alt="W."></a>
+      <div class="nav-crs-secs">
+        <a href="#" class="ncs">Browse Courses&nbsp;<i class="fa fa-angle-down"></i></a>
+        <div class="ncs-dds">
+          <ul class="ncs-cat1">
+            <li><a href="#" class="cat">Academy</a></li>
+            <li><a href="#" class="cat">Featured</a></li>
+            <li><a href="#" class="cat">Trending</a></li>
+          </ul>
+          <ul class="ncs-cat2">
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+            <li><a href="#" class="crs">Courses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header-tools">
+        <div class="header-tool sch" id="sch">
+          <form>
+            <input class="sch-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
+            <input class="sch-submit" type="submit" value="">
+            <span class="sch-icon fa fa-search"></span>
+          </form>
+        </div><a href="#" class="header-tool msg"><i class="fa fa-envelope"></i></a><a href="#" class="nav-myc-pri">My Courses</a><a href="#" class="header-tool ntf"><i class="fa fa-bell-o"></i></a><div class="nav-unm-pris">
+           <a href="#" class="nav-unm-pri">
+            <span class="unm">User Name</span>
+            <span class="uim"><img src="../img/png/UIM-120120.png" alt="User Image"></span>
+            <i class="fa fa-angle-down"></i>
+          </a>
+          <div class="nup-dds">
+            <ul class="nup-tools">
+              <li><a href="#" class="nup-tool"><i class="fa fa-user"></i>&nbsp;View Profile</a></li>
+              <li><a href="#" class="nup-tool"><i class="fa fa-cog"></i>&nbsp;User Settings</a></li>
+              <li><a href="#" class="nup-tool"><i class="fa fa-wrench"></i>&nbsp;Account Settings</a></li>
+              <li><a href="#" class="nup-tool btn-logout">Log Out</a></li>
+            </ul>
+          </div>
+          </div>
+      </div>
+  </div>
+</div>
+
 Styleguide 1
 */
 
@@ -363,170 +419,3 @@ $brandUnit: 60px; // Depends on image dimension.
 		}
 	}
 }
-
-/*
-Nav Courses Secondary.
-
-Interface to navigate through courses.
-
-Main Class: `nav-crs-secs`
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-    <div class="nav-crs-secs">
-      <a href="#" class="ncs">Browse Courses&nbsp;<i class="fa fa-angle-down"></i></a>
-    </div>
-  </div>
-</div>
-
-Styleguide 1.1
-*/
-/*
-NCS Dropdown.
-
-Dropdown UI triggered on `a.nav-crs-secs` click. Then adding class 'open'.
-
-Main Class: `.ncs-dds`
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-    <div class="ncs-dds open">
-      <ul class="ncs-cat1">
-        <li><a href="#" class="cat">Academy</a></li>
-        <li><a href="#" class="cat">Featured</a></li>
-        <li><a href="#" class="cat">Trending</a></li>
-      </ul>
-      <ul class="ncs-cat2">
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-        <li><a href="#" class="crs">Courses</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-Styleguide 1.1.1
-*/
-/*
-Header tools.
-
-Collection of buttons with specific function.
-
-Styleguide 1.2
-*/
-/* 
-Search.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-      <div class="header-tools">
-        <div class="header-tool sch open" id="sch">
-          <form>
-            <input class="sch-input" placeholder="Enter your search term..." type="search" value="" name="search" id="search">
-            <input class="sch-submit" type="submit" value="">
-            <span class="sch-icon fa fa-search"></span>
-          </form>
-        </div>
-  </div>
-</div>
-
-Styleguide 1.2.1
-*/
-/*
-Message.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-      <div class="header-tools">
-        <a href="#" class="header-tool msg"><i class="fa fa-envelope"></i></a>
-      </div>
-  </div>
-</div>
-
-Styleguide 1.2.2
-*/
-/*
-Nav My Courses.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-      <div class="header-tools">
-        <a href="#" class="nav-myc-pri">My Courses</a>
-      </div>
-  </div>
-</div>
-
-Styleguide 1.2.3
-*/
-/*
-Notification.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-      <div class="header-tools">
-        <a href="#" class="header-tool ntf"><i class="fa fa-bell-o"></i></a>
-      </div>
-  </div>
-</div>
-
-Styleguide 1.2.4
-*/
-/*
-User Tools.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-    <div class="nav-unm-pris">
-      <a href="#" class="nav-unm-pri">
-        <span class="unm">User Name</span>
-        <span class="uim"><img src="../img/png/UIM-120120.png" alt="User Image"></span>
-        <i class="fa fa-angle-down"></i>
-      </a>
-    </div>
-  </div>
-</div>
-
-Styleguide 1.2.5
-*/
-/*
-User Tools Dropdown.
-
-Markup:
-<div class="cm-headers">
-  <div class="cm-header">
-    <div class="nav-unm-pris">
-      <a href="#" class="nav-unm-pri active">
-        <span class="unm">User Name</span>
-        <span class="uim"><img src="../img/png/UIM-120120.png" alt="User Image"></span>
-        <i class="fa fa-angle-down"></i>
-      </a>
-      <div class="nup-dds open">
-        <ul class="nup-tools">
-          <li><a href="#" class="nup-tool"><i class="fa fa-user"></i>&nbsp;View Profile</a></li>
-          <li><a href="#" class="nup-tool"><i class="fa fa-cog"></i>&nbsp;User Settings</a></li>
-          <li><a href="#" class="nup-tool"><i class="fa fa-wrench"></i>&nbsp;Account Settings</a></li>
-          <li><a href="#" class="nup-tool btn-logout">Log Out</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-Styleguide 1.2.6
-*/
