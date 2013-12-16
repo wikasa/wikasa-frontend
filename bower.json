@@ -25,6 +25,7 @@
     "modernizr": "~2.7.0"
   },
   "dependencies": {
-    "flowplayer": "~5.4.4"
+    "flowplayer": "~5.4.4",
+    "yepnope": "~1.5.4"
   }
 }
