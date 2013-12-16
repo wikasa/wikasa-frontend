@@ -3858,7 +3858,7 @@ Interface to navigate to Course Page
 Main Class: '.card.c-crs'
 
 Markup:
-div class="page">
+<div class="page">
     <div class="cards">
         <div class="card c-crs">
             <div class="c-cover">
