@@ -1,5 +1,8 @@
 ;( function( $, R ) {
 	R.ready( function() {
+
+		if($('.ncs').length < 1) {return false;}
+
 		var $ncs = $('.ncs'),
 			$ncsDds = $('.ncs-dds'),
 			$nup = $('.nav-unm-pri'),

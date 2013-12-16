@@ -10097,6 +10097,9 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 }));
 ;( function( $, R ) {
 	R.ready( function() {
+
+		if($('.ncs').length < 1) {return false;}
+
 		var $ncs = $('.ncs'),
 			$ncsDds = $('.ncs-dds'),
 			$nup = $('.nav-unm-pri'),
@@ -10117,6 +10120,9 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 
 ;( function( $, R ) {
 	R.ready( function() {
+		
+		if($('.ht-tab').length < 1) {return false;}
+
 		var $htTabs = $('.ht-tabs'),
 			$htTab = $('.ht-tab')
 			;
@@ -10140,6 +10146,9 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 
 ;( function( $, R ) {
 	R.ready( function() {
+		
+		if($('.ncp').length < 1) {return false;}
+
 		var $ncpSortFeatured = $('.ncp-sort.sort-featured'),
 			$ncpSortTrend = $('.ncp-sort.sort-trend'),
 			$ncp = $('.ncp')
@@ -10168,6 +10177,8 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 ;( function( window ) {
     
     'use strict';
+
+    if(document.getElementsByClassName("sch-input").length < 1) { return false; }
     
     // EventListener | @jon_neal | //github.com/jonathantneal/EventListener
     !window.addEventListener && window.Element && (function () {

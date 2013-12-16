@@ -11,6 +11,8 @@
 ;( function( window ) {
     
     'use strict';
+
+    if(document.getElementsByClassName("sch-input").length < 1) { return false; }
     
     // EventListener | @jon_neal | //github.com/jonathantneal/EventListener
     !window.addEventListener && window.Element && (function () {

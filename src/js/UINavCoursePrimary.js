@@ -1,5 +1,8 @@
 ;( function( $, R ) {
 	R.ready( function() {
+		
+		if($('.ncp').length < 1) {return false;}
+
 		var $ncpSortFeatured = $('.ncp-sort.sort-featured'),
 			$ncpSortTrend = $('.ncp-sort.sort-trend'),
 			$ncp = $('.ncp')

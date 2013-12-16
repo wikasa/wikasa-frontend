@@ -1,5 +1,8 @@
 ;( function( $, R ) {
 	R.ready( function() {
+		
+		if($('.ht-tab').length < 1) {return false;}
+
 		var $htTabs = $('.ht-tabs'),
 			$htTab = $('.ht-tab')
 			;
