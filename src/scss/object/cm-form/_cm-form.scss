@@ -37,7 +37,19 @@ Styleguide 13
 	margin: 0 0 $leadpx 0;
 }
 
-.form-group { margin: 0 0 $leadpx 0; }
+.form-group { margin: 0 0 ($leadpx * 0.5) 0; }
+
+.form-go {
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  line-height: $leadpx;
+  color: $black;
+
+  &:hover {
+    color: $orange;
+  }
+}
 
 .form-control {
 	@include border-radius(3px);

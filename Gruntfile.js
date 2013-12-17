@@ -234,7 +234,7 @@ module.exports = function (grunt) {
     watch: {
       concat: {
         files: '<%= config.src %>/js/{,*/}*.js',
-        tasks: ['concat:dev', 'jshint']
+        tasks: ['concat:dev']
       },
       sass: {
         files: '<%= config.src %>/scss/{,**/}*.{scss,sass}',

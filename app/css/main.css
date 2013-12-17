@@ -2483,7 +2483,18 @@ Styleguide 13
 }
 
 .form-group {
-  margin: 0 0 24px 0;
+  margin: 0 0 12px 0;
+}
+
+.form-go {
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  line-height: 24px;
+  color: #2b2f3a;
+}
+.form-go:hover {
+  color: #ea6b53;
 }
 
 .form-control {
@@ -6102,6 +6113,20 @@ Styleguide 11.2
 }
 .lan-navs .lan-nav:hover {
   background-color: #eaeaea;
+}
+
+.lan-forms {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  width: 240px;
+  background-color: #eaeaea;
+  padding: 24px 24px 0 24px;
+  position: relative;
+  margin: 24px auto 0;
+  overflow: hidden;
 }
 
 .sg-nav {
