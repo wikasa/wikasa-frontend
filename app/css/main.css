@@ -6208,27 +6208,13 @@ Styleguide 11.2
 .cd-main {
   margin: 0 0 0 24px;
 }
-
-.cd-row {
-  padding: 0 0 0 48px;
-}
-
-.cd-editors {
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #c4c4c4;
-  position: relative;
-}
-.cd-editors .cd-users {
+.cd-main .cd-users {
   display: block;
   float: left;
   margin: 24px 0;
   width: 48px;
 }
-.cd-editors .cd-users .cd-uim {
+.cd-main .cd-users .cd-uim {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -6239,6 +6225,21 @@ Styleguide 11.2
   width: 48px;
   height: 48px;
   border: 2px solid white;
+}
+
+.cd-row {
+  padding: 0 0 0 48px;
+  position: relative;
+  margin: 24px 0 0 0;
+}
+
+.cd-editors {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #c4c4c4;
 }
 
 .cd-editor {
@@ -6281,6 +6282,50 @@ Styleguide 11.2
 .cd-editor .btn {
   float: right;
   margin: 0 0 12px 0;
+}
+
+.cd-contents {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 0 24px 0 12px;
+  position: relative;
+}
+.cd-contents .cdc-header {
+  overflow: hidden;
+  *zoom: 1;
+  width: 100%;
+  height: 24px;
+}
+.cd-contents .cdc-meta {
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0;
+  float: left;
+}
+.cd-contents .cdc-meta .cdc-username {
+  color: #2b2f3a;
+}
+.cd-contents .cdc-meta .cdc-date {
+  color: #6f6f6f;
+}
+.cd-contents .cdc-tools {
+  height: 24px;
+  float: right;
+}
+.cd-contents .cdc-tools > a {
+  margin: 0;
+  color: #2b2f3a;
+  font-size: 12px;
+  line-height: 24px;
+  margin: 0 0 0 6px;
+}
+.cd-contents .cdc-tools > a:hover {
+  color: #64afb2;
+}
+.cd-contents .cdc-content p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: SansLight, Arial, sans-serif;
 }
 
 .sg-nav {
