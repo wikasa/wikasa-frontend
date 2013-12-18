@@ -7,6 +7,11 @@ Tools for homepage.
 
 Main Class: '.home-tools'
 
+####Name Meanings####
+*  ht : home tools
+*  dds : dropdowns
+*  btn : button
+
 Markup:
 <div class="home-tools">
   <div class="ht-tabs">
@@ -100,6 +105,15 @@ Styleguide 2
 		.fa:last-child {
 			margin-left: 12px;
 		}
+	}
+
+	.ht-sort-btn {
+		display: block;
+		margin: 0;
+		height: $leadpx * 2;
+		line-height: $leadpx * 2;
+		color: $black;
+		font-size: 12px;
 	}
 
 	.ht-sort-dds {

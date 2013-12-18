@@ -2455,30 +2455,6 @@ Main Class: '.form-group'
 
 Markup:
 <div class="page">
-  <form role="form">
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-      <p class="help-block">Example block-level help text here.</p>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputBio">Short Bio</label>
-      <textarea rows="3" class="form-control" id="exampleInputBio"></textarea>
-    </div>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox"> Check me out
-      </label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
-
-<div class="page">
   <form class="form-inline" role="form">
     <div class="form-group">
       <label class="sr-only" for="exampleInputEmail2">Email address</label>
@@ -2507,7 +2483,18 @@ Styleguide 13
 }
 
 .form-group {
-  margin: 0 0 24px 0;
+  margin: 0 0 12px 0;
+}
+
+.form-go {
+  display: block;
+  margin: 0;
+  font-size: 12px;
+  line-height: 24px;
+  color: #2b2f3a;
+}
+.form-go:hover {
+  color: #ea6b53;
 }
 
 .form-control {
@@ -2671,6 +2658,23 @@ Header Bar appears on every page.
 *Authored by Bangsawan & Silvi.*
 
 Main Class: '.cm-headers'
+
+####Name Meanings####
+*  cm : common
+*  pri : primary
+*  nav : navigation
+*  crs : course
+*  secs : secondaries
+*  ncs : navigation course secondary
+*  dds : dropdowns
+*  cat : category
+*  crs : course
+*  sch : search
+*  fa : fontawesome
+*  msg : message
+*  unm : user name
+*  uim : user image
+*  nup : name user profile
 
 Markup:
 <div class="cm-headers">
@@ -3218,13 +3222,16 @@ Styleguide 1
 }
 
 /*
-Common Pagination
+Common Pagination.
 
 Pagination on every page.
 
 *Authored by Bangsawan & Silvi.*
 
 Main Class: '.cm-paginations'
+
+####Name Meanings####
+*  cm : common
 
 Markup:
 <div class="page">
@@ -3339,6 +3346,11 @@ Tools for homepage.
 
 Main Class: '.home-tools'
 
+####Name Meanings####
+*  ht : home tools
+*  dds : dropdowns
+*  btn : button
+
 Markup:
 <div class="home-tools">
   <div class="ht-tabs">
@@ -3425,6 +3437,14 @@ Styleguide 2
 .home-tools .ht-sort .fa:last-child {
   margin-left: 12px;
 }
+.home-tools .ht-sort-btn {
+  display: block;
+  margin: 0;
+  height: 48px;
+  line-height: 48px;
+  color: #2b2f3a;
+  font-size: 12px;
+}
 .home-tools .ht-sort-dds {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -3475,6 +3495,12 @@ Interface to navigate course cards.
 *Authored by Bangsawan & Silvi.*
 
 Main Class: '.nav-crs-pris'
+
+####Name Meanings####
+*  nav : navigation
+*  crs : course
+*  pris : primaries
+*  ncp : navigation course primaries
 
 Markup:
 <div class="page">
@@ -3607,6 +3633,10 @@ Footer Bar appears on every page.
 
 Main Class: '.footers'
 
+####Name Meanings####
+*  navs : navigations
+*  nav : navigation
+
 Markup:
 <div class="footers">
     <div class="footer">
@@ -3677,6 +3707,12 @@ Cards.
 Card for every course appears on page.
 
 *Authored by Bangsawan & Silvi.*
+
+####Name Meanings####
+*  c : card
+*  crs : course
+*  ca : card author
+*  cmeta : card meta
 
 Styleguide 5
 */
@@ -4071,6 +4107,13 @@ Header for external page.
 
 Main Class: '.ext-head'
 
+####Name Meanings####
+*  ext : external
+*  xhxt : external head
+*  std1 : standard 1
+*  ctn : content
+*  crs : course
+
 Markup:
 <div class="ext-head">
     <div class="page">
@@ -4297,6 +4340,12 @@ Navigation for external page.
 *Authored by Bangsawan & Silvi.*
 
 Main Class: '.ext-nav'
+
+####Name Meanings####
+*  ext : external
+*  xn : external nav
+*  xnl : exter nav lesson
+*  ctn : content
 
 Markup:
 <div class="ext-nav">
@@ -4542,6 +4591,11 @@ Summary for external page.
 
 Main Class: '.ext-sum'
 
+####Name Meanings####
+*  ext : external
+*  sum : summary
+*  es : external summary
+
 Markup:
 <div class="ext-sums">
     <div class="ext-sum">
@@ -4610,6 +4664,19 @@ Header for course page.
 
 Main Class: '.ctn-watch'
 
+####Name Meanings####
+*  ctn : content
+*  les : lesson
+*  lh : lesson header
+*  lw : lesson watch
+*  lm : lesson media
+*  nav : navigation
+*  sec : secondary
+*  lns : lesson navigation secondary
+*  btn : button
+*  lwt : lesson watch tools
+*  lo : lesson overview
+
 Markup:
 <div class="ctn-watch">
     <div class="les-header">
@@ -4673,8 +4740,8 @@ Markup:
 
 Styleguide 9
 */
-.watch {
-  width: 840px;
+.ctn-watch {
+  background-color: #F3F3F3;
 }
 
 .les-nav-pri-shame {
@@ -5073,13 +5140,26 @@ Markup:
 Styleguide 9.2.3
 */
 /*
-Course Primary Navigation
+Course Primary Navigation.
 
 Primary navigation for course page.
 
 *Authored by Bangsawan & Silvi.*
 
 Main Class: '.les-tools'
+
+####Name Meanings####
+*  les : lesson
+*  lt : lesson tools
+*  lth : lesson tools header
+*  ltu : lesson tools user
+*  ltt : lesson tools track
+*  nav : navigation
+*  pris : primaries
+*  pri : primary
+*  nlp : navigation lessom primary
+*  subnav : sub navigation
+*  slp : sub navigation lesson primary
 
 Markup:
 <div class="page">
@@ -5578,13 +5658,17 @@ Styleguide 10
 }
 
 /*
-Academy Header
+Academy Header.
 
 Header for academy page.
 
 *Authored by Bangsawan & Silvi.*
 
 Main Class: '.acm-headers'
+
+####Name Meanings####
+*  acm : academy
+*  acmh : academy header
 
 Markup:
 <div class="acm-headers acmh-titles">
@@ -6053,6 +6137,20 @@ Styleguide 11.2
 }
 .lan-navs .lan-nav:hover {
   background-color: #eaeaea;
+}
+
+.lan-forms {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  width: 240px;
+  background-color: #eaeaea;
+  padding: 24px 24px 0 24px;
+  position: relative;
+  margin: 24px auto 0;
+  overflow: hidden;
 }
 
 .sg-nav {

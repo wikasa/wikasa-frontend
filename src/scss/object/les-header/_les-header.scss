@@ -7,6 +7,19 @@ Header for course page.
 
 Main Class: '.ctn-watch'
 
+####Name Meanings####
+*  ctn : content
+*  les : lesson
+*  lh : lesson header
+*  lw : lesson watch
+*  lm : lesson media
+*  nav : navigation
+*  sec : secondary
+*  lns : lesson navigation secondary
+*  btn : button
+*  lwt : lesson watch tools
+*  lo : lesson overview
+
 Markup:
 <div class="ctn-watch">
     <div class="les-header">
@@ -71,8 +84,8 @@ Markup:
 Styleguide 9
 */
 
-.watch {
-	width: $leadpx * 35;
+.ctn-watch {
+	background-color: #F3F3F3;
 }
 
 .les-nav-pri-shame {

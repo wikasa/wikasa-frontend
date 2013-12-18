@@ -1,0 +1,9 @@
+.lan-forms {
+	@include border-radius(3px);
+	width: $leadpx * 10;
+	background-color: $whiteDark2;
+	padding: $leadpx $leadpx 0 $leadpx;
+	position: relative;
+	margin: $leadpx auto 0;
+	overflow: hidden;
+}

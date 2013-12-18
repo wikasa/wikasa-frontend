@@ -21,8 +21,7 @@
   ],
   "devDependencies": {
     "jquery": "~2.0.3",
-    "responsejs": "~0.7.8",
-    "modernizr": "~2.7.0"
+    "responsejs": "~0.7.8"
   },
   "dependencies": {
     "flowplayer": "~5.4.4"
