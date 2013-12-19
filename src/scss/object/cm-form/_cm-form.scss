@@ -34,7 +34,16 @@ Styleguide 13
 	font-size: 12px;
 	line-height: $leadpx;
 	color: $black;
-	margin: 0 0 $leadpx 0;
+	margin: $leadpx 0 0 0;
+    padding: 0 0 $leadpx 0;
+
+    .form-title {
+        display: block;
+        margin: 0 0 ($leadpx/2) 0;
+        height: $leadpx * 1.5;
+        line-height: $leadpx * 1.5;
+        font-size: 18px;
+    }
 }
 
 .form-group { margin: 0 0 ($leadpx * 0.5) 0; }
@@ -170,4 +179,27 @@ label {
 	font-size: 12px;
 	line-height: $leadpx;
 	height: $leadpx;
+}
+
+.form-inline {
+    @extend .form;
+
+    .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+
+    .radio,
+    .checkbox {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    & > * {
+        margin-right: ($leadpx/2);
+    }
+
 }

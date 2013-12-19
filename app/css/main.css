@@ -2475,11 +2475,19 @@ Markup:
 
 Styleguide 13
 */
-.form {
+.form, .form-inline {
   font-size: 12px;
   line-height: 24px;
   color: #2b2f3a;
-  margin: 0 0 24px 0;
+  margin: 24px 0 0 0;
+  padding: 0 0 24px 0;
+}
+.form .form-title, .form-inline .form-title {
+  display: block;
+  margin: 0 0 12px 0;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
 }
 
 .form-group {
@@ -2618,6 +2626,22 @@ label {
   font-size: 12px;
   line-height: 24px;
   height: 24px;
+}
+
+.form-inline .form-group {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.form-inline .radio,
+.form-inline .checkbox {
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+.form-inline > * {
+  margin-right: 12px;
 }
 
 .media-std1 {
