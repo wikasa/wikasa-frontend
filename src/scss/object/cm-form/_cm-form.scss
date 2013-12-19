@@ -203,3 +203,31 @@ label {
     }
 
 }
+
+.form-horizontal {
+    @extend .form;
+
+    .label-left {
+        display: block;
+        float: left;
+        padding: 0 $leadpx 0 0;
+        width: 16.667%;
+        height: $leadpx * 1.5;
+        text-align: right;
+        line-height: $leadpx * 1.5;
+    }
+
+    .input-right {
+        width: 83.333%;
+        float: left;
+    }
+
+    .push-right {
+        width: 83.333%;
+        float: right;
+    }
+
+    .form-group {
+        @include clearfix;
+    }
+}

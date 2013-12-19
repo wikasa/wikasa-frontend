@@ -2475,14 +2475,14 @@ Markup:
 
 Styleguide 13
 */
-.form, .form-inline {
+.form, .form-inline, .form-horizontal {
   font-size: 12px;
   line-height: 24px;
   color: #2b2f3a;
   margin: 24px 0 0 0;
   padding: 0 0 24px 0;
 }
-.form .form-title, .form-inline .form-title {
+.form .form-title, .form-inline .form-title, .form-horizontal .form-title {
   display: block;
   margin: 0 0 12px 0;
   height: 36px;
@@ -2642,6 +2642,28 @@ label {
 }
 .form-inline > * {
   margin-right: 12px;
+}
+
+.form-horizontal .label-left {
+  display: block;
+  float: left;
+  padding: 0 24px 0 0;
+  width: 16.667%;
+  height: 36px;
+  text-align: right;
+  line-height: 36px;
+}
+.form-horizontal .input-right {
+  width: 83.333%;
+  float: left;
+}
+.form-horizontal .push-right {
+  width: 83.333%;
+  float: right;
+}
+.form-horizontal .form-group {
+  overflow: hidden;
+  *zoom: 1;
 }
 
 .media-std1 {
