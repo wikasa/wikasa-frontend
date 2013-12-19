@@ -5511,6 +5511,7 @@ Styleguide 10
   margin: 0;
   padding: 0;
   list-style: none outside none;
+  border-bottom: 4px solid #2b2f3a;
 }
 .nav-les-pris li {
   margin: 0;
@@ -5532,6 +5533,8 @@ Styleguide 10
 }
 .nav-les-pris .nav-les-pri .nlp-title p {
   margin: 0;
+  font-family: SansBold, Arial, sans-serif;
+  letter-spacing: 0.8px;
 }
 .nav-les-pris .nav-les-pri.open:after {
   content: "\f106";
