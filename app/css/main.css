@@ -4834,6 +4834,9 @@ Styleguide 9
 .les-nav-sec .lns-btn:hover {
   background-color: #c4c4c4;
 }
+.les-nav-sec .lns-btn.last {
+  background-color: #c4c4c4;
+}
 .les-nav-sec .lns-prev-btn {
   width: 24px;
   height: 24px;
@@ -5318,11 +5321,14 @@ Styleguide 10
 .lt-header {
   overflow: hidden;
   *zoom: 1;
+  display: block;
+  margin: 0;
   position: relative;
   padding: 12px 0 36px 0;
   background-color: #2b2f3a;
   color: white;
   z-index: 50;
+  cursor: pointer;
 }
 .lt-header .lth-label {
   padding: 0 12px;
@@ -5353,6 +5359,7 @@ Styleguide 10
   padding: 0 0 24px 0;
   width: 100%;
   background-color: #64afb2;
+  margin: 0;
 }
 .lt-user .ltu-photo {
   -webkit-border-radius: 50%;

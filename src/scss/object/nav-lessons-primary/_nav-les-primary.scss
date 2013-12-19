@@ -165,11 +165,14 @@ Styleguide 10
 
 .lt-header {
 	@include clearfix;
+	display: block;
+	margin: 0;
 	position: relative;
 	padding: 12px 0 36px 0;
 	background-color: $black;
 	color: $white;
 	z-index: 50;
+	cursor: pointer;
 
 	.lth-label {
 		padding: 0 ($leadpx / 2);
@@ -205,6 +208,7 @@ Styleguide 10
 	padding: 0 0 $leadpx 0;
 	width: 100%;
 	background-color: $green;
+	margin: 0;
 
 	.ltu-photo {
 		@include border-radius(50%);
