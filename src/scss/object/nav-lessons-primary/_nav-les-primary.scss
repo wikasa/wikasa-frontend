@@ -354,12 +354,16 @@ Styleguide 10
 }
 
 .subnav-les-pris {
+	@include clearfix;
+	overflow: hidden;
 	width: $leadpx * 8;
 	margin: 0;
 	padding: 0;
 	list-style: none outside none;
 
-	&.close { display: none; }
+	@include transition( height 0.3s ease-in-out );
+
+	&.close { height: 0; }
 
 	li {
 		@include clearfix;

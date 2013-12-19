@@ -5560,13 +5560,20 @@ Styleguide 10
 }
 
 .subnav-les-pris {
+  overflow: hidden;
+  *zoom: 1;
+  overflow: hidden;
   width: 192px;
   margin: 0;
   padding: 0;
   list-style: none outside none;
+  -webkit-transition: height 0.3s ease-in-out;
+  -moz-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
 }
 .subnav-les-pris.close {
-  display: none;
+  height: 0;
 }
 .subnav-les-pris li {
   overflow: hidden;
