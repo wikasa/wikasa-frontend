@@ -231,3 +231,13 @@ label {
         @include clearfix;
     }
 }
+
+.radio-inline,
+.checkbox-inline {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding: 0 ($leadpx/2) 0 ($leadpx/2);
+    vertical-align: middle;
+}
