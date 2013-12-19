@@ -61,7 +61,7 @@
 .cd-row {
 	padding: 0 0 0 ($leadpx * 2);
 	position: relative;
-	margin: $leadpx 0 0 0;
+	margin: $leadpx 0;
 }
 
 .cd-editors {
@@ -118,6 +118,7 @@
 		@include clearfix;
 		width: 100%;
 		height: $leadpx;
+		margin: $leadpx 0 0 0;
 	}
 
 	.cdc-meta {
@@ -146,6 +147,8 @@
 	}
 
 	.cdc-content {
+		display: block;
+		padding: 0 $leadpx * 2 0 0;
 		p {
 			font-size: 14px;
 			line-height: $leadpx;
