@@ -1,0 +1,45 @@
+<div class="page">
+  <%= render "sidebar" %>
+  <div class="ctn-watch">
+    <div class="les-header">
+        <div class="les-titles">
+          <p class="lh-label">Unit <%= @unit.course_position %></p>
+          <h1 class="lh-title"><%= @unit.name %></h1>
+        </div>
+        <div class="les-watch">
+
+          <div class="les-nav-sec">
+            <%= link_to("", [@course, @unit.previous_unit], class: "lns-prev-btn lns-btn") if @unit.previous_unit %>
+            <%= link_to("Next Unit", [@course, @unit.next_unit], class: "lns-next-btn lns-btn") if @unit.next_unit %>
+          </div>
+
+          <br/>
+          <br/>
+
+          <% if @unit.content_tipe == 'youtube' %>
+
+            <div class="les-media">
+                <iframe title="YouTube video player" width=640 height=360 src="http://www.youtube.com/embed/<%=@unit.content_youtube_content_id%>?rel=0&showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="les-overview">
+                <br/>
+                <h3 class="lo-label">Transcript</h3>
+                <div class="lo-ctn">
+                    <p> Video Transcript Here </p>
+                </div>
+            </div>
+
+          <% elsif @unit_content_tipe == 'text' %>
+
+            <div class="les-overview">
+
+            </div>
+          
+          <% end %>  
+
+
+      </div>
+    </div>
+  </div>
+</div>
