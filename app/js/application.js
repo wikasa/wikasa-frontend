@@ -10095,11 +10095,11 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
     return Response;
 
 }));
-$(window).bind("load", function() {
+;( function( $, R ) {
 
   var footerHeight = 0,
   footerTop = 0,
-  $footer = $(".footer");
+  $footer = $(".footers");
 
   function positionFooter() {
 
@@ -10114,19 +10114,21 @@ $(window).bind("load", function() {
       });
     } else {
       $footer.css({
-      position: "static"
-    });
+        position: "static"
+      });
     }
 
   }
 
-  positionFooter();
+  R.ready( function() {
+    positionFooter();
 
-  $(window)
-  .scroll(positionFooter)
-  .resize(positionFooter);
+    $(window)
+      .scroll(positionFooter)
+      .resize(positionFooter);
+  });
 
-});
+})(jQuery, Response);
 
 ;( function( $, R ) {
 	R.ready( function() {
