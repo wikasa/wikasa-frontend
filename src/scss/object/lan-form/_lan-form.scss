@@ -4,6 +4,7 @@
 	background-color: $whiteDark2;
 	padding: $leadpx $leadpx 0 $leadpx;
 	position: relative;
-	margin: $leadpx auto 0;
+	margin: ($leadpx * 1.5) auto 0;
 	overflow: hidden;
+	color: $black;
 }

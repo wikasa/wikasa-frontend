@@ -58,6 +58,69 @@ Styleguide 13
   &:hover {
     color: $orange;
   }
+
+  &.fg-connect {
+    @include border-radius(3px);
+    position: relative;
+    display: block;
+    padding: 0 ($leadpx/2) 0 0;
+    height: $leadpx * 1.5;
+    background-color: $green;
+    text-align: left;
+    font-size: 13px;
+    line-height: $leadpx * 1.5;
+    font-family: $ff-sans-regular;
+    color: $white;
+    letter-spacing: 0.3px;
+
+    .fa {
+      font-size: 24px;
+      margin: 0 6px 0 12px;
+      position: relative;
+      top: 6px;
+    }
+
+    &:hover { background-color: $black; }
+  }
+}
+
+.form-decos {
+  position: relative;
+  width: 100%;
+  height: $leadpx;
+  margin: $leadpx/2 0;
+
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 45%;
+    top: 0;
+    left: 0;
+    height: $leadpx/2;
+    border-bottom: 1px solid $black;
+    z-index: 20;
+  }
+
+  &:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 45%;
+    top: 0;
+    right: 0;
+    height: $leadpx/2;
+    border-bottom: 1px solid $black;
+    z-index: 20;
+  }
+
+  .form-deco-img {
+    display: block;
+    width: $leadpx;
+    height: $leadpx;
+    margin: 0 auto;
+    z-index: 21;
+  }
 }
 
 .form-control {

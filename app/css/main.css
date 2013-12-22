@@ -2415,6 +2415,14 @@ body {
   margin: 0 auto;
 }
 
+.lh-half {
+  max-width: 516px;
+  min-width: 516px;
+  width: 50%;
+  position: relative;
+  float: left;
+}
+
 .ctn-main, .ext-nav, .ext-sums {
   padding: 24px 0 0 0;
   width: 792px;
@@ -2504,6 +2512,69 @@ Styleguide 13
 }
 .form-go:hover {
   color: #ea6b53;
+}
+.form-go.fg-connect {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  display: block;
+  padding: 0 12px 0 0;
+  height: 36px;
+  background-color: #64afb2;
+  text-align: left;
+  font-size: 13px;
+  line-height: 36px;
+  font-family: SansRegular, Arial, sans-serif;
+  color: white;
+  letter-spacing: 0.3px;
+}
+.form-go.fg-connect .fa {
+  font-size: 24px;
+  margin: 0 6px 0 12px;
+  position: relative;
+  top: 6px;
+}
+.form-go.fg-connect:hover {
+  background-color: #2b2f3a;
+}
+
+.form-decos {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  margin: 12px 0;
+}
+.form-decos:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 45%;
+  top: 0;
+  left: 0;
+  height: 12px;
+  border-bottom: 1px solid #2b2f3a;
+  z-index: 20;
+}
+.form-decos:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 45%;
+  top: 0;
+  right: 0;
+  height: 12px;
+  border-bottom: 1px solid #2b2f3a;
+  z-index: 20;
+}
+.form-decos .form-deco-img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+  z-index: 21;
 }
 
 .form-control {
@@ -6069,18 +6140,22 @@ Styleguide 11.2
   *zoom: 1;
   background-color: #2b2f3a;
   color: white;
-  text-align: center;
-  min-height: 384px;
+  min-height: 432px;
+}
+
+.lh-half {
+  min-height: 432px;
 }
 
 .lan-brands {
   position: absolute;
-  top: 0;
+  top: 24px;
   left: 50%;
   width: 168px;
   height: 288px;
   padding: 24px 0;
   margin: 0 0 0 -84px;
+  text-align: center;
 }
 .lan-brands .lan-brand-img {
   display: block;
@@ -6092,8 +6167,9 @@ Styleguide 11.2
   position: absolute;
   width: 100%;
   height: 24px 5;
-  bottom: 0;
+  bottom: 24px;
   margin: 0 0 24px 0;
+  text-align: center;
 }
 .lh-wordings .lh-wording-pri,
 .lh-wordings .lh-wording-sec {
@@ -6109,6 +6185,7 @@ Styleguide 11.2
   font-size: 14px;
   line-height: 24px;
   margin: 0 auto;
+  width: 50%;
 }
 
 .lan-main {
@@ -6234,8 +6311,9 @@ Styleguide 11.2
   background-color: #eaeaea;
   padding: 24px 24px 0 24px;
   position: relative;
-  margin: 24px auto 0;
+  margin: 36px auto 0;
   overflow: hidden;
+  color: #2b2f3a;
 }
 
 .cm-discussion {
