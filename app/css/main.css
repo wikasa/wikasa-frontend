@@ -4851,16 +4851,16 @@ Styleguide 9
 }
 
 .les-media {
-  width: 648px;
-  height: 360px;
+  width: 816px;
+  height: 459px;
   margin: 0 0 0 24px;
   position: relative;
   float: left;
 }
 
 .lm-player {
-  width: 640px;
-  height: 360px;
+  width: 100%;
+  height: 100%;
   background-color: #000;
 }
 
@@ -6241,8 +6241,8 @@ Styleguide 11.2
 .cm-discussion {
   overflow: hidden;
   *zoom: 1;
-  float: left;
-  margin: 24px 0;
+  float: right;
+  margin: 24px 192px 0 0;
   width: 648px;
 }
 
