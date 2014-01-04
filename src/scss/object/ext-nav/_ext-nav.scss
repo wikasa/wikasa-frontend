@@ -104,7 +104,6 @@ Styleguide 7
 	// background-color: $green;
 
 	a, p, li {
-		color: $white;
 		text-decoration: none;
 		margin: 0;
 		padding: 0;
@@ -123,22 +122,23 @@ Styleguide 7
 	position: relative;
 	width: 100%;
 	padding: 0;
-	background-color: $white;
 
 	& > li {
 		width: 100%;
 		position: relative;
 		overflow: hidden;
+    margin: 0 0 $leadpx 0;
+    background-color: $white;
 	}
 
 	.xn-section {
+    color: $white;
 		overflow: hidden;
 		padding: 0 $leadpx;
 		max-height: $leadpx * 2;
 		width: 100%;
 		height: $leadpx * 1.5;
 		background-color: $black;
-		font-size: 14px;
 		line-height: $leadpx * 1.5;
 		margin: 0 0 ($leadpx * 0.5) 0;
 
@@ -163,11 +163,20 @@ Styleguide 7
 	}
 }
 
+.xn-text {
+  @include clearfix;
+  position: relative;
+  display: block;
+  padding: 0 $leadpx ($leadpx * 1.5) $leadpx;
+  width: 100%;
+  font-size: 14px;
+}
+
 .xn-lessons {
 	@include clearfix;
 	position: relative;
 	display: block;
-	padding: 0 $leadpx;
+	padding: $leadpx $leadpx;
 	width: 100%;
 
 	li {
@@ -182,7 +191,7 @@ Styleguide 7
 
 	.xn-lesson {
 		@include clearfix;
-		font-size: 12px;
+		font-size: 14px;
 
 		.xnl-thumb {
 			position: relative;

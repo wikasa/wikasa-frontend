@@ -1,10 +1,21 @@
 .lan-forms {
 	@include border-radius(3px);
-	width: $leadpx * 10;
+	width: $leadpx * 15;
 	background-color: $whiteDark2;
 	padding: $leadpx $leadpx 0 $leadpx;
 	position: relative;
 	margin: ($leadpx * 1.5) auto 0;
 	overflow: hidden;
 	color: $black;
+}
+
+.lan-forms-compact {
+  @include border-radius(3px);
+  width: $leadpx * 10;
+  background-color: $whiteDark2;
+  padding: $leadpx $leadpx 0 $leadpx;
+  position: relative;
+  margin: ($leadpx * 1.5) auto 0;
+  overflow: hidden;
+  color: $black;
 }

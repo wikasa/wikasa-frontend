@@ -45,6 +45,10 @@
 	@include clearfix;
 }
 
+.main {
+	min-height: 600px;
+}
+
 .ctn-main {
 	@extend %cn-main;
 	float: left;
