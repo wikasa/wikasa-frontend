@@ -32,10 +32,17 @@ Styleguide 5
 	max-width: $leadpx * 10;
 	max-height: 360px;
 	width: $leadpx * 10;
-	height: 360px;
 	background-color: $white;
 	font-size: 14px;
 	line-height: $leadpx;
+
+	&.c-crs {
+		height: 360px;		
+	}
+
+	&.c-acm {
+		height: 200px;		
+	}
 
 	.c-cover {
 		width: 100%;
