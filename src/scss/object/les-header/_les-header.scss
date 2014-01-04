@@ -84,8 +84,10 @@ Markup:
 Styleguide 9
 */
 
+$content-width: $leadpx * 31;
+
 .ctn-watch {
-	background-color: #F3F3F3;
+	width: $content-width;
 }
 
 .les-nav-pri-shame {
@@ -100,21 +102,17 @@ Styleguide 9
 }
 
 .les-header {
-	@include clearfix;
 	position: relative;
-	width: 100%;
 }
 
 .les-titles {
 	overflow: hidden;
-	width: $leadpx * 28;
 	// height: $leadpx * 3;
 	margin: 0 0 $leadpx 0;
 	padding: 0 $leadpx;
 
 	.lh-label {
 		overflow: hidden;
-		width: 100%;
 		height: $leadpx;
 		font-size: 12px;
 		font-family: $ff-sans-light;
@@ -130,16 +128,13 @@ Styleguide 9
 }
 
 .les-watch {
-	@include clearfix;
 	margin: 0 0 $leadpx 0;
 }
 
 .les-media {
-	width: $leadpx * 34;
-	height: $leadpx * 19.125;
-	margin: 0 0 0 $leadpx;
+	height: auto;
+	margin: 0 0 $leadpx $leadpx;
 	position: relative;
-
 	float: left;
 }
 
@@ -282,7 +277,7 @@ Styleguide 9
 
 .les-overview {
 	padding: 0 $leadpx;
-	width: $leadpx * 27;
+	width: $leadpx * 28;
 	float: left;
 
 	.lo-label {

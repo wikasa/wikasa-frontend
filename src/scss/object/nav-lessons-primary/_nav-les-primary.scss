@@ -152,13 +152,15 @@ Markup:
 Styleguide 10
 */
 
+$sidebar-width: $leadpx * 10;
+
 .les-tools {
 	@include clearfix;
 	float: left;
 	overflow: hidden;
-	min-width: $leadpx * 8;
+	min-width: $sidebar-width;
 	min-height: $leadpx * 40;
-	width: $leadpx * 8;
+	width: $sidebar-width;
 	height: 100%;
 	padding: $leadpx 0 0 0;
 }
@@ -294,7 +296,6 @@ Styleguide 10
 }
 
 .nav-les-pris {
-	width: $leadpx * 8;
 	margin: 0;
 	padding: 0;
 	list-style: none outside none;
@@ -357,7 +358,6 @@ Styleguide 10
 .subnav-les-pris {
 	@include clearfix;
 	overflow: hidden;
-	width: $leadpx * 8;
 	margin: 0;
 	padding: 0;
 	list-style: none outside none;

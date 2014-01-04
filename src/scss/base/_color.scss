@@ -12,14 +12,16 @@
 // --------------------------------------------------------------------/
 
 $white: #FFFFFF;
-$whiteDark1: #F3F3F3;
-$whiteDark2: #EAEAEA;
+$whiteDark1: #F9F9F9;
+$whiteDark2: #F3F3F3;
+$whiteDark3: #EAEAEA;
 
 $black: #2B2F3A;
 $blackLite: #2D3E51;
 
 $gray: #C4C4C4;
 $gray2: #6F6F6F;
+$gray3: #3F3F3F;
 
 $green: #64AFB2;
 $green2: #354A5C;
@@ -31,3 +33,7 @@ $orange: #EA6B53;
 $c-color: $black; // Bodycopy color
 $h-color: $black; // Heading color
 $a-color: $black; // Link color
+
+a, a:visited {
+  color: $gray3;
+};
