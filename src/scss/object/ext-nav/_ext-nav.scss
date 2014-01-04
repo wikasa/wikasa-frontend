@@ -100,7 +100,7 @@ Styleguide 7
 */
 
 .ext-nav {
-	@extend %cn-main;
+	@extend %cn-main-centered;
 	// background-color: $green;
 
 	a, p, li {
@@ -128,8 +128,11 @@ Styleguide 7
 		position: relative;
 		overflow: hidden;
     margin: 0 0 $leadpx 0;
-    background-color: $white;
 	}
+
+  & > li.xn-boxed {
+    background-color: $white
+  }
 
 	.xn-section {
     color: $white;
@@ -161,6 +164,50 @@ Styleguide 7
 			content: "\f107"; // Font Awesome "Angle Down"
 		}
 	}
+}
+
+.xn-go{
+  margin: 0px auto 0px auto;
+  width: 18.5 * $leadpx;
+
+  .crs-go-btn {
+    @include border-radius(2px);
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 0 6px 0 0;
+    max-height: $leadpx * 1.5;
+    width: $leadpx * 9;
+    height: $leadpx * 2;
+    color: $white !important;
+    font-weight: 700 !important;
+    font-size: 16px;
+    line-height: $leadpx * 1.5;
+    text-align: center;
+
+    &.resume{
+      background-color: $orange;
+      width: $leadpx * 18 !important;
+    }
+
+    &.start {
+      background-color: $orange;
+    }
+
+    &.wish {
+      background-color: $green;
+
+      .fa {
+        display: block;
+        width: $leadpx * 1.5;
+        height: $leadpx * 1.5;
+        line-height: $leadpx * 1.5;
+        border-right: 1px solid $white;
+        float: left;
+        color: $white;
+      }
+    }
+  } 
 }
 
 .xn-text {

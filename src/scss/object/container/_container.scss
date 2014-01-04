@@ -29,6 +29,20 @@
 	position: relative;
 }
 
+%cn-main-centered {
+	padding: $leadpx 0 0 0;
+	width: $leadpx * 29;
+	position: relative;
+	position: relative;
+	margin: 0 auto;
+}
+
+%cn-side-reduced {
+	padding: $leadpx 0 0 0;
+	width: $leadpx * 9;
+	position: relative;
+}
+
 %cn-watch {
 	padding: $leadpx 0 0 0;
 	width: $leadpx * 35;
