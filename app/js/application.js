@@ -10097,6 +10097,17 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 }));
 ;( function( $, R ) {
 
+	R.ready( function() {
+		$( '.alert' ).on( 'click', function(e) {
+			e.preventDefault();
+			$(this).closest('.alerts').remove();
+		});
+	});
+
+})(jQuery, Response);
+
+;( function( $, R ) {
+
   var footerHeight = 0,
   footerTop = 0,
   $footer = $(".footers");
