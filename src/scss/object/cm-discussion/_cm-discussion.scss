@@ -1,7 +1,7 @@
 .cm-discussion {
 	@include clearfix;
-	float: left;
-	margin: $leadpx 0;
+	float: right;
+	margin: $leadpx ($leadpx * 8) 0 0;
 	width: $leadpx * 27;
 }
 

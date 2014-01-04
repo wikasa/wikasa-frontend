@@ -15,6 +15,14 @@
 	margin: 0 auto;
 }
 
+%cn-half {
+	max-width: $leadpx * 21.5;
+	min-width: $leadpx * 21.5;
+	width: 50%;
+	position: relative;
+	float: left;
+}
+
 %cn-main {
 	padding: $leadpx 0 0 0;
 	width: $leadpx * 33;
