@@ -268,7 +268,7 @@ Styleguide 5
 	.c-authors {
 		@include clearfix;
 		position: relative;
-		margin: 12px 0 12px -36px;
+		margin: 24px 0 12px -36px;
 		padding: 0 12px;
 		min-height: $leadpx * 2;
 		max-height: $leadpx * 2;
@@ -383,7 +383,7 @@ Styleguide 5
 		display: block;
 		overflow: hidden;
 		margin: 0;
-		padding: $leadpx*1.25 0;
+		padding: $leadpx 0;
 		min-height: $leadpx * 3.5;
 		width: $leadpx * 10;
 		height: $leadpx * 3.5;
@@ -409,7 +409,7 @@ Styleguide 5
 			@include border-radius(12px 0 0 12px);
 			display: block;
 			float: left;
-			margin: $leadpx*1.25 0;
+			margin: $leadpx 0;
 			width: $leadpx * 2;
 			height: $leadpx;
 			background-color: $orange;
@@ -430,7 +430,7 @@ Styleguide 5
 			display: block;
 			float: left;
 			overflow: hidden;
-			margin: $leadpx*1.25 0;
+			margin: $leadpx 0;
 			padding: 0 ($leadpx * 0.5);
 			min-width: $leadpx * 6;
 			min-height: $leadpx;
@@ -469,7 +469,7 @@ Styleguide 5
 			margin: 0;
 			font-size: 16px;
 			line-height: $leadpx;
-			color: $white;
+			color: $black;
 		}
 	}
 }

@@ -4104,7 +4104,7 @@ Styleguide 5
   overflow: hidden;
   *zoom: 1;
   position: relative;
-  margin: 12px 0 12px -36px;
+  margin: 24px 0 12px -36px;
   padding: 0 12px;
   min-height: 48px;
   max-height: 48px;
@@ -4210,7 +4210,7 @@ Styleguide 5
   display: block;
   overflow: hidden;
   margin: 0;
-  padding: 30px 0;
+  padding: 24px 0;
   min-height: 84px;
   width: 240px;
   height: 84px;
@@ -4237,7 +4237,7 @@ Styleguide 5
   border-radius: 12px 0 0 12px;
   display: block;
   float: left;
-  margin: 30px 0;
+  margin: 24px 0;
   width: 48px;
   height: 24px;
   background-color: #ea6b53;
@@ -4258,7 +4258,7 @@ Styleguide 5
   display: block;
   float: left;
   overflow: hidden;
-  margin: 30px 0;
+  margin: 24px 0;
   padding: 0 12px;
   min-width: 144px;
   min-height: 24px;
@@ -4298,7 +4298,7 @@ Styleguide 5
   margin: 0;
   font-size: 16px;
   line-height: 24px;
-  color: white;
+  color: #2b2f3a;
 }
 
 /*
