@@ -191,7 +191,11 @@ Styleguide 7
     }
 
     &.start {
-      background-color: $orange;
+      background-color: $orange2;
+    }
+
+    &.wait {
+      background-color: $green2;
     }
 
     &.wish {
