@@ -13,7 +13,10 @@
 
 .container {
     @extend %cn-full;
+    @include clearfix;
+
+    // for debugging purpose only
     display: block;
-    height: 4em;
-    background-color: #000;
+    // height: 16em;
+    background-color: #CCC;
 }

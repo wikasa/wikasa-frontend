@@ -2280,8 +2280,12 @@ body {
 
 .container {
   display: block;
-  height: 4em;
-  background-color: #000;
+  background-color: #CCC;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .gc-alpha {
@@ -2289,6 +2293,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 6.77966%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-alpha:last-child {
   margin-right: 0;
@@ -2299,6 +2306,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 15.25424%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-beta:last-child {
   margin-right: 0;
@@ -2309,6 +2319,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 23.72881%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-gamma:last-child {
   margin-right: 0;
@@ -2319,6 +2332,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 32.20339%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-delta:last-child {
   margin-right: 0;
@@ -2329,6 +2345,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 40.67797%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-epsilon:last-child {
   margin-right: 0;
@@ -2339,6 +2358,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 49.15254%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-zeta:last-child {
   margin-right: 0;
@@ -2349,6 +2371,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 57.62712%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-eta:last-child {
   margin-right: 0;
@@ -2359,6 +2384,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 66.10169%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-theta:last-child {
   margin-right: 0;
@@ -2369,6 +2397,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 74.57627%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-iota:last-child {
   margin-right: 0;
@@ -2379,6 +2410,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 83.05085%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-kappa:last-child {
   margin-right: 0;
@@ -2389,6 +2423,9 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 91.52542%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-lambda:last-child {
   margin-right: 0;
@@ -2399,8 +2436,15 @@ body {
   display: block;
   margin-right: 1.69492%;
   width: 100%;
+  height: 8em;
+  background-color: #333;
+  margin-top: 1em;
 }
 .gc-mu:last-child {
+  margin-right: 0;
+}
+
+.omega {
   margin-right: 0;
 }
 
