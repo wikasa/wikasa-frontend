@@ -1,0 +1,19 @@
+/** ----------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.CONTAINER
+ *  
+ *  Container object.
+ *  @author Rezki & Rianti
+ *  @version 0.0.0
+ *  Copyright 2013. Free licensed.
+ ** ----------------------------------------------------------------- */
+
+%cn-full {
+    @include outer-container(71em);
+}
+
+.container {
+    @extend %cn-full;
+    display: block;
+    height: 4em;
+    background-color: #000;
+}

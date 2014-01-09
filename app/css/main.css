@@ -9,6 +9,12 @@
 /** ------------------------------------------------------------------------- *\
  *  All styles Preconcatenated by main.scss
  ** ------------------------------------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /**
  * Typecsset
  *
@@ -2229,14 +2235,6 @@ table {
   border-spacing: 0;
 }
 
-/** ----------------------------------------------------------------- *\
- *  WIKASA.BASE.COLOR
- *  
- *  Color variables.
- *  @author Bangsawan & Rianti
- *  @version 0.0.0
- *  Copyright 2013. Free licensed.
- ** ----------------------------------------------------------------- */
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.BASE.ELEMENT
  *  
@@ -2259,6 +2257,151 @@ body {
   font-family: SansRegular, Arial, sans-serif;
   background-color: #f3f3f3;
   min-height: 100%;
+}
+
+/** ----------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.CONTAINER
+ *  
+ *  Container object.
+ *  @author Rezki & Rianti
+ *  @version 0.0.0
+ *  Copyright 2013. Free licensed.
+ ** ----------------------------------------------------------------- */
+.container {
+  max-width: 71em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  display: block;
+  height: 4em;
+  background-color: #000;
+}
+
+.gc-alpha {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 6.77966%;
+}
+.gc-alpha:last-child {
+  margin-right: 0;
+}
+
+.gc-beta {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 15.25424%;
+}
+.gc-beta:last-child {
+  margin-right: 0;
+}
+
+.gc-gamma {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 23.72881%;
+}
+.gc-gamma:last-child {
+  margin-right: 0;
+}
+
+.gc-delta {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 32.20339%;
+}
+.gc-delta:last-child {
+  margin-right: 0;
+}
+
+.gc-epsilon {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 40.67797%;
+}
+.gc-epsilon:last-child {
+  margin-right: 0;
+}
+
+.gc-zeta {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 49.15254%;
+}
+.gc-zeta:last-child {
+  margin-right: 0;
+}
+
+.gc-eta {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 57.62712%;
+}
+.gc-eta:last-child {
+  margin-right: 0;
+}
+
+.gc-theta {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 66.10169%;
+}
+.gc-theta:last-child {
+  margin-right: 0;
+}
+
+.gc-iota {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 74.57627%;
+}
+.gc-iota:last-child {
+  margin-right: 0;
+}
+
+.gc-kappa {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 83.05085%;
+}
+.gc-kappa:last-child {
+  margin-right: 0;
+}
+
+.gc-lambda {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 91.52542%;
+}
+.gc-lambda:last-child {
+  margin-right: 0;
+}
+
+.gc-mu {
+  float: left;
+  display: block;
+  margin-right: 1.69492%;
+  width: 100%;
+}
+.gc-mu:last-child {
+  margin-right: 0;
 }
 
 body {

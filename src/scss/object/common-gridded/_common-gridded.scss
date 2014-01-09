@@ -1,0 +1,31 @@
+// --------------------------------------------------------------------------\
+// WIKASA.OBJECT.COMMON-GRIDDED
+// 
+// A set of objects (placeholder) with predefined size based on grid system.
+// 
+// @author Bangsawan & Silvia
+// 
+// @version 0.0.1
+// Copyright 2014. Free licensed.
+// --------------------------------------------------------------------------/
+
+$griddeds: 'alpha',
+           'beta',
+           'gamma',
+           'delta',
+           'epsilon',
+           'zeta',
+           'eta',
+           'theta',
+           'iota',
+           'kappa',
+           'lambda',
+           'mu';
+
+@each $current-column in $griddeds {
+    $i: index($griddeds, $current-column);
+
+    .gc-#{$current-column} {
+        @include span-columns($i);
+    }
+}

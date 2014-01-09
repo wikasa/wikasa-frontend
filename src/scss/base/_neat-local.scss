@@ -1,0 +1,18 @@
+// --------------------------------------------------------------------------\
+// WIKASA.OBJECT.NEAT-LOCAL-SETTING
+// 
+// Local settings which will be used by NEAT through out the site.
+// This setting contains breakpoint values for the site media queries.
+// 
+// @important "Import this before Neat imported."
+// 
+// @author Bangsawan & Silvia
+// 
+// @version 0.0.1
+// Copyright 2014. Free licensed.
+// --------------------------------------------------------------------------/
+
+$mobile:  new-breakpoint(max-width 20em 3);
+$tablet:  new-breakpoint(min-width 20.0625em max-width 48em 12);
+$desktop: new-breakpoint(min-width 48.0625em max-width 71em 12);
+$wide:    new-breakpoint(min-width 71.0625em 12);
