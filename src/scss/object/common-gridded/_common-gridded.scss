@@ -25,9 +25,37 @@ $griddeds: 'alpha',
 @each $current-column in $griddeds {
     $i: index($griddeds, $current-column);
 
-    .gc-#{$current-column} {
-        @include span-columns($i);
+    @include media($mobile) {
+        @if $i <= 3 {
+            .gc-#{$current-column} {
+                @include span-columns($i);
+            }
+        } @else {
+            .gc-#{$current-column} {
+                @include span-columns(3);
+            }
+        }
+    }
 
+    @include media($tablet) {
+        .gc-#{$current-column} {
+            @include span-columns($i);
+        }
+    }
+
+    @include media($desktop) {
+        .gc-#{$current-column} {
+            @include span-columns($i);
+        }
+    }
+
+    @include media($wide) {
+        .gc-#{$current-column} {
+            @include span-columns($i);
+        }
+    }
+
+    .gc-#{$current-column} {
         // for debugging purpose only
         height: 8em;
         background-color: #333;

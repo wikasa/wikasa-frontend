@@ -1,19 +1,28 @@
-/** ----------------------------------------------------------------- *\
+/** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.CONTAINER
  *  
  *  Container object.
  *  @author Rezki & Rianti
  *  @version 0.0.0
  *  Copyright 2013. Free licensed.
- ** ----------------------------------------------------------------- */
-
-%cn-full {
-    @include outer-container(71em);
-}
+ ** ------------------------------------------------------------------------- */
 
 .container {
-    @extend %cn-full;
-    @include clearfix;
+    @include media($mobile) {
+        @include outer-container(20em);
+    }
+
+    @include media($tablet) {
+        @include outer-container(48em);
+    }
+
+    @include media($desktop) {
+        @include outer-container(71em);
+    }
+
+    @include media($wide) {
+        @include outer-container(71em);
+    }
 
     // for debugging purpose only
     display: block;

@@ -2259,189 +2259,665 @@ body {
   min-height: 100%;
 }
 
-/** ----------------------------------------------------------------- *\
+/** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.CONTAINER
  *  
  *  Container object.
  *  @author Rezki & Rianti
  *  @version 0.0.0
  *  Copyright 2013. Free licensed.
- ** ----------------------------------------------------------------- */
-.container {
-  max-width: 71em;
-  margin-left: auto;
-  margin-right: auto;
-}
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
+ ** ------------------------------------------------------------------------- */
 .container {
   display: block;
   background-color: #CCC;
 }
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
+@media screen and (max-width: 20em) {
+  .container {
+    max-width: 20em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .container {
+    max-width: 48em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .container {
+    max-width: 71em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .container {
+    max-width: 71em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
+@media screen and (max-width: 20em) {
+  .gc-alpha {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 28.57143%;
+  }
+  .gc-alpha:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-alpha {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 6.77966%;
+  }
+  .gc-alpha:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-alpha {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 6.77966%;
+  }
+  .gc-alpha:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-alpha {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 6.77966%;
+  }
+  .gc-alpha:last-child {
+    margin-right: 0;
+  }
+}
 .gc-alpha {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 6.77966%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
 }
-.gc-alpha:last-child {
-  margin-right: 0;
-}
 
+@media screen and (max-width: 20em) {
+  .gc-beta {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 64.28571%;
+  }
+  .gc-beta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-beta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 15.25424%;
+  }
+  .gc-beta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-beta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 15.25424%;
+  }
+  .gc-beta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-beta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 15.25424%;
+  }
+  .gc-beta:last-child {
+    margin-right: 0;
+  }
+}
 .gc-beta {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 15.25424%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
 }
-.gc-beta:last-child {
-  margin-right: 0;
-}
 
+@media screen and (max-width: 20em) {
+  .gc-gamma {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 100%;
+  }
+  .gc-gamma:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-gamma {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 23.72881%;
+  }
+  .gc-gamma:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-gamma {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 23.72881%;
+  }
+  .gc-gamma:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-gamma {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 23.72881%;
+  }
+  .gc-gamma:last-child {
+    margin-right: 0;
+  }
+}
 .gc-gamma {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 23.72881%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
 }
-.gc-gamma:last-child {
-  margin-right: 0;
-}
 
+@media screen and (max-width: 20em) {
+  .gc-delta {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 100%;
+  }
+  .gc-delta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-delta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 32.20339%;
+  }
+  .gc-delta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-delta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 32.20339%;
+  }
+  .gc-delta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-delta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 32.20339%;
+  }
+  .gc-delta:last-child {
+    margin-right: 0;
+  }
+}
 .gc-delta {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 32.20339%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
 }
-.gc-delta:last-child {
-  margin-right: 0;
-}
 
+@media screen and (max-width: 20em) {
+  .gc-epsilon {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 100%;
+  }
+  .gc-epsilon:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-epsilon {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 40.67797%;
+  }
+  .gc-epsilon:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-epsilon {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 40.67797%;
+  }
+  .gc-epsilon:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-epsilon {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 40.67797%;
+  }
+  .gc-epsilon:last-child {
+    margin-right: 0;
+  }
+}
 .gc-epsilon {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 40.67797%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
 }
-.gc-epsilon:last-child {
-  margin-right: 0;
-}
 
+@media screen and (max-width: 20em) {
+  .gc-zeta {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 100%;
+  }
+  .gc-zeta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-zeta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 49.15254%;
+  }
+  .gc-zeta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-zeta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 49.15254%;
+  }
+  .gc-zeta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-zeta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 49.15254%;
+  }
+  .gc-zeta:last-child {
+    margin-right: 0;
+  }
+}
 .gc-zeta {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 49.15254%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
 }
-.gc-zeta:last-child {
-  margin-right: 0;
-}
 
+@media screen and (max-width: 20em) {
+  .gc-eta {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 100%;
+  }
+  .gc-eta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-eta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 57.62712%;
+  }
+  .gc-eta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-eta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 57.62712%;
+  }
+  .gc-eta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-eta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 57.62712%;
+  }
+  .gc-eta:last-child {
+    margin-right: 0;
+  }
+}
 .gc-eta {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 57.62712%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
 }
-.gc-eta:last-child {
-  margin-right: 0;
-}
 
+@media screen and (max-width: 20em) {
+  .gc-theta {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 100%;
+  }
+  .gc-theta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-theta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 66.10169%;
+  }
+  .gc-theta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-theta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 66.10169%;
+  }
+  .gc-theta:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-theta {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 66.10169%;
+  }
+  .gc-theta:last-child {
+    margin-right: 0;
+  }
+}
 .gc-theta {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 66.10169%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
 }
-.gc-theta:last-child {
-  margin-right: 0;
-}
 
+@media screen and (max-width: 20em) {
+  .gc-iota {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 100%;
+  }
+  .gc-iota:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-iota {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 74.57627%;
+  }
+  .gc-iota:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-iota {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 74.57627%;
+  }
+  .gc-iota:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-iota {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 74.57627%;
+  }
+  .gc-iota:last-child {
+    margin-right: 0;
+  }
+}
 .gc-iota {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 74.57627%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
 }
-.gc-iota:last-child {
-  margin-right: 0;
-}
 
+@media screen and (max-width: 20em) {
+  .gc-kappa {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 100%;
+  }
+  .gc-kappa:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-kappa {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 83.05085%;
+  }
+  .gc-kappa:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-kappa {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 83.05085%;
+  }
+  .gc-kappa:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-kappa {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 83.05085%;
+  }
+  .gc-kappa:last-child {
+    margin-right: 0;
+  }
+}
 .gc-kappa {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 83.05085%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
 }
-.gc-kappa:last-child {
-  margin-right: 0;
-}
 
+@media screen and (max-width: 20em) {
+  .gc-lambda {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 100%;
+  }
+  .gc-lambda:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-lambda {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 91.52542%;
+  }
+  .gc-lambda:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-lambda {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 91.52542%;
+  }
+  .gc-lambda:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-lambda {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 91.52542%;
+  }
+  .gc-lambda:last-child {
+    margin-right: 0;
+  }
+}
 .gc-lambda {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 91.52542%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
-}
-.gc-lambda:last-child {
-  margin-right: 0;
 }
 
+@media screen and (max-width: 20em) {
+  .gc-mu {
+    float: left;
+    display: block;
+    margin-right: 7.14286%;
+    width: 100%;
+  }
+  .gc-mu:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .gc-mu {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 100%;
+  }
+  .gc-mu:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .gc-mu {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 100%;
+  }
+  .gc-mu:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .gc-mu {
+    float: left;
+    display: block;
+    margin-right: 1.69492%;
+    width: 100%;
+  }
+  .gc-mu:last-child {
+    margin-right: 0;
+  }
+}
 .gc-mu {
-  float: left;
-  display: block;
-  margin-right: 1.69492%;
-  width: 100%;
   height: 8em;
   background-color: #333;
   margin-top: 1em;
-}
-.gc-mu:last-child {
-  margin-right: 0;
 }
 
 .omega {

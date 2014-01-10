@@ -5,9 +5,9 @@
 // ----------------------------------------------------------------------------\
 // Vendor.
 // ----------------------------------------------------------------------------/
-@import "base/_neat-local.scss"; // This should be imported before Neat loaded.
 @import "vendor/bourbon/_bourbon.scss";
 @import "vendor/neat/_neat.scss";
+@import "base/_neat-local.scss"; // This should be imported before Neat loaded.
 @import "vendor/typecsset/_typecsset.scss";
 @import "vendor/font-awesome/font-awesome";
 
