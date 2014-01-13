@@ -2284,10 +2284,68 @@ table {
   box-sizing: border-box;
 }
 
+html {
+  background-color: #f3f3f3;
+}
+
 body {
+  display: block;
   font-family: SansRegular, Arial, sans-serif;
   background-color: #f3f3f3;
   min-height: 100%;
+}
+
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.BASE.GRID-SETTING
+ *  
+ *  Global variable definitions needed by profoundgrid.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.CONTAINER
+ *  
+ *  Container object.
+ *  
+ *  @author Rezki & Rianti
+ *  @version 0.0.0
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.container {
+  display: block;
+  height: 16em;
+}
+@media screen and (max-width: 20em) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #900;
+  }
+}
+@media screen and (min-width: 20.0625em) and (max-width: 48em) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #AAA;
+  }
+}
+@media screen and (min-width: 48.0625em) and (max-width: 71em) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: yellow;
+  }
+}
+@media screen and (min-width: 71.0625em) {
+  .container {
+    width: 71em;
+    margin: 0 auto;
+    background-color: #CCC;
+  }
 }
 
 body {

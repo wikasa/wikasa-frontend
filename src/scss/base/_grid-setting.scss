@@ -9,7 +9,11 @@
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 
-$total_width: 59em; // 944px
+$total_width: 59em; // 944px Default value to be overrided by media query.
 $container_margin: auto;
 $gutter_width: 1em; // 16px
 $max_width: 59em; // 944px
+
+$class_container: 'container';
+$class_column: 'column';
+$class_push: 'push';

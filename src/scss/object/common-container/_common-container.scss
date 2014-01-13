@@ -2,30 +2,54 @@
  *  WIKASA.OBJECT.CONTAINER
  *  
  *  Container object.
+ *  
  *  @author Rezki & Rianti
  *  @version 0.0.0
- *  Copyright 2013. Free licensed.
+ *  
+ *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 
 .container {
     @include media-query($mobile) {
-        
+        $total_columns: 3;
+        // $total_width: 20em; // 16 * 20 = 320px
+        $total_width: 100%;
+
+        @include container();
+
+        background-color: #900;
     }
 
     @include media-query($tablet) {
-        
+        $total_columns: 12;
+        // $total_width: 48em; // 16 * 48 = 768px
+        $total_width: 100%;
+
+        @include container();
+
+        background-color: #AAA;
     }
 
     @include media-query($desktop) {
-        
+        $total_columns: 12;
+        // $total_width: 71em; // 16 * 71 = 1136px
+        $total_width: 100%;
+
+        @include container();
+
+        background-color: yellow;
     }
 
     @include media-query($wide) {
-        
+        $total_columns: 12;
+        $total_width: 71em; // 16 * 71 = 1136px
+
+        @include container();
+
+        background-color: #CCC;
     }
 
     // for debugging purpose only
     display: block;
-    // height: 16em;
-    background-color: #CCC;
+    height: 16em;
 }
