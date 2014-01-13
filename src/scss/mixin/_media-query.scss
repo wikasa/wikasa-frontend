@@ -19,7 +19,7 @@
     }
 
     @else {
-        @warn "Wrong number of arguments.";
+        @warn "Mixin media-query error. Wrong number of arguments.";
     }
 
 }
