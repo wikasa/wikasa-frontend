@@ -1,0 +1,15 @@
+// ----------------------------------------------------------------------------\
+// WIKASA.OBJECT.BREAKPOINT
+// 
+// Global variable definitions for ready to use media query.
+// 
+// @author Bangsawan & Silvia
+// 
+// @version 0.0.1
+// Copyright 2014. Free licensed.
+// ----------------------------------------------------------------------------/
+
+$mobile:  max-width 20em;
+$tablet:  min-width 20.0625em max-width 48em;
+$desktop: min-width 48.0625em max-width 71em;
+$wide:    min-width 71.0625em;
