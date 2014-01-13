@@ -6,8 +6,7 @@
 // Vendor.
 // ----------------------------------------------------------------------------/
 @import "vendor/bourbon/_bourbon.scss";
-@import "vendor/neat/_neat.scss";
-@import "base/_neat-local.scss"; // This should be imported before Neat loaded.
+@import "vendor/profoundgrid/grid/grid";
 @import "vendor/typecsset/_typecsset.scss";
 @import "vendor/font-awesome/font-awesome";
 
@@ -15,6 +14,7 @@
 // Mixin.
 // ----------------------------------------------------------------------------/
 @import "mixin/webfont";
+@import "mixin/media-query";
 
 
 // ----------------------------------------------------------------------------\
@@ -25,12 +25,13 @@
 @import "base/normalize";
 @import "base/color";
 @import "base/element";
+@import "base/grid-setting";
 
 // ----------------------------------------------------------------------------\
 // Object.
 // ----------------------------------------------------------------------------/
-@import "object/common-container/common-container";
-@import "object/common-gridded/common-gridded";
+// @import "object/common-container/common-container";
+// @import "object/common-gridded/common-gridded";
 // @import "object/cm-form/cm-form";
 // @import "object/cm-media/cm-media";
 // @import "object/cm-triangle/cm-triangle";
