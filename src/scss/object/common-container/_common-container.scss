@@ -8,20 +8,20 @@
  ** ------------------------------------------------------------------------- */
 
 .container {
-    @include media($mobile) {
-        @include outer-container(20em);
+    @include media-query($mobile) {
+        
     }
 
-    @include media($tablet) {
-        @include outer-container(48em);
+    @include media-query($tablet) {
+        
     }
 
-    @include media($desktop) {
-        @include outer-container(71em);
+    @include media-query($desktop) {
+        
     }
 
-    @include media($wide) {
-        @include outer-container(71em);
+    @include media-query($wide) {
+        
     }
 
     // for debugging purpose only
