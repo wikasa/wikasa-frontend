@@ -22,9 +22,6 @@ $_items: 'alpha',
          'lambda',
          'mu';
 
-$_container-type: 1 2 3 4 6 12;
-
-
 // for testing purpose only.
 *[class^="column"] {
     // margin-bottom: 1em;
@@ -36,7 +33,7 @@ $_container-type: 1 2 3 4 6 12;
 // Local Mixin
 // =========================================================================== /
 
-@mixin _container-1() {
+@mixin _container-full() {
     @each $_item in $_items {
         & > .column-#{$_item},
         & > .column {
@@ -47,11 +44,10 @@ $_container-type: 1 2 3 4 6 12;
     }
 }
 
-@mixin _container-n($_col_n: 2) {
+@mixin _container-uni-n($_col_n: 2) {
     $j: 1;
     @each $_item in $_items {
-        & > .column-#{$_item},
-        & > .column {
+        & > *[class^="column"] {
             @include column($total_columns / $_col_n);
 
             @while $j <= ($_col_n + 1) {
@@ -72,151 +68,76 @@ $_container-type: 1 2 3 4 6 12;
  *  Predefined Container Objects
  ** ------------------------------------------------------------------------- */
 
-/* Exceptional preset for mobile breakpoint --------------------------------- */
+/* CONTAINER FULL ----------------------------------------------------------- */
 
-*[class^="container-"]:not(.container-1) {
-    @include media-query($mobile) {
-        $total_columns: 3;
-        $total_width: 20em; // 16 * 20px = 320px
-        @include _container-n(3);
-    }
-}
-
-/* CONTAINER - 1 ------------------------------------------------------------ */
-
-.container-1 {
+.container-full {
     @include media-query($mobile) {
         $total_columns: 3;
         $total_width: 20em; // 20 * 16px = 320px
-        @include _container-1;
+        @include _container-full;
     }
 
     @include media-query($tablet) {
         $total_columns: 6;
         $total_width: 38em; // 38 * 16px = 608px
-        @include _container-1;
+        @include _container-full;
     }
 
     @include media-query($desktop) {
         $total_columns: 12;
         $total_width: 59em; // 59 * 16px = 944px
-        @include _container-1;
+        @include _container-full;
     }
 
     @include media-query($wide) {
         $total_columns: 12;
         $total_width: 71em; // 71 * 16px = 1136px
-        @include _container-1;
+        @include _container-full;
     }
 }
 
-/* CONTAINER - 2 ------------------------------------------------------------ */
+/* CONTAINER UNI ------------------------------------------------------------ */
 
-.container-2 {
+$_container-uni-types: 2 3 4 6 12;
 
-    @include media-query($tablet) {
-        $total_columns: 6;
-        $total_width: 38em; // 38 * 16px = 608px
-        @include _container-n(2);
-    }
-
-    @include media-query($desktop) {
-        $total_columns: 12;
-        $total_width: 59em; // 59 * 16px = 944px
-        @include _container-n(2);
-    }
-
-    @include media-query($wide) {
-        $total_columns: 12;
-        $total_width: 71em; // 71 * 16px = 944px
-        @include _container-n(2);
+*[class^="container-uni-"] {
+    @include media-query($mobile) {
+        $total_columns: 3;
+        $total_width: 20em; // 16 * 20px = 320px
+        @include _container-uni-n(3);
     }
 }
 
-/* CONTAINER - 3 ------------------------------------------------------------ */
+@each $_type in $_container-uni-types {
+    .container-uni-#{$_type} {
+        @include media-query($tablet) {
+            $total_columns: 6;
+            $total_width: 38em; // 38 * 16px = 608px
+            @if $_type <= $total_columns {
+                @include _container-uni-n($_type);
+            } @else {
+                @include _container-uni-n($total_columns);
+            }
+        }
 
-.container-3 {
-    @include media-query($tablet) {
-        $total_columns: 6;
-        $total_width: 38em; // 38 * 16px = 608px
-        @include _container-n(3);
-    }
+        @include media-query($desktop) {
+            $total_columns: 12;
+            $total_width: 59em; // 59 * 16px = 944px
+            @if $_type <= $total_columns {
+                @include _container-uni-n($_type);
+            } @else {
+                @include _container-uni-n($total_columns);
+            }
+        }
 
-    @include media-query($desktop) {
-        $total_columns: 12;
-        $total_width: 59em; // 59 * 16px = 944px
-        @include _container-n(3);
-    }
-
-    @include media-query($wide) {
-        $total_columns: 12;
-        $total_width: 71em; // 71 * 16px = 944px
-        @include _container-n(3);
-    }
-}
-
-/* CONTAINER - 4 ------------------------------------------------------------ */
-
-.container-4 {
-    @include media-query($tablet) {
-        $total_columns: 6;
-        $total_width: 38em; // 38 * 16px = 608px
-        @include _container-n(4);
-    }
-
-    @include media-query($desktop) {
-        $total_columns: 12;
-        $total_width: 59em; // 59 * 16px = 944px
-        @include _container-n(4);
-    }
-
-    @include media-query($wide) {
-        $total_columns: 12;
-        $total_width: 71em; // 71 * 16px = 944px
-        @include _container-n(4);
-    }
-}
-
-/* CONTAINER - 6 ------------------------------------------------------------ */
-
-.container-6 {
-    @include media-query($tablet) {
-        $total_columns: 6;
-        $total_width: 38em; // 38 * 16px = 608px
-        @include _container-n(6);
-    }
-
-    @include media-query($desktop) {
-        $total_columns: 12;
-        $total_width: 59em; // 59 * 16px = 944px
-        @include _container-n(6);
-    }
-
-    @include media-query($wide) {
-        $total_columns: 12;
-        $total_width: 71em; // 71 * 16px = 944px
-        @include _container-n(6);
-    }
-}
-
-/* CONTAINER - 12 ------------------------------------------------------------ */
-
-.container-12 {
-    @include media-query($tablet) {
-        $total_columns: 6;
-        $total_width: 38em; // 38 * 16px = 608px
-        @include _container-n(6);
-    }
-
-    @include media-query($desktop) {
-        $total_columns: 12;
-        $total_width: 59em; // 59 * 16px = 944px
-        @include _container-n(12);
-    }
-
-    @include media-query($wide) {
-        $total_columns: 12;
-        $total_width: 71em; // 71 * 16px = 944px
-        @include _container-n(12);
+        @include media-query($wide) {
+            $total_columns: 12;
+            $total_width: 71em; // 71 * 16px = 944px
+            @if $_type <= $total_columns {
+                @include _container-uni-n($_type);
+            } @else {
+                @include _container-uni-n($total_columns);
+            }
+        }
     }
 }
