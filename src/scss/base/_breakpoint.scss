@@ -9,7 +9,7 @@
 // Copyright 2014. Free licensed.
 // ----------------------------------------------------------------------------/
 
-$mobile:  max-width 20em;
-$tablet:  min-width 20.0625em max-width 48em;
-$desktop: min-width 48.0625em max-width 71em;
-$wide:    min-width 71.0625em;
+$mobile:  min-width 320px max-width 639px;
+$tablet:  min-width 640px max-width 959px;
+$desktop: min-width 960px max-width 1279px;
+$wide:    min-width 1280px;

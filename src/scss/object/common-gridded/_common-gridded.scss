@@ -1,68 +1,222 @@
-// --------------------------------------------------------------------------\
-// WIKASA.OBJECT.COMMON-GRIDDED
-// 
-// A set of objects (placeholder) with predefined size based on grid system.
-// 
-// @author Bangsawan & Silvia
-// 
-// @version 0.0.1
-// Copyright 2014. Free licensed.
-// --------------------------------------------------------------------------/
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-GRIDDED
+ *  
+ *  A set of objects (placeholder) with predefined size.
+ *  
+ *  @author Bangsawan & Silvia
+ *  
+ *  @version 0.0.1
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
 
-$griddeds: 'alpha',
-           'beta',
-           'gamma',
-           'delta',
-           'epsilon',
-           'zeta',
-           'eta',
-           'theta',
-           'iota',
-           'kappa',
-           'lambda',
-           'mu';
+$_items: 'alpha',
+         'beta',
+         'gamma',
+         'delta',
+         'epsilon',
+         'zeta',
+         'eta',
+         'theta',
+         'iota',
+         'kappa',
+         'lambda',
+         'mu';
 
-@each $current-column in $griddeds {
-    $i: index($griddeds, $current-column);
+$_container-type: 1 2 3 4 6 12;
 
-    @include media($mobile) {
-        @if $i <= 3 {
-            .gc-#{$current-column} {
-                @include span-columns($i);
-            }
-        } @else {
-            .gc-#{$current-column} {
-                @include span-columns(3);
-            }
+
+// for testing purpose only.
+*[class^="column"] {
+    // margin-bottom: 1em;
+    height: 5em;
+    background-color: #333;
+}
+
+// =========================================================================== \
+// Local Mixin
+// =========================================================================== /
+
+@mixin _container-1() {
+    @each $_item in $_items {
+        & > .column-#{$_item},
+        & > .column {
+            @include column($total_columns);
+            float: none;
+            &:nth-child(n+2) { margin-top: 1em; }
         }
-    }
-
-    @include media($tablet) {
-        .gc-#{$current-column} {
-            @include span-columns($i);
-        }
-    }
-
-    @include media($desktop) {
-        .gc-#{$current-column} {
-            @include span-columns($i);
-        }
-    }
-
-    @include media($wide) {
-        .gc-#{$current-column} {
-            @include span-columns($i);
-        }
-    }
-
-    .gc-#{$current-column} {
-        // for debugging purpose only
-        height: 8em;
-        background-color: #333;
-        margin-top: 1em;
     }
 }
 
-.omega {
-    @include omega();
+@mixin _container-n($_col_n: 2) {
+    $j: 1;
+    @each $_item in $_items {
+        & > .column-#{$_item},
+        & > .column {
+            @include column($total_columns / $_col_n);
+
+            @while $j <= ($_col_n + 1) {
+                @if $j <= $_col_n {
+                    &:nth-child(#{$_col_n}n + #{$j}) { @include push($total_columns * ($j - 1) / $_col_n); }
+                } @else {
+                    &:nth-child(#{$_col_n}n + #{$j}) { clear: left; }
+                }
+                $j: $j + 1;
+            }
+
+            &:nth-child(n + #{$_col_n + 1}) { margin-top: 1em; }
+        }
+    }
+}
+
+/** ------------------------------------------------------------------------- *\
+ *  Predefined Container Objects
+ ** ------------------------------------------------------------------------- */
+
+/* Exceptional preset for mobile breakpoint --------------------------------- */
+
+*[class^="container-"]:not(.container-1) {
+    @include media-query($mobile) {
+        $total_columns: 3;
+        $total_width: 20em; // 16 * 20px = 320px
+        @include _container-n(3);
+    }
+}
+
+/* CONTAINER - 1 ------------------------------------------------------------ */
+
+.container-1 {
+    @include media-query($mobile) {
+        $total_columns: 3;
+        $total_width: 20em; // 20 * 16px = 320px
+        @include _container-1;
+    }
+
+    @include media-query($tablet) {
+        $total_columns: 6;
+        $total_width: 38em; // 38 * 16px = 608px
+        @include _container-1;
+    }
+
+    @include media-query($desktop) {
+        $total_columns: 12;
+        $total_width: 59em; // 59 * 16px = 944px
+        @include _container-1;
+    }
+
+    @include media-query($wide) {
+        $total_columns: 12;
+        $total_width: 71em; // 71 * 16px = 1136px
+        @include _container-1;
+    }
+}
+
+/* CONTAINER - 2 ------------------------------------------------------------ */
+
+.container-2 {
+
+    @include media-query($tablet) {
+        $total_columns: 6;
+        $total_width: 38em; // 38 * 16px = 608px
+        @include _container-n(2);
+    }
+
+    @include media-query($desktop) {
+        $total_columns: 12;
+        $total_width: 59em; // 59 * 16px = 944px
+        @include _container-n(2);
+    }
+
+    @include media-query($wide) {
+        $total_columns: 12;
+        $total_width: 71em; // 71 * 16px = 944px
+        @include _container-n(2);
+    }
+}
+
+/* CONTAINER - 3 ------------------------------------------------------------ */
+
+.container-3 {
+    @include media-query($tablet) {
+        $total_columns: 6;
+        $total_width: 38em; // 38 * 16px = 608px
+        @include _container-n(3);
+    }
+
+    @include media-query($desktop) {
+        $total_columns: 12;
+        $total_width: 59em; // 59 * 16px = 944px
+        @include _container-n(3);
+    }
+
+    @include media-query($wide) {
+        $total_columns: 12;
+        $total_width: 71em; // 71 * 16px = 944px
+        @include _container-n(3);
+    }
+}
+
+/* CONTAINER - 4 ------------------------------------------------------------ */
+
+.container-4 {
+    @include media-query($tablet) {
+        $total_columns: 6;
+        $total_width: 38em; // 38 * 16px = 608px
+        @include _container-n(4);
+    }
+
+    @include media-query($desktop) {
+        $total_columns: 12;
+        $total_width: 59em; // 59 * 16px = 944px
+        @include _container-n(4);
+    }
+
+    @include media-query($wide) {
+        $total_columns: 12;
+        $total_width: 71em; // 71 * 16px = 944px
+        @include _container-n(4);
+    }
+}
+
+/* CONTAINER - 6 ------------------------------------------------------------ */
+
+.container-6 {
+    @include media-query($tablet) {
+        $total_columns: 6;
+        $total_width: 38em; // 38 * 16px = 608px
+        @include _container-n(6);
+    }
+
+    @include media-query($desktop) {
+        $total_columns: 12;
+        $total_width: 59em; // 59 * 16px = 944px
+        @include _container-n(6);
+    }
+
+    @include media-query($wide) {
+        $total_columns: 12;
+        $total_width: 71em; // 71 * 16px = 944px
+        @include _container-n(6);
+    }
+}
+
+/* CONTAINER - 12 ------------------------------------------------------------ */
+
+.container-12 {
+    @include media-query($tablet) {
+        $total_columns: 6;
+        $total_width: 38em; // 38 * 16px = 608px
+        @include _container-n(6);
+    }
+
+    @include media-query($desktop) {
+        $total_columns: 12;
+        $total_width: 59em; // 59 * 16px = 944px
+        @include _container-n(12);
+    }
+
+    @include media-query($wide) {
+        $total_columns: 12;
+        $total_width: 71em; // 71 * 16px = 944px
+        @include _container-n(12);
+    }
 }

@@ -9,47 +9,48 @@
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 
-.container {
+@function _total_width($_column_width: 5em) {
+    @return ( $total_columns * $_column_width) + ( ($total_columns - 1) * $gutter_width );
+}
+
+*[class^="container"] {
+    @include clearfix;
+    min-height: 5em;
+    font-size: 1em;
+
     @include media-query($mobile) {
         $total_columns: 3;
-        // $total_width: 20em; // 16 * 20 = 320px
-        $total_width: 100%;
-
+        $total_width: _total_width(6em); // 20em || 320px
         @include container();
 
-        background-color: #900;
+        // For testing purpose only.
+        background-color: #CCC;
     }
 
     @include media-query($tablet) {
-        $total_columns: 12;
-        // $total_width: 48em; // 16 * 48 = 768px
-        $total_width: 100%;
-
+        $total_columns: 6;
+        $total_width: _total_width(5.5em); // 38em || 608px
         @include container();
 
-        background-color: #AAA;
+        // For testing purpose only.
+        background-color: #CCC;
     }
 
     @include media-query($desktop) {
         $total_columns: 12;
-        // $total_width: 71em; // 16 * 71 = 1136px
-        $total_width: 100%;
-
+        $total_width: _total_width(4em); // 59em || 944px
         @include container();
 
-        background-color: yellow;
+        // For testing purpose only.
+        background-color: #CCC;
     }
 
     @include media-query($wide) {
         $total_columns: 12;
-        $total_width: 71em; // 16 * 71 = 1136px
-
+        $total_width: _total_width(5em); // 71em || 1136px
         @include container();
 
+        // For testing purpose only.
         background-color: #CCC;
     }
-
-    // for debugging purpose only
-    display: block;
-    height: 16em;
 }
