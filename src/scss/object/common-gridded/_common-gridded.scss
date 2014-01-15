@@ -33,6 +33,20 @@ $_items: 'alpha',
 // Local Mixin
 // =========================================================================== /
 
+// CONTAINER STANDARD MIXIN -------------------------------------------------- >
+@mixin _container-std() {
+    @each $_item in $_items {
+        & > .column-#{$_item} {
+            @if index($_items, $_item) <= $total_columns {
+                @include column(index($_items, $_item));
+            } @else {
+                @include column($total_columns);
+            }
+        }
+    }
+}
+
+// CONTAINER FULL MIXIN ------------------------------------------------------ >
 @mixin _container-full() {
     @each $_item in $_items {
         & > *[class^="column"] {
@@ -43,6 +57,7 @@ $_items: 'alpha',
     }
 }
 
+// CONTAINER UNI MIXIN ------------------------------------------------------- >
 @mixin container-uni($_col_n: 2) {
     $j: 1;
     & > *[class^="column"] {
@@ -58,18 +73,6 @@ $_items: 'alpha',
         }
 
         &:nth-child(n + #{$_col_n + 1}) { margin-top: 1em; }
-    }
-}
-
-@mixin _container-std() {
-    @each $_item in $_items {
-        & > .column-#{$_item} {
-            @if index($_items, $_item) <= $total_columns {
-                @include column(index($_items, $_item));
-            } @else {
-                @include column($total_columns);
-            }
-        }
     }
 }
 
