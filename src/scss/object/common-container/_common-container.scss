@@ -18,6 +18,8 @@
     min-height: 5em;
     font-size: 1em;
 
+    &:nth-child(n+2) { margin-top: 1em; }
+
     @include media-query($mobile) {
         $total_columns: 3;
         $total_width: _total_width(6em); // 20em || 320px

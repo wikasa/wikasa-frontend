@@ -35,8 +35,7 @@ $_items: 'alpha',
 
 @mixin _container-full() {
     @each $_item in $_items {
-        & > .column-#{$_item},
-        & > .column {
+        & > *[class^="column"] {
             @include column($total_columns);
             float: none;
             &:nth-child(n+2) { margin-top: 1em; }
@@ -46,20 +45,30 @@ $_items: 'alpha',
 
 @mixin container-uni($_col_n: 2) {
     $j: 1;
-    @each $_item in $_items {
-        & > *[class^="column"] {
-            @include column($total_columns / $_col_n);
+    & > *[class^="column"] {
+        @include column($total_columns / $_col_n);
 
-            @while $j <= ($_col_n + 1) {
-                @if $j <= $_col_n {
-                    &:nth-child(#{$_col_n}n + #{$j}) { @include push($total_columns * ($j - 1) / $_col_n); }
-                } @else {
-                    &:nth-child(#{$_col_n}n + #{$j}) { clear: left; }
-                }
-                $j: $j + 1;
+        @while $j <= ($_col_n + 1) {
+            @if $j <= $_col_n {
+                &:nth-child(#{$_col_n}n + #{$j}) { @include push($total_columns * ($j - 1) / $_col_n); }
+            } @else {
+                &:nth-child(#{$_col_n}n + #{$j}) { clear: left; }
             }
+            $j: $j + 1;
+        }
 
-            &:nth-child(n + #{$_col_n + 1}) { margin-top: 1em; }
+        &:nth-child(n + #{$_col_n + 1}) { margin-top: 1em; }
+    }
+}
+
+@mixin _container-std() {
+    @each $_item in $_items {
+        & > .column-#{$_item} {
+            @if index($_items, $_item) <= $total_columns {
+                @include column(index($_items, $_item));
+            } @else {
+                @include column($total_columns);
+            }
         }
     }
 }
@@ -67,6 +76,32 @@ $_items: 'alpha',
 /** ------------------------------------------------------------------------- *\
  *  Predefined Container Objects
  ** ------------------------------------------------------------------------- */
+
+.container {
+    @include media-query($mobile) {
+        $total_columns: 3;
+        $total_width: 20em; // 20 * 16px = 320px
+        @include _container-std;
+    }
+
+    @include media-query($tablet) {
+        $total_columns: 6;
+        $total_width: 38em; // 38 * 16px = 608px
+        @include _container-std;
+    }
+
+    @include media-query($desktop) {
+        $total_columns: 12;
+        $total_width: 59em; // 59 * 16px = 944px
+        @include _container-std;
+    }
+
+    @include media-query($wide) {
+        $total_columns: 12;
+        $total_width: 71em; // 71 * 16px = 1136px
+        @include _container-std;
+    }
+}
 
 /* CONTAINER FULL ----------------------------------------------------------- */
 
