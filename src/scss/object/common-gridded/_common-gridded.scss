@@ -44,7 +44,7 @@ $_items: 'alpha',
     }
 }
 
-@mixin _container-uni-n($_col_n: 2) {
+@mixin container-uni($_col_n: 2) {
     $j: 1;
     @each $_item in $_items {
         & > *[class^="column"] {
@@ -104,7 +104,7 @@ $_container-uni-types: 2 3 4 6 12;
     @include media-query($mobile) {
         $total_columns: 3;
         $total_width: 20em; // 16 * 20px = 320px
-        @include _container-uni-n(3);
+        @include container-uni(3);
     }
 }
 
@@ -114,9 +114,9 @@ $_container-uni-types: 2 3 4 6 12;
             $total_columns: 6;
             $total_width: 38em; // 38 * 16px = 608px
             @if $_type <= $total_columns {
-                @include _container-uni-n($_type);
+                @include container-uni($_type);
             } @else {
-                @include _container-uni-n($total_columns);
+                @include container-uni($total_columns);
             }
         }
 
@@ -124,9 +124,9 @@ $_container-uni-types: 2 3 4 6 12;
             $total_columns: 12;
             $total_width: 59em; // 59 * 16px = 944px
             @if $_type <= $total_columns {
-                @include _container-uni-n($_type);
+                @include container-uni($_type);
             } @else {
-                @include _container-uni-n($total_columns);
+                @include container-uni($total_columns);
             }
         }
 
@@ -134,9 +134,9 @@ $_container-uni-types: 2 3 4 6 12;
             $total_columns: 12;
             $total_width: 71em; // 71 * 16px = 944px
             @if $_type <= $total_columns {
-                @include _container-uni-n($_type);
+                @include container-uni($_type);
             } @else {
-                @include _container-uni-n($total_columns);
+                @include container-uni($total_columns);
             }
         }
     }
