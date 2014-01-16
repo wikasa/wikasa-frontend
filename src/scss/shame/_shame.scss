@@ -1,15 +1,15 @@
 body {
-	min-height: 1000px;
+    min-height: 1000px;
 }
 
 .hid {
-	display: none !important;
+    display: none !important;
 }
 
 p.typesetting-subhead {
-	@include typecsset-font-size(14px);
-	@include typecsset-space(padding-top);
-	margin-top: 2em;
-	border-bottom: 1px solid #999;
-	color: #999;
+    @include typecsset-font-size(14px);
+    @include typecsset-space(padding-top);
+    margin-top: 2em;
+    border-bottom: 1px solid #999;
+    color: #999;
 }

@@ -1,0 +1,20 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-USERPIC
+ *  
+ *  User Image object used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.userpic {
+    @include rb-border-radius(50%);
+
+    & > img {
+        display: block;
+        width: $lp * 2;
+        height: $lp * 2;
+    }
+}
