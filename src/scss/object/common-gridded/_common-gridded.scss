@@ -24,10 +24,9 @@ $_items: 'alpha',
          'mu';
 
 // for testing purpose only.
-*[class^="column"] {
-    // margin-bottom: 1em;
-    height: 5em;
-    background-color: #333;
+*[class^="container"].test > *[class^="column"] {
+    min-height: 5em;
+    background-color: #DDD;
 }
 
 // =========================================================================== \

@@ -13,10 +13,18 @@
 .mains {
     @extend .container;
     @extend .container-center-6;
-    min-height: 1em;
 }
 
 .main {
     @extend .column;
+}
+
+/* TEST MOCK ---------------------------------------------------------------- */
+.mains.test {
     min-height: 1em;
+    background-color: #EEE;
+
+    .main {
+        background-color: #DDD;
+    }
 }
