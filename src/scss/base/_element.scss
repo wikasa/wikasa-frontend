@@ -34,9 +34,10 @@ html {
 // ----------------------------------------------------------------------------/
 body {
     display: block;
-    font-family: $ff-sans-regular;
-    background-color: $whiteDark1;
     min-height: 100%;
+    background-color: $whiteDark1;
+    color: $black;
+    font-family: $ff-sans-regular;
 }
 
 // ----------------------------------------------------------------------------\

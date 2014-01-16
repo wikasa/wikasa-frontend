@@ -2334,9 +2334,10 @@ html {
 
 body {
   display: block;
-  font-family: SansRegular, Arial, sans-serif;
-  background-color: #f3f3f3;
   min-height: 100%;
+  background-color: #f3f3f3;
+  color: #2b2f3a;
+  font-family: SansRegular, Arial, sans-serif;
 }
 
 p, pre, ol, ul, address, a {
@@ -4124,16 +4125,183 @@ a {
 .common-heads {
   background-color: #FFF;
   font-size: 1em;
-  height: 3em;
+  height: 3rem;
   width: 100%;
 }
+.common-heads:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
+.common-head {
+  height: 3rem;
+  max-height: 3rem;
+}
 .common-head > *[class^="comhead"] {
   display: inline-block;
+  overflow: hidden;
   margin: 0;
   padding: 0;
-  height: 3em;
-  max-height: 3em;
+  max-height: 3rem;
+  height: 3rem;
+  position: relative;
+}
+
+.comhead-brand-alphas {
+  width: 3rem;
+  background-color: #2b2f3a;
+}
+.comhead-brand-alphas:hover {
+  background-color: #ea6b53;
+}
+.comhead-brand-alphas > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -16px;
+  width: 32px;
+  height: 32px;
+}
+
+.comhead-brand-betas {
+  width: 9rem;
+  background-color: transparent;
+  margin-right: 16px;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .comhead-brand-betas {
+    display: none !important;
+  }
+}
+.comhead-brand-betas > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -56px;
+  width: 112px;
+  height: 32px;
+}
+
+.common-head > a[class^="comhead-link"] {
+  font-size: 0.75rem;
+  line-height: 3rem;
+  padding: 0 16px 0 16px;
+}
+.common-head > a[class^="comhead-link"]:hover {
+  background-color: #f3f3f3;
+  color: #ea6b53;
+}
+.common-head > .comhead-link-basic {
+  border-right: 1px solid #f3f3f3;
+  border-left: 1px solid #f3f3f3;
+}
+.common-head > .comhead-link-search {
+  width: 3rem;
+  border-right: 1px solid #f3f3f3;
+  border-left: 1px solid #f3f3f3;
+  float: right;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .common-head > .comhead-link-search {
+    display: none !important;
+  }
+}
+.common-head > .comhead-link-user {
+  float: right;
+}
+.common-head > .comhead-link-user:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .common-head > .comhead-link-user {
+    width: 12rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .common-head > .comhead-link-user {
+    width: 12rem;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .common-head > .comhead-link-user {
+    width: 9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .common-head > .comhead-link-user {
+    width: 11rem;
+  }
+}
+.common-head > .comhead-link-user > * {
+  display: inline-block;
+  float: left;
+}
+.common-head > .comhead-link-user .comhead-username {
+  overflow: hidden;
+  height: 3rem;
+  margin-right: 8px;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .common-head > .comhead-link-user .comhead-username {
+    max-width: 5.5rem;
+    width: 5.5rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .common-head > .comhead-link-user .comhead-username {
+    max-width: 5.5rem;
+    width: 5.5rem;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .common-head > .comhead-link-user .comhead-username {
+    max-width: 4rem;
+    width: 4rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .common-head > .comhead-link-user .comhead-username {
+    max-width: 5rem;
+    width: 5rem;
+  }
+}
+.common-head > .comhead-link-user .comhead-userpic {
+  max-width: 32px;
+  max-height: 32px;
+  width: 32px;
+  height: 32px;
+  overflow: hidden;
+  border: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-USERPIC
+ *  
+ *  User Image object used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.userpic {
+  -webkit-border-radius: 50%;
+  -khtml-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.userpic > img {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 body {

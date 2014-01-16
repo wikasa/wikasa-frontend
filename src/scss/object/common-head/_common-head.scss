@@ -10,18 +10,142 @@
  ** ------------------------------------------------------------------------- */
 
 .common-heads {
+    @include clearfix;
     background-color: #FFF;
     font-size: 1em;
-    height: 3em;
+    height: z(3rem);
     width: 100%;
 }
 
 .common-head {
+
+    height: z(3rem);
+    max-height: z(3rem);
+
     & > *[class^="comhead"] {
         display: inline-block;
+        overflow: hidden;
         margin: 0;
         padding: 0;
-        height: 3em;
-        max-height: 3em;
+        max-height: z(3rem);
+        height: z(3rem);
+        position: relative;
     }
+}
+
+// Brand Local Variable for width in px
+$_brand-alpha-width: 32px;
+$_brand-alpha-height: 32px;
+$_brand-beta-width: 112px;
+$_brand-beta-height: 32px;
+
+.comhead-brand-alphas {
+    width: z(3rem);
+    background-color: $black;
+
+    &:hover { background-color: $orange; }
+
+    & > img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: ($_brand-alpha-height/-2) 0 0 ($_brand-alpha-width/-2);
+        width: $_brand-alpha-width;
+        height: $_brand-alpha-height;
+    }
+}
+
+.comhead-brand-betas {
+    @include media-query($mobile) { display: none !important; }
+    // @include media-query($tablet) { display: none !important; }
+
+    width: z(9rem);
+    background-color: transparent;
+    margin-right: $lp;
+
+    & > img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: ($_brand-beta-height/-2) 0 0 ($_brand-beta-width/-2);
+        width: $_brand-beta-width;
+        height: $_brand-beta-height;
+    }
+}
+
+.common-head {
+
+    & > a[class^="comhead-link"] {
+        font-size: z( (12 / $lead) * 1rem ); // 12px
+        line-height: z(3rem); // 48px
+        padding: 0 $lp 0 $lp;
+
+        &:hover {
+            background-color: $whiteDark1;
+            color: $orange;
+        }
+    }
+
+    & > .comhead-link-basic {
+        border-right: 1px solid $whiteDark1;
+        border-left: 1px solid $whiteDark1;
+    }
+
+    & > .comhead-link-search {
+        @include media-query($mobile) { display: none !important; }
+        
+        width: z(3rem);
+        border-right: 1px solid $whiteDark1;
+        border-left: 1px solid $whiteDark1;
+        float: right;
+    }
+
+    & > .comhead-link-user {
+        @include clearfix;
+        @include media-query($mobile) { width: z(12rem); }
+        @include media-query($tablet) { width: z(12rem); }
+        @include media-query($desktop) { width: z(9rem); }
+        @include media-query($wide) { width: z(11rem); }
+        float: right;
+
+        & > * {
+            display: inline-block;
+            float: left;
+        }
+
+        .comhead-username {
+            @include media-query($mobile) {
+                max-width: z(5.5rem);
+                width: z(5.5rem);
+            }
+            @include media-query($tablet) {
+                max-width: z(5.5rem);
+                width: z(5.5rem);
+            }
+            @include media-query($desktop) {
+                max-width: z(4rem);
+                width: z(4rem);
+            }
+            @include media-query($wide) {
+                max-width: z(5rem);
+                width: z(5rem);
+            }
+            overflow: hidden;
+            height: z(3rem);
+            margin-right: $lp/2;
+        }
+
+        .comhead-userpic {
+            max-width: $lp * 2;
+            max-height: $lp * 2;
+            width: $lp * 2;
+            height: $lp * 2;
+            overflow: hidden;
+            border: 0;
+            margin-top: $lp/2;
+            margin-bottom: $lp/2;
+            margin-right: $lp/2;
+        }
+    }
+
 }

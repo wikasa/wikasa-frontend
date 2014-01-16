@@ -1,11 +1,12 @@
 /** ------------------------------------------------------------------------- *\
- *  All styles Preconcatenated by main.scss
+ *  All styles Preconcatenated by main-ie8.scss
+ *  For Old Browser only.
  ** ------------------------------------------------------------------------- */
 
 // ----------------------------------------------------------------------------\
 // Old browser toggler.
 // ----------------------------------------------------------------------------/
-$old: false;
+$old: true;
 $pixel-base: 16;
 
 // ----------------------------------------------------------------------------\
@@ -19,8 +20,6 @@ $pixel-base: 16;
 // ----------------------------------------------------------------------------\
 // Mixin.
 // ----------------------------------------------------------------------------/
-@import "mixin/rb-prefix";
-@import "mixin/rb-border-radius";
 @import "mixin/webfont";
 @import "mixin/media-query";
 
@@ -47,7 +46,6 @@ $pixel-base: 16;
 @import "object/common-gridded/common-gridded";
 @import "object/common-layout/common-layout";
 @import "object/common-head/common-head";
-@import "object/common-userpic/common-userpic";
 // @import "object/cm-form/cm-form";
 // @import "object/cm-media/cm-media";
 // @import "object/cm-triangle/cm-triangle";
