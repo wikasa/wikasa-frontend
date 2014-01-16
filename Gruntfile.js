@@ -37,7 +37,8 @@ module.exports = function (grunt) {
       src: 'src',
       app: 'app',
       css: [
-        '<%= config.src %>/scss/main.scss'
+        '<%= config.src %>/scss/main.scss',
+        '<%= config.src %>/scss/main-ie8.scss'
       ],
       js: [
         '<%= config.src %>/js/lib/classie/classie.js',
@@ -170,7 +171,8 @@ module.exports = function (grunt) {
           banner: '<%= tag.banner %>'
         },
         files: {
-          '<%= config.app %>/css/main.css': '<%= config.css %>'
+          '<%= config.app %>/css/main.css': '<%= config.css[0] %>',
+          '<%= config.app %>/css/main-ie8.css': '<%= config.css[1] %>'
         }
       },
       dist: {
