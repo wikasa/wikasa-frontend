@@ -2266,6 +2266,10 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 button[disabled],
@@ -2333,6 +2337,32 @@ body {
   font-family: SansRegular, Arial, sans-serif;
   background-color: #f3f3f3;
   min-height: 100%;
+}
+
+p, pre, ol, ul, address, a {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 1.88235;
+}
+
+i, cite, em, var, dfn {
+  font-family: SansLightItalic, Arial, sans-serif;
+  font-style: normal;
+}
+
+address {
+  font-family: SansRegular, Arial, sans-serif;
+  font-style: normal;
+}
+
+blockquote {
+  font-family: SerifItalic, Arial, sans-serif;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #2b2f3a;
 }
 
 /** ------------------------------------------------------------------------- *\
@@ -4081,32 +4111,37 @@ body {
   background-color: #DDD;
 }
 
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-HEAD
+ *  
+ *  Head object used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.common-heads {
+  background-color: #FFF;
+  font-size: 1em;
+  height: 3em;
+  width: 100%;
+}
+
+.common-head > *[class^="comhead"] {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 3em;
+  max-height: 3em;
+}
+
 body {
   min-height: 1000px;
 }
 
-p, pre, ol, ul, address {
-  font-size: 17px;
-  font-size: 1.0625rem;
-  line-height: 1.88235;
-}
-p.test-serif, pre.test-serif, ol.test-serif, ul.test-serif, address.test-serif {
-  font-family: SerifRegular, Arial, sans-serif;
-}
-
-i, cite, em, var, dfn {
-  font-family: SansLightItalic, Arial, sans-serif;
-  font-style: normal;
-}
-
-address {
-  font-family: SansRegular, Arial, sans-serif;
-  font-style: normal;
-}
-
-blockquote {
-  font-family: SerifItalic, Arial, sans-serif;
-  font-style: normal;
+.hid {
+  display: none !important;
 }
 
 p.typesetting-subhead {

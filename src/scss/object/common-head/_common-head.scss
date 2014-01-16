@@ -1,0 +1,27 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-HEAD
+ *  
+ *  Head object used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.common-heads {
+    background-color: #FFF;
+    font-size: 1em;
+    height: 3em;
+    width: 100%;
+}
+
+.common-head {
+    & > *[class^="comhead"] {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        height: 3em;
+        max-height: 3em;
+    }
+}
