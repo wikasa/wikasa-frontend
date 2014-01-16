@@ -2,27 +2,6 @@ body {
 	min-height: 1000px;
 }
 
-p, pre, ol, ul, address {
-	@include typecsset-font-size(17px);
-
-	&.test-serif { font-family: $ff-serif-regular; }
-}
-
-i, cite, em, var, dfn {
-	font-family: $ff-sans-lightitalic;
-	font-style: normal;
-}
-
-address {
-	font-family: $ff-sans-regular;
-	font-style: normal;
-}
-
-blockquote {
-	font-family: $ff-serif-italic;
-	font-style: normal;	
-}
-
 p.typesetting-subhead {
 	@include typecsset-font-size(14px);
 	@include typecsset-space(padding-top);

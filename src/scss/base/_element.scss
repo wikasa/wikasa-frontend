@@ -38,3 +38,29 @@ body {
     background-color: $whiteDark1;
     min-height: 100%;
 }
+
+// ----------------------------------------------------------------------------\
+// Typography.
+// ----------------------------------------------------------------------------/
+%ff-serif {
+    font-family: $ff-serif-regular;
+}
+
+p, pre, ol, ul, address {
+    @include typecsset-font-size(17px);
+}
+
+i, cite, em, var, dfn {
+    font-family: $ff-sans-lightitalic;
+    font-style: normal;
+}
+
+address {
+    font-family: $ff-sans-regular;
+    font-style: normal;
+}
+
+blockquote {
+    font-family: $ff-serif-italic;
+    font-style: normal; 
+}
