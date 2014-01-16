@@ -2315,19 +2315,23 @@ body {
  *  
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
+.container, .mains,
 *[class^="container"] {
   min-height: 5em;
   font-size: 1em;
 }
+.container:after, .mains:after,
 *[class^="container"]:after {
   content: "";
   display: table;
   clear: both;
 }
+.container:nth-child(n+2), .mains:nth-child(n+2),
 *[class^="container"]:nth-child(n+2) {
   margin-top: 1em;
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
+  .container, .mains,
   *[class^="container"] {
     width: 20em;
     margin: 0 auto;
@@ -2335,6 +2339,7 @@ body {
   }
 }
 @media screen and (min-width: 640px) and (max-width: 959px) {
+  .container, .mains,
   *[class^="container"] {
     width: 38em;
     margin: 0 auto;
@@ -2342,6 +2347,7 @@ body {
   }
 }
 @media screen and (min-width: 960px) and (max-width: 1279px) {
+  .container, .mains,
   *[class^="container"] {
     width: 59em;
     margin: 0 auto;
@@ -2349,6 +2355,7 @@ body {
   }
 }
 @media screen and (min-width: 1280px) {
+  .container, .mains,
   *[class^="container"] {
     width: 71em;
     margin: 0 auto;
@@ -2359,7 +2366,8 @@ body {
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-GRIDDED
  *  
- *  A set of objects (placeholder) with predefined size.
+ *  A set of containers, rows, and columns with predefined size,
+ *  and aligned with its underlying grid.
  *  
  *  @author Bangsawan & Silvia
  *  
@@ -2375,248 +2383,248 @@ body {
  *  Predefined Container Objects
  ** ------------------------------------------------------------------------- */
 @media screen and (min-width: 320px) and (max-width: 639px) {
-  .container > .column-alpha {
+  .container > .column-alpha, .mains > .column-alpha {
     float: left;
     margin-right: -100%;
     width: 6em;
   }
-  .container > .column-beta {
+  .container > .column-beta, .mains > .column-beta {
     float: left;
     margin-right: -100%;
     width: 13em;
   }
-  .container > .column-gamma {
+  .container > .column-gamma, .mains > .column-gamma {
     float: left;
     margin-right: -100%;
     width: 20em;
   }
-  .container > .column-delta {
+  .container > .column-delta, .mains > .column-delta {
     float: left;
     margin-right: -100%;
     width: 20em;
   }
-  .container > .column-epsilon {
+  .container > .column-epsilon, .mains > .column-epsilon {
     float: left;
     margin-right: -100%;
     width: 20em;
   }
-  .container > .column-zeta {
+  .container > .column-zeta, .mains > .column-zeta {
     float: left;
     margin-right: -100%;
     width: 20em;
   }
-  .container > .column-eta {
+  .container > .column-eta, .mains > .column-eta {
     float: left;
     margin-right: -100%;
     width: 20em;
   }
-  .container > .column-theta {
+  .container > .column-theta, .mains > .column-theta {
     float: left;
     margin-right: -100%;
     width: 20em;
   }
-  .container > .column-iota {
+  .container > .column-iota, .mains > .column-iota {
     float: left;
     margin-right: -100%;
     width: 20em;
   }
-  .container > .column-kappa {
+  .container > .column-kappa, .mains > .column-kappa {
     float: left;
     margin-right: -100%;
     width: 20em;
   }
-  .container > .column-lambda {
+  .container > .column-lambda, .mains > .column-lambda {
     float: left;
     margin-right: -100%;
     width: 20em;
   }
-  .container > .column-mu {
+  .container > .column-mu, .mains > .column-mu {
     float: left;
     margin-right: -100%;
     width: 20em;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 959px) {
-  .container > .column-alpha {
+  .container > .column-alpha, .mains > .column-alpha {
     float: left;
     margin-right: -100%;
     width: 5.5em;
   }
-  .container > .column-beta {
+  .container > .column-beta, .mains > .column-beta {
     float: left;
     margin-right: -100%;
     width: 12em;
   }
-  .container > .column-gamma {
+  .container > .column-gamma, .mains > .column-gamma {
     float: left;
     margin-right: -100%;
     width: 18.5em;
   }
-  .container > .column-delta {
+  .container > .column-delta, .mains > .column-delta {
     float: left;
     margin-right: -100%;
     width: 25em;
   }
-  .container > .column-epsilon {
+  .container > .column-epsilon, .mains > .column-epsilon {
     float: left;
     margin-right: -100%;
     width: 31.5em;
   }
-  .container > .column-zeta {
+  .container > .column-zeta, .mains > .column-zeta {
     float: left;
     margin-right: -100%;
     width: 38em;
   }
-  .container > .column-eta {
+  .container > .column-eta, .mains > .column-eta {
     float: left;
     margin-right: -100%;
     width: 38em;
   }
-  .container > .column-theta {
+  .container > .column-theta, .mains > .column-theta {
     float: left;
     margin-right: -100%;
     width: 38em;
   }
-  .container > .column-iota {
+  .container > .column-iota, .mains > .column-iota {
     float: left;
     margin-right: -100%;
     width: 38em;
   }
-  .container > .column-kappa {
+  .container > .column-kappa, .mains > .column-kappa {
     float: left;
     margin-right: -100%;
     width: 38em;
   }
-  .container > .column-lambda {
+  .container > .column-lambda, .mains > .column-lambda {
     float: left;
     margin-right: -100%;
     width: 38em;
   }
-  .container > .column-mu {
+  .container > .column-mu, .mains > .column-mu {
     float: left;
     margin-right: -100%;
     width: 38em;
   }
 }
 @media screen and (min-width: 960px) and (max-width: 1279px) {
-  .container > .column-alpha {
+  .container > .column-alpha, .mains > .column-alpha {
     float: left;
     margin-right: -100%;
     width: 4em;
   }
-  .container > .column-beta {
+  .container > .column-beta, .mains > .column-beta {
     float: left;
     margin-right: -100%;
     width: 9em;
   }
-  .container > .column-gamma {
+  .container > .column-gamma, .mains > .column-gamma {
     float: left;
     margin-right: -100%;
     width: 14em;
   }
-  .container > .column-delta {
+  .container > .column-delta, .mains > .column-delta {
     float: left;
     margin-right: -100%;
     width: 19em;
   }
-  .container > .column-epsilon {
+  .container > .column-epsilon, .mains > .column-epsilon {
     float: left;
     margin-right: -100%;
     width: 24em;
   }
-  .container > .column-zeta {
+  .container > .column-zeta, .mains > .column-zeta {
     float: left;
     margin-right: -100%;
     width: 29em;
   }
-  .container > .column-eta {
+  .container > .column-eta, .mains > .column-eta {
     float: left;
     margin-right: -100%;
     width: 34em;
   }
-  .container > .column-theta {
+  .container > .column-theta, .mains > .column-theta {
     float: left;
     margin-right: -100%;
     width: 39em;
   }
-  .container > .column-iota {
+  .container > .column-iota, .mains > .column-iota {
     float: left;
     margin-right: -100%;
     width: 44em;
   }
-  .container > .column-kappa {
+  .container > .column-kappa, .mains > .column-kappa {
     float: left;
     margin-right: -100%;
     width: 49em;
   }
-  .container > .column-lambda {
+  .container > .column-lambda, .mains > .column-lambda {
     float: left;
     margin-right: -100%;
     width: 54em;
   }
-  .container > .column-mu {
+  .container > .column-mu, .mains > .column-mu {
     float: left;
     margin-right: -100%;
     width: 59em;
   }
 }
 @media screen and (min-width: 1280px) {
-  .container > .column-alpha {
+  .container > .column-alpha, .mains > .column-alpha {
     float: left;
     margin-right: -100%;
     width: 5em;
   }
-  .container > .column-beta {
+  .container > .column-beta, .mains > .column-beta {
     float: left;
     margin-right: -100%;
     width: 11em;
   }
-  .container > .column-gamma {
+  .container > .column-gamma, .mains > .column-gamma {
     float: left;
     margin-right: -100%;
     width: 17em;
   }
-  .container > .column-delta {
+  .container > .column-delta, .mains > .column-delta {
     float: left;
     margin-right: -100%;
     width: 23em;
   }
-  .container > .column-epsilon {
+  .container > .column-epsilon, .mains > .column-epsilon {
     float: left;
     margin-right: -100%;
     width: 29em;
   }
-  .container > .column-zeta {
+  .container > .column-zeta, .mains > .column-zeta {
     float: left;
     margin-right: -100%;
     width: 35em;
   }
-  .container > .column-eta {
+  .container > .column-eta, .mains > .column-eta {
     float: left;
     margin-right: -100%;
     width: 41em;
   }
-  .container > .column-theta {
+  .container > .column-theta, .mains > .column-theta {
     float: left;
     margin-right: -100%;
     width: 47em;
   }
-  .container > .column-iota {
+  .container > .column-iota, .mains > .column-iota {
     float: left;
     margin-right: -100%;
     width: 53em;
   }
-  .container > .column-kappa {
+  .container > .column-kappa, .mains > .column-kappa {
     float: left;
     margin-right: -100%;
     width: 59em;
   }
-  .container > .column-lambda {
+  .container > .column-lambda, .mains > .column-lambda {
     float: left;
     margin-right: -100%;
     width: 65em;
   }
-  .container > .column-mu {
+  .container > .column-mu, .mains > .column-mu {
     float: left;
     margin-right: -100%;
     width: 71em;
@@ -3089,6 +3097,7 @@ body {
   }
 }
 
+/* CONTAINER UNI ------------------------------------------------------------ */
 @media screen and (min-width: 640px) and (max-width: 959px) {
   .container-uni-2 > *[class^="column"] {
     float: left;
@@ -3512,6 +3521,385 @@ body {
   .container-uni-12 > *[class^="column"]:nth-child(n + 13) {
     margin-top: 1em;
   }
+}
+
+/* CONTAINER CENTER --------------------------------------------------------- */
+@media screen and (min-width: 1280px) {
+  .container-center-2 > .column, .container-center-2 > .main, .container-center-2 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 11em;
+    margin-left: 30em;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .container-center-2 > .column, .container-center-2 > .main, .container-center-2 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 9em;
+    margin-left: 25em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .container-center-2 > .column, .container-center-2 > .main, .container-center-2 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 12em;
+    margin-left: 13em;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .container-center-2 > .column, .container-center-2 > .main, .container-center-2 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 13em;
+    margin-left: 3.5em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-center-4 > .column, .container-center-4 > .main, .container-center-4 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 23em;
+    margin-left: 24em;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .container-center-4 > .column, .container-center-4 > .main, .container-center-4 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 19em;
+    margin-left: 20em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .container-center-4 > .column, .container-center-4 > .main, .container-center-4 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 25em;
+    margin-left: 6.5em;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .container-center-4 > .column, .container-center-4 > .main, .container-center-4 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 20em;
+    margin-left: 0em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-center-6 > .column, .mains > .column, .container-center-6 > .main, .mains > .main, .container-center-6 > *[class^="column"], .mains > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 35em;
+    margin-left: 18em;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .container-center-6 > .column, .mains > .column, .container-center-6 > .main, .mains > .main, .container-center-6 > *[class^="column"], .mains > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 29em;
+    margin-left: 15em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .container-center-6 > .column, .mains > .column, .container-center-6 > .main, .mains > .main, .container-center-6 > *[class^="column"], .mains > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 25em;
+    margin-left: 6.5em;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .container-center-6 > .column, .mains > .column, .container-center-6 > .main, .mains > .main, .container-center-6 > *[class^="column"], .mains > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 20em;
+    margin-left: 0em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-center-8 > .column, .container-center-8 > .main, .container-center-8 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 47em;
+    margin-left: 12em;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .container-center-8 > .column, .container-center-8 > .main, .container-center-8 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 39em;
+    margin-left: 10em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .container-center-8 > .column, .container-center-8 > .main, .container-center-8 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 38em;
+    margin-left: 0em;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .container-center-8 > .column, .container-center-8 > .main, .container-center-8 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 20em;
+    margin-left: 0em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-center-10 > .column, .container-center-10 > .main, .container-center-10 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 59em;
+    margin-left: 6em;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .container-center-10 > .column, .container-center-10 > .main, .container-center-10 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 49em;
+    margin-left: 5em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .container-center-10 > .column, .container-center-10 > .main, .container-center-10 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 38em;
+    margin-left: 0em;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .container-center-10 > .column, .container-center-10 > .main, .container-center-10 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 20em;
+    margin-left: 0em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container-center-12 > .column, .container-center-12 > .main, .container-center-12 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 59em;
+    margin-left: 6em;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .container-center-12 > .column, .container-center-12 > .main, .container-center-12 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 49em;
+    margin-left: 5em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .container-center-12 > .column, .container-center-12 > .main, .container-center-12 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 38em;
+    margin-left: 0em;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .container-center-12 > .column, .container-center-12 > .main, .container-center-12 > *[class^="column"] {
+    float: left;
+    margin-right: -100%;
+    width: 20em;
+    margin-left: 0em;
+  }
+}
+
+/* PUSH COLUMN -------------------------------------------------------------- */
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .push0 {
+    margin-left: 0em;
+  }
+
+  .push1 {
+    margin-left: 7em;
+  }
+
+  .push2 {
+    margin-left: 14em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .push0 {
+    margin-left: 0em;
+  }
+
+  .push1 {
+    margin-left: 3.25em;
+  }
+
+  .push2 {
+    margin-left: 6.5em;
+  }
+
+  .push3 {
+    margin-left: 9.75em;
+  }
+
+  .push4 {
+    margin-left: 13em;
+  }
+
+  .push5 {
+    margin-left: 16.25em;
+  }
+
+  .push6 {
+    margin-left: 19.5em;
+  }
+
+  .push7 {
+    margin-left: 22.75em;
+  }
+
+  .push8 {
+    margin-left: 26em;
+  }
+
+  .push9 {
+    margin-left: 29.25em;
+  }
+
+  .push10 {
+    margin-left: 32.5em;
+  }
+
+  .push11 {
+    margin-left: 35.75em;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .push0 {
+    margin-left: 0em;
+  }
+
+  .push1 {
+    margin-left: 5em;
+  }
+
+  .push2 {
+    margin-left: 10em;
+  }
+
+  .push3 {
+    margin-left: 15em;
+  }
+
+  .push4 {
+    margin-left: 20em;
+  }
+
+  .push5 {
+    margin-left: 25em;
+  }
+
+  .push6 {
+    margin-left: 30em;
+  }
+
+  .push7 {
+    margin-left: 35em;
+  }
+
+  .push8 {
+    margin-left: 40em;
+  }
+
+  .push9 {
+    margin-left: 45em;
+  }
+
+  .push10 {
+    margin-left: 50em;
+  }
+
+  .push11 {
+    margin-left: 55em;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .push0 {
+    margin-left: 0em;
+  }
+
+  .push1 {
+    margin-left: 6em;
+  }
+
+  .push2 {
+    margin-left: 12em;
+  }
+
+  .push3 {
+    margin-left: 18em;
+  }
+
+  .push4 {
+    margin-left: 24em;
+  }
+
+  .push5 {
+    margin-left: 30em;
+  }
+
+  .push6 {
+    margin-left: 36em;
+  }
+
+  .push7 {
+    margin-left: 42em;
+  }
+
+  .push8 {
+    margin-left: 48em;
+  }
+
+  .push9 {
+    margin-left: 54em;
+  }
+
+  .push10 {
+    margin-left: 60em;
+  }
+
+  .push11 {
+    margin-left: 66em;
+  }
+}
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-LAYOUT
+ *  
+ *  A set of layout objects with specific implemention the Wikasa.
+ *  
+ *  @author Bangsawan & Silvia
+ *  
+ *  @version 0.0.1
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+/* MAIN LAYOUT -------------------------------------------------------------- */
+.mains {
+  min-height: 1em;
+}
+
+.main {
+  min-height: 1em;
 }
 
 body {

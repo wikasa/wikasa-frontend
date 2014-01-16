@@ -1,7 +1,8 @@
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-GRIDDED
  *  
- *  A set of objects (placeholder) with predefined size.
+ *  A set of containers, rows, and columns with predefined size,
+ *  and aligned with its underlying grid.
  *  
  *  @author Bangsawan & Silvia
  *  
@@ -32,6 +33,15 @@ $_items: 'alpha',
 // =========================================================================== \
 // Local Mixin
 // =========================================================================== /
+
+// PUSH MIXIN ---------------------------------------------------------------- >
+@mixin _push($_total_columns: 12) {
+    @for $i from 0 through ($_total_columns - 1){
+        .#{$class_push}#{$i} {
+            @include push($i);
+        }
+    }
+}
 
 // CONTAINER STANDARD MIXIN -------------------------------------------------- >
 @mixin _container-std() {
@@ -146,6 +156,8 @@ $_container-uni-types: 2 3 4 6 12;
     }
 }
 
+/* CONTAINER UNI ------------------------------------------------------------ */
+
 @each $_type in $_container-uni-types {
     .container-uni-#{$_type} {
         @include media-query($tablet) {
@@ -178,4 +190,85 @@ $_container-uni-types: 2 3 4 6 12;
             }
         }
     }
+}
+
+/* CONTAINER CENTER --------------------------------------------------------- */
+$_container-center-type: 2 4 6 8 10 12;
+
+@mixin _container-center($_type) {
+    @if $_type <= $total_columns {
+        @if $_type == $total_columns {
+            $_type: $_type - 2;
+        }
+        $_margin: ($total_columns - $_type) / 2;
+        @include column($_type);
+        @include push($_margin);
+    } @else {
+        $_margin: 0;
+        @include column($total_columns);
+        @include push($_margin);
+    }
+}
+
+@each $_type in $_container-center-type {
+    .container-center-#{$_type} {
+        @include media-query($wide) {
+            $total_columns: 12;
+            $total_width: 71em; // 71 * 16px = 1136px
+            $_margin: ($total_columns - $_type) / 2;
+            & > .column,
+            & > *[class^="column"] {
+                @include _container-center($_type)
+            }
+        }
+        @include media-query($desktop) {
+            $total_columns: 12;
+            $total_width: 59em; // 71 * 16px = 1136px
+            $_margin: ($total_columns - $_type) / 2;
+            & > .column,
+            & > *[class^="column"] {
+                @include _container-center($_type)
+            }
+        }
+        @include media-query($tablet) {
+            $total_columns: 6;
+            $total_width: 38em; // 71 * 16px = 1136px
+            $_margin: ($total_columns - $_type) / 2;
+            & > .column,
+            & > *[class^="column"] {
+                @include _container-center($_type)
+            }
+        }
+        @include media-query($mobile) {
+            $total_columns: 3;
+            $total_width: 20em; // 71 * 16px = 1136px
+            $_margin: ($total_columns - $_type) / 2;
+            & > .column,
+            & > *[class^="column"] {
+                @include _container-center($_type)
+            }
+        }
+    }
+}
+
+/* PUSH COLUMN -------------------------------------------------------------- */
+@include media-query($mobile) {
+    $total_columns: 3;
+    $total_width: 20em; // 16 * 20px = 320px
+    @include _push($total_columns);
+}
+@include media-query($tablet) {
+    $total_columns: 12;
+    $total_width: 38em; // 16 * 20px = 320px
+    @include _push($total_columns);
+}
+@include media-query($desktop) {
+    $total_columns: 12;
+    $total_width: 59em; // 16 * 20px = 320px
+    @include _push($total_columns);
+}
+@include media-query($wide) {
+    $total_columns: 12;
+    $total_width: 71em; // 16 * 20px = 320px
+    @include _push($total_columns);
 }

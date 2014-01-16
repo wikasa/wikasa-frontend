@@ -13,6 +13,7 @@
     @return ( $total_columns * $_column_width) + ( ($total_columns - 1) * $gutter_width );
 }
 
+.container,
 *[class^="container"] {
     @include clearfix;
     min-height: 5em;

@@ -1,0 +1,22 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-LAYOUT
+ *  
+ *  A set of layout objects with specific implemention the Wikasa.
+ *  
+ *  @author Bangsawan & Silvia
+ *  
+ *  @version 0.0.1
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+/* MAIN LAYOUT -------------------------------------------------------------- */
+.mains {
+    @extend .container;
+    @extend .container-center-6;
+    min-height: 1em;
+}
+
+.main {
+    @extend .column;
+    min-height: 1em;
+}
