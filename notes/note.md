@@ -10,3 +10,31 @@
                 button.comhead-userpic
                 span.comhead-drop-icon
             a.comhead-link-search
+
+
+**COMMON SIDEBAR**
+
+    nav.sidebars
+        ul.sidebar-nav
+            li.sidebar-list > a.sidebar-link > span.sidebar-icon
+
+
+**COMMON SIDEBAR NAV**
+
+    nav.sidebars-nav
+        ul.sidebar-nav
+            li.sidebar-list > a.sidebar-link > span.sidebar-icon
+
+
+**COMMON SIDEBAR TOOL**
+
+    nav.sidebars-tool
+        ul.sidebar-tool
+            li.sidebar-list > a.sidebar-link > span.sidebar-icon
+
+
+**COMMON SIDEBAR TIMELINE**
+
+    nav.sidebars-timeline
+        ul.sidebar-timeline
+            li.sidebar-list > a.sidebar-link > span.sidebar-icon
