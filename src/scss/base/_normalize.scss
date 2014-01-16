@@ -406,6 +406,11 @@ input[type="submit"] {
     @if $legacy_support_for_ie {
         *overflow: visible;  // 4
     }
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
 }
 
 // Re-set default cursor for disabled elements
