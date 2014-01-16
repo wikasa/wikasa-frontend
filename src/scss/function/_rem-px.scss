@@ -25,7 +25,7 @@
             $val  : parseInt($value);
 
             @if ($old) and ($unit == 'rem') {
-                  $list: append($list, ($val * $pixelBase) + px);
+                  $list: append($list, ($val * $pixel-base) + px);
             }
 
             @else if($unit == 'px') or ($unit == 'rem'){
