@@ -2,6 +2,10 @@ body {
 	min-height: 1000px;
 }
 
+.hid {
+	display: none !important;
+}
+
 p.typesetting-subhead {
 	@include typecsset-font-size(14px);
 	@include typecsset-space(padding-top);

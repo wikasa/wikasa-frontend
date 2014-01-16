@@ -46,7 +46,7 @@ body {
     font-family: $ff-serif-regular;
 }
 
-p, pre, ol, ul, address {
+p, pre, ol, ul, address, a {
     @include typecsset-font-size(17px);
 }
 
@@ -63,4 +63,9 @@ address {
 blockquote {
     font-family: $ff-serif-italic;
     font-style: normal; 
+}
+
+a {
+    text-decoration: none;
+    color: $black;
 }
