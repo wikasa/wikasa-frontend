@@ -66,8 +66,8 @@ h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, pre, blockquote, table {
 }
 
 h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, pre, blockquote, table {
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 /*------------------------------------*\
@@ -80,16 +80,11 @@ h1, h2, h3, h4, h5, h6, ul, ol, dd, p, address, pre, blockquote, table {
  *    desired `line-height` (defined previously in pixels), and your project’s
  *    base font size.
  */
-/**
- * 3. If you have chosen to display a baseline grid, we turn it on here.
- */
 html {
   font-size: 1em;
   /* [1] */
-  line-height: 1.5;
+  line-height: 1;
   /* [2] */
-  background-image: url(http://basehold.it/i/24);
-  /* [3] */
 }
 
 body {
@@ -100,47 +95,47 @@ body {
     #HEADINGS
 \*------------------------------------*/
 h1 {
-  font-size: 48px;
-  font-size: 3rem;
-  line-height: 1;
-}
-
-h2 {
-  font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 1.33333;
-}
-
-h3 {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 1.6;
-}
-
-h4 {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1;
-}
-
-h5 {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.2;
 }
 
-h6 {
+h2 {
+  font-size: 26px;
+  font-size: 1.625rem;
+  line-height: 1.23077;
+}
+
+h3 {
   font-size: 18px;
   font-size: 1.125rem;
-  line-height: 1.33333;
+  line-height: 1.77778;
+}
+
+h4 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+}
+
+h5 {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.23077;
+}
+
+h6 {
+  font-size: 13px;
+  font-size: 0.8125rem;
+  line-height: 1.23077;
 }
 
 /*------------------------------------*\
     #LISTS
 \*------------------------------------*/
 ul, ol, dd {
-  margin-left: 48px;
-  margin-left: 3rem;
+  margin-left: 32px;
+  margin-left: 2rem;
 }
 
 li > ul,
@@ -186,8 +181,8 @@ blockquote {
  */
 blockquote {
   quotes: "“" "”";
-  margin-left: 48px;
-  margin-left: 3rem;
+  margin-left: 32px;
+  margin-left: 2rem;
 }
 blockquote p:before {
   content: "“";
@@ -243,7 +238,7 @@ table {
 
 th,
 td {
-  padding: 12px;
+  padding: 8px;
 }
 
 /*!
@@ -2031,6 +2026,51 @@ td {
   font-stretch: normal;
 }
 
+@font-face {
+  font-family: "SerifBold";
+  src: url('../fonts/lucida_bright_demibold-webfont.eot');
+  src: url('../fonts/lucida_bright_demibold-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/lucida_bright_demibold-webfont.woff') format("woff"), url('../fonts/lucida_bright_demibold-webfont.ttf') format("truetype"), url('../fonts/lucida_bright_demibold-webfont.svg#SerifBold') format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "SerifBoldItalic";
+  src: url('../fonts/lucida_bright_demibold_italic-webfont.eot');
+  src: url('../fonts/lucida_bright_demibold_italic-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/lucida_bright_demibold_italic-webfont.woff') format("woff"), url('../fonts/lucida_bright_demibold_italic-webfont.ttf') format("truetype"), url('../fonts/lucida_bright_demibold_italic-webfont.svg#SerifBoldItalic') format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "SerifItalic";
+  src: url('../fonts/lucida_bright_italic-webfont.eot');
+  src: url('../fonts/lucida_bright_italic-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/lucida_bright_italic-webfont.woff') format("woff"), url('../fonts/lucida_bright_italic-webfont.ttf') format("truetype"), url('../fonts/lucida_bright_italic-webfont.svg#SerifItalic') format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "SerifRegular";
+  src: url('../fonts/lucida_bright-webfont.eot');
+  src: url('../fonts/lucida_bright-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/lucida_bright-webfont.woff') format("woff"), url('../fonts/lucida_bright-webfont.ttf') format("truetype"), url('../fonts/lucida_bright-webfont.svg#SerifRegular') format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "IconFont";
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/fontawesome-webfont.woff') format("woff"), url('../fonts/fontawesome-webfont.ttf') format("truetype"), url('../fonts/fontawesome-webfont.svg#IconFont') format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
 /** ----------------------------------------------------------------- *\
  *  WIKASA.BASE.SETTING
  *  
@@ -2315,11 +2355,6 @@ body {
  *  
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
-*[class^="container"].test {
-  background-color: #EEE;
-  min-height: 1em;
-}
-
 .container, .mains,
 *[class^="container"] {
   font-size: 1em;
@@ -2337,7 +2372,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 639px) {
   .container, .mains,
   *[class^="container"] {
-    width: 20em;
+    width: 18.5em;
     margin: 0 auto;
   }
 }
@@ -2361,6 +2396,12 @@ body {
     width: 71em;
     margin: 0 auto;
   }
+}
+
+/* TEST MOCK ---------------------------------------------------------------- */
+*[class^="container"].test {
+  background-color: #EEE;
+  min-height: 1em;
 }
 
 /** ------------------------------------------------------------------------- *\
@@ -2374,11 +2415,6 @@ body {
  *  @version 0.0.1
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
-*[class^="container"].test > *[class^="column"] {
-  min-height: 5em;
-  background-color: #DDD;
-}
-
 /** ------------------------------------------------------------------------- *\
  *  Predefined Container Objects
  ** ------------------------------------------------------------------------- */
@@ -2386,62 +2422,74 @@ body {
   .container > .column-alpha, .mains > .column-alpha {
     float: left;
     margin-right: -100%;
-    width: 6em;
+    width: 5.5em;
+    word-break: break-word;
   }
   .container > .column-beta, .mains > .column-beta {
     float: left;
     margin-right: -100%;
-    width: 13em;
+    width: 12em;
+    word-break: break-word;
   }
   .container > .column-gamma, .mains > .column-gamma {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
   }
   .container > .column-delta, .mains > .column-delta {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
   }
   .container > .column-epsilon, .mains > .column-epsilon {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
   }
   .container > .column-zeta, .mains > .column-zeta {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
   }
   .container > .column-eta, .mains > .column-eta {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
   }
   .container > .column-theta, .mains > .column-theta {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
   }
   .container > .column-iota, .mains > .column-iota {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
   }
   .container > .column-kappa, .mains > .column-kappa {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
   }
   .container > .column-lambda, .mains > .column-lambda {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
   }
   .container > .column-mu, .mains > .column-mu {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 959px) {
@@ -2449,61 +2497,73 @@ body {
     float: left;
     margin-right: -100%;
     width: 5.5em;
+    word-break: break-word;
   }
   .container > .column-beta, .mains > .column-beta {
     float: left;
     margin-right: -100%;
     width: 12em;
+    word-break: break-word;
   }
   .container > .column-gamma, .mains > .column-gamma {
     float: left;
     margin-right: -100%;
     width: 18.5em;
+    word-break: break-word;
   }
   .container > .column-delta, .mains > .column-delta {
     float: left;
     margin-right: -100%;
     width: 25em;
+    word-break: break-word;
   }
   .container > .column-epsilon, .mains > .column-epsilon {
     float: left;
     margin-right: -100%;
     width: 31.5em;
+    word-break: break-word;
   }
   .container > .column-zeta, .mains > .column-zeta {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
   }
   .container > .column-eta, .mains > .column-eta {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
   }
   .container > .column-theta, .mains > .column-theta {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
   }
   .container > .column-iota, .mains > .column-iota {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
   }
   .container > .column-kappa, .mains > .column-kappa {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
   }
   .container > .column-lambda, .mains > .column-lambda {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
   }
   .container > .column-mu, .mains > .column-mu {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
   }
 }
 @media screen and (min-width: 960px) and (max-width: 1279px) {
@@ -2511,61 +2571,73 @@ body {
     float: left;
     margin-right: -100%;
     width: 4em;
+    word-break: break-word;
   }
   .container > .column-beta, .mains > .column-beta {
     float: left;
     margin-right: -100%;
     width: 9em;
+    word-break: break-word;
   }
   .container > .column-gamma, .mains > .column-gamma {
     float: left;
     margin-right: -100%;
     width: 14em;
+    word-break: break-word;
   }
   .container > .column-delta, .mains > .column-delta {
     float: left;
     margin-right: -100%;
     width: 19em;
+    word-break: break-word;
   }
   .container > .column-epsilon, .mains > .column-epsilon {
     float: left;
     margin-right: -100%;
     width: 24em;
+    word-break: break-word;
   }
   .container > .column-zeta, .mains > .column-zeta {
     float: left;
     margin-right: -100%;
     width: 29em;
+    word-break: break-word;
   }
   .container > .column-eta, .mains > .column-eta {
     float: left;
     margin-right: -100%;
     width: 34em;
+    word-break: break-word;
   }
   .container > .column-theta, .mains > .column-theta {
     float: left;
     margin-right: -100%;
     width: 39em;
+    word-break: break-word;
   }
   .container > .column-iota, .mains > .column-iota {
     float: left;
     margin-right: -100%;
     width: 44em;
+    word-break: break-word;
   }
   .container > .column-kappa, .mains > .column-kappa {
     float: left;
     margin-right: -100%;
     width: 49em;
+    word-break: break-word;
   }
   .container > .column-lambda, .mains > .column-lambda {
     float: left;
     margin-right: -100%;
     width: 54em;
+    word-break: break-word;
   }
   .container > .column-mu, .mains > .column-mu {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -2573,61 +2645,73 @@ body {
     float: left;
     margin-right: -100%;
     width: 5em;
+    word-break: break-word;
   }
   .container > .column-beta, .mains > .column-beta {
     float: left;
     margin-right: -100%;
     width: 11em;
+    word-break: break-word;
   }
   .container > .column-gamma, .mains > .column-gamma {
     float: left;
     margin-right: -100%;
     width: 17em;
+    word-break: break-word;
   }
   .container > .column-delta, .mains > .column-delta {
     float: left;
     margin-right: -100%;
     width: 23em;
+    word-break: break-word;
   }
   .container > .column-epsilon, .mains > .column-epsilon {
     float: left;
     margin-right: -100%;
     width: 29em;
+    word-break: break-word;
   }
   .container > .column-zeta, .mains > .column-zeta {
     float: left;
     margin-right: -100%;
     width: 35em;
+    word-break: break-word;
   }
   .container > .column-eta, .mains > .column-eta {
     float: left;
     margin-right: -100%;
     width: 41em;
+    word-break: break-word;
   }
   .container > .column-theta, .mains > .column-theta {
     float: left;
     margin-right: -100%;
     width: 47em;
+    word-break: break-word;
   }
   .container > .column-iota, .mains > .column-iota {
     float: left;
     margin-right: -100%;
     width: 53em;
+    word-break: break-word;
   }
   .container > .column-kappa, .mains > .column-kappa {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
   }
   .container > .column-lambda, .mains > .column-lambda {
     float: left;
     margin-right: -100%;
     width: 65em;
+    word-break: break-word;
   }
   .container > .column-mu, .mains > .column-mu {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
   }
 }
 
@@ -2636,7 +2720,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2645,7 +2730,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2654,7 +2740,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2663,7 +2750,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2672,7 +2760,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2681,7 +2770,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2690,7 +2780,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2699,7 +2790,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2708,7 +2800,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2717,7 +2810,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2726,7 +2820,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2735,7 +2830,8 @@ body {
   .container-full > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2747,6 +2843,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2756,6 +2853,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2765,6 +2863,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2774,6 +2873,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2783,6 +2883,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2792,6 +2893,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2801,6 +2903,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2810,6 +2913,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2819,6 +2923,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2828,6 +2933,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2837,6 +2943,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2846,6 +2953,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2857,6 +2965,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2866,6 +2975,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2875,6 +2985,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2884,6 +2995,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2893,6 +3005,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2902,6 +3015,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2911,6 +3025,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2920,6 +3035,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2929,6 +3045,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2938,6 +3055,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2947,6 +3065,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2956,6 +3075,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2967,6 +3087,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2976,6 +3097,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2985,6 +3107,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -2994,6 +3117,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -3003,6 +3127,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -3012,6 +3137,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -3021,6 +3147,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -3030,6 +3157,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -3039,6 +3167,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -3048,6 +3177,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -3057,6 +3187,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -3066,6 +3197,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 71em;
+    word-break: break-word;
     float: none;
   }
   .container-full > *[class^="column"]:nth-child(n+2) {
@@ -3078,16 +3210,17 @@ body {
   *[class^="container-uni-"] > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 6em;
+    width: 5.5em;
+    word-break: break-word;
   }
   *[class^="container-uni-"] > *[class^="column"]:nth-child(3n + 1) {
     margin-left: 0em;
   }
   *[class^="container-uni-"] > *[class^="column"]:nth-child(3n + 2) {
-    margin-left: 7em;
+    margin-left: 6.5em;
   }
   *[class^="container-uni-"] > *[class^="column"]:nth-child(3n + 3) {
-    margin-left: 14em;
+    margin-left: 13em;
   }
   *[class^="container-uni-"] > *[class^="column"]:nth-child(3n + 4) {
     clear: left;
@@ -3103,6 +3236,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 18.5em;
+    word-break: break-word;
   }
   .container-uni-2 > *[class^="column"]:nth-child(2n + 1) {
     margin-left: 0em;
@@ -3122,6 +3256,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 29em;
+    word-break: break-word;
   }
   .container-uni-2 > *[class^="column"]:nth-child(2n + 1) {
     margin-left: 0em;
@@ -3141,6 +3276,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 35em;
+    word-break: break-word;
   }
   .container-uni-2 > *[class^="column"]:nth-child(2n + 1) {
     margin-left: 0em;
@@ -3161,6 +3297,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 12em;
+    word-break: break-word;
   }
   .container-uni-3 > *[class^="column"]:nth-child(3n + 1) {
     margin-left: 0em;
@@ -3183,6 +3320,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 19em;
+    word-break: break-word;
   }
   .container-uni-3 > *[class^="column"]:nth-child(3n + 1) {
     margin-left: 0em;
@@ -3205,6 +3343,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 23em;
+    word-break: break-word;
   }
   .container-uni-3 > *[class^="column"]:nth-child(3n + 1) {
     margin-left: 0em;
@@ -3228,6 +3367,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 8.75em;
+    word-break: break-word;
   }
   .container-uni-4 > *[class^="column"]:nth-child(4n + 1) {
     margin-left: 0em;
@@ -3253,6 +3393,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 14em;
+    word-break: break-word;
   }
   .container-uni-4 > *[class^="column"]:nth-child(4n + 1) {
     margin-left: 0em;
@@ -3278,6 +3419,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 17em;
+    word-break: break-word;
   }
   .container-uni-4 > *[class^="column"]:nth-child(4n + 1) {
     margin-left: 0em;
@@ -3304,6 +3446,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 5.5em;
+    word-break: break-word;
   }
   .container-uni-6 > *[class^="column"]:nth-child(6n + 1) {
     margin-left: 0em;
@@ -3335,6 +3478,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 9em;
+    word-break: break-word;
   }
   .container-uni-6 > *[class^="column"]:nth-child(6n + 1) {
     margin-left: 0em;
@@ -3366,6 +3510,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 11em;
+    word-break: break-word;
   }
   .container-uni-6 > *[class^="column"]:nth-child(6n + 1) {
     margin-left: 0em;
@@ -3398,6 +3543,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 5.5em;
+    word-break: break-word;
   }
   .container-uni-12 > *[class^="column"]:nth-child(6n + 1) {
     margin-left: 0em;
@@ -3429,6 +3575,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 4em;
+    word-break: break-word;
   }
   .container-uni-12 > *[class^="column"]:nth-child(12n + 1) {
     margin-left: 0em;
@@ -3478,6 +3625,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 5em;
+    word-break: break-word;
   }
   .container-uni-12 > *[class^="column"]:nth-child(12n + 1) {
     margin-left: 0em;
@@ -3529,6 +3677,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 11em;
+    word-break: break-word;
     margin-left: 30em;
   }
 }
@@ -3537,6 +3686,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 9em;
+    word-break: break-word;
     margin-left: 25em;
   }
 }
@@ -3545,6 +3695,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 12em;
+    word-break: break-word;
     margin-left: 13em;
   }
 }
@@ -3552,8 +3703,9 @@ body {
   .container-center-2 > .column, .container-center-2 > .main, .container-center-2 > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 13em;
-    margin-left: 3.5em;
+    width: 12em;
+    word-break: break-word;
+    margin-left: 3.25em;
   }
 }
 
@@ -3562,6 +3714,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 23em;
+    word-break: break-word;
     margin-left: 24em;
   }
 }
@@ -3570,6 +3723,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 19em;
+    word-break: break-word;
     margin-left: 20em;
   }
 }
@@ -3578,6 +3732,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 25em;
+    word-break: break-word;
     margin-left: 6.5em;
   }
 }
@@ -3585,7 +3740,8 @@ body {
   .container-center-4 > .column, .container-center-4 > .main, .container-center-4 > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     margin-left: 0em;
   }
 }
@@ -3595,6 +3751,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 35em;
+    word-break: break-word;
     margin-left: 18em;
   }
 }
@@ -3603,6 +3760,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 29em;
+    word-break: break-word;
     margin-left: 15em;
   }
 }
@@ -3611,6 +3769,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 25em;
+    word-break: break-word;
     margin-left: 6.5em;
   }
 }
@@ -3618,7 +3777,8 @@ body {
   .container-center-6 > .column, .mains > .column, .container-center-6 > .main, .mains > .main, .container-center-6 > *[class^="column"], .mains > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     margin-left: 0em;
   }
 }
@@ -3628,6 +3788,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 47em;
+    word-break: break-word;
     margin-left: 12em;
   }
 }
@@ -3636,6 +3797,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 39em;
+    word-break: break-word;
     margin-left: 10em;
   }
 }
@@ -3644,6 +3806,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     margin-left: 0em;
   }
 }
@@ -3651,7 +3814,8 @@ body {
   .container-center-8 > .column, .container-center-8 > .main, .container-center-8 > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     margin-left: 0em;
   }
 }
@@ -3661,6 +3825,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     margin-left: 6em;
   }
 }
@@ -3669,6 +3834,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 49em;
+    word-break: break-word;
     margin-left: 5em;
   }
 }
@@ -3677,6 +3843,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     margin-left: 0em;
   }
 }
@@ -3684,7 +3851,8 @@ body {
   .container-center-10 > .column, .container-center-10 > .main, .container-center-10 > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     margin-left: 0em;
   }
 }
@@ -3694,6 +3862,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 59em;
+    word-break: break-word;
     margin-left: 6em;
   }
 }
@@ -3702,6 +3871,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 49em;
+    word-break: break-word;
     margin-left: 5em;
   }
 }
@@ -3710,6 +3880,7 @@ body {
     float: left;
     margin-right: -100%;
     width: 38em;
+    word-break: break-word;
     margin-left: 0em;
   }
 }
@@ -3717,7 +3888,8 @@ body {
   .container-center-12 > .column, .container-center-12 > .main, .container-center-12 > *[class^="column"] {
     float: left;
     margin-right: -100%;
-    width: 20em;
+    width: 18.5em;
+    word-break: break-word;
     margin-left: 0em;
   }
 }
@@ -3729,11 +3901,11 @@ body {
   }
 
   .push1 {
-    margin-left: 7em;
+    margin-left: 6.5em;
   }
 
   .push2 {
-    margin-left: 14em;
+    margin-left: 13em;
   }
 }
 @media screen and (min-width: 640px) and (max-width: 959px) {
@@ -3883,6 +4055,12 @@ body {
     margin-left: 66em;
   }
 }
+/* TEST MOCK ---------------------------------------------------------------- */
+*[class^="container"].test > *[class^="column"] {
+  min-height: 5em;
+  background-color: #DDD;
+}
+
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-LAYOUT
  *  
@@ -3905,4 +4083,39 @@ body {
 
 body {
   min-height: 1000px;
+}
+
+p, pre, ol, ul, address {
+  font-size: 17px;
+  font-size: 1.0625rem;
+  line-height: 1.88235;
+}
+p.test-serif, pre.test-serif, ol.test-serif, ul.test-serif, address.test-serif {
+  font-family: SerifRegular, Arial, sans-serif;
+}
+
+i, cite, em, var, dfn {
+  font-family: SansLightItalic, Arial, sans-serif;
+  font-style: normal;
+}
+
+address {
+  font-family: SansRegular, Arial, sans-serif;
+  font-style: normal;
+}
+
+blockquote {
+  font-family: SerifItalic, Arial, sans-serif;
+  font-style: normal;
+}
+
+p.typesetting-subhead {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+  padding-top: 32px;
+  padding-top: 2rem;
+  margin-top: 2em;
+  border-bottom: 1px solid #999;
+  color: #999;
 }

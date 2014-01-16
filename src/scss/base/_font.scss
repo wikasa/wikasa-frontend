@@ -17,6 +17,15 @@ $ff-sans-regular: SansRegular, Arial, sans-serif;
 $ff-sans-light: SansLight, Arial, sans-serif;
 $ff-sans-lightitalic: SansLightItalic, Arial, sans-serif;
 
-// @include rb-font-face( 'IconFont', 'fontawesome-webfont' );
+@include rb-font-face( 'SerifBold',       'lucida_bright_demibold-webfont' );
+@include rb-font-face( 'SerifBoldItalic', 'lucida_bright_demibold_italic-webfont' );
+@include rb-font-face( 'SerifItalic', 'lucida_bright_italic-webfont' );
+@include rb-font-face( 'SerifRegular', 'lucida_bright-webfont' );
 
+$ff-serif-bold: SerifBold, Arial, sans-serif;
+$ff-serif-boldItalic: SerifBoldItalic, Arial, sans-serif;
+$ff-serif-italic: SerifItalic, Arial, sans-serif;
+$ff-serif-regular: SerifRegular, Arial, sans-serif;
+
+@include rb-font-face( 'IconFont', 'fontawesome-webfont' );
 $ff-iconfont: FontAwesome;

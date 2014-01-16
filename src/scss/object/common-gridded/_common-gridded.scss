@@ -23,12 +23,6 @@ $_items: 'alpha',
          'lambda',
          'mu';
 
-// for testing purpose only.
-*[class^="container"].test > *[class^="column"] {
-    min-height: 5em;
-    background-color: #DDD;
-}
-
 // =========================================================================== \
 // Local Mixin
 // =========================================================================== /
@@ -92,7 +86,7 @@ $_items: 'alpha',
 .container {
     @include media-query($mobile) {
         $total_columns: 3;
-        $total_width: 20em; // 20 * 16px = 320px
+        $total_width: 18.5em; // 18.5 * 16px = 296px
         @include _container-std;
     }
 
@@ -120,7 +114,7 @@ $_items: 'alpha',
 .container-full {
     @include media-query($mobile) {
         $total_columns: 3;
-        $total_width: 20em; // 20 * 16px = 320px
+        $total_width: 18.5em; // 18.5 * 16px = 296px
         @include _container-full;
     }
 
@@ -150,7 +144,7 @@ $_container-uni-types: 2 3 4 6 12;
 *[class^="container-uni-"] {
     @include media-query($mobile) {
         $total_columns: 3;
-        $total_width: 20em; // 16 * 20px = 320px
+        $total_width: 18.5em; // 18.5 * 16px = 296px
         @include container-uni(3);
     }
 }
@@ -240,7 +234,7 @@ $_container-center-type: 2 4 6 8 10 12;
         }
         @include media-query($mobile) {
             $total_columns: 3;
-            $total_width: 20em; // 71 * 16px = 1136px
+            $total_width: 18.5em; // 18.5 * 16px = 296px
             $_margin: ($total_columns - $_type) / 2;
             & > .column,
             & > *[class^="column"] {
@@ -253,7 +247,7 @@ $_container-center-type: 2 4 6 8 10 12;
 /* PUSH COLUMN -------------------------------------------------------------- */
 @include media-query($mobile) {
     $total_columns: 3;
-    $total_width: 20em; // 16 * 20px = 320px
+    $total_width: 18.5em; // 18.5 * 16px = 296px
     @include _push($total_columns);
 }
 @include media-query($tablet) {
@@ -270,4 +264,10 @@ $_container-center-type: 2 4 6 8 10 12;
     $total_columns: 12;
     $total_width: 71em; // 16 * 20px = 320px
     @include _push($total_columns);
+}
+
+/* TEST MOCK ---------------------------------------------------------------- */
+*[class^="container"].test > *[class^="column"] {
+    min-height: 5em;
+    background-color: #DDD;
 }

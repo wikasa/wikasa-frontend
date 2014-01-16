@@ -13,11 +13,6 @@
     @return ( $total_columns * $_column_width) + ( ($total_columns - 1) * $gutter_width );
 }
 
-*[class^="container"].test {
-    background-color: #EEE;
-    min-height: 1em;
-}
-
 .container,
 *[class^="container"] {
     @include clearfix;
@@ -27,7 +22,7 @@
 
     @include media-query($mobile) {
         $total_columns: 3;
-        $total_width: _total_width(6em); // 20em || 320px
+        $total_width: _total_width(5.5em); // 20em || 320px
         @include container();
     }
 
@@ -48,4 +43,10 @@
         $total_width: _total_width(5em); // 71em || 1136px
         @include container();
     }
+}
+
+/* TEST MOCK ---------------------------------------------------------------- */
+*[class^="container"].test {
+    background-color: #EEE;
+    min-height: 1em;
 }
