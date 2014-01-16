@@ -93,7 +93,8 @@ $_brand-beta-height: 32px;
 
     & > .comhead-link-search {
         @include media-query($mobile) { display: none !important; }
-        
+
+        text-align: center;
         width: z(3rem);
         border-right: 1px solid $whiteDark1;
         border-left: 1px solid $whiteDark1;

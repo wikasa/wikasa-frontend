@@ -4197,6 +4197,7 @@ a {
   border-left: 1px solid #f3f3f3;
 }
 .common-head > .comhead-link-search {
+  text-align: center;
   width: 3rem;
   border-right: 1px solid #f3f3f3;
   border-left: 1px solid #f3f3f3;
