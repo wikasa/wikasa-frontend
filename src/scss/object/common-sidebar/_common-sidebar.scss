@@ -1,7 +1,7 @@
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-SIDEBAR
  *  
- *  Sidebar object used globally.
+ *  Sidebar abstraction used by other sidebar objects.
  * 
  *  @author Bangsawan & Silvia
  *  @version 0.0.1
@@ -38,8 +38,8 @@
 
     font-size: $bp;
     overflow: hidden;
-    min-height: 100%;
-    height: 100%;
+    // min-height: 100%;
+    // height: 100%;
 }
 
 *[class^="common-sidebar-"] {
@@ -90,61 +90,4 @@
     @include media-query(min-width 40em) { max-width: 2rem; width: 2rem; }
     height: 100%;
     text-align: center;
-}
-
-/* COMMON SIDEBAR NAV ------------------------------------------------------- */
-.common-sidebars-nav {
-    @include media-query(max-width 39.9275em) { padding: 1rem 0 2rem 0; }
-    @include media-query(min-width 40em) { padding: 4rem 0 2rem 0; }
-
-    .common-sidebar-nav {
-        background-color: $black;
-    }
-
-    .comside-list {
-        border-bottom: 1px solid $whiteDark2;
-    }
-
-    .comside-link {
-        color: $white;
-        background-color: $black;
-
-        @include media-query(max-width 39.9275em) { padding: 0 1rem 0 3rem; }
-        @include media-query(min-width 40em) { padding: 0 1rem 0 2rem; }
-
-        &:not(.toggle) {
-            &:hover {
-                color: $black;
-                background-color: $whiteDark3;
-            }
-
-            *[class^="comside-icon-"] { display: none; }
-
-            &.active {
-                color: $orange;
-                *[class^="comside-icon-"] { display: block; }
-            }
-        }
-
-        &.toggle {
-            &:hover {
-                color: $white;
-                background-color: $green;
-            }
-            &.active { color: $white; }
-        }
-    }
-
-    &.close {
-        @include media-query(max-width 39.9275em) {
-            @include transition (all 0.3s ease-in);
-            min-height: 6rem;
-            height: 6rem;
-        }
-        .common-sidebar-nav { background-color: transparent; }
-        .comside-list:not(.toggle) {
-            @include transition (margin-left 0.3s ease-in);
-            @include media-query(min-width 40em) { margin-left: -100%; }
-        }
-    }
 }

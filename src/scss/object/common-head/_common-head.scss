@@ -11,16 +11,22 @@
 
 .common-heads {
     @include clearfix;
+    // position: fixed;
+    // top: 0;
+    z-index: 1999;
+    overflow: hidden;
+    max-height: z(3rem);
+    width: 100%;
+    height: z(3rem);
     background-color: #FFF;
     font-size: 1em;
-    height: z(3rem);
-    width: 100%;
 }
 
 .common-head {
 
     height: z(3rem);
     max-height: z(3rem);
+    border-bottom: 1px solid $whiteDark2;
 
     & > *[class^="comhead"] {
         display: inline-block;
@@ -106,7 +112,7 @@ $_brand-beta-height: 32px;
         @include media-query($mobile) { width: z(12rem); }
         @include media-query($tablet) { width: z(12rem); }
         @include media-query($desktop) { width: z(9rem); }
-        @include media-query($wide) { width: z(11rem); }
+        @include media-query($wide) { width: z(12rem); }
         float: right;
 
         & > * {

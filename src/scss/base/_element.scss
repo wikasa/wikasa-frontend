@@ -26,7 +26,7 @@
 // HTML.
 // ----------------------------------------------------------------------------/
 html {
-    background-color: $whiteDark1;
+    // background-color: $whiteDark1;
 }
 
 // ----------------------------------------------------------------------------\
@@ -35,7 +35,7 @@ html {
 body {
     display: block;
     min-height: 100%;
-    background-color: $whiteDark1;
+    // background-color: $whiteDark1;
     color: $black;
     font-family: $ff-sans-regular;
 }
@@ -49,6 +49,10 @@ body {
 
 p, pre, ol, ul, address, a {
     @include typecsset-font-size(17px);
+}
+
+p.test-serif {
+    font-family: $ff-serif-regular;
 }
 
 i, cite, em, var, dfn {

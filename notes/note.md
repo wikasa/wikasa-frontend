@@ -15,7 +15,7 @@
 **COMMON SIDEBAR**
 
     nav.common-sidebars
-        ul.common-sidebar-nav
+        ul.common-sidebar
             li.comside-list > a.comside-link > span.comside-icon
 
 

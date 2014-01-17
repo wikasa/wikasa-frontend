@@ -2328,14 +2328,9 @@ table {
   box-sizing: border-box;
 }
 
-html {
-  background-color: #f3f3f3;
-}
-
 body {
   display: block;
   min-height: 100%;
-  background-color: #f3f3f3;
   color: #2b2f3a;
   font-family: SansRegular, Arial, sans-serif;
 }
@@ -2344,6 +2339,10 @@ p, pre, ol, ul, address, a {
   font-size: 17px;
   font-size: 1.0625rem;
   line-height: 1.88235;
+}
+
+p.test-serif {
+  font-family: SerifRegular, Arial, sans-serif;
 }
 
 i, cite, em, var, dfn {
@@ -4123,10 +4122,13 @@ a {
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 .common-heads {
+  z-index: 1999;
+  overflow: hidden;
+  max-height: 3rem;
+  width: 100%;
+  height: 3rem;
   background-color: #FFF;
   font-size: 1em;
-  height: 3rem;
-  width: 100%;
 }
 .common-heads:after {
   content: "";
@@ -4137,6 +4139,7 @@ a {
 .common-head {
   height: 3rem;
   max-height: 3rem;
+  border-bottom: 1px solid #eaeaea;
 }
 .common-head > *[class^="comhead"] {
   display: inline-block;
@@ -4233,7 +4236,7 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .common-head > .comhead-link-user {
-    width: 11rem;
+    width: 12rem;
   }
 }
 .common-head > .comhead-link-user > * {
@@ -4308,7 +4311,7 @@ a {
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-SIDEBAR
  *  
- *  Sidebar object used globally.
+ *  Sidebar abstraction used by other sidebar objects.
  * 
  *  @author Bangsawan & Silvia
  *  @version 0.0.1
@@ -4319,8 +4322,6 @@ a {
 *[class^="common-sidebars-"] {
   font-size: 16px;
   overflow: hidden;
-  min-height: 100%;
-  height: 100%;
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
   *[class^="common-sidebars-"] {
@@ -4422,15 +4423,24 @@ a {
   }
 }
 
-/* COMMON SIDEBAR NAV ------------------------------------------------------- */
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-SIDEBAR
+ *  
+ *  Side Navigation Bar.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
 @media screen and (max-width: 39.9275em) {
   .common-sidebars-nav {
-    padding: 1rem 0 2rem 0;
+    padding: 0 0 0 0;
   }
 }
 @media screen and (min-width: 40em) {
   .common-sidebars-nav {
-    padding: 4rem 0 2rem 0;
+    padding: 4rem 0 0 0;
   }
 }
 .common-sidebars-nav .common-sidebar-nav {
@@ -4457,14 +4467,14 @@ a {
   color: #2b2f3a;
   background-color: #b4b6b2;
 }
-.common-sidebars-nav .comside-link:not(.toggle) *[class^="comside-icon-"] {
-  display: none;
-}
 .common-sidebars-nav .comside-link:not(.toggle).active {
   color: #ea6b53;
 }
 .common-sidebars-nav .comside-link:not(.toggle).active *[class^="comside-icon-"] {
   display: block;
+}
+.common-sidebars-nav .comside-link:not(.toggle) .comside-icon-active {
+  display: none;
 }
 .common-sidebars-nav .comside-link.toggle:hover {
   color: white;
@@ -4478,8 +4488,8 @@ a {
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
-    min-height: 6rem;
-    height: 6rem;
+    min-height: 3rem;
+    height: 3rem;
   }
 }
 .common-sidebars-nav.close .common-sidebar-nav {
@@ -4493,6 +4503,90 @@ a {
 @media screen and (min-width: 40em) {
   .common-sidebars-nav.close .comside-list:not(.toggle) {
     margin-left: -100%;
+  }
+}
+
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-SIDEBAR
+ *  
+ *  Side Navigation Tool.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.common-sidebars-tool {
+  right: 0;
+  z-index: 1998;
+}
+@media screen and (max-width: 39.9275em) {
+  .common-sidebars-tool {
+    top: 0;
+  }
+}
+@media screen and (min-width: 40em) {
+  .common-sidebars-tool {
+    top: 3rem;
+  }
+}
+.common-sidebars-tool .common-sidebar-tool {
+  background-color: #FFF;
+}
+.common-sidebars-tool .comside-list {
+  border-bottom: 1px solid #eaeaea;
+}
+.common-sidebars-tool .comside-link {
+  color: #2b2f3a;
+  background-color: #FFF;
+}
+@media screen and (max-width: 39.9275em) {
+  .common-sidebars-tool .comside-link {
+    padding: 0 1rem 0 3rem;
+  }
+}
+@media screen and (min-width: 40em) {
+  .common-sidebars-tool .comside-link {
+    padding: 0 1rem 0 2rem;
+  }
+}
+.common-sidebars-tool .comside-link:not(.toggle):hover {
+  color: #2b2f3a;
+  background-color: #f3f3f3;
+}
+.common-sidebars-tool .comside-link:not(.toggle).active {
+  color: #ea6b53;
+}
+.common-sidebars-tool .comside-link:not(.toggle).active *[class^="comside-icon-"] {
+  display: block;
+}
+.common-sidebars-tool .comside-link:not(.toggle) .comside-icon-active {
+  display: none;
+}
+.common-sidebars-tool .comside-link.toggle:hover {
+  color: white;
+  background-color: #64afb2;
+}
+.common-sidebars-tool .comside-link.toggle.active {
+  color: #ea6b53;
+}
+@media screen and (max-width: 39.9275em) {
+  .common-sidebars-tool.close {
+    min-height: 0;
+    height: 0;
+  }
+}
+.common-sidebars-tool.close .common-sidebar-tool {
+  background-color: transparent;
+}
+.common-sidebars-tool.close .comside-list:not(.toggle) {
+  -webkit-transition: margin-left 0.3s ease-in;
+  -moz-transition: margin-left 0.3s ease-in;
+  transition: margin-left 0.3s ease-in;
+}
+@media screen and (min-width: 40em) {
+  .common-sidebars-tool.close .comside-list:not(.toggle) {
+    margin-left: 100%;
   }
 }
 
