@@ -4878,6 +4878,16 @@ a {
   margin-top: 4rem;
 }
 
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-TAB
+ *  
+ *  Tab Nav object used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
 .hid {
   display: none !important;
 }
