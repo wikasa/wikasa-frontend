@@ -57,3 +57,9 @@
             ul.comcard-categories
                 li > a.cardcat-link > img
 
+**TAB**
+
+    nav.common-tab
+        a.comtab-link
+        a.comtab-link
+

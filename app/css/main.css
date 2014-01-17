@@ -4322,6 +4322,8 @@ a {
 *[class^="common-sidebars-"] {
   font-size: 16px;
   overflow: hidden;
+  min-height: 100%;
+  height: 100%;
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
   *[class^="common-sidebars-"] {
@@ -4874,10 +4876,6 @@ a {
 
 .common-cards.test {
   margin-top: 4rem;
-}
-
-body {
-  min-height: 1000px;
 }
 
 .hid {

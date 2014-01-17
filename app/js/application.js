@@ -10114,6 +10114,7 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
         ;
 
     $comsideToolToggle.on('click', function(e) {
+        console.log($comsideToolToggle);
         e.preventDefault();
         $comsideTool.toggleClass('close');
     });

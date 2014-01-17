@@ -4,6 +4,7 @@
         ;
 
     $comsideToolToggle.on('click', function(e) {
+        console.log($comsideToolToggle);
         e.preventDefault();
         $comsideTool.toggleClass('close');
     });
