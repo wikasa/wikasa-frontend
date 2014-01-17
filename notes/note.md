@@ -38,3 +38,21 @@
     nav.common-sidebars-timeline
         ul.common-sidebar-timeline
             li.comside-list > a.comside-link > span.comside-icon
+
+
+**CARD**
+
+    article.common-cards
+        div.comcard-images
+            a.card-covers > img.card-cover
+            a.card-userpics > img.card-userpic
+        div.comcard-body
+            p.card-meta
+                span.card-username
+                span.card-acmename
+                span.card-postdate
+            a.card-title
+            p.card-info
+        ul.comcard-categories
+            li > a.cardcat-link > img
+
