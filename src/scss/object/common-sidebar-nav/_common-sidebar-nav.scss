@@ -1,0 +1,66 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-SIDEBAR
+ *  
+ *  Side Navigation Bar.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.common-sidebars-nav {
+    @include media-query(max-width 39.9275em) { padding: 0 0 0 0; }
+    @include media-query(min-width 40em) { padding: 4rem 0 0 0; }
+
+    .common-sidebar-nav {
+        background-color: $black;
+    }
+
+    .comside-list {
+        border-bottom: 1px solid $whiteDark2;
+    }
+
+    .comside-link {
+        color: $white;
+        background-color: $black;
+
+        @include media-query(max-width 39.9275em) { padding: 0 1rem 0 3rem; }
+        @include media-query(min-width 40em) { padding: 0 1rem 0 2rem; }
+
+        &:not(.toggle) {
+            &:hover {
+                color: $black;
+                background-color: $whiteDark3;
+            }
+
+            &.active {
+                color: $orange;
+                *[class^="comside-icon-"] { display: block; }
+            }
+
+            .comside-icon-active { display: none; }
+        }
+
+        &.toggle {
+            &:hover {
+                color: $white;
+                background-color: $green;
+            }
+            &.active { color: $white; }
+        }
+    }
+
+    &.close {
+        @include media-query(max-width 39.9275em) {
+            @include transition (all 0.3s ease-in);
+            min-height: 3rem;
+            height: 3rem;
+        }
+        .common-sidebar-nav { background-color: transparent; }
+        .comside-list:not(.toggle) {
+            @include transition (margin-left 0.3s ease-in);
+            @include media-query(min-width 40em) { margin-left: -100%; }
+        }
+    }
+}
