@@ -14,27 +14,27 @@
 
 **COMMON SIDEBAR**
 
-    nav.sidebars
-        ul.sidebar-nav
-            li.sidebar-list > a.sidebar-link > span.sidebar-icon
+    nav.common-sidebars
+        ul.common-sidebar-nav
+            li.comside-list > a.comside-link > span.comside-icon
 
 
 **COMMON SIDEBAR NAV**
 
-    nav.sidebars-nav
-        ul.sidebar-nav
-            li.sidebar-list > a.sidebar-link > span.sidebar-icon
+    nav.common-sidebars-nav
+        ul.common-sidebar-nav
+            li.comside-list > a.comside-link > span.comside-icon
 
 
 **COMMON SIDEBAR TOOL**
 
-    nav.sidebars-tool
-        ul.sidebar-tool
-            li.sidebar-list > a.sidebar-link > span.sidebar-icon
+    nav.common-sidebars-tool
+        ul.common-sidebar-tool
+            li.comside-list > a.comside-link > span.comside-icon
 
 
 **COMMON SIDEBAR TIMELINE**
 
-    nav.sidebars-timeline
-        ul.sidebar-timeline
-            li.sidebar-list > a.sidebar-link > span.sidebar-icon
+    nav.common-sidebars-timeline
+        ul.common-sidebar-timeline
+            li.comside-list > a.comside-link > span.comside-icon

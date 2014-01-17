@@ -1,0 +1,150 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-SIDEBAR
+ *  
+ *  Sidebar object used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+/* SHARED STYLES ------------------------------------------------------------ */
+*[class^="common-sidebars-"] {
+    @include media-query($mobile)  {
+        width: 100%;
+        position: relative;
+    }
+    @include media-query($tablet)  {
+        width: 12rem;
+        position: absolute;
+        top: 0;
+    }
+    @include media-query($desktop) {
+        width: 9rem;
+        position: absolute;
+        top: 0;
+    }
+    @include media-query($wide)    {
+        width: 12rem;
+        position: absolute;
+        top: 0;
+    }
+    
+    @include media-query(min-width 40em) {
+        @include transition (margin-left 0.3s ease-in);
+        margin-left: 0;
+    }
+
+    font-size: $bp;
+    overflow: hidden;
+    min-height: 100%;
+    height: 100%;
+}
+
+*[class^="common-sidebar-"] {
+    display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    list-style: none outside none;
+}
+
+.comside-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 3rem;
+    width: 100%;
+    height: 3rem;
+    text-transform: uppercase;
+}
+
+.comside-link {
+    @include clearfix;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 3rem;
+    max-height: 3rem;
+    max-width: 100%;
+    height: 3rem;
+    width: 100%;
+}
+
+*[class^="comside-icon-"] {
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    min-height: 100%;
+    @include media-query(max-width 39.9275em) { max-width: 3rem; width: 3rem; }
+    @include media-query(min-width 40em) { max-width: 2rem; width: 2rem; }
+    height: 100%;
+    text-align: center;
+}
+
+/* COMMON SIDEBAR NAV ------------------------------------------------------- */
+.common-sidebars-nav {
+    @include media-query(max-width 39.9275em) { padding: 1rem 0 2rem 0; }
+    @include media-query(min-width 40em) { padding: 4rem 0 2rem 0; }
+
+    .common-sidebar-nav {
+        background-color: $black;
+    }
+
+    .comside-list {
+        border-bottom: 1px solid $whiteDark2;
+    }
+
+    .comside-link {
+        color: $white;
+        background-color: $black;
+
+        @include media-query(max-width 39.9275em) { padding: 0 1rem 0 3rem; }
+        @include media-query(min-width 40em) { padding: 0 1rem 0 2rem; }
+
+        &:not(.toggle) {
+            &:hover {
+                color: $black;
+                background-color: $whiteDark3;
+            }
+
+            *[class^="comside-icon-"] { display: none; }
+
+            &.active {
+                color: $orange;
+                *[class^="comside-icon-"] { display: block; }
+            }
+        }
+
+        &.toggle {
+            &:hover {
+                color: $white;
+                background-color: $green;
+            }
+            &.active { color: $white; }
+        }
+    }
+
+    &.close {
+        @include media-query(max-width 39.9275em) {
+            @include transition (all 0.3s ease-in);
+            min-height: 6rem;
+            height: 6rem;
+        }
+        .common-sidebar-nav { background-color: transparent; }
+        .comside-list:not(.toggle) {
+            @include transition (margin-left 0.3s ease-in);
+            @include media-query(min-width 40em) { margin-left: -100%; }
+        }
+    }
+}
