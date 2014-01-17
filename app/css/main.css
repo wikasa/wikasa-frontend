@@ -4590,6 +4590,292 @@ a {
   }
 }
 
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-CARD
+ *  
+ *  Card object used globally.
+ *  
+ *  @author Rezki & Rianti
+ *  @version 0.0.0
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.common-cards {
+  position: relative;
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+}
+.common-cards:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.common-card {
+  padding: 1rem 0 0 0;
+  width: 100%;
+  padding-right: 3rem;
+  position: relative;
+}
+.common-card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .common-card {
+    margin: 0 0 3rem 0;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .common-card {
+    margin: 0 0 3rem 0;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .common-card {
+    margin: 0 0 1rem 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .common-card {
+    margin: 0 0 1rem 0;
+  }
+}
+
+.comcard-images {
+  position: relative;
+  float: left;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .comcard-images {
+    width: 1rem;
+    height: 100%;
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .comcard-images {
+    width: 1rem;
+    height: 100%;
+    margin-right: 48px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .comcard-images {
+    width: 9rem;
+    height: 9rem;
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comcard-images {
+    width: 13rem;
+    height: 13rem;
+    margin-right: 32px;
+  }
+}
+.comcard-images .card-covers {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .comcard-images .card-covers {
+    display: none;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .comcard-images .card-covers {
+    display: none;
+  }
+}
+.comcard-images .card-covers .card-cover {
+  height: 100%;
+}
+.comcard-images .card-userpics {
+  position: absolute;
+  top: 2rem;
+  right: -1rem;
+  display: block;
+  overflow: hidden;
+  max-width: 2rem;
+  max-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid white;
+}
+
+.comcard-body {
+  max-height: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .comcard-body {
+    padding-left: 3rem;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .comcard-body {
+    padding-left: 3rem;
+  }
+}
+.comcard-body .card-meta {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.33333;
+  color: #6f6f6f;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+.comcard-body .card-title {
+  font-family: SansBold, Arial, sans-serif;
+  display: block;
+  overflow: hidden;
+  max-height: 3.7em;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .comcard-body .card-title {
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: -1px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .comcard-body .card-title {
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: -1px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .comcard-body .card-title {
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: -1px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comcard-body .card-title {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 1.23077;
+  }
+}
+.comcard-body .card-title .card-title-link {
+  color: #2b2f3a;
+  font-size: inherit;
+  line-height: inherit;
+}
+.comcard-body .card-title .card-title-link:hover {
+  color: #ea6b53;
+}
+.comcard-body .card-info {
+  position: absolute;
+  font-family: SansBold, Arial, sans-serif;
+  color: #ea6b53;
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .comcard-body .card-info {
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 1.23077;
+    bottom: -23px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comcard-body .card-info {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1;
+    bottom: -21px;
+  }
+}
+
+.comcard-categories {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 2rem;
+  min-width: 2rem;
+  max-height: 100%;
+  min-height: 100%;
+  width: 2rem;
+  height: 100%;
+  list-style: none outside none;
+  margin: 0;
+  padding: 45px 0 0 0;
+}
+.comcard-categories li {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 2rem;
+}
+.comcard-categories li a {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .comcard-categories li a {
+    margin: 0 0 4px 4px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comcard-categories li a {
+    margin: 0 0 4px 4px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .comcard-categories li a {
+    margin: 0 0 4px 4px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comcard-categories li a {
+    margin: 0 0 2px 4px;
+  }
+}
+.comcard-categories li a img {
+  display: block;
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .comcard-categories li a img {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 959px) {
+  .comcard-categories li a img {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .comcard-categories li a img {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comcard-categories li a img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.common-cards.test {
+  margin-top: 4rem;
+}
+
 body {
   min-height: 1000px;
 }

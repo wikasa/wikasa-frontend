@@ -1,0 +1,207 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-CARD
+ *  
+ *  Card object used globally.
+ *  
+ *  @author Rezki & Rianti
+ *  @version 0.0.0
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.common-cards {
+    @include clearfix;
+    position: relative;
+    margin: 0 0 1rem 0;
+    font-size: z(1rem);
+}
+
+.common-card {
+    @include clearfix;
+    @include media-query($mobile) { margin: 0 0 3rem 0; }
+    @include media-query($tablet) { margin: 0 0 3rem 0; }
+    @include media-query($desktop) { margin: 0 0 1rem 0; }
+    @include media-query($wide) { margin: 0 0 1rem 0; }
+    padding: 1rem 0 0 0;
+    width: 100%;
+    padding-right: 3rem;
+    position: relative;
+
+    // &:nth-child(n+1) {
+    //     &:after {
+    //         content: "";
+    //         position: absolute;
+    //         display: block;
+    //         width: 100%;
+    //         background-color: $whiteDark2;
+    //         height: 1px;
+    //         bottom: 0;
+    //     }
+    // }
+}
+
+.comcard-images {
+    position: relative;
+    float: left;
+
+    @include media-query($mobile) {
+        width: 1rem;
+        height: 100%;
+        margin-right: $lp * 2;
+    }
+    @include media-query($tablet) {
+        width: 1rem;
+        height: 100%;
+        margin-right: $lp * 3;
+    }
+    @include media-query($desktop) {
+        width: 9rem;
+        height: 9rem;
+        margin-right: $lp * 2;
+    }
+    @include media-query($wide) {
+        width: 13rem;
+        height: 13rem;
+        margin-right: $lp * 2;
+    }
+
+    .card-covers {
+        @include media-query($mobile) { display: none; }
+        @include media-query($tablet) { display: none; }
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+
+        .card-cover {
+            height: 100%;
+        }
+    }
+
+    .card-userpics {
+        position: absolute;
+        top: 2rem;
+        right: -1rem;
+        display: block;
+        overflow: hidden;
+        max-width: 2rem;
+        max-height: 2rem;
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid $white;
+    }
+}
+
+.comcard-body {
+    max-height: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    @include media-query($mobile) { padding-left: 3rem; }
+    @include media-query($tablet) { padding-left: 3rem; }
+
+    .card-meta {
+        @include typecsset-font-size(12px);
+        color: $gray2;
+        white-space: nowrap;
+        margin-bottom: 1rem;
+    }
+
+    .card-title {
+        @include media-query($mobile) {
+            font-size: 23px;
+            line-height: 28px;
+            letter-spacing: -1px;
+        }
+        @include media-query($tablet) {
+            font-size: 23px;
+            line-height: 28px;
+            letter-spacing: -1px;
+        }
+        @include media-query($desktop) {
+            font-size: 23px;
+            line-height: 28px;
+            letter-spacing: -1px;
+        }
+        @include media-query($wide) { @include typecsset-font-size(26px); }
+        font-family: $ff-sans-bold;
+        display: block;
+        overflow: hidden;
+        max-height: 3.7em;
+
+        .card-title-link {
+            color: $black;
+            font-size: inherit;
+            line-height: inherit;
+
+            &:hover { color: $orange; }
+        }
+    }
+
+    .card-info {
+        position: absolute;
+        font-family: $ff-sans-bold;
+        color: $orange;
+
+        @include media-query($desktop) {
+            @include typecsset-font-size(13px);
+            bottom: -23px;
+        }
+        @include media-query($wide) {
+            @include typecsset-font-size(16px);
+            bottom: -21px;
+        }
+    }
+}
+
+.comcard-categories {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 2rem;
+    min-width: 2rem;
+    max-height: 100%;
+    min-height: 100%;
+    width: 2rem;
+    height: 100%;
+    list-style: none outside none;
+    margin: 0;
+    padding: 45px 0 0 0;
+
+    li {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 2rem;
+
+        a {
+            position: relative;
+            display: block;
+            @include media-query($mobile) { margin: 0 0 4px 4px; }
+            @include media-query($wide) { margin: 0 0 4px 4px; }
+            @include media-query($desktop) { margin: 0 0 4px 4px; }
+            @include media-query($wide) { margin: 0 0 2px 4px; }
+            width: 100%;
+
+            img {
+                display: block;
+                @include media-query($mobile) { width: 24px; height: 24px; }
+                @include media-query($tablet) { width: 24px; height: 24px; }
+                @include media-query($desktop) { width: 24px; height: 24px; }
+                @include media-query($wide) { width: 30px; height: 30px; }
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+            }
+        }
+    }
+}
+
+.common-cards.test {
+    margin-top: 4rem;
+}

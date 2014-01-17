@@ -23,6 +23,7 @@ $pixel-base: 16;
 @import "mixin/rb-border-radius";
 @import "mixin/webfont";
 @import "mixin/media-query";
+@import "mixin/media-object";
 
 // ----------------------------------------------------------------------------\
 // Function.
@@ -51,6 +52,7 @@ $pixel-base: 16;
 @import "object/common-sidebar/common-sidebar";
 @import "object/common-sidebar-nav/common-sidebar-nav";
 @import "object/common-sidebar-tool/common-sidebar-tool";
+@import "object/common-card/common-card";
 // @import "object/cm-form/cm-form";
 // @import "object/cm-media/cm-media";
 // @import "object/cm-triangle/cm-triangle";
