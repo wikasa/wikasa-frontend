@@ -12,7 +12,7 @@
 /* MAIN LAYOUT -------------------------------------------------------------- */
 .mains {
     @extend .container;
-    @extend .container-center-6;
+    @extend .container-center-8;
 }
 
 .main {
@@ -21,10 +21,11 @@
 
 /* TEST MOCK ---------------------------------------------------------------- */
 .mains.test {
-    min-height: 1em;
+    min-height: 5em;
     background-color: #EEE;
 
     .main {
         background-color: #DDD;
+        min-height: 5em;
     }
 }

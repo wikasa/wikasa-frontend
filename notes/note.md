@@ -63,3 +63,7 @@
         a.comtab-link
         a.comtab-link
 
+
+**HOME-CATEGORY**
+
+    a.home-categories > span.homcat-icon

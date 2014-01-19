@@ -3777,7 +3777,7 @@ a {
 }
 
 @media screen and (min-width: 1280px) {
-  .container-center-6 > .column, .mains > .column, .container-center-6 > .main, .mains > .main, .container-center-6 > *[class^="column"], .mains > *[class^="column"] {
+  .container-center-6 > .column, .container-center-6 > .main, .container-center-6 > *[class^="column"] {
     float: left;
     margin-right: -100%;
     width: 35em;
@@ -3786,7 +3786,7 @@ a {
   }
 }
 @media screen and (min-width: 960px) and (max-width: 1279px) {
-  .container-center-6 > .column, .mains > .column, .container-center-6 > .main, .mains > .main, .container-center-6 > *[class^="column"], .mains > *[class^="column"] {
+  .container-center-6 > .column, .container-center-6 > .main, .container-center-6 > *[class^="column"] {
     float: left;
     margin-right: -100%;
     width: 29em;
@@ -3795,7 +3795,7 @@ a {
   }
 }
 @media screen and (min-width: 640px) and (max-width: 959px) {
-  .container-center-6 > .column, .mains > .column, .container-center-6 > .main, .mains > .main, .container-center-6 > *[class^="column"], .mains > *[class^="column"] {
+  .container-center-6 > .column, .container-center-6 > .main, .container-center-6 > *[class^="column"] {
     float: left;
     margin-right: -100%;
     width: 25em;
@@ -3804,7 +3804,7 @@ a {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
-  .container-center-6 > .column, .mains > .column, .container-center-6 > .main, .mains > .main, .container-center-6 > *[class^="column"], .mains > *[class^="column"] {
+  .container-center-6 > .column, .container-center-6 > .main, .container-center-6 > *[class^="column"] {
     float: left;
     margin-right: -100%;
     width: 18.5em;
@@ -3814,7 +3814,7 @@ a {
 }
 
 @media screen and (min-width: 1280px) {
-  .container-center-8 > .column, .container-center-8 > .main, .container-center-8 > *[class^="column"] {
+  .container-center-8 > .column, .mains > .column, .container-center-8 > .main, .mains > .main, .container-center-8 > *[class^="column"], .mains > *[class^="column"] {
     float: left;
     margin-right: -100%;
     width: 47em;
@@ -3823,7 +3823,7 @@ a {
   }
 }
 @media screen and (min-width: 960px) and (max-width: 1279px) {
-  .container-center-8 > .column, .container-center-8 > .main, .container-center-8 > *[class^="column"] {
+  .container-center-8 > .column, .mains > .column, .container-center-8 > .main, .mains > .main, .container-center-8 > *[class^="column"], .mains > *[class^="column"] {
     float: left;
     margin-right: -100%;
     width: 39em;
@@ -3832,7 +3832,7 @@ a {
   }
 }
 @media screen and (min-width: 640px) and (max-width: 959px) {
-  .container-center-8 > .column, .container-center-8 > .main, .container-center-8 > *[class^="column"] {
+  .container-center-8 > .column, .mains > .column, .container-center-8 > .main, .mains > .main, .container-center-8 > *[class^="column"], .mains > *[class^="column"] {
     float: left;
     margin-right: -100%;
     width: 38em;
@@ -3841,7 +3841,7 @@ a {
   }
 }
 @media screen and (min-width: 320px) and (max-width: 639px) {
-  .container-center-8 > .column, .container-center-8 > .main, .container-center-8 > *[class^="column"] {
+  .container-center-8 > .column, .mains > .column, .container-center-8 > .main, .mains > .main, .container-center-8 > *[class^="column"], .mains > *[class^="column"] {
     float: left;
     margin-right: -100%;
     width: 18.5em;
@@ -4104,11 +4104,12 @@ a {
 /* MAIN LAYOUT -------------------------------------------------------------- */
 /* TEST MOCK ---------------------------------------------------------------- */
 .mains.test {
-  min-height: 1em;
+  min-height: 5em;
   background-color: #EEE;
 }
 .mains.test .main {
   background-color: #DDD;
+  min-height: 5em;
 }
 
 /** ------------------------------------------------------------------------- *\
@@ -4919,6 +4920,32 @@ a {
   margin-right: 2rem;
 }
 
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.HOME-TITLE
+ *  
+ *  Home Title object used only on home page.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.home-title {
+  width: 100%;
+  height: 5rem;
+  color: #2b2f3a;
+  font-size: 50px;
+  font-family: SansBold, Arial, sans-serif;
+  line-height: 5rem;
+}
+.home-title .homtit-link {
+  display: block;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .hid {
   display: none !important;
 }
@@ -4933,3 +4960,8 @@ p.typesetting-subhead {
   border-bottom: 1px solid #999;
   color: #999;
 }
+
+/* 
+ *  @BUG: Test sublimeTODO package
+ *  @BUG(VIA): Test sublimeTODO package
+ */
