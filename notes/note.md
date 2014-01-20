@@ -54,8 +54,8 @@
                     span.card-postdate
                 a.card-title
                 p.card-info
-            ul.comcard-categories
-                li > a.cardcat-link > img
+            // ul.comcard-categories
+                // li > a.cardcat-link > img
 
 **TAB**
 
