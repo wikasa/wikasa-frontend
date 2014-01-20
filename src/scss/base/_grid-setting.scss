@@ -17,3 +17,15 @@ $max_width: 59em; // 944px
 $class_container: 'container';
 $class_column: 'column';
 $class_push: 'push';
+
+$mobile:   min-width 320px max-width 479px;
+$mobtab:   min-width 480px max-width 639px;
+$tablet:   min-width 640px max-width 799px;
+$tabtop:   min-width 800px max-width 959px;
+$desktop:  min-width 960px max-width 1019px;
+$wide:     min-width 1280px;
+
+// TOTAL COLUMNS LIST ------------------------------------------------------- //
+$total_columns_list: 4 4 6 8 10 12;
+// $total_elwidth_list: 5.5em 
+// $total_width_list: 18.5rem 

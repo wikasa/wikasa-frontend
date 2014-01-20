@@ -1,0 +1,14 @@
+// -------------------------------------------------------------------------- *\
+// WIKASA.FUNCTION.REM-PX
+// 
+// Functions related to grid math.
+//
+// @author Bangsawan & Silvia
+// @version 0.0.1
+// 
+// Copyright 2014. Free licensed.
+// -------------------------------------------------------------------------- */
+
+@function _get_total_from_column($_column_width: 5em) {
+    @return ( $total_columns * $_column_width) + ( ($total_columns - 1) * $gutter_width );
+}

@@ -23,18 +23,20 @@ $_items: 'alpha',
          'lambda',
          'mu';
 
-// =========================================================================== \
-// Local Mixin
-// =========================================================================== /
-
-// PUSH MIXIN ---------------------------------------------------------------- >
-@mixin _push($_total_columns: 12) {
-    @for $i from 0 through ($_total_columns - 1){
-        .#{$class_push}#{$i} {
-            @include push($i);
+// CONTAINER FULL MIXIN ------------------------------------------------------ >
+@mixin _container-full() {
+    @each $_item in $_items {
+        & > *[class^="column"] {
+            @include column($total_columns);
+            float: none;
+            &:nth-child(n+2) { margin-top: 1em; }
         }
     }
 }
+
+/** ------------------------------------------------------------------------- *\
+ *  Predefined Container Objects
+ ** ------------------------------------------------------------------------- */
 
 // CONTAINER STANDARD MIXIN -------------------------------------------------- >
 @mixin _container-std() {
@@ -49,40 +51,7 @@ $_items: 'alpha',
     }
 }
 
-// CONTAINER FULL MIXIN ------------------------------------------------------ >
-@mixin _container-full() {
-    @each $_item in $_items {
-        & > *[class^="column"] {
-            @include column($total_columns);
-            float: none;
-            &:nth-child(n+2) { margin-top: 1em; }
-        }
-    }
-}
-
-// CONTAINER UNI MIXIN ------------------------------------------------------- >
-@mixin container-uni($_col_n: 2) {
-    $j: 1;
-    & > *[class^="column"] {
-        @include column($total_columns / $_col_n);
-
-        @while $j <= ($_col_n + 1) {
-            @if $j <= $_col_n {
-                &:nth-child(#{$_col_n}n + #{$j}) { @include push($total_columns * ($j - 1) / $_col_n); }
-            } @else {
-                &:nth-child(#{$_col_n}n + #{$j}) { clear: left; }
-            }
-            $j: $j + 1;
-        }
-
-        &:nth-child(n + #{$_col_n + 1}) { margin-top: 1em; }
-    }
-}
-
-/** ------------------------------------------------------------------------- *\
- *  Predefined Container Objects
- ** ------------------------------------------------------------------------- */
-
+/* CONTAINER STANDARD ------------------------------------------------------- */
 .container {
     @include media-query($mobile) {
         $total_columns: 3;
@@ -110,7 +79,6 @@ $_items: 'alpha',
 }
 
 /* CONTAINER FULL ----------------------------------------------------------- */
-
 .container-full {
     @include media-query($mobile) {
         $total_columns: 3;
@@ -137,50 +105,70 @@ $_items: 'alpha',
     }
 }
 
-/* CONTAINER UNI ------------------------------------------------------------ */
+// CONTAINER UNI MIXIN ------------------------------------------------------- >
 
-$_container-uni-types: 2 3 4 6 12;
+@mixin container-uni($_column_pattern: $total_columns) {
+    $j: 1;
+    & > *[class^="column"] {
 
-*[class^="container-uni-"] {
-    @include media-query($mobile) {
-        $total_columns: 3;
-        $total_width: 18.5em; // 18.5 * 16px = 296px
-        @include container-uni(3);
+        @if $_column_pattern > $total_columns or ($total_columns % $_column_pattern) > 0 {
+            $_column_pattern: $total_columns;
+        }
+
+        @include column($total_columns / $_column_pattern);
+
+        @while $j <= ($_column_pattern + 1) {
+            @if $j <= $_column_pattern {
+                &:nth-child(#{$_column_pattern}n + #{$j}) { @include push($total_columns * ($j - 1) / $_column_pattern); }
+            } @else {
+                &:nth-child(#{$_column_pattern}n + #{$j}) { clear: left; }
+            }
+            $j: $j + 1;
+        }
+
+        &:nth-child(n + #{$_column_pattern + 1}) { margin-top: 1em; }
     }
 }
 
 /* CONTAINER UNI ------------------------------------------------------------ */
 
-@each $_type in $_container-uni-types {
-    .container-uni-#{$_type} {
+@for $i from 1 through 12 {
+    .container-uni-#{$i} {
+        @include media-query($mobile) {
+            $total_columns: 4;
+            $total_width: _get_total_from_column(4em);
+            @if $i <= $total_columns { @include container-uni($i); }
+            @else { @include container-uni($total_columns); }
+        }
+        @include media-query($mobtab) {
+            $total_columns: 4;
+            $total_width: _get_total_from_column(6em);
+            @if $i <= $total_columns { @include container-uni($i); }
+            @else { @include container-uni($total_columns); }
+        }
         @include media-query($tablet) {
             $total_columns: 6;
-            $total_width: 38em; // 38 * 16px = 608px
-            @if $_type <= $total_columns {
-                @include container-uni($_type);
-            } @else {
-                @include container-uni($total_columns);
-            }
+            $total_width: _get_total_from_column(5.5em);
+            @if $i <= $total_columns { @include container-uni($i); }
+            @else { @include container-uni($total_columns); }
         }
-
+        @include media-query($tablet) {
+            $total_columns: 8;
+            $total_width: _get_total_from_column(5em);
+            @if $i <= $total_columns { @include container-uni($i); }
+            @else { @include container-uni($total_columns); }
+        }
+        @include media-query($tabtop) {
+            $total_columns: 10;
+            $total_width: _get_total_from_column(5em);
+            @if $i <= $total_columns { @include container-uni($i); }
+            @else { @include container-uni($total_columns); }
+        }
         @include media-query($desktop) {
-            $total_columns: 12;
-            $total_width: 59em; // 59 * 16px = 944px
-            @if $_type <= $total_columns {
-                @include container-uni($_type);
-            } @else {
-                @include container-uni($total_columns);
-            }
-        }
-
-        @include media-query($wide) {
-            $total_columns: 12;
-            $total_width: 71em; // 71 * 16px = 944px
-            @if $_type <= $total_columns {
-                @include container-uni($_type);
-            } @else {
-                @include container-uni($total_columns);
-            }
+            $total_columns: 10;
+            $total_width: _get_total_from_column(5em);
+            @if $i <= $total_columns { @include container-uni($i); }
+            @else { @include container-uni($total_columns); }
         }
     }
 }
@@ -240,6 +228,15 @@ $_container-center-type: 2 4 6 8 10 12;
             & > *[class^="column"] {
                 @include _container-center($_type)
             }
+        }
+    }
+}
+
+// PUSH MIXIN ---------------------------------------------------------------- >
+@mixin _push($_total_columns: 12) {
+    @for $i from 0 through ($_total_columns - 1){
+        .#{$class_push}#{$i} {
+            @include push($i);
         }
     }
 }

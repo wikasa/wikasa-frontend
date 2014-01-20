@@ -29,6 +29,7 @@ $pixel-base: 16;
 // Function.
 // ----------------------------------------------------------------------------/
 @import "function/_rem-px.scss";
+@import "function/_grid-functions.scss";
 
 // ----------------------------------------------------------------------------\
 // Base.
@@ -39,7 +40,6 @@ $pixel-base: 16;
 @import "base/color";
 @import "base/element";
 @import "base/grid-setting";
-@import "base/breakpoint";
 
 // ----------------------------------------------------------------------------\
 // Object.

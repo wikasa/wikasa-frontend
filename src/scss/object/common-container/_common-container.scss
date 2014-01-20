@@ -9,10 +9,6 @@
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 
-@function _total_width($_column_width: 5em) {
-    @return ( $total_columns * $_column_width) + ( ($total_columns - 1) * $gutter_width );
-}
-
 .container,
 *[class^="container"] {
     @include clearfix;
@@ -21,26 +17,38 @@
     &:nth-child(n+2) { margin-top: 1em; }
 
     @include media-query($mobile) {
-        $total_columns: 3;
-        $total_width: _total_width(5.5em); // 20em || 320px
+        $total_columns: 4;
+        $total_width: _get_total_from_column(4em); // 20em || 320px
+        @include container();
+    }
+
+    @include media-query($mobtab) {
+        $total_columns: 4;
+        $total_width: _get_total_from_column(4em); // 38em || 608px
         @include container();
     }
 
     @include media-query($tablet) {
         $total_columns: 6;
-        $total_width: _total_width(5.5em); // 38em || 608px
+        $total_width: _get_total_from_column(5em); // 38em || 608px
+        @include container();
+    }
+
+    @include media-query($tabtop) {
+        $total_columns: 8;
+        $total_width: _get_total_from_column(5em); // 59em || 944px
+        @include container();
+    }
+
+    @include media-query($desktop) {
+        $total_columns: 10;
+        $total_width: _get_total_from_column(5em); // 71em || 1136px
         @include container();
     }
 
     @include media-query($desktop) {
         $total_columns: 12;
-        $total_width: _total_width(4em); // 59em || 944px
-        @include container();
-    }
-
-    @include media-query($wide) {
-        $total_columns: 12;
-        $total_width: _total_width(5em); // 71em || 1136px
+        $total_width: _get_total_from_column(5em); // 71em || 1136px
         @include container();
     }
 }
