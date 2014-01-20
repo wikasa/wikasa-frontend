@@ -18,14 +18,22 @@ $class_container: 'container';
 $class_column: 'column';
 $class_push: 'push';
 
-$mobile:   min-width 320px max-width 479px;
-$mobtab:   min-width 480px max-width 639px;
-$tablet:   min-width 640px max-width 799px;
-$tabtop:   min-width 800px max-width 959px;
-$desktop:  min-width 960px max-width 1019px;
-$wide:     min-width 1280px;
+$mobile-min    : 20em;   $mobile-max    : 29.9375em;   $mobile-column:  4em;
+$mobtab-min    : 30em;   $mobtab-max    : 39.9375em;   $mobtab-column:  6em;
+$tablet-min    : 40em;   $tablet-max    : 49.9375em;   $tablet-column:  5.5em;
+$tabtop-min    : 50em;   $tabtop-max    : 59.9375em;   $tabtop-column:  5em;
+$desktop-min   : 60em;   $desktop-max   : 79.9375em;   $desktop-column: 5em;
+$wide-min      : 80em;                                 $wide-column:    5em;
+
+$mobile:   min-width 20em max-width 29.9375em;
+$mobtab:   min-width 30em max-width 39.9375em;
+$tablet:   min-width 40em max-width 49.9375em;
+$tabtop:   min-width 50em max-width 59.9375em;
+$desktop:  min-width 60em max-width 79.9375em;
+$wide:     min-width 80em;
 
 // TOTAL COLUMNS LIST ------------------------------------------------------- //
+$breakpoint_list: $mobile, $mobtab, $tablet, $tabtop, $desktop, $wide;
+$breakpoint_min_list: 20em 30em 40em 50em 60em 80em;
 $total_columns_list: 4 4 6 8 10 12;
-// $total_elwidth_list: 5.5em 
-// $total_width_list: 18.5rem 
+$total_width_list: 19em 27em 38em 47em 59em 71em;

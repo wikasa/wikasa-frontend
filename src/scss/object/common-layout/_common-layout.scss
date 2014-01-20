@@ -1,7 +1,7 @@
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-LAYOUT
  *  
- *  A set of layout objects with specific implemention the Wikasa.
+ *  A set of layout objects with specific implemention for Wikasa.
  *  
  *  @author Bangsawan & Silvia
  *  
@@ -10,13 +10,21 @@
  ** ------------------------------------------------------------------------- */
 
 /* MAIN LAYOUT -------------------------------------------------------------- */
-.mains {
-    @extend .container;
-    @extend .container-center-8;
-}
+.mains { @extend .container; }
 
 .main {
-    @extend .column;
+    font-size: z(1rem);
+    
+    @include media-query($mobile)  { width: nth($total_width_list, 1); }
+    @include media-query($mobtab)  { width: nth($total_width_list, 2); }
+    @include media-query($tablet)  { width: nth($total_width_list, 3); }
+    @include media-query($tabtop)  { width: nth($total_width_list, 4); }
+    @include media-query($desktop) { width: element_width(8); }
+    @include media-query($wide)    { width: element_width(8); }
+
+    margin: 0 auto;
+
+    &:nth-of-type(n+2) { margin-top: z(1rem); }
 }
 
 /* TEST MOCK ---------------------------------------------------------------- */

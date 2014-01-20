@@ -14,41 +14,41 @@
     @include clearfix;
     font-size: 1em;
 
-    &:nth-child(n+2) { margin-top: 1em; }
+    &:nth-of-type(n+2) { margin-top: 1em; }
 
     @include media-query($mobile) {
         $total_columns: 4;
-        $total_width: _get_total_from_column(4em); // 20em || 320px
+        $total_width: _get_total_from_column($mobile_column);
         @include container();
     }
 
     @include media-query($mobtab) {
         $total_columns: 4;
-        $total_width: _get_total_from_column(4em); // 38em || 608px
+        $total_width: _get_total_from_column($mobtab_column);
         @include container();
     }
 
     @include media-query($tablet) {
         $total_columns: 6;
-        $total_width: _get_total_from_column(5em); // 38em || 608px
+        $total_width: _get_total_from_column($tablet_column);
         @include container();
     }
 
     @include media-query($tabtop) {
         $total_columns: 8;
-        $total_width: _get_total_from_column(5em); // 59em || 944px
+        $total_width: _get_total_from_column($tabtop_column);
         @include container();
     }
 
     @include media-query($desktop) {
         $total_columns: 10;
-        $total_width: _get_total_from_column(5em); // 71em || 1136px
+        $total_width: _get_total_from_column($desktop_column);
         @include container();
     }
 
-    @include media-query($desktop) {
+    @include media-query($wide) {
         $total_columns: 12;
-        $total_width: _get_total_from_column(5em); // 71em || 1136px
+        $total_width: _get_total_from_column($wide_column);
         @include container();
     }
 }
