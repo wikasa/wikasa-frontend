@@ -13,43 +13,42 @@
 *[class^="container"] {
     @include clearfix;
     font-size: 1em;
-
-    &:nth-of-type(n+2) { margin-top: 1em; }
+    margin: 1em auto 0 auto;
 
     @include media-query($mobile) {
         $total_columns: 4;
         $total_width: _get_total_from_column($mobile_column);
-        @include container();
+        width: $total_width;
     }
 
     @include media-query($mobtab) {
         $total_columns: 4;
         $total_width: _get_total_from_column($mobtab_column);
-        @include container();
+        width: $total_width;
     }
 
     @include media-query($tablet) {
         $total_columns: 6;
         $total_width: _get_total_from_column($tablet_column);
-        @include container();
+        width: $total_width;
     }
 
     @include media-query($tabtop) {
         $total_columns: 8;
         $total_width: _get_total_from_column($tabtop_column);
-        @include container();
+        width: $total_width;
     }
 
     @include media-query($desktop) {
         $total_columns: 10;
         $total_width: _get_total_from_column($desktop_column);
-        @include container();
+        width: $total_width;
     }
 
     @include media-query($wide) {
         $total_columns: 12;
         $total_width: _get_total_from_column($wide_column);
-        @include container();
+        width: $total_width;
     }
 }
 
