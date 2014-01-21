@@ -11,6 +11,8 @@
 
 .common-heads {
     @include clearfix;
+    position: fixed;
+    top: 0;
     z-index: 1999;
     overflow: hidden;
     max-height: z(3rem);

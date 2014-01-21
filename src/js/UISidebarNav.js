@@ -1,12 +1,22 @@
 ;( function( $, R ) {
 
-    var $comsideNav = $('.js-comside-nav'),
-        $comsideNavToggle = $('.js-comside-nav-toggle')
+    var $commonSidebarsNav = $('.js.common-sidebars-nav'),
+        $comsideFloatButton = $('.js.comside-float-button'),
+        $comsideLinkToggle = $('.js.comside-link.toggle')
         ;
 
-    $comsideNavToggle.on('click', function(e) {
+    $comsideFloatButton.on('click', function(e) {
         e.preventDefault();
-        $comsideNav.toggleClass('close');
+        $comsideFloatButton.toggleClass('is-shown');
+        $commonSidebarsNav.toggleClass('is-shown');
+        console.log("x");
+    });
+
+    $comsideLinkToggle.on('click', function(e) {
+        e.preventDefault();
+        $comsideFloatButton.toggleClass('is-shown');
+        $commonSidebarsNav.toggleClass('is-shown');
+        console.log("y");
     });
 
 })(jQuery, Response);
