@@ -11,28 +11,32 @@
 
 .common-sidebars-nav {
     z-index: 10;
-    padding: z(4rem) 0 0 0;
 
-    @include media-query(min-width $wide-min) {
+    @include media-query(max-width $tabtop-max) { padding: 0; }
+
+    @include media-query(min-width $desktop-min) {
         @include transition(left 0.3s ease-in 0.1s);
         left: z(-13rem);
+        padding: z(4rem) 0 0 0;
+
         &.is-shown { left: z(0rem); }
     }
 }
 
 .common-sidebar-nav {
-    background-color: $black;
+    @include media-query(max-width $tabtop-max) { background-color: transparent; }
+    @include media-query(min-width $desktop-min) { background-color: $black; }
 }
 
 .comside-float-button {
 
-    @include media-query(min-width $wide-min) { display: block; }
-    @include media-query(max-width $desktop-max) { display: none; }
+    @include media-query(max-width $tabtop-max) { display: none; }
+    @include media-query(min-width $desktop-min) { display: block; }
 
     display: block;
     margin: 0;
     text-align: center;
-    position: absolute;
+    position: fixed;
     top: z(4rem);
     left: 0;
     width: z(3rem);
@@ -72,9 +76,14 @@
     border-bottom: 1px solid $whiteDark2;
 }
 
+.common-sidebar-nav .comside-list {
+    @include media-query(max-width $tabtop-max) {
+        &:nth-of-type(n+2) { display: none; }
+        .is-shown &:nth-of-type(n+2) { display: block; }
+    }
+}
+
 .comside-link {
-    color: $white;
-    background-color: $black;
     padding: 0 0 0 z(3rem);
 
     &:not(.toggle) {
@@ -98,5 +107,12 @@
             background-color: $green;
         }
         &.active { color: $white; }
+    }
+}
+
+.common-sidebar-nav {
+    .comside-link {
+        color: $white;
+        background-color: $black;
     }
 }

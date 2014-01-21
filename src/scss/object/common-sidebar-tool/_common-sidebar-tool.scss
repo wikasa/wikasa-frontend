@@ -10,63 +10,30 @@
  ** ------------------------------------------------------------------------- */
 
 .common-sidebars-tool {
-    @include media-query(max-width 39.9275em) { top: 0; }
-    @include media-query(min-width 40em) { top: 3rem; }
+    z-index: 20;
+    border-left: 1px solid $whiteDark2;
 
-    right: 0;
-    z-index: 1998;
+    @include media-query(max-width $tabtop-max) { padding: 0; }
 
-    .common-sidebar-tool {
-        background-color: #FFF;
+    @include media-query(min-width $desktop-min) {
+        @include transition(right 0.3s ease-in 0.1s);
+        right: z(-13rem);
+        padding: z(3rem) 0 0 0;
+
+        &.is-shown { right: z(0rem); }
     }
+}
 
-    .comside-list {
-        border-bottom: 1px solid $whiteDark2;
-    }
+.common-sidebar-tool { background-color: rgba(255, 255, 255, 0.8); }
 
+.common-sidebar-tool {
     .comside-link {
         color: $black;
-        background-color: #FFF;
-
-        @include media-query(max-width 39.9275em) { padding: 0 1rem 0 3rem; }
-        @include media-query(min-width 40em) { padding: 0 1rem 0 2rem; }
-
-        &:not(.toggle) {
-            &:hover {
-                color: $black;
-                background-color: $whiteDark1;
-            }
-
-            &.active {
-                color: $orange;
-                *[class^="comside-icon-"] { display: block; }
-            }
-
-            .comside-icon-active { display: none; }
-        }
-
-        &.toggle {
-            &:hover {
-                color: $white;
-                background-color: $green;
-            }
-            &.active { color: $orange; }
-        }
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
-    &.close {
-        @include media-query(max-width 39.9275em) {
-            // @include transition (all 0.3s ease-in);
-            min-height: 0;
-            height: 0;
-        }
-
-        // z-index: 2000;
-
-        .common-sidebar-tool { background-color: transparent; }
-        .comside-list:not(.toggle) {
-            @include transition (margin-left 0.3s ease-in);
-            @include media-query(min-width 40em) { margin-left: 100%; }
-        }
+    @include media-query(max-width $tabtop-max) {
+        display: none;
+        .is-shown & { display: block; }
     }
 }

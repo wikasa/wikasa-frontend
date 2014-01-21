@@ -10106,27 +10106,26 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
         e.preventDefault();
         $comsideFloatButton.toggleClass('is-shown');
         $commonSidebarsNav.toggleClass('is-shown');
-        console.log("x");
     });
 
     $comsideLinkToggle.on('click', function(e) {
         e.preventDefault();
         $comsideFloatButton.toggleClass('is-shown');
         $commonSidebarsNav.toggleClass('is-shown');
-        console.log("y");
     });
 
 })(jQuery, Response);
 
 ;( function( $, R ) {
-    var $comsideTool = $('.js-comside-tool'),
-        $comsideToolToggle = $('.js-comside-tool-toggle')
+
+    var $comheadLinkUser = $('.js.comhead-link-user'),
+        $commonSidebarsTool = $('.js.common-sidebars-tool')
         ;
 
-    $comsideToolToggle.on('click', function(e) {
-        console.log($comsideToolToggle);
+    $comheadLinkUser.on('click', function(e) {
         e.preventDefault();
-        $comsideTool.toggleClass('close');
+        console.log('z');
+        $commonSidebarsTool.toggleClass('is-shown');
     });
 
 })(jQuery, Response);

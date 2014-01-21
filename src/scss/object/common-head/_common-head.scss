@@ -11,7 +11,8 @@
 
 .common-heads {
     @include clearfix;
-    position: fixed;
+    @include media-query(max-width $tabtop-max) { position: relative; }
+    @include media-query(min-width $desktop-min) { position: fixed; }
     top: 0;
     z-index: 1999;
     overflow: hidden;

@@ -1,12 +1,13 @@
 ;( function( $, R ) {
-    var $comsideTool = $('.js-comside-tool'),
-        $comsideToolToggle = $('.js-comside-tool-toggle')
+
+    var $comheadLinkUser = $('.js.comhead-link-user'),
+        $commonSidebarsTool = $('.js.common-sidebars-tool')
         ;
 
-    $comsideToolToggle.on('click', function(e) {
-        console.log($comsideToolToggle);
+    $comheadLinkUser.on('click', function(e) {
         e.preventDefault();
-        $comsideTool.toggleClass('close');
+        console.log('z');
+        $commonSidebarsTool.toggleClass('is-shown');
     });
 
 })(jQuery, Response);

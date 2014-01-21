@@ -14,22 +14,21 @@
     font-size: $lp;
 
     @include clearfix;
-    @include media-query(min-width $wide-min) {
+
+    @include media-query(max-width $tabtop-max) {
+        position: relative;
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    @include media-query(min-width $desktop-min) {
         position: fixed;
         top: 0;
         bottom: 0;
         max-width: z(13rem);
         width: z(13rem);
     }
-    @include media-query(max-width $desktop-max) {
-        min-width: 100%;
-        min-height: z(1rem);
-        max-width: 100%;
-        width: 100%;
-        height: 100%;
-    }
-
-    overflow: hidden;
 }
 
 *[class^="common-sidebar-"] {

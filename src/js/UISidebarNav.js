@@ -9,14 +9,12 @@
         e.preventDefault();
         $comsideFloatButton.toggleClass('is-shown');
         $commonSidebarsNav.toggleClass('is-shown');
-        console.log("x");
     });
 
     $comsideLinkToggle.on('click', function(e) {
         e.preventDefault();
         $comsideFloatButton.toggleClass('is-shown');
         $commonSidebarsNav.toggleClass('is-shown');
-        console.log("y");
     });
 
 })(jQuery, Response);
