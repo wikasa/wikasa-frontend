@@ -10,7 +10,7 @@
  ** ------------------------------------------------------------------------- */
 
 .common-mainheads {
-    margin-bottom: z(1rem);
+    margin-bottom: z(2rem);
     width: 100%;
     height: auto;
     @include media-query(max-width $tabtop-max) { padding: 0; }
