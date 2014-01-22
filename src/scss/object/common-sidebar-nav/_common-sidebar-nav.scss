@@ -81,6 +81,10 @@
         &:nth-of-type(n+2) { display: none; }
         .is-shown &:nth-of-type(n+2) { display: block; }
     }
+
+    overflow: hidden;
+    max-height: z(3rem);
+    height: z(3rem);
 }
 
 .comside-link {

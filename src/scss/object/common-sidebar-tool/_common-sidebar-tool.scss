@@ -26,6 +26,12 @@
 
 .common-sidebar-tool { background-color: rgba(255, 255, 255, 0.8); }
 
+.common-sidebar-tool .comside-list {
+    overflow: hidden;
+    max-height: z(3rem);
+    height: z(3rem);
+}
+
 .common-sidebar-tool {
     .comside-link {
         color: $black;
