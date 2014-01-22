@@ -9208,6 +9208,74 @@ a {
   height: 36px;
 }
 
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-MAINHEAD
+ *  
+ *  Head object globally used inside main layout.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.common-mainheads {
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 59.9375em) {
+  .common-mainheads {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 60em) {
+  .common-mainheads {
+    padding: 0 2rem;
+  }
+}
+
+.common-mainhead {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.mainhead-meta {
+  margin-bottom: 1rem;
+  min-width: 100%;
+  width: 100%;
+  color: #999;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+}
+.mainhead-meta:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.mainhead-meta > * {
+  float: left;
+}
+.mainhead-meta .headmeta-userpics {
+  display: block;
+  overflow: hidden;
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.mainhead-meta span[class^="headmeta-"] {
+  margin: 0.75rem 0 0 0;
+}
+
+.mainhead-title {
+  padding: 0 0 0 3rem;
+  width: 100%;
+}
+
+.common-mainheads.test {
+  background-color: #f3f3f3;
+}
+
 .hid {
   display: none !important;
 }

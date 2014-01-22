@@ -1,0 +1,55 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-MAINHEAD
+ *  
+ *  Head object globally used inside main layout.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.common-mainheads {
+    margin-bottom: z(1rem);
+    width: 100%;
+    height: auto;
+    @include media-query(max-width $tabtop-max) { padding: 0; }
+    @include media-query(min-width $desktop-min) { padding: 0 z(2rem); }
+}
+
+.common-mainhead {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.mainhead-meta {
+    @include clearfix;
+    margin-bottom: z(1rem);
+    min-width: 100%;
+    width: 100%;
+    color: #999;
+    font-size: z(13 / $l * 1rem);
+    line-height: z(1rem);
+
+    & > * { float: left; }
+
+    .headmeta-userpics {
+        display: block;
+        overflow: hidden;
+        margin-right: z(1rem);
+        width: z(2rem);
+        height: z(2rem);
+    }
+
+    span[class^="headmeta-"] { margin: z(12 / $l * 1rem) 0 0 0; }
+}
+
+.mainhead-title {
+    padding: 0 0 0 z(3rem);
+    width: 100%;
+}
+
+.common-mainheads.test {
+    background-color: $whiteDark1;
+}
