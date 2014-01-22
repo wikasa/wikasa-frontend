@@ -40,7 +40,7 @@
             li.comside-list > a.comside-link > span.comside-icon
 
 
-**CARD**
+**COMMON CARD**
 
     div.common-cards
         article.common-card
@@ -57,13 +57,21 @@
             // ul.comcard-categories
                 // li > a.cardcat-link > img
 
-**TAB**
+**COMMON TAB**
 
     nav.common-tab
         a.comtab-link
         a.comtab-link
 
 
-**HOME-CATEGORY**
+**COMMON MAIN HEAD**
 
-    a.home-categories > span.homcat-icon
+    div.common-mainheads
+        div.common-mainhead
+            a.mainhead-userpics.userpic > img.mainhead-userpic
+            p.mainhead-meta
+                span.headmeta-username
+                span.headmeta-acmename
+                span.headmeta-date
+            h1.mainhead-title
+
