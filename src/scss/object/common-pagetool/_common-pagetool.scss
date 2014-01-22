@@ -1,0 +1,75 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-MEDIA
+ *  
+ *  Page tools (such as socmed buttons) used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.common-pagetools {
+    @include clearfix;
+    position: relative;
+    padding: z(1rem) 0;
+    margin: z(2rem) 0;
+    min-width: 100%;
+    min-height: z(4rem);
+    max-width: 100%;
+    width: 100%;
+    height: z(4rem);
+    border-top: 1px solid $whiteDark2;
+    border-bottom: 1px solid $whiteDark2;
+}
+
+.common-shares {
+    @include clearfix;
+    position: relative;
+    margin-right: z(1rem);
+    float: left;
+}
+
+.comshare-btn {
+    @include clearfix;
+    display: block;
+    min-width: z(4rem);
+    width: z(5rem);
+    float: left;
+    text-align: left;
+
+    &:nth-of-type(n+2) { margin-left: z(0.5 * 1rem); }
+
+    & > .icon { margin-right: z(0.5 * 1rem); }
+
+    &.twitter  { background-color: #2DAAE1; }
+    &.facebook { background-color: #3B5998; }
+    &.gplus    { background-color: #F90101; }
+    &.linkedin { background-color: #1783BC; }
+
+    &:hover    { background-color: $black; }
+
+    .comshare-count {
+        float: right;
+        text-align: right;
+        white-space: nowrap;
+    }
+}
+
+.common-siblingnavs {
+    @include clearfix;
+    position: relative;
+    margin-left: z(1rem);
+    float: right;
+
+    .comsib-btn {
+        @include clearfix;
+        background-color: $black;
+        float: left;
+        font-weight: 400;
+
+        &:nth-of-type(n+2) { margin-left: z(0.5 * 1rem); }
+
+        &:hover { background-color: $orange; }
+    }
+}

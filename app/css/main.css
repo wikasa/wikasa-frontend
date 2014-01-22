@@ -2573,15 +2573,18 @@ button, select {
   border-radius: 3px;
   display: inline-block;
   margin: 0;
-  padding: 0.25rem 0.5rem;
-  border: 1px solid #64afb2;
+  padding: 0 0.5rem;
+  height: 2rem;
+  border: 0 solid transparent;
+  background-color: #64afb2;
   background-image: none;
+  color: white;
   vertical-align: middle;
   text-align: center;
   white-space: nowrap;
   font-weight: normal;
   font-size: 0.875rem;
-  line-height: 1rem;
+  line-height: 2rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2589,8 +2592,8 @@ button, select {
   user-select: none;
 }
 .btn:hover {
-  background-color: #2b2f3a;
-  border: 1px solid #2b2f3a;
+  background-color: #ea6b53;
+  border: 0 solid transparent;
 }
 
 .radio, .checkbox {
@@ -9575,7 +9578,7 @@ label {
  ** ------------------------------------------------------------------------- */
 .common-medias {
   font-size: 1rem;
-  margin: 0 0 3rem 0;
+  margin: 0 0 2rem 0;
   overflow: hidden;
 }
 @media screen and (min-width: 20em) and (max-width: 29.9375em) {
@@ -9627,6 +9630,111 @@ label {
 
 .common-medias.test {
   background-color: #eaeaea;
+}
+
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-MEDIA
+ *  
+ *  Page tools (such as socmed buttons) used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.common-pagetools {
+  position: relative;
+  padding: 1rem 0;
+  margin: 2rem 0;
+  min-width: 100%;
+  min-height: 4rem;
+  max-width: 100%;
+  width: 100%;
+  height: 4rem;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+.common-pagetools:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.common-shares {
+  position: relative;
+  margin-right: 1rem;
+  float: left;
+}
+.common-shares:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.comshare-btn {
+  display: block;
+  min-width: 4rem;
+  width: 5rem;
+  float: left;
+  text-align: left;
+}
+.comshare-btn:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.comshare-btn:nth-of-type(n+2) {
+  margin-left: 0.5rem;
+}
+.comshare-btn > .icon {
+  margin-right: 0.5rem;
+}
+.comshare-btn.twitter {
+  background-color: #2DAAE1;
+}
+.comshare-btn.facebook {
+  background-color: #3B5998;
+}
+.comshare-btn.gplus {
+  background-color: #F90101;
+}
+.comshare-btn.linkedin {
+  background-color: #1783BC;
+}
+.comshare-btn:hover {
+  background-color: #2b2f3a;
+}
+.comshare-btn .comshare-count {
+  float: right;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.common-siblingnavs {
+  position: relative;
+  margin-left: 1rem;
+  float: right;
+}
+.common-siblingnavs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.common-siblingnavs .comsib-btn {
+  background-color: #2b2f3a;
+  float: left;
+  font-weight: 400;
+}
+.common-siblingnavs .comsib-btn:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.common-siblingnavs .comsib-btn:nth-of-type(n+2) {
+  margin-left: 0.5rem;
+}
+.common-siblingnavs .comsib-btn:hover {
+  background-color: #ea6b53;
 }
 
 .hid {

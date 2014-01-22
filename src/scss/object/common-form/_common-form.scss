@@ -185,15 +185,18 @@ button, select {
   @include rb-border-radius(3px);
   display: inline-block;
   margin: 0;
-  padding: z(0.25 * 1rem) z(0.5 * 1rem);
-  border: 1px solid $green;
+  padding: 0 z(0.5 * 1rem);
+  height: z(2rem);
+  border: 0 solid transparent;
+  background-color: $green;
   background-image: none;
+  color: $white;
   vertical-align: middle;
   text-align: center;
   white-space: nowrap;
   font-weight: normal;
   font-size: z(14 / $l * 1rem);
-  line-height: z(1rem);
+  line-height: z(2rem);
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -201,8 +204,8 @@ button, select {
   user-select: none;
 
   &:hover {
-    background-color: $black;
-    border: 1px solid $black;
+    background-color: $orange;
+    border: 0 solid transparent;
   }
 }
 
