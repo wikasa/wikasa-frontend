@@ -12,7 +12,6 @@
 .common-pagetools {
     @include clearfix;
     position: relative;
-    padding: z(1rem) 0;
     margin: z(2rem) 0;
     min-width: 100%;
     min-height: z(4rem);
@@ -28,6 +27,7 @@
     position: relative;
     margin-right: z(1rem);
     float: left;
+    margin: z(1rem) 0;
 }
 
 .comshare-btn {
@@ -61,6 +61,7 @@
     position: relative;
     margin-left: z(1rem);
     float: right;
+    margin: z(1rem) 0;
 
     .comsib-btn {
         @include clearfix;

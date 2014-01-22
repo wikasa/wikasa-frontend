@@ -9644,7 +9644,6 @@ label {
  ** ------------------------------------------------------------------------- */
 .common-pagetools {
   position: relative;
-  padding: 1rem 0;
   margin: 2rem 0;
   min-width: 100%;
   min-height: 4rem;
@@ -9664,6 +9663,7 @@ label {
   position: relative;
   margin-right: 1rem;
   float: left;
+  margin: 1rem 0;
 }
 .common-shares:after {
   content: "";
@@ -9714,6 +9714,7 @@ label {
   position: relative;
   margin-left: 1rem;
   float: right;
+  margin: 1rem 0;
 }
 .common-siblingnavs:after {
   content: "";
