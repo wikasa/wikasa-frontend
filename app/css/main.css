@@ -9268,8 +9268,17 @@ a {
 }
 
 .mainhead-title {
-  padding: 0 0 0 3rem;
   width: 100%;
+}
+@media screen and (max-width: 59.9375em) {
+  .mainhead-title {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 60em) {
+  .mainhead-title {
+    padding: 0 0 0 3rem;
+  }
 }
 
 .common-mainheads.test {
