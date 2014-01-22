@@ -1,0 +1,285 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-FORM
+ *  
+ *  All Form UI objects used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.form {
+    font-size: z(12 / $l * 1rem);
+    line-height: z(1rem);
+    color: $black;
+    margin: z(1rem) 0 0 0;
+    padding: 0 0 z(1rem) 0;
+
+    .form-title {
+        display: block;
+        margin: 0 0 z(0.5 * 1rem) 0;
+        height: z(1.5 * 1rem);
+        line-height: z(1.5 * 1rem);
+        font-size: z(18 / $l * 1rem);
+    }
+}
+
+.form-group { margin: 0 0 z(0.5 * 1rem) 0; }
+
+.form-go {
+  display: block;
+  margin: 0;
+  font-size: z(12 /$l * 1rem);
+  line-height: z(1rem);
+  color: $black;
+
+  &:hover {
+    color: $orange;
+  }
+
+  &.fg-connect {
+    @include rb-border-radius(3px);
+    position: relative;
+    display: block;
+    padding: 0 z(0.5 * 1rem) 0 0;
+    height: z(1.5 * 1rem);
+    background-color: $green;
+    text-align: left;
+    font-size: z(13 /$l * 1rem);
+    line-height: z(1.5 * 1rem);
+    font-family: $ff-sans-regular;
+    color: $white;
+    letter-spacing: 0.3px;
+
+    .fa {
+      font-size: z(2rem);
+      margin: 0 z(0.25 * 1rem) 0 z(0.5 * 1rem);
+      position: relative;
+      top: z(0.25 * 1rem);
+    }
+
+    &:hover { background-color: $black; }
+  }
+}
+
+.form-decos {
+  position: relative;
+  width: 100%;
+  height: z(1rem);
+  margin: z(0.5 * 1rem) 0;
+
+  &:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 45%;
+    top: 0;
+    left: 0;
+    height: z(0.5 * 1rem);
+    border-bottom: 1px solid $black;
+    z-index: 20;
+  }
+
+  &:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 45%;
+    top: 0;
+    right: 0;
+    height: z(0.5 * 1rem);
+    border-bottom: 1px solid $black;
+    z-index: 20;
+  }
+
+  .form-deco-img {
+    display: block;
+    width: z(1rem);
+    height: z(1rem);
+    margin: 0 auto;
+    z-index: 21;
+  }
+}
+
+.form-control {
+    @include rb-border-radius(3px);
+    display: block;
+    padding: z(0.5 * 1rem);
+    width: 100%;
+    height: z(1.5 * 1rem);
+    border: 1px solid $gray;
+    background-color: $white;
+    background-image: none;
+    color: $gray2;
+    font-size: z(14 / $l * 1rem);
+    font-family: $ff-sans-light;
+    line-height: z(1.5 * 1rem);
+    // transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    vertical-align: middle;
+
+    &::-webkit-input-placeholder,
+    &::-moz-placeholder,
+    &:-ms-input-placeholder {
+      height: z(1rem);
+      color: $gray;
+      font-size: z(12 / $l * 1rem);
+      font-family: $ff-sans-light;
+      font-weight: 400;
+      line-height: z(1rem);
+      opacity: 1;
+    }
+}
+
+.help-block {
+  color: $black;
+  display: block;
+  margin-top: z(0.5 * 1rem);
+  margin-bottom: z(0.5 * 1rem);
+  font-size: 14px;
+  line-height: z(1rem);
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+}
+
+input[type="file"] {
+  display: block;
+  font-size: z(12 / $l * 1rem);
+  line-height: z(1rem);
+  height: z(1rem);
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, select {
+  text-transform: none;
+}
+
+.btn-default {
+  background-color: $green;
+  border-color: $green;
+  color: $white;
+}
+
+.btn {
+  @include rb-border-radius(3px);
+  display: inline-block;
+  margin: 0;
+  padding: z(0.25 * 1rem) z(0.5 * 1rem);
+  border: 1px solid $green;
+  background-image: none;
+  vertical-align: middle;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: normal;
+  font-size: z(14 / $l * 1rem);
+  line-height: z(1rem);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+  &:hover {
+    background-color: $black;
+    border: 1px solid $black;
+  }
+}
+
+.radio, .checkbox {
+  display: block;
+  margin: z(0.5 * 1rem) 0;
+  min-height: z(1rem);
+  vertical-align: middle;
+}
+
+label {
+    display: inline-block;
+    font-weight: bold;
+
+    margin-bottom: 0;
+    font-size: z(12 / $l * 1rem);
+    line-height: z(1rem);
+    height: z(1rem);
+}
+
+.form-inline {
+    @extend .form;
+
+    .form-group {
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+    }
+
+    .radio,
+    .checkbox {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-left: 0;
+    }
+
+    & > * {
+        margin-right: z(0.5 * 1rem);
+    }
+
+}
+
+.form-horizontal {
+    @extend .form;
+
+    .label-left {
+        display: block;
+        float: left;
+        padding: 0 z(1rem) 0 0;
+        width: 16.667%;
+        height: z(1.5 * 1rem);
+        text-align: right;
+        line-height: z(1.5 * 1rem);
+    }
+
+    .input-right {
+        width: 83.333%;
+        float: left;
+    }
+
+    .push-right {
+        width: 83.333%;
+        float: right;
+    }
+
+    .form-group {
+        @include clearfix;
+    }
+}
+
+.radio-inline,
+.checkbox-inline {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding: 0 z(0.5 * 1rem);
+    vertical-align: middle;
+}
