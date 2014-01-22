@@ -1,0 +1,87 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-SIDEBAR-TIMELINE
+ *  
+ *  Side Navigation Timeline.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.common-sidebars-timeline {
+    z-index: 10;
+
+    @include media-query(max-width $tabtop-max) { padding: 0; }
+
+    @include media-query(min-width $desktop-min) {
+        @include transition(left 0.3s ease-in 0.1s);
+        left: z(-13rem);
+        padding: z(4rem) 0 0 0;
+
+        &.is-shown { left: z(0rem); }
+    }
+}
+
+.common-sidebar-timeline {
+    @include media-query(max-width $tabtop-max) { background-color: transparent; }
+    @include media-query(min-width $desktop-min) { background-color: $black; }
+}
+
+.common-sidebar-timeline .comside-list {
+    @include media-query(max-width $tabtop-max) {
+        &:nth-of-type(n+2) { display: none; }
+        .is-shown &:nth-of-type(n+2) { display: block; }
+    }
+
+    overflow: visible;
+    min-height: z(3rem);
+}
+
+.common-sidebar-timeline {
+    .comside-link {
+        background-color: $black;
+        color: $white;
+
+        &:not(.sect) {
+            height: z(3rem);
+            line-height: z(3rem);
+        }
+
+        &.sect {
+            height: auto;
+            line-height: z(1rem);
+            border-bottom: 0 solid transparent;
+            padding-bottom: z(1rem);
+        }
+    }
+
+    .comside-link .fa { background-color: $black; }
+    .comside-link:hover .fa { background-color: $blackLite; }
+
+    .comside-link.sect:before {
+        position: absolute;
+        left: z(1.5rem);
+        width: 1px;
+        height: 100%;
+        background-color: $orange;
+        content: "";
+    }
+
+    .sidelink-head {
+        display: block;
+        min-height: z(3rem);
+        text-transform: uppercase;
+        line-height: z(3rem);
+    }
+
+    .comside-link.watched .sidelink-head { color: $green; }
+    .comside-link.current .sidelink-head { color: $orange; }
+
+    .comside-link.watched .comside-icon { color: $green; }
+    .comside-link.current .comside-icon { color: $orange; }
+
+    .comside-link.toggle:hover .fa { background-color: $green; }
+
+    .sidelink-body { text-transform: none; }
+}

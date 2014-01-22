@@ -72,10 +72,6 @@
     }
 }
 
-.comside-list {
-    border-bottom: 1px solid $whiteDark2;
-}
-
 .common-sidebar-nav .comside-list {
     @include media-query(max-width $tabtop-max) {
         &:nth-of-type(n+2) { display: none; }
@@ -87,36 +83,13 @@
     height: z(3rem);
 }
 
-.comside-link {
-    padding: 0 0 0 z(3rem);
-
-    &:not(.toggle) {
-
-        .comside-icon-active { display: none; }
-
-        &:hover {
-            color: $black;
-            background-color: $whiteDark3;
-        }
-
-        &.active {
-            color: $orange;
-            *[class^="comside-icon-"] { display: block; }
-        }
-    }
-
-    &.toggle {
-        &:hover {
-            color: $white;
-            background-color: $green;
-        }
-        &.active { color: $white; }
-    }
-}
-
 .common-sidebar-nav {
     .comside-link {
         color: $white;
         background-color: $black;
+        overflow: hidden;
+        max-height: z(3rem);
+        height: z(3rem);
+        line-height: z(3rem);
     }
 }

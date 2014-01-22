@@ -33,9 +33,10 @@
 
 *[class^="common-sidebar-"] {
     @include clearfix;
+    @include media-query(max-width $tabtop-max) { overflow: hidden; }
+    @include media-query(min-width $desktop-min) { overflow: scroll; }
     position: relative;
     display: block;
-    overflow: hidden;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -58,22 +59,43 @@
     position: relative;
     display: block;
     margin: 0;
-    padding: 0;
+    padding: 0 z(1rem) 0 z(3rem);
     font-size: z((13 / $l) * 1rem);
-    line-height: z(3rem);
-    max-height: z(3rem);
     max-width: 100%;
-    height: z(3rem);
     width: 100%;
+    border-bottom: 1px solid $white;
+
+    &:not(.toggle) {
+
+        .comside-icon-active { display: none; }
+
+        &:hover {
+            color: $white;
+            background-color: $blackLite;
+        }
+
+        &.active {
+            color: $orange;
+            *[class^="comside-icon-"] { display: block; }
+        }
+    }
+
+    &.toggle {
+        &:hover {
+            color: $white;
+            background-color: $green;
+        }
+        &.active { color: $white; }
+    }
 }
 
-*[class^="comside-icon-"] {
+*[class^="comside-icon"] {
     position: absolute;
     left: 0;
-    overflow: hidden;
     min-height: 100%;
     max-width: z(3rem);
     width: z(3rem);
-    height: 100%;
+    height: z(3rem);
+    line-height: z(3rem);
     text-align: center;
 }

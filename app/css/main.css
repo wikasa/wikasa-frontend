@@ -8523,7 +8523,6 @@ a {
 *[class^="common-sidebar-"] {
   position: relative;
   display: block;
-  overflow: hidden;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -8534,6 +8533,16 @@ a {
   content: "";
   display: table;
   clear: both;
+}
+@media screen and (max-width: 59.9375em) {
+  *[class^="common-sidebar-"] {
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 60em) {
+  *[class^="common-sidebar-"] {
+    overflow: scroll;
+  }
 }
 
 .comside-list {
@@ -8550,28 +8559,46 @@ a {
   position: relative;
   display: block;
   margin: 0;
-  padding: 0;
+  padding: 0 1rem 0 3rem;
   font-size: 0.8125rem;
-  line-height: 3rem;
-  max-height: 3rem;
   max-width: 100%;
-  height: 3rem;
   width: 100%;
+  border-bottom: 1px solid white;
 }
 .comside-link:after {
   content: "";
   display: table;
   clear: both;
 }
+.comside-link:not(.toggle) .comside-icon-active {
+  display: none;
+}
+.comside-link:not(.toggle):hover {
+  color: white;
+  background-color: #2d3e51;
+}
+.comside-link:not(.toggle).active {
+  color: #ea6b53;
+}
+.comside-link:not(.toggle).active *[class^="comside-icon-"] {
+  display: block;
+}
+.comside-link.toggle:hover {
+  color: white;
+  background-color: #64afb2;
+}
+.comside-link.toggle.active {
+  color: white;
+}
 
-*[class^="comside-icon-"] {
+*[class^="comside-icon"] {
   position: absolute;
   left: 0;
-  overflow: hidden;
   min-height: 100%;
   max-width: 3rem;
   width: 3rem;
-  height: 100%;
+  height: 3rem;
+  line-height: 3rem;
   text-align: center;
 }
 
@@ -8674,10 +8701,6 @@ a {
   line-height: 3rem;
 }
 
-.comside-list {
-  border-bottom: 1px solid #eaeaea;
-}
-
 .common-sidebar-nav .comside-list {
   overflow: hidden;
   max-height: 3rem;
@@ -8692,33 +8715,13 @@ a {
   }
 }
 
-.comside-link {
-  padding: 0 0 0 3rem;
-}
-.comside-link:not(.toggle) .comside-icon-active {
-  display: none;
-}
-.comside-link:not(.toggle):hover {
-  color: #2b2f3a;
-  background-color: #b4b6b2;
-}
-.comside-link:not(.toggle).active {
-  color: #ea6b53;
-}
-.comside-link:not(.toggle).active *[class^="comside-icon-"] {
-  display: block;
-}
-.comside-link.toggle:hover {
-  color: white;
-  background-color: #64afb2;
-}
-.comside-link.toggle.active {
-  color: white;
-}
-
 .common-sidebar-nav .comside-link {
   color: white;
   background-color: #2b2f3a;
+  overflow: hidden;
+  max-height: 3rem;
+  height: 3rem;
+  line-height: 3rem;
 }
 
 /** ------------------------------------------------------------------------- *\
@@ -8762,10 +8765,21 @@ a {
   max-height: 3rem;
   height: 3rem;
 }
+.common-sidebar-tool .comside-list:nth-child(n+2) .comside-link {
+  border-top: 1px solid #eaeaea;
+}
 
-.common-sidebar-tool .comside-link {
+.common-sidebar-tool .comside-link:not(.toggle) {
   color: #2b2f3a;
   background-color: rgba(255, 255, 255, 0.8);
+  max-height: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  border-bottom: 0 solid transparent;
+}
+.common-sidebar-tool .comside-link:hover {
+  color: #ea6b53;
+  background-color: #eaeaea;
 }
 @media screen and (max-width: 59.9375em) {
   .common-sidebar-tool {
@@ -8774,6 +8788,114 @@ a {
   .is-shown .common-sidebar-tool {
     display: block;
   }
+}
+
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-SIDEBAR-TIMELINE
+ *  
+ *  Side Navigation Timeline.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.common-sidebars-timeline {
+  z-index: 10;
+}
+@media screen and (max-width: 59.9375em) {
+  .common-sidebars-timeline {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 60em) {
+  .common-sidebars-timeline {
+    -webkit-transition: left 0.3s ease-in 0.1s;
+    -moz-transition: left 0.3s ease-in 0.1s;
+    transition: left 0.3s ease-in 0.1s;
+    left: -13rem;
+    padding: 4rem 0 0 0;
+  }
+  .common-sidebars-timeline.is-shown {
+    left: 0rem;
+  }
+}
+
+@media screen and (max-width: 59.9375em) {
+  .common-sidebar-timeline {
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 60em) {
+  .common-sidebar-timeline {
+    background-color: #2b2f3a;
+  }
+}
+
+.common-sidebar-timeline .comside-list {
+  overflow: visible;
+  min-height: 3rem;
+}
+@media screen and (max-width: 59.9375em) {
+  .common-sidebar-timeline .comside-list:nth-of-type(n+2) {
+    display: none;
+  }
+  .is-shown .common-sidebar-timeline .comside-list:nth-of-type(n+2) {
+    display: block;
+  }
+}
+
+.common-sidebar-timeline .comside-link {
+  background-color: #2b2f3a;
+  color: white;
+}
+.common-sidebar-timeline .comside-link:not(.sect) {
+  height: 3rem;
+  line-height: 3rem;
+}
+.common-sidebar-timeline .comside-link.sect {
+  height: auto;
+  line-height: 1rem;
+  border-bottom: 0 solid transparent;
+  padding-bottom: 1rem;
+}
+.common-sidebar-timeline .comside-link .fa {
+  background-color: #2b2f3a;
+}
+.common-sidebar-timeline .comside-link:hover .fa {
+  background-color: #2d3e51;
+}
+.common-sidebar-timeline .comside-link.sect:before {
+  position: absolute;
+  left: 1.5rem;
+  width: 1px;
+  height: 100%;
+  background-color: #ea6b53;
+  content: "";
+}
+.common-sidebar-timeline .sidelink-head {
+  display: block;
+  min-height: 3rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+.common-sidebar-timeline .comside-link.watched .sidelink-head {
+  color: #64afb2;
+}
+.common-sidebar-timeline .comside-link.current .sidelink-head {
+  color: #ea6b53;
+}
+.common-sidebar-timeline .comside-link.watched .comside-icon {
+  color: #64afb2;
+}
+.common-sidebar-timeline .comside-link.current .comside-icon {
+  color: #ea6b53;
+}
+.common-sidebar-timeline .comside-link.toggle:hover .fa {
+  background-color: #64afb2;
+}
+.common-sidebar-timeline .sidelink-body {
+  text-transform: none;
 }
 
 /** ------------------------------------------------------------------------- *\

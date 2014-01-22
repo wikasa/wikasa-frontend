@@ -30,12 +30,25 @@
     overflow: hidden;
     max-height: z(3rem);
     height: z(3rem);
+    
+    &:nth-child(n+2) .comside-link {
+        border-top: 1px solid $whiteDark2;
+    }
 }
 
 .common-sidebar-tool {
-    .comside-link {
+    .comside-link:not(.toggle) {
         color: $black;
         background-color: rgba(255, 255, 255, 0.8);
+        max-height: z(3rem);
+        height: z(3rem);
+        line-height: z(3rem);
+        border-bottom: 0 solid transparent;
+    }
+
+    .comside-link:hover {
+        color: $orange;
+        background-color: $whiteDark2;
     }
 
     @include media-query(max-width $tabtop-max) {
@@ -43,3 +56,10 @@
         .is-shown & { display: block; }
     }
 }
+
+// .common-sidebar-tool {
+//     .comside-link {
+//         color: $white;
+//         background-color: $black;
+//     }
+// }
