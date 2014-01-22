@@ -8310,7 +8310,7 @@ a {
   max-height: 3rem;
   width: 100%;
   height: 3rem;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.8);
   font-size: 1em;
 }
 .common-heads:after {
@@ -8347,6 +8347,7 @@ a {
 .comhead-brand-alphas {
   width: 3rem;
   background-color: #2b2f3a;
+  z-index: 3010;
 }
 .comhead-brand-alphas:hover {
   background-color: #ea6b53;
@@ -8361,6 +8362,7 @@ a {
 }
 
 .comhead-brand-betas {
+  z-index: 3000;
   width: 9rem;
   background-color: transparent;
   margin-right: 16px;
@@ -8383,6 +8385,8 @@ a {
   font-size: 0.75rem;
   line-height: 3rem;
   padding: 0 16px 0 16px;
+  background-color: #FFF;
+  border-bottom: 1px solid #eaeaea;
 }
 .common-head > a[class^="comhead-link"]:hover {
   background-color: #f3f3f3;
@@ -8391,6 +8395,7 @@ a {
 .common-head > .comhead-link-basic {
   border-right: 1px solid #f3f3f3;
   border-left: 1px solid #f3f3f3;
+  z-index: 2010;
 }
 .common-head > .comhead-link-search {
   text-align: center;
@@ -8398,6 +8403,7 @@ a {
   border-right: 1px solid #f3f3f3;
   border-left: 1px solid #f3f3f3;
   float: right;
+  z-index: 2020;
 }
 @media screen and (min-width: 20em) and (max-width: 29.9375em) {
   .common-head > .comhead-link-search {
@@ -8406,64 +8412,40 @@ a {
 }
 .common-head > .comhead-link-user {
   float: right;
+  z-index: 2000;
 }
 .common-head > .comhead-link-user:after {
   content: "";
   display: table;
   clear: both;
 }
-@media screen and (min-width: 20em) and (max-width: 29.9375em) {
+@media screen and (max-width: 29.9375em) {
   .common-head > .comhead-link-user {
-    width: 12rem;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
-@media screen and (min-width: 40em) and (max-width: 49.9375em) {
+@media screen and (min-width: 30em) {
   .common-head > .comhead-link-user {
-    width: 12rem;
-  }
-}
-@media screen and (min-width: 60em) and (max-width: 79.9375em) {
-  .common-head > .comhead-link-user {
-    width: 9rem;
-  }
-}
-@media screen and (min-width: 80em) {
-  .common-head > .comhead-link-user {
-    width: 12rem;
+    position: relative;
+    width: 13rem;
   }
 }
 .common-head > .comhead-link-user > * {
   display: inline-block;
-  float: left;
+  float: right;
 }
 .common-head > .comhead-link-user .comhead-username {
+  max-width: 7rem;
+  width: 7rem;
   overflow: hidden;
   height: 3rem;
   margin-right: 8px;
-}
-@media screen and (min-width: 20em) and (max-width: 29.9375em) {
-  .common-head > .comhead-link-user .comhead-username {
-    max-width: 5.5rem;
-    width: 5.5rem;
-  }
-}
-@media screen and (min-width: 40em) and (max-width: 49.9375em) {
-  .common-head > .comhead-link-user .comhead-username {
-    max-width: 5.5rem;
-    width: 5.5rem;
-  }
-}
-@media screen and (min-width: 60em) and (max-width: 79.9375em) {
-  .common-head > .comhead-link-user .comhead-username {
-    max-width: 4rem;
-    width: 4rem;
-  }
-}
-@media screen and (min-width: 80em) {
-  .common-head > .comhead-link-user .comhead-username {
-    max-width: 5rem;
-    width: 5rem;
-  }
+  padding-right: 8px;
+  text-align: right;
+  white-space: nowrap;
 }
 .common-head > .comhead-link-user .comhead-userpic {
   max-width: 32px;
@@ -8798,7 +8780,7 @@ a {
  ** ------------------------------------------------------------------------- */
 .common-cards {
   position: relative;
-  margin: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
   font-size: 1rem;
 }
 .common-cards:after {
@@ -9004,7 +8986,7 @@ a {
   height: 3rem;
   overflow: hidden;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .common-tab:before {
   position: relative;
@@ -9019,6 +9001,7 @@ a {
   position: relative;
   display: block;
   height: 100%;
+  font-size: 0.875rem;
   line-height: 3rem;
   float: left;
   border-bottom: 1px solid #eaeaea;
@@ -9032,29 +9015,67 @@ a {
 }
 
 /** ------------------------------------------------------------------------- *\
- *  WIKASA.OBJECT.HOME-TITLE
+ *  WIKASA.OBJECT.COMMON-TAB
  *  
- *  Home Title object used only on home page.
+ *  Common typography implementation used globally.
  * 
  *  @author Bangsawan & Silvia
  *  @version 0.0.1
  *  
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
-.home-title {
-  width: 100%;
-  height: 5rem;
+*[class^="subheads-"] {
+  display: block;
+  position: relative;
   color: #2b2f3a;
-  font-size: 50px;
+  text-transform: uppercase;
   font-family: SansBold, Arial, sans-serif;
-  line-height: 5rem;
+  margin: 1rem 0;
+  height: 3rem;
 }
-.home-title .homtit-link {
+*[class^="subheads-"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*[class^="subheads-"] > a {
+  position: relative;
   display: block;
   margin: 0;
-  text-transform: uppercase;
+}
+*[class^="subheads-"] > a:hover {
+  color: #ea6b53;
+}
+
+.subheads-1 {
+  font-size: 40px;
+  line-height: 3rem;
+}
+.subheads-1 > * {
   font-size: inherit;
-  line-height: inherit;
+  line-height: 3rem;
+}
+
+.subhead .icon {
+  position: relative;
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  margin-right: 1rem;
+  float: left;
+}
+@media screen and (max-width: 59.9375em) {
+  .subhead .icon {
+    display: none;
+  }
+}
+.subhead .icon img {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  margin: -18px 0 0 -18px;
+  height: 36px;
 }
 
 .hid {

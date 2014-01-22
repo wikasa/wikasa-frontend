@@ -1,0 +1,60 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-TAB
+ *  
+ *  Common typography implementation used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+*[class^="subheads-"] {
+    @include clearfix;
+    display: block;
+    position: relative;
+    color: $black;
+    text-transform: uppercase;
+    font-family: $ff-sans-bold;
+    margin: z(1rem) 0;
+    height: z(3rem);
+
+    & > a {
+        position: relative;
+        display: block;
+        margin: 0;
+
+        &:hover {  color: $orange; }
+    }
+}
+
+.subheads-1 {
+    font-size: 40px;
+    line-height: z(3rem);
+
+    & > * {
+        font-size: inherit;
+        line-height: z(3rem);
+    }
+}
+
+.subhead {
+    .icon {
+        @include media-query(max-width $tabtop-max) { display: none; }
+        position: relative;
+        display: block;
+        height: z(3rem);
+        width: z(3rem);
+        margin-right: z(1rem);
+        float: left;
+
+        img {
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 50%;
+            margin: -18px 0 0 -18px;
+            height: 36px;
+        }
+    }
+}

@@ -19,7 +19,7 @@
     max-height: z(3rem);
     width: 100%;
     height: z(3rem);
-    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.8);
     font-size: 1em;
 }
 
@@ -49,6 +49,7 @@ $_brand-beta-height: 32px;
 .comhead-brand-alphas {
     width: z(3rem);
     background-color: $black;
+    z-index: 3010;
 
     &:hover { background-color: $orange; }
 
@@ -64,7 +65,7 @@ $_brand-beta-height: 32px;
 
 .comhead-brand-betas {
     @include media-query($mobile) { display: none !important; }
-    // @include media-query($tablet) { display: none !important; }
+    z-index: 3000;
 
     width: z(9rem);
     background-color: transparent;
@@ -86,6 +87,8 @@ $_brand-beta-height: 32px;
         font-size: z( (12 / $lead) * 1rem ); // 12px
         line-height: z(3rem); // 48px
         padding: 0 $lp 0 $lp;
+        background-color: #FFF;
+        border-bottom: 1px solid $whiteDark2;
 
         &:hover {
             background-color: $whiteDark1;
@@ -96,6 +99,7 @@ $_brand-beta-height: 32px;
     & > .comhead-link-basic {
         border-right: 1px solid $whiteDark1;
         border-left: 1px solid $whiteDark1;
+        z-index: 2010;
     }
 
     & > .comhead-link-search {
@@ -106,41 +110,39 @@ $_brand-beta-height: 32px;
         border-right: 1px solid $whiteDark1;
         border-left: 1px solid $whiteDark1;
         float: right;
+        z-index: 2020;
     }
 
     & > .comhead-link-user {
         @include clearfix;
-        @include media-query($mobile) { width: z(12rem); }
-        @include media-query($tablet) { width: z(12rem); }
-        @include media-query($desktop) { width: z(9rem); }
-        @include media-query($wide) { width: z(12rem); }
+        @include media-query(max-width $mobile-max) {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        @include media-query(min-width $mobtab-min) {
+            position: relative;
+            width: z(13rem);
+        }
+
         float: right;
+        z-index: 2000;
 
         & > * {
             display: inline-block;
-            float: left;
+            float: right;
         }
 
         .comhead-username {
-            @include media-query($mobile) {
-                max-width: z(5.5rem);
-                width: z(5.5rem);
-            }
-            @include media-query($tablet) {
-                max-width: z(5.5rem);
-                width: z(5.5rem);
-            }
-            @include media-query($desktop) {
-                max-width: z(4rem);
-                width: z(4rem);
-            }
-            @include media-query($wide) {
-                max-width: z(5rem);
-                width: z(5rem);
-            }
+            max-width: z(7rem);
+            width: z(7rem);
             overflow: hidden;
             height: z(3rem);
             margin-right: $lp/2;
+            padding-right: $lp/2;
+            text-align: right;
+            white-space: nowrap;
         }
 
         .comhead-userpic {

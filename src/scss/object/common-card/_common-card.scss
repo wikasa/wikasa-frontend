@@ -12,7 +12,7 @@
 .common-cards {
     @include clearfix;
     position: relative;
-    margin: 0 0 1rem 0;
+    margin: 0 0 z(2rem) 0;
     font-size: z(1rem);
 }
 

@@ -13,23 +13,24 @@
     height: 3rem;
     overflow: hidden;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: z(2rem);
     
     &:before {
         position: relative;
         display: block;
         width: 100%;
-        height: 3rem;
+        height: z(3rem);
         content: "";
         border-bottom: 1px solid $whiteDark2;
-        margin-bottom: -3rem;
+        margin-bottom: z(-3rem);
     }
 
     & > *[class^="comtab-link"] {
         position: relative;
         display: block;
         height: 100%;
-        line-height: 3rem;
+        font-size: z(14 / $l *  1rem);
+        line-height: z(3rem);
         float: left;
         border-bottom: 1px solid $whiteDark2;
 
@@ -39,7 +40,7 @@
         }
 
         &:nth-child(n+1) {
-            margin-right: 2rem;
+            margin-right: z(2rem);
         }
     }
 }

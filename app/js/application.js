@@ -10124,7 +10124,6 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 
     $comheadLinkUser.on('click', function(e) {
         e.preventDefault();
-        console.log('z');
         $commonSidebarsTool.toggleClass('is-shown');
     });
 
