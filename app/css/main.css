@@ -9504,6 +9504,11 @@ label {
   width: 100%;
   height: auto;
 }
+.common-mainheads:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 @media screen and (max-width: 59.9375em) {
   .common-mainheads {
     padding: 0;
@@ -9517,6 +9522,7 @@ label {
 
 .common-mainhead {
   position: relative;
+  overflow: hidden;
   width: 100%;
   height: auto;
 }
@@ -9534,8 +9540,10 @@ label {
   display: table;
   clear: both;
 }
-.mainhead-meta > * {
-  float: left;
+@media screen and (min-width: 40em) {
+  .mainhead-meta > * {
+    float: left;
+  }
 }
 .mainhead-meta .headmeta-userpics {
   display: block;
@@ -9543,6 +9551,11 @@ label {
   margin-right: 1rem;
   width: 2rem;
   height: 2rem;
+}
+@media screen and (max-width: 59.9375em) {
+  .mainhead-meta .headmeta-userpics {
+    margin-bottom: 1rem;
+  }
 }
 .mainhead-meta span[class^="headmeta-"] {
   margin: 0.75rem 0 0 0;
@@ -9564,6 +9577,48 @@ label {
 
 .common-mainheads.test {
   background-color: #f3f3f3;
+}
+
+.mainhead-tools {
+  position: relative;
+  left: 50%;
+  float: left;
+  margin: 1rem 0 0 0;
+}
+.mainhead-tools:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.mainhead-tools .mainhead-tool {
+  position: relative;
+  right: 50%;
+  float: left;
+  margin: 0.5rem 0.25rem;
+  background-color: #2b2f3a;
+}
+.mainhead-tools .mainhead-tool:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.mainhead-tools .mainhead-tool:hover {
+  background-color: #ea6b53;
+}
+
+.common-mainheads.altered {
+  background-color: #64afb2;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.common-mainheads.altered .mainhead-meta {
+  color: #2b2f3a;
+}
+.common-mainheads.altered .mainhead-title {
+  color: white;
+}
+.common-mainheads.altered .headmeta-userpics {
+  border: 2px solid white;
 }
 
 /** ------------------------------------------------------------------------- *\
@@ -9649,9 +9704,9 @@ label {
   min-height: 4rem;
   max-width: 100%;
   width: 100%;
-  height: 4rem;
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
+  overflow: hidden;
 }
 .common-pagetools:after {
   content: "";
@@ -9670,11 +9725,16 @@ label {
   display: table;
   clear: both;
 }
+@media screen and (max-width: 59.9375em) {
+  .common-shares {
+    left: 50%;
+    clear: left;
+  }
+}
 
 .comshare-btn {
+  position: relative;
   display: block;
-  min-width: 4rem;
-  width: 5rem;
   float: left;
   text-align: left;
 }
@@ -9683,11 +9743,33 @@ label {
   display: table;
   clear: both;
 }
+@media screen and (min-width: 60em) {
+  .comshare-btn {
+    min-width: 5rem;
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 59.9375em) {
+  .comshare-btn {
+    right: 50%;
+  }
+}
+@media screen and (max-width: 49.9375em) {
+  .comshare-btn {
+    min-width: 2rem;
+    width: 2rem;
+  }
+}
 .comshare-btn:nth-of-type(n+2) {
   margin-left: 0.5rem;
 }
 .comshare-btn > .icon {
+  display: block;
+  float: left;
   margin-right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
 }
 .comshare-btn.twitter {
   background-color: #2DAAE1;
@@ -9712,8 +9794,6 @@ label {
 
 .common-siblingnavs {
   position: relative;
-  margin-left: 1rem;
-  float: right;
   margin: 1rem 0;
 }
 .common-siblingnavs:after {
@@ -9721,21 +9801,115 @@ label {
   display: table;
   clear: both;
 }
+@media screen and (max-width: 59.9375em) {
+  .common-siblingnavs {
+    left: 50%;
+    float: left;
+    clear: left;
+  }
+}
+@media screen and (min-width: 60em) {
+  .common-siblingnavs {
+    float: right;
+    clear: right;
+  }
+}
 .common-siblingnavs .comsib-btn {
   background-color: #2b2f3a;
   float: left;
-  font-weight: 400;
+  position: relative;
 }
 .common-siblingnavs .comsib-btn:after {
   content: "";
   display: table;
   clear: both;
 }
+@media screen and (max-width: 59.9375em) {
+  .common-siblingnavs .comsib-btn {
+    right: 50%;
+    left: auto;
+  }
+}
 .common-siblingnavs .comsib-btn:nth-of-type(n+2) {
   margin-left: 0.5rem;
 }
 .common-siblingnavs .comsib-btn:hover {
   background-color: #ea6b53;
+}
+
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-MAINHEAD
+ *  
+ *  Page Footer used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.common-footers {
+  position: relative;
+  background-color: #2b2f3a;
+  color: white;
+  margin-top: 4rem;
+}
+.common-footers:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 49.9375em) {
+  .common-footers {
+    padding-top: 1rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  .common-footers {
+    height: 2rem;
+  }
+}
+
+.common-footer {
+  height: 100%;
+  margin: 0 auto !important;
+}
+.common-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.common-footer > * {
+  display: block;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  color: white;
+}
+.common-footer > *:hover {
+  color: #ea6b53;
+}
+@media screen and (max-width: 49.9375em) {
+  .common-footer > * {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  .common-footer .comfoot-link {
+    float: left;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .common-footer .comfoot-link:nth-child(n+2) {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  .common-footer .comfoot-copyright {
+    float: right;
+    margin: 0.5rem;
+  }
 }
 
 .hid {
