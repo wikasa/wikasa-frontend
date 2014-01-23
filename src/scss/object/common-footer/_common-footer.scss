@@ -1,0 +1,56 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-MAINHEAD
+ *  
+ *  Page Footer used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.common-footers {
+    @include clearfix;
+    position: relative;
+    @include media-query(max-width $tablet-max) { padding-top: z(1rem); }
+    @include media-query(min-width $tabtop-min) { height: z(2rem); }
+    background-color: $black;
+    color: $white;
+    margin-top: z(4rem);
+}
+
+.common-footer {
+    @include clearfix;
+    height: 100%;
+    margin: 0 auto !important;
+    
+    & > * {
+        display: block;
+        height: z(1rem);
+        line-height: z(1rem);
+        font-size: z(12 / $l * 1rem);
+        color: $white;
+        &:hover { color: $orange; }
+        @include media-query(max-width $tablet-max) {
+            width: 100%;
+            text-align: center;
+            margin-bottom: z(1rem);
+        }
+    }
+
+    .comfoot-link {
+        @include media-query(min-width $tabtop-min) {
+            float: left;
+            margin-top: z(0.5 * 1rem);
+            margin-bottom: z(0.5 * 1rem);
+            &:nth-child(n+2) { margin-left: z(1rem); }
+        }
+    }
+
+    .comfoot-copyright {
+        @include media-query(min-width $tabtop-min) {
+            float: right;
+            margin: z(0.5 * 1rem);
+        }
+    }
+}
