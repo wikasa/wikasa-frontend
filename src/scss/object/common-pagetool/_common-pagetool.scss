@@ -17,9 +17,9 @@
     min-height: z(4rem);
     max-width: 100%;
     width: 100%;
-    height: z(4rem);
     border-top: 1px solid $whiteDark2;
     border-bottom: 1px solid $whiteDark2;
+    overflow: hidden;
 }
 
 .common-shares {
@@ -28,19 +28,39 @@
     margin-right: z(1rem);
     float: left;
     margin: z(1rem) 0;
+    @include media-query(max-width $tabtop-max) {
+        left: 50%;
+        clear:left;
+    }
 }
 
 .comshare-btn {
     @include clearfix;
+    @include media-query(min-width $desktop-min) {
+        min-width: z(5rem);
+        width: z(5rem);
+    }
+    @include media-query(max-width $tabtop-max) { right: 50%; }
+    @include media-query(max-width $tablet-max) {
+        min-width: z(2rem);
+        width: z(2rem);
+    }
+
+    position: relative;
     display: block;
-    min-width: z(4rem);
-    width: z(5rem);
     float: left;
     text-align: left;
 
     &:nth-of-type(n+2) { margin-left: z(0.5 * 1rem); }
 
-    & > .icon { margin-right: z(0.5 * 1rem); }
+    & > .icon {
+        display: block;
+        float: left;
+        margin-right: z(0.5 * 1rem);
+        width: z(2rem);
+        height: z(2rem);
+        line-height: z(2rem);
+    }
 
     &.twitter  { background-color: #2DAAE1; }
     &.facebook { background-color: #3B5998; }
@@ -58,19 +78,33 @@
 
 .common-siblingnavs {
     @include clearfix;
+
+    @include media-query(max-width $tabtop-max) {
+        left: 50%;
+        float: left;
+        clear: left;
+    }
+
+    @include media-query(min-width $desktop-min) {
+        float: right;
+        clear: right;
+    }
+
     position: relative;
-    margin-left: z(1rem);
-    float: right;
     margin: z(1rem) 0;
 
     .comsib-btn {
         @include clearfix;
         background-color: $black;
         float: left;
-        font-weight: 400;
+        position: relative;
+
+        @include media-query(max-width $tabtop-max) {
+            right: 50%;
+            left: auto;
+        }
 
         &:nth-of-type(n+2) { margin-left: z(0.5 * 1rem); }
-
         &:hover { background-color: $orange; }
     }
 }

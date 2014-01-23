@@ -10,6 +10,7 @@
  ** ------------------------------------------------------------------------- */
 
 .common-mainheads {
+    @include clearfix;
     margin-bottom: z(2rem);
     width: 100%;
     height: auto;
@@ -19,6 +20,7 @@
 
 .common-mainhead {
     position: relative;
+    overflow: hidden;
     width: 100%;
     height: auto;
 }
@@ -32,9 +34,16 @@
     font-size: z(13 / $l * 1rem);
     line-height: z(1rem);
 
-    & > * { float: left; }
+    & > * {
+        @include media-query(min-width $tablet-min) {
+            float: left;
+        }
+    }
 
     .headmeta-userpics {
+        @include media-query(max-width $tabtop-max) {
+            margin-bottom: z(1rem);
+        }
         display: block;
         overflow: hidden;
         margin-right: z(1rem);
@@ -53,4 +62,33 @@
 
 .common-mainheads.test {
     background-color: $whiteDark1;
+}
+
+.mainhead-tools {
+    @include clearfix;
+    position: relative;
+    left: 50%;
+    float: left;
+    margin: z(1rem) 0 0 0;
+
+    .mainhead-tool {
+        @include clearfix;
+        position: relative;
+        right: 50%;
+        float: left;
+        margin: z(0.5 * 1rem) z(0.25 * 1rem);
+        background-color: $black;
+
+        &:hover { background-color: $orange; }
+    }
+}
+
+.common-mainheads.altered {
+    background-color: $green;
+    margin-bottom: z(1rem);
+    padding: z(1rem);
+
+    .mainhead-meta { color: $black; }
+    .mainhead-title { color: $white; }
+    .headmeta-userpics { border: 2px solid $white; }
 }
