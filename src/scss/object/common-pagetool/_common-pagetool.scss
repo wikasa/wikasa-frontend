@@ -36,6 +36,7 @@
 
 .comshare-btn {
     @include clearfix;
+    @include transition(width 0.2s ease-in 0.1s);
     @include media-query(min-width $desktop-min) {
         min-width: z(5rem);
         width: z(5rem);
@@ -62,6 +63,12 @@
         line-height: z(2rem);
     }
 
+    .comshare-count {
+        float: right;
+        text-align: right;
+        white-space: nowrap;
+    }
+
     &.twitter  { background-color: #2DAAE1; }
     &.facebook { background-color: #3B5998; }
     &.gplus    { background-color: #F90101; }
@@ -69,11 +76,7 @@
 
     &:hover    { background-color: $black; }
 
-    .comshare-count {
-        float: right;
-        text-align: right;
-        white-space: nowrap;
-    }
+    &.open { width: z(5rem) !important; }
 }
 
 .common-siblingnavs {

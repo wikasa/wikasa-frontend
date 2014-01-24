@@ -9733,6 +9733,9 @@ label {
 }
 
 .comshare-btn {
+  -webkit-transition: width 0.2s ease-in 0.1s;
+  -moz-transition: width 0.2s ease-in 0.1s;
+  transition: width 0.2s ease-in 0.1s;
   position: relative;
   display: block;
   float: left;
@@ -9771,6 +9774,11 @@ label {
   height: 2rem;
   line-height: 2rem;
 }
+.comshare-btn .comshare-count {
+  float: right;
+  text-align: right;
+  white-space: nowrap;
+}
 .comshare-btn.twitter {
   background-color: #2DAAE1;
 }
@@ -9786,10 +9794,8 @@ label {
 .comshare-btn:hover {
   background-color: #2b2f3a;
 }
-.comshare-btn .comshare-count {
-  float: right;
-  text-align: right;
-  white-space: nowrap;
+.comshare-btn.open {
+  width: 5rem !important;
 }
 
 .common-siblingnavs {
