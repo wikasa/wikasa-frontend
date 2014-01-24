@@ -1992,8 +1992,8 @@ td {
  ** ----------------------------------------------------------------- */
 @font-face {
   font-family: "SansBold";
-  src: url('../fonts/AkkBd_Pro_1.eot');
-  src: url('../fonts/AkkBd_Pro_1.eot?#iefix') format("embedded-opentype"), url('../fonts/AkkBd_Pro_1.woff') format("woff"), url('../fonts/AkkBd_Pro_1.ttf') format("truetype"), url('../fonts/AkkBd_Pro_1.svg#SansBold') format("svg");
+  src: font-url("AkkBd_Pro_1.eot");
+  src: font-url("AkkBd_Pro_1.eot?#iefix") format("embedded-opentype"), font-url("AkkBd_Pro_1.woff") format("woff"), font-url("AkkBd_Pro_1.ttf") format("truetype"), font-url("AkkBd_Pro_1.svg#SansBold") format("svg");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2001,8 +2001,8 @@ td {
 
 @font-face {
   font-family: "SansRegular";
-  src: url('../fonts/AkkRg_Pro_1.eot');
-  src: url('../fonts/AkkRg_Pro_1.eot?#iefix') format("embedded-opentype"), url('../fonts/AkkRg_Pro_1.woff') format("woff"), url('../fonts/AkkRg_Pro_1.ttf') format("truetype"), url('../fonts/AkkRg_Pro_1.svg#SansRegular') format("svg");
+  src: font-url("AkkRg_Pro_1.eot");
+  src: font-url("AkkRg_Pro_1.eot?#iefix") format("embedded-opentype"), font-url("AkkRg_Pro_1.woff") format("woff"), font-url("AkkRg_Pro_1.ttf") format("truetype"), font-url("AkkRg_Pro_1.svg#SansRegular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2010,8 +2010,8 @@ td {
 
 @font-face {
   font-family: "SansLight";
-  src: url('../fonts/AkkLg_Pro_1.eot');
-  src: url('../fonts/AkkLg_Pro_1.eot?#iefix') format("embedded-opentype"), url('../fonts/AkkLg_Pro_1.woff') format("woff"), url('../fonts/AkkLg_Pro_1.ttf') format("truetype"), url('../fonts/AkkLg_Pro_1.svg#SansLight') format("svg");
+  src: font-url("AkkLg_Pro_1.eot");
+  src: font-url("AkkLg_Pro_1.eot?#iefix") format("embedded-opentype"), font-url("AkkLg_Pro_1.woff") format("woff"), font-url("AkkLg_Pro_1.ttf") format("truetype"), font-url("AkkLg_Pro_1.svg#SansLight") format("svg");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2019,8 +2019,8 @@ td {
 
 @font-face {
   font-family: "SansLightItalic";
-  src: url('../fonts/AkkLgIt_Pro_1.eot');
-  src: url('../fonts/AkkLgIt_Pro_1.eot?#iefix') format("embedded-opentype"), url('../fonts/AkkLgIt_Pro_1.woff') format("woff"), url('../fonts/AkkLgIt_Pro_1.ttf') format("truetype"), url('../fonts/AkkLgIt_Pro_1.svg#SansLightItalic') format("svg");
+  src: font-url("AkkLgIt_Pro_1.eot");
+  src: font-url("AkkLgIt_Pro_1.eot?#iefix") format("embedded-opentype"), font-url("AkkLgIt_Pro_1.woff") format("woff"), font-url("AkkLgIt_Pro_1.ttf") format("truetype"), font-url("AkkLgIt_Pro_1.svg#SansLightItalic") format("svg");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2028,8 +2028,8 @@ td {
 
 @font-face {
   font-family: "SerifBold";
-  src: url('../fonts/lucida_bright_demibold-webfont.eot');
-  src: url('../fonts/lucida_bright_demibold-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/lucida_bright_demibold-webfont.woff') format("woff"), url('../fonts/lucida_bright_demibold-webfont.ttf') format("truetype"), url('../fonts/lucida_bright_demibold-webfont.svg#SerifBold') format("svg");
+  src: font-url("lucida_bright_demibold-webfont.eot");
+  src: font-url("lucida_bright_demibold-webfont.eot?#iefix") format("embedded-opentype"), font-url("lucida_bright_demibold-webfont.woff") format("woff"), font-url("lucida_bright_demibold-webfont.ttf") format("truetype"), font-url("lucida_bright_demibold-webfont.svg#SerifBold") format("svg");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2037,8 +2037,8 @@ td {
 
 @font-face {
   font-family: "SerifBoldItalic";
-  src: url('../fonts/lucida_bright_demibold_italic-webfont.eot');
-  src: url('../fonts/lucida_bright_demibold_italic-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/lucida_bright_demibold_italic-webfont.woff') format("woff"), url('../fonts/lucida_bright_demibold_italic-webfont.ttf') format("truetype"), url('../fonts/lucida_bright_demibold_italic-webfont.svg#SerifBoldItalic') format("svg");
+  src: font-url("lucida_bright_demibold_italic-webfont.eot");
+  src: font-url("lucida_bright_demibold_italic-webfont.eot?#iefix") format("embedded-opentype"), font-url("lucida_bright_demibold_italic-webfont.woff") format("woff"), font-url("lucida_bright_demibold_italic-webfont.ttf") format("truetype"), font-url("lucida_bright_demibold_italic-webfont.svg#SerifBoldItalic") format("svg");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2046,8 +2046,8 @@ td {
 
 @font-face {
   font-family: "SerifItalic";
-  src: url('../fonts/lucida_bright_italic-webfont.eot');
-  src: url('../fonts/lucida_bright_italic-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/lucida_bright_italic-webfont.woff') format("woff"), url('../fonts/lucida_bright_italic-webfont.ttf') format("truetype"), url('../fonts/lucida_bright_italic-webfont.svg#SerifItalic') format("svg");
+  src: font-url("lucida_bright_italic-webfont.eot");
+  src: font-url("lucida_bright_italic-webfont.eot?#iefix") format("embedded-opentype"), font-url("lucida_bright_italic-webfont.woff") format("woff"), font-url("lucida_bright_italic-webfont.ttf") format("truetype"), font-url("lucida_bright_italic-webfont.svg#SerifItalic") format("svg");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2055,8 +2055,8 @@ td {
 
 @font-face {
   font-family: "SerifRegular";
-  src: url('../fonts/lucida_bright-webfont.eot');
-  src: url('../fonts/lucida_bright-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/lucida_bright-webfont.woff') format("woff"), url('../fonts/lucida_bright-webfont.ttf') format("truetype"), url('../fonts/lucida_bright-webfont.svg#SerifRegular') format("svg");
+  src: font-url("lucida_bright-webfont.eot");
+  src: font-url("lucida_bright-webfont.eot?#iefix") format("embedded-opentype"), font-url("lucida_bright-webfont.woff") format("woff"), font-url("lucida_bright-webfont.ttf") format("truetype"), font-url("lucida_bright-webfont.svg#SerifRegular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -2064,8 +2064,8 @@ td {
 
 @font-face {
   font-family: "IconFont";
-  src: url('../fonts/fontawesome-webfont.eot');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix') format("embedded-opentype"), url('../fonts/fontawesome-webfont.woff') format("woff"), url('../fonts/fontawesome-webfont.ttf') format("truetype"), url('../fonts/fontawesome-webfont.svg#IconFont') format("svg");
+  src: font-url("fontawesome-webfont.eot");
+  src: font-url("fontawesome-webfont.eot?#iefix") format("embedded-opentype"), font-url("fontawesome-webfont.woff") format("woff"), font-url("fontawesome-webfont.ttf") format("truetype"), font-url("fontawesome-webfont.svg#IconFont") format("svg");
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -9926,8 +9926,3 @@ p.styleguide-subhead {
   border-bottom: 1px solid #999;
   color: #999;
 }
-
-/* 
- *  @BUG: Test sublimeTODO package
- *  @BUG(VIA): Test sublimeTODO package
- */
