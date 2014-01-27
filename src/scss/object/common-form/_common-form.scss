@@ -38,7 +38,7 @@
     color: $orange;
   }
 
-  &.fg-connect {
+  &.connect {
     @include rb-border-radius(3px);
     position: relative;
     display: block;

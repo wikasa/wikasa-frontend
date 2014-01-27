@@ -2419,7 +2419,7 @@ a {
 .form-go:hover {
   color: #ea6b53;
 }
-.form-go.fg-connect {
+.form-go.connect {
   -webkit-border-radius: 3px;
   -khtml-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2438,13 +2438,13 @@ a {
   color: white;
   letter-spacing: 0.3px;
 }
-.form-go.fg-connect .fa {
+.form-go.connect .fa {
   font-size: 2rem;
   margin: 0 0.25rem 0 0.5rem;
   position: relative;
   top: 0.25rem;
 }
-.form-go.fg-connect:hover {
+.form-go.connect:hover {
   background-color: #2b2f3a;
 }
 

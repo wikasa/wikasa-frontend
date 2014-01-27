@@ -17,15 +17,37 @@
     width: 100%;
     height: auto;
     padding: z(2rem) 0;
+
+    & .mains { margin-top: z(1rem); }
 }
 
-.lanbodies-a { background-color: #67B4AE; margin-top: z(3rem);}
+.lanbodies-a {
+    background-color: #67B4AE;
+    margin-top: z(3rem);
+
+    @include media-query( max-width $tabtop-max ) {
+        margin-top: 0;
+    }
+}
 .lanbodies-b { background-color: #354A5C; }
 
 .lanbody-a * { text-align: center; }
 
 // A1
 .lancontent-a1 { color: $white; margin-bottom: z(2rem); }
+
+// A2
+.lancontent-a2 {
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: 0 auto z(2rem) auto;
+
+    .brand-landing-huge {
+        display: block;
+        width: 100%;
+    }
+}
 
 // A3
 .lancontent-a3 { color: $white; margin-bottom: z(1rem); }

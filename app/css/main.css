@@ -2419,7 +2419,7 @@ a {
 .form-go:hover {
   color: #ea6b53;
 }
-.form-go.fg-connect {
+.form-go.connect {
   -webkit-border-radius: 3px;
   -khtml-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2438,13 +2438,13 @@ a {
   color: white;
   letter-spacing: 0.3px;
 }
-.form-go.fg-connect .fa {
+.form-go.connect .fa {
   font-size: 2rem;
   margin: 0 0.25rem 0 0.5rem;
   position: relative;
   top: 0.25rem;
 }
-.form-go.fg-connect:hover {
+.form-go.connect:hover {
   background-color: #2b2f3a;
 }
 
@@ -9939,10 +9939,18 @@ label {
   display: table;
   clear: both;
 }
+*[class^="lanbodies-"] .mains {
+  margin-top: 1rem;
+}
 
 .lanbodies-a {
   background-color: #67B4AE;
   margin-top: 3rem;
+}
+@media screen and (max-width: 59.9375em) {
+  .lanbodies-a {
+    margin-top: 0;
+  }
 }
 
 .lanbodies-b {
@@ -9956,6 +9964,17 @@ label {
 .lancontent-a1 {
   color: white;
   margin-bottom: 2rem;
+}
+
+.lancontent-a2 {
+  position: relative;
+  width: 50%;
+  height: auto;
+  margin: 0 auto 2rem auto;
+}
+.lancontent-a2 .brand-landing-huge {
+  display: block;
+  width: 100%;
 }
 
 .lancontent-a3 {
