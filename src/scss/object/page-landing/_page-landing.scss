@@ -1,0 +1,114 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-USERPIC
+ *  
+ *  Styling specific for Landing Page only.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+// LANBODIES
+
+*[class^="lanbodies-"] {
+    @include clearfix;
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: z(2rem) 0;
+}
+
+.lanbodies-a { background-color: #67B4AE; margin-top: z(3rem);}
+.lanbodies-b { background-color: #354A5C; }
+
+.lanbody-a * { text-align: center; }
+
+// A1
+.lancontent-a1 { color: $white; margin-bottom: z(2rem); }
+
+// A3
+.lancontent-a3 { color: $white; margin-bottom: z(1rem); }
+
+// A4
+.lancontent-a4 {
+    position: relative;
+    margin: z(2rem) 0;
+    left: 50%;
+    width: 100%;
+}
+.btn-huge {
+    @extend .btn;
+
+    height: z(4rem);
+    padding: 0 z(2rem);
+    font-size: z(21 / $l * 1rem);
+    line-height: z(4rem);
+    position: relative;
+    left: -50%;
+}
+.lancontent-btn { background-color: #313CA3; color: $white; }
+
+// A5
+.lancontent-a5 { margin-bottom: z(1rem); }
+.lancontent-link { color:#313CA3; }
+
+// A6
+.lancontent-a6 { margin-bottom: 0; }
+
+// LANDING FEATURETTE
+.landing-featurette {
+    @include clearfix;
+    position: relative;
+    width: 100%;
+    margin-bottom: z(2rem);
+    color: $white;
+
+    @include media-query(max-width $tabtop-max) {
+        & > * {
+            @include clearfix;
+            float: none;
+            max-width: 100%;
+            width: 100%;
+            padding: 0;
+            margin-bottom: z(1rem);
+            position: relative;
+        }
+
+        .lanfeat-image {
+            position: relative;
+            height: z(12rem);
+            img {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin: 0 0 0 z(-6rem);
+            }
+        }
+
+        .lanfeat-content > * { text-align: center; }
+    }
+
+    @include media-query(min-width $tablet-min) {
+        & > * {
+            @include clearfix;
+            float: left;
+            max-width: 50%;
+            width: 50%;
+            padding: z(2rem);
+            position: relative;
+        }
+
+        &:nth-of-type(odd) {
+            .lanfeat-image img { float: right; }
+            .lanfeat-content > * { text-align: left; }
+        }
+
+        &:nth-of-type(even) {
+            .lanfeat-image img { float: left; }
+            .lanfeat-content > * { text-align: right; }
+        }
+    }
+
+    .lanfeat-text a { color: $orange; }
+}

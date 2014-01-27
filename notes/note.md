@@ -75,3 +75,20 @@
                 span.headmeta-date
             h1.mainhead-title
 
+**LANDING**
+
+    div.mains
+        div.landing-bodies
+            div.lanbody-a
+                h1.lancontent-a1
+                div.common-medias.lancontent-a2 > div.common-media
+                p.lancontent-a3
+                a.lancontent-a4.btn-huge.lancontent-btn
+                p.lancontent-a4 > a
+                p.lancontent-a5 > a
+            div.lanbody-b
+                p.lancontent-b1
+                    img
+                    h2
+                    p
+

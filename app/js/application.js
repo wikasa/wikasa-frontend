@@ -10102,6 +10102,7 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 
     $comshareBtn.each(function() {
         $(this).on('click', function(e) {
+            e.preventDefault();
             $(this).toggleClass('open');
         });
         $(this).on('mouseout', function(e) {

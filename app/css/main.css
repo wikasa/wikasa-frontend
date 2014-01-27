@@ -2564,7 +2564,7 @@ button, select {
   color: white;
 }
 
-.btn {
+.btn, .btn-huge {
   -webkit-border-radius: 3px;
   -khtml-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2591,7 +2591,7 @@ button, select {
   -o-user-select: none;
   user-select: none;
 }
-.btn:hover {
+.btn:hover, .btn-huge:hover {
   background-color: #ea6b53;
   border: 0 solid transparent;
 }
@@ -9916,6 +9916,153 @@ label {
     float: right;
     margin: 0.5rem;
   }
+}
+
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-USERPIC
+ *  
+ *  Styling specific for Landing Page only.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+*[class^="lanbodies-"] {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+}
+*[class^="lanbodies-"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lanbodies-a {
+  background-color: #67B4AE;
+  margin-top: 3rem;
+}
+
+.lanbodies-b {
+  background-color: #354A5C;
+}
+
+.lanbody-a * {
+  text-align: center;
+}
+
+.lancontent-a1 {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.lancontent-a3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.lancontent-a4 {
+  position: relative;
+  margin: 2rem 0;
+  left: 50%;
+  width: 100%;
+}
+
+.btn-huge {
+  height: 4rem;
+  padding: 0 2rem;
+  font-size: 1.3125rem;
+  line-height: 4rem;
+  position: relative;
+  left: -50%;
+}
+
+.lancontent-btn {
+  background-color: #313CA3;
+  color: white;
+}
+
+.lancontent-a5 {
+  margin-bottom: 1rem;
+}
+
+.lancontent-link {
+  color: #313CA3;
+}
+
+.lancontent-a6 {
+  margin-bottom: 0;
+}
+
+.landing-featurette {
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: white;
+}
+.landing-featurette:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 59.9375em) {
+  .landing-featurette > * {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  .landing-featurette > *:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .landing-featurette .lanfeat-image {
+    position: relative;
+    height: 12rem;
+  }
+  .landing-featurette .lanfeat-image img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -6rem;
+  }
+  .landing-featurette .lanfeat-content > * {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 40em) {
+  .landing-featurette > * {
+    float: left;
+    max-width: 50%;
+    width: 50%;
+    padding: 2rem;
+    position: relative;
+  }
+  .landing-featurette > *:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .landing-featurette:nth-of-type(odd) .lanfeat-image img {
+    float: right;
+  }
+  .landing-featurette:nth-of-type(odd) .lanfeat-content > * {
+    text-align: left;
+  }
+  .landing-featurette:nth-of-type(even) .lanfeat-image img {
+    float: left;
+  }
+  .landing-featurette:nth-of-type(even) .lanfeat-content > * {
+    text-align: right;
+  }
+}
+.landing-featurette .lanfeat-text a {
+  color: #ea6b53;
 }
 
 .hid {
