@@ -11,9 +11,12 @@
 
 .common-footers {
     @include clearfix;
-    position: relative;
     @include media-query(max-width $tablet-max) { padding-top: z(1rem); }
     @include media-query(min-width $tabtop-min) { height: z(2rem); }
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: $black;
     color: $white;
     margin-top: z(4rem);

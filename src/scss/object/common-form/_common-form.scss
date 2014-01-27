@@ -25,16 +25,18 @@
     }
 }
 
-.form-group { margin: 0 0 z(0.5 * 1rem) 0; }
+.form-group {
+    &:nth-child(n+2) { margin-top: z(1rem); }
+}
 
 .form-go {
   display: block;
   margin: 0;
   font-size: z(12 /$l * 1rem);
   line-height: z(1rem);
-  color: $black;
+  color: $white;
 
-  &:hover {
+  &:not(.btn):hover {
     color: $orange;
   }
 
@@ -107,14 +109,14 @@
     display: block;
     padding: z(0.5 * 1rem);
     width: 100%;
-    height: z(1.5 * 1rem);
+    height: z(2rem);
     border: 1px solid $gray;
     background-color: $white;
     background-image: none;
     color: $gray2;
     font-size: z(14 / $l * 1rem);
     font-family: $ff-sans-light;
-    line-height: z(1.5 * 1rem);
+    line-height: z(2rem);
     // transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
     vertical-align: middle;
 
@@ -175,12 +177,6 @@ button, select {
   text-transform: none;
 }
 
-.btn-default {
-  background-color: $green;
-  border-color: $green;
-  color: $white;
-}
-
 .btn {
   @include rb-border-radius(3px);
   display: inline-block;
@@ -203,10 +199,28 @@ button, select {
   -o-user-select: none;
   user-select: none;
 
-  &:hover {
-    background-color: $orange;
-    border: 0 solid transparent;
-  }
+    &.btn-default {
+        background-color: $green;
+        border-color: $green;
+        color: $white;
+    }
+
+    &.btn-purple {
+        background-color: #313CA3;
+        border-color: #313CA3;
+        color: $white;
+    }
+
+    &.btn-orange {
+        background-color: $orange;
+        border-color: $orange;
+        color: $white;
+    }
+
+    &:hover {
+        background-color: $orange;
+        border: 0 solid transparent;
+    }
 }
 
 .radio, .checkbox {
@@ -218,7 +232,7 @@ button, select {
 
 label {
     display: inline-block;
-    font-weight: bold;
+    font-weight: normal;
 
     margin-bottom: 0;
     font-size: z(12 / $l * 1rem);
@@ -285,4 +299,17 @@ label {
     margin-bottom: 0;
     padding: 0 z(0.5 * 1rem);
     vertical-align: middle;
+}
+
+
+.single-forms {
+    @include clearfix;
+    @include rb-border-radius(3px);
+    overflow: hidden;
+    padding: z(2rem);
+    max-width: z(15rem);
+    width: z(15rem);
+    background-color: $black;
+    color: $white;
+    margin: z(1rem) auto;
 }

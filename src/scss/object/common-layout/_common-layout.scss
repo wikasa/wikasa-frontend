@@ -16,6 +16,7 @@
     @include media-query(max-width $tabtop-max) { &:nth-of-type(1) { margin-top: z(1rem); } }
     @include media-query(min-width $desktop-min) { &:nth-of-type(1) { margin-top: z(4rem); } }
     &:nth-of-type(n+2) { margin-top: z(1rem); }
+    min-height: 100%;
 }
 
 .main {

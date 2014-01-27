@@ -13,8 +13,6 @@
     @include clearfix;
     display: block;
     position: relative;
-    color: $black;
-    text-transform: uppercase;
     font-family: $ff-sans-bold;
     margin: z(1rem) 0;
     height: z(3rem);
@@ -29,10 +27,24 @@
 }
 
 .subheads-1 {
-    font-size: 40px;
+    font-size: z(40 / $l * 1rem);
     line-height: z(3rem);
+    color: $black;
+    text-transform: uppercase;
 
     & > * {
+        font-size: inherit;
+        line-height: z(3rem);
+    }
+}
+
+.subheads-2 {
+    font-size: z(40 / $l * 1rem);
+    line-height: z(3rem);
+    color: $blackLite2;
+
+    & > * {
+        text-align: center;
         font-size: inherit;
         line-height: z(3rem);
     }
