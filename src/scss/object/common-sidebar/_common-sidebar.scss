@@ -52,6 +52,8 @@
     max-width: 100%;
     width: 100%;
     text-transform: uppercase;
+
+    &:last-of-type { border-bottom: 1px solid $white; }
 }
 
 .comside-link {

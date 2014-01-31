@@ -8864,6 +8864,9 @@ label {
   width: 100%;
   text-transform: uppercase;
 }
+.comside-list:last-of-type {
+  border-bottom: 1px solid white;
+}
 
 .comside-link {
   position: relative;
@@ -9909,7 +9912,7 @@ label {
   right: 0;
   background-color: #2b2f3a;
   color: white;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 .common-footers:after {
   content: "";

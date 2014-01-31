@@ -2697,49 +2697,49 @@ label {
  *  
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
-.container, .mains,
+.container, .mains, .alerts,
 *[class^="container"] {
   font-size: 1em;
   margin: 1em auto 0 auto;
 }
-.container:after, .mains:after,
+.container:after, .mains:after, .alerts:after,
 *[class^="container"]:after {
   content: "";
   display: table;
   clear: both;
 }
 @media screen and (min-width: 20em) and (max-width: 29.9375em) {
-  .container, .mains,
+  .container, .mains, .alerts,
   *[class^="container"] {
     width: 19em;
   }
 }
 @media screen and (min-width: 30em) and (max-width: 39.9375em) {
-  .container, .mains,
+  .container, .mains, .alerts,
   *[class^="container"] {
     width: 27em;
   }
 }
 @media screen and (min-width: 40em) and (max-width: 49.9375em) {
-  .container, .mains,
+  .container, .mains, .alerts,
   *[class^="container"] {
     width: 38em;
   }
 }
 @media screen and (min-width: 50em) and (max-width: 59.9375em) {
-  .container, .mains,
+  .container, .mains, .alerts,
   *[class^="container"] {
     width: 47em;
   }
 }
 @media screen and (min-width: 60em) and (max-width: 79.9375em) {
-  .container, .mains,
+  .container, .mains, .alerts,
   *[class^="container"] {
     width: 59em;
   }
 }
 @media screen and (min-width: 80em) {
-  .container, .mains,
+  .container, .mains, .alerts,
   *[class^="container"] {
     width: 71em;
   }
@@ -2767,230 +2767,230 @@ label {
  ** ------------------------------------------------------------------------- */
 /* CONTAINER STANDARD ------------------------------------------------------- */
 @media screen and (min-width: 20em) and (max-width: 29.9375em) {
-  .container > .column-alpha, .mains > .column-alpha {
+  .container > .column-alpha, .mains > .column-alpha, .alerts > .column-alpha {
     width: 4em;
   }
-  .container > .column-beta, .mains > .column-beta {
+  .container > .column-beta, .mains > .column-beta, .alerts > .column-beta {
     width: 9em;
   }
-  .container > .column-gamma, .mains > .column-gamma {
+  .container > .column-gamma, .mains > .column-gamma, .alerts > .column-gamma {
     width: 14em;
   }
-  .container > .column-delta, .mains > .column-delta {
+  .container > .column-delta, .mains > .column-delta, .alerts > .column-delta {
     width: 19em;
   }
-  .container > .column-epsilon, .mains > .column-epsilon {
+  .container > .column-epsilon, .mains > .column-epsilon, .alerts > .column-epsilon {
     width: 19em;
   }
-  .container > .column-zeta, .mains > .column-zeta {
+  .container > .column-zeta, .mains > .column-zeta, .alerts > .column-zeta {
     width: 19em;
   }
-  .container > .column-eta, .mains > .column-eta {
+  .container > .column-eta, .mains > .column-eta, .alerts > .column-eta {
     width: 19em;
   }
-  .container > .column-theta, .mains > .column-theta {
+  .container > .column-theta, .mains > .column-theta, .alerts > .column-theta {
     width: 19em;
   }
-  .container > .column-iota, .mains > .column-iota {
+  .container > .column-iota, .mains > .column-iota, .alerts > .column-iota {
     width: 19em;
   }
-  .container > .column-kappa, .mains > .column-kappa {
+  .container > .column-kappa, .mains > .column-kappa, .alerts > .column-kappa {
     width: 19em;
   }
-  .container > .column-lambda, .mains > .column-lambda {
+  .container > .column-lambda, .mains > .column-lambda, .alerts > .column-lambda {
     width: 19em;
   }
-  .container > .column-mu, .mains > .column-mu {
+  .container > .column-mu, .mains > .column-mu, .alerts > .column-mu {
     width: 19em;
   }
 }
 @media screen and (min-width: 30em) and (max-width: 39.9375em) {
-  .container > .column-alpha, .mains > .column-alpha {
+  .container > .column-alpha, .mains > .column-alpha, .alerts > .column-alpha {
     width: 6em;
   }
-  .container > .column-beta, .mains > .column-beta {
+  .container > .column-beta, .mains > .column-beta, .alerts > .column-beta {
     width: 13em;
   }
-  .container > .column-gamma, .mains > .column-gamma {
+  .container > .column-gamma, .mains > .column-gamma, .alerts > .column-gamma {
     width: 20em;
   }
-  .container > .column-delta, .mains > .column-delta {
+  .container > .column-delta, .mains > .column-delta, .alerts > .column-delta {
     width: 27em;
   }
-  .container > .column-epsilon, .mains > .column-epsilon {
+  .container > .column-epsilon, .mains > .column-epsilon, .alerts > .column-epsilon {
     width: 27em;
   }
-  .container > .column-zeta, .mains > .column-zeta {
+  .container > .column-zeta, .mains > .column-zeta, .alerts > .column-zeta {
     width: 27em;
   }
-  .container > .column-eta, .mains > .column-eta {
+  .container > .column-eta, .mains > .column-eta, .alerts > .column-eta {
     width: 27em;
   }
-  .container > .column-theta, .mains > .column-theta {
+  .container > .column-theta, .mains > .column-theta, .alerts > .column-theta {
     width: 27em;
   }
-  .container > .column-iota, .mains > .column-iota {
+  .container > .column-iota, .mains > .column-iota, .alerts > .column-iota {
     width: 27em;
   }
-  .container > .column-kappa, .mains > .column-kappa {
+  .container > .column-kappa, .mains > .column-kappa, .alerts > .column-kappa {
     width: 27em;
   }
-  .container > .column-lambda, .mains > .column-lambda {
+  .container > .column-lambda, .mains > .column-lambda, .alerts > .column-lambda {
     width: 27em;
   }
-  .container > .column-mu, .mains > .column-mu {
+  .container > .column-mu, .mains > .column-mu, .alerts > .column-mu {
     width: 27em;
   }
 }
 @media screen and (min-width: 40em) and (max-width: 49.9375em) {
-  .container > .column-alpha, .mains > .column-alpha {
+  .container > .column-alpha, .mains > .column-alpha, .alerts > .column-alpha {
     width: 5.5em;
   }
-  .container > .column-beta, .mains > .column-beta {
+  .container > .column-beta, .mains > .column-beta, .alerts > .column-beta {
     width: 12em;
   }
-  .container > .column-gamma, .mains > .column-gamma {
+  .container > .column-gamma, .mains > .column-gamma, .alerts > .column-gamma {
     width: 18.5em;
   }
-  .container > .column-delta, .mains > .column-delta {
+  .container > .column-delta, .mains > .column-delta, .alerts > .column-delta {
     width: 25em;
   }
-  .container > .column-epsilon, .mains > .column-epsilon {
+  .container > .column-epsilon, .mains > .column-epsilon, .alerts > .column-epsilon {
     width: 31.5em;
   }
-  .container > .column-zeta, .mains > .column-zeta {
+  .container > .column-zeta, .mains > .column-zeta, .alerts > .column-zeta {
     width: 38em;
   }
-  .container > .column-eta, .mains > .column-eta {
+  .container > .column-eta, .mains > .column-eta, .alerts > .column-eta {
     width: 38em;
   }
-  .container > .column-theta, .mains > .column-theta {
+  .container > .column-theta, .mains > .column-theta, .alerts > .column-theta {
     width: 38em;
   }
-  .container > .column-iota, .mains > .column-iota {
+  .container > .column-iota, .mains > .column-iota, .alerts > .column-iota {
     width: 38em;
   }
-  .container > .column-kappa, .mains > .column-kappa {
+  .container > .column-kappa, .mains > .column-kappa, .alerts > .column-kappa {
     width: 38em;
   }
-  .container > .column-lambda, .mains > .column-lambda {
+  .container > .column-lambda, .mains > .column-lambda, .alerts > .column-lambda {
     width: 38em;
   }
-  .container > .column-mu, .mains > .column-mu {
+  .container > .column-mu, .mains > .column-mu, .alerts > .column-mu {
     width: 38em;
   }
 }
 @media screen and (min-width: 50em) and (max-width: 59.9375em) {
-  .container > .column-alpha, .mains > .column-alpha {
+  .container > .column-alpha, .mains > .column-alpha, .alerts > .column-alpha {
     width: 5em;
   }
-  .container > .column-beta, .mains > .column-beta {
+  .container > .column-beta, .mains > .column-beta, .alerts > .column-beta {
     width: 11em;
   }
-  .container > .column-gamma, .mains > .column-gamma {
+  .container > .column-gamma, .mains > .column-gamma, .alerts > .column-gamma {
     width: 17em;
   }
-  .container > .column-delta, .mains > .column-delta {
+  .container > .column-delta, .mains > .column-delta, .alerts > .column-delta {
     width: 23em;
   }
-  .container > .column-epsilon, .mains > .column-epsilon {
+  .container > .column-epsilon, .mains > .column-epsilon, .alerts > .column-epsilon {
     width: 29em;
   }
-  .container > .column-zeta, .mains > .column-zeta {
+  .container > .column-zeta, .mains > .column-zeta, .alerts > .column-zeta {
     width: 35em;
   }
-  .container > .column-eta, .mains > .column-eta {
+  .container > .column-eta, .mains > .column-eta, .alerts > .column-eta {
     width: 41em;
   }
-  .container > .column-theta, .mains > .column-theta {
+  .container > .column-theta, .mains > .column-theta, .alerts > .column-theta {
     width: 47em;
   }
-  .container > .column-iota, .mains > .column-iota {
+  .container > .column-iota, .mains > .column-iota, .alerts > .column-iota {
     width: 47em;
   }
-  .container > .column-kappa, .mains > .column-kappa {
+  .container > .column-kappa, .mains > .column-kappa, .alerts > .column-kappa {
     width: 47em;
   }
-  .container > .column-lambda, .mains > .column-lambda {
+  .container > .column-lambda, .mains > .column-lambda, .alerts > .column-lambda {
     width: 47em;
   }
-  .container > .column-mu, .mains > .column-mu {
+  .container > .column-mu, .mains > .column-mu, .alerts > .column-mu {
     width: 47em;
   }
 }
 @media screen and (min-width: 60em) and (max-width: 79.9375em) {
-  .container > .column-alpha, .mains > .column-alpha {
+  .container > .column-alpha, .mains > .column-alpha, .alerts > .column-alpha {
     width: 5em;
   }
-  .container > .column-beta, .mains > .column-beta {
+  .container > .column-beta, .mains > .column-beta, .alerts > .column-beta {
     width: 11em;
   }
-  .container > .column-gamma, .mains > .column-gamma {
+  .container > .column-gamma, .mains > .column-gamma, .alerts > .column-gamma {
     width: 17em;
   }
-  .container > .column-delta, .mains > .column-delta {
+  .container > .column-delta, .mains > .column-delta, .alerts > .column-delta {
     width: 23em;
   }
-  .container > .column-epsilon, .mains > .column-epsilon {
+  .container > .column-epsilon, .mains > .column-epsilon, .alerts > .column-epsilon {
     width: 29em;
   }
-  .container > .column-zeta, .mains > .column-zeta {
+  .container > .column-zeta, .mains > .column-zeta, .alerts > .column-zeta {
     width: 35em;
   }
-  .container > .column-eta, .mains > .column-eta {
+  .container > .column-eta, .mains > .column-eta, .alerts > .column-eta {
     width: 41em;
   }
-  .container > .column-theta, .mains > .column-theta {
+  .container > .column-theta, .mains > .column-theta, .alerts > .column-theta {
     width: 47em;
   }
-  .container > .column-iota, .mains > .column-iota {
+  .container > .column-iota, .mains > .column-iota, .alerts > .column-iota {
     width: 53em;
   }
-  .container > .column-kappa, .mains > .column-kappa {
+  .container > .column-kappa, .mains > .column-kappa, .alerts > .column-kappa {
     width: 59em;
   }
-  .container > .column-lambda, .mains > .column-lambda {
+  .container > .column-lambda, .mains > .column-lambda, .alerts > .column-lambda {
     width: 59em;
   }
-  .container > .column-mu, .mains > .column-mu {
+  .container > .column-mu, .mains > .column-mu, .alerts > .column-mu {
     width: 59em;
   }
 }
 @media screen and (min-width: 80em) {
-  .container > .column-alpha, .mains > .column-alpha {
+  .container > .column-alpha, .mains > .column-alpha, .alerts > .column-alpha {
     width: 5em;
   }
-  .container > .column-beta, .mains > .column-beta {
+  .container > .column-beta, .mains > .column-beta, .alerts > .column-beta {
     width: 11em;
   }
-  .container > .column-gamma, .mains > .column-gamma {
+  .container > .column-gamma, .mains > .column-gamma, .alerts > .column-gamma {
     width: 17em;
   }
-  .container > .column-delta, .mains > .column-delta {
+  .container > .column-delta, .mains > .column-delta, .alerts > .column-delta {
     width: 23em;
   }
-  .container > .column-epsilon, .mains > .column-epsilon {
+  .container > .column-epsilon, .mains > .column-epsilon, .alerts > .column-epsilon {
     width: 29em;
   }
-  .container > .column-zeta, .mains > .column-zeta {
+  .container > .column-zeta, .mains > .column-zeta, .alerts > .column-zeta {
     width: 35em;
   }
-  .container > .column-eta, .mains > .column-eta {
+  .container > .column-eta, .mains > .column-eta, .alerts > .column-eta {
     width: 41em;
   }
-  .container > .column-theta, .mains > .column-theta {
+  .container > .column-theta, .mains > .column-theta, .alerts > .column-theta {
     width: 47em;
   }
-  .container > .column-iota, .mains > .column-iota {
+  .container > .column-iota, .mains > .column-iota, .alerts > .column-iota {
     width: 53em;
   }
-  .container > .column-kappa, .mains > .column-kappa {
+  .container > .column-kappa, .mains > .column-kappa, .alerts > .column-kappa {
     width: 59em;
   }
-  .container > .column-lambda, .mains > .column-lambda {
+  .container > .column-lambda, .mains > .column-lambda, .alerts > .column-lambda {
     width: 65em;
   }
-  .container > .column-mu, .mains > .column-mu {
+  .container > .column-mu, .mains > .column-mu, .alerts > .column-mu {
     width: 71em;
   }
 }
@@ -8538,67 +8538,67 @@ label {
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 /* MAIN LAYOUT -------------------------------------------------------------- */
-.mains {
+.mains, .alerts {
   min-height: 100%;
 }
 @media screen and (max-width: 59.9375em) {
-  .mains:nth-of-type(1) {
+  .mains:nth-of-type(1), .alerts:nth-of-type(1) {
     margin-top: 1rem;
   }
 }
 @media screen and (min-width: 60em) {
-  .mains:nth-of-type(1) {
+  .mains:nth-of-type(1), .alerts:nth-of-type(1) {
     margin-top: 4rem;
   }
 }
-.mains:nth-of-type(n+2) {
+.mains:nth-of-type(n+2), .alerts:nth-of-type(n+2) {
   margin-top: 1rem;
 }
 
-.main {
+.main, .alert {
   font-size: 1rem;
   margin: 0 auto;
 }
 @media screen and (min-width: 20em) and (max-width: 29.9375em) {
-  .main {
+  .main, .alert {
     width: 19em;
   }
 }
 @media screen and (min-width: 30em) and (max-width: 39.9375em) {
-  .main {
+  .main, .alert {
     width: 27em;
   }
 }
 @media screen and (min-width: 40em) and (max-width: 49.9375em) {
-  .main {
+  .main, .alert {
     width: 38em;
   }
 }
 @media screen and (min-width: 50em) and (max-width: 59.9375em) {
-  .main {
+  .main, .alert {
     width: 47em;
   }
 }
 @media screen and (min-width: 60em) and (max-width: 79.9375em) {
-  .main {
+  .main, .alert {
     width: 47em;
   }
 }
 @media screen and (min-width: 80em) {
-  .main {
+  .main, .alert {
     width: 47em;
   }
 }
-.main:nth-of-type(n+2) {
+.main:nth-of-type(n+2), .alert:nth-of-type(n+2) {
   margin-top: 1rem;
 }
 
 /* TEST MOCK ---------------------------------------------------------------- */
-.mains.test {
+.mains.test, .test.alerts {
   min-height: 5em;
   background-color: #EEE;
 }
-.mains.test .main {
+.mains.test .main, .test.alerts .main, .mains.test .alert, .test.alerts .alert {
   background-color: #DDD;
   min-height: 5em;
 }
@@ -8863,6 +8863,9 @@ label {
   max-width: 100%;
   width: 100%;
   text-transform: uppercase;
+}
+.comside-list:last-of-type {
+  border-bottom: 1px solid white;
 }
 
 .comside-link {
@@ -9893,6 +9896,84 @@ label {
 }
 
 /** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-CARD
+ *  
+ *  Alert object used globally.
+ *  
+ *  @author Rezki & Rianti
+ *  @version 0.0.0
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.alerts {
+  min-height: 0;
+}
+
+.alert {
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  padding: 1rem;
+  min-height: 3rem;
+  margin: 1rem auto;
+}
+.alert:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.alert.success {
+  background-color: #cfe6e7;
+  color: #64afb2;
+  border: 1px solid #64afb2;
+}
+.alert.info {
+  background-color: #becfdf;
+  color: #648cb2;
+  border: 1px solid #648cb2;
+}
+.alert.warning {
+  background-color: #f8eabe;
+  color: #e8b71c;
+  border: 1px solid #e8b71c;
+}
+.alert.danger {
+  background-color: #fac7c7;
+  color: #ef4b4b;
+  border: 1px solid #ef4b4b;
+}
+.alert .alert-text {
+  display: block;
+  color: inherit;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding-right: 2rem;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 0;
+}
+.alert .alert-text:nth-child(n+2) {
+  margin-top: 1rem;
+}
+.alert .alert-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  margin: 1rem 1rem 0 0;
+}
+
+/** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-MAINHEAD
  *  
  *  Page Footer used globally.
@@ -9909,7 +9990,7 @@ label {
   right: 0;
   background-color: #2b2f3a;
   color: white;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 .common-footers:after {
   content: "";
@@ -9991,7 +10072,7 @@ label {
   display: table;
   clear: both;
 }
-*[class^="lanbodies-"] .mains {
+*[class^="lanbodies-"] .mains, *[class^="lanbodies-"] .alerts {
   margin-top: 1rem;
 }
 

@@ -28,11 +28,24 @@ $gray2: #6F6F6F;
 $green: #64AFB2;
 $green2: #354A5C;
 $greenLite: #DAECEC;
+$greenLite2: #CFE6E7;
 
 $red: #EF4B4B;
+$redLite: #FAC7C7;
+
 $yellow: #E8B71C;
+$yellowLite: #F8EABE;
+
 $orange: #EA6B53;
+
+$blue: #648CB2;
+$blueLite: #BECFDF;
 
 $c-color: $black; // Bodycopy color
 $h-color: $black; // Heading color
 $a-color: $black; // Link color
+
+$alert-success-bgc: $greenLite2;
+$alert-info-bgc: $blueLite;
+$alert-warning-bgc: $yellowLite;
+$alert-danger-bgc: $redLite;

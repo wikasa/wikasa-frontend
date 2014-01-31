@@ -1,0 +1,73 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-CARD
+ *  
+ *  Alert object used globally.
+ *  
+ *  @author Rezki & Rianti
+ *  @version 0.0.0
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.alerts {
+    @extend .mains;
+    min-height: 0;
+}
+
+.alert {
+    @extend .main;
+    @include clearfix;
+    @include rb-border-radius(3px);
+    display: block;
+    position: relative;
+    padding: z(1rem);
+    min-height: z(3rem);
+    margin: z(1rem) auto;
+
+    &.success {
+        background-color: $alert-success-bgc;
+        color: $green;
+        border: 1px solid $green;
+    }
+    &.info {
+        background-color: $alert-info-bgc;
+        color: $blue;
+        border: 1px solid $blue;
+    }
+    &.warning {
+        background-color: $alert-warning-bgc;
+        color: $yellow;
+        border: 1px solid $yellow;
+    }
+    &.danger {
+        background-color: $alert-danger-bgc;
+        color: $red;
+        border: 1px solid $red;
+    }
+
+    .alert-text {
+        display: block;
+        color: inherit;
+        font-size: z(14 / $l * 1rem);
+        line-height: z(1rem);
+        padding-right: z(2rem);
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 0;
+
+        &:nth-child(n+2) { margin-top: z(1rem); }
+    }
+
+    .alert-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: z(1rem);
+        height: z(1rem);
+        text-align: center;
+        font-size: z(14 / $l * 1rem);
+        line-height: z(1rem);
+        margin: z(1rem) z(1rem) 0 0;
+    }
+}
