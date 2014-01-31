@@ -15,93 +15,57 @@
     color: $black;
     margin: z(1rem) 0 0 0;
     padding: 0 0 z(1rem) 0;
-
-    .form-title {
-        display: block;
-        margin: 0 0 z(0.5 * 1rem) 0;
-        height: z(1.5 * 1rem);
-        line-height: z(1.5 * 1rem);
-        font-size: z(18 / $l * 1rem);
-    }
 }
 
 .form-group {
     &:nth-child(n+2) { margin-top: z(1rem); }
 }
 
-.form-go {
-  display: block;
-  margin: 0;
-  font-size: z(12 /$l * 1rem);
-  line-height: z(1rem);
-  color: $white;
-
-  &:not(.btn):hover {
-    color: $orange;
-  }
-
-  &.connect {
-    @include rb-border-radius(3px);
-    position: relative;
+.form-title {
     display: block;
-    padding: 0 z(0.5 * 1rem) 0 0;
+    margin: 0 0 z(0.5 * 1rem) 0;
     height: z(1.5 * 1rem);
-    background-color: $green;
-    text-align: left;
-    font-size: z(13 /$l * 1rem);
     line-height: z(1.5 * 1rem);
-    font-family: $ff-sans-regular;
-    color: $white;
-    letter-spacing: 0.3px;
-
-    .fa {
-      font-size: z(2rem);
-      margin: 0 z(0.25 * 1rem) 0 z(0.5 * 1rem);
-      position: relative;
-      top: z(0.25 * 1rem);
-    }
-
-    &:hover { background-color: $black; }
-  }
+    font-size: z(18 / $l * 1rem);
 }
 
 .form-decos {
-  position: relative;
-  width: 100%;
-  height: z(1rem);
-  margin: z(0.5 * 1rem) 0;
-
-  &:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 45%;
-    top: 0;
-    left: 0;
-    height: z(0.5 * 1rem);
-    border-bottom: 1px solid $black;
-    z-index: 20;
-  }
-
-  &:after {
-    content: " ";
-    display: block;
-    position: absolute;
-    width: 45%;
-    top: 0;
-    right: 0;
-    height: z(0.5 * 1rem);
-    border-bottom: 1px solid $black;
-    z-index: 20;
-  }
-
-  .form-deco-img {
-    display: block;
-    width: z(1rem);
+    position: relative;
+    width: 100%;
     height: z(1rem);
-    margin: 0 auto;
-    z-index: 21;
-  }
+    margin: z(0.5 * 1rem) 0;
+
+    &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 45%;
+        top: 0;
+        left: 0;
+        height: z(0.5 * 1rem);
+        border-bottom: 1px solid $black;
+        z-index: 20;
+    }
+
+    &:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 45%;
+        top: 0;
+        right: 0;
+        height: z(0.5 * 1rem);
+        border-bottom: 1px solid $black;
+        z-index: 20;
+    }
+
+    .form-deco-img {
+        display: block;
+        width: z(1rem);
+        height: z(1rem);
+        margin: 0 auto;
+        z-index: 21;
+    }
 }
 
 .form-control {
@@ -113,7 +77,7 @@
     border: 1px solid $gray;
     background-color: $white;
     background-image: none;
-    color: $gray2;
+    color: $black;
     font-size: z(14 / $l * 1rem);
     font-family: $ff-sans-light;
     line-height: z(2rem);
@@ -123,81 +87,97 @@
     &::-webkit-input-placeholder,
     &::-moz-placeholder,
     &:-ms-input-placeholder {
-      height: z(1rem);
-      color: $gray;
-      font-size: z(12 / $l * 1rem);
-      font-family: $ff-sans-light;
-      font-weight: 400;
-      line-height: z(1rem);
-      opacity: 1;
+        height: z(1rem);
+        color: $gray;
+        font-size: z(12 / $l * 1rem);
+        font-family: $ff-sans-light;
+        font-weight: 400;
+        line-height: z(1rem);
+        opacity: 1;
     }
 }
 
+.form-go {
+    display: block;
+    height: z(1rem);
+    line-height: z(1rem);
+    font-size: z(12 / $l * 1rem);
+
+    &:hover { color: $orange; }
+}
+
 .help-block {
-  color: $black;
-  display: block;
-  margin-top: z(0.5 * 1rem);
-  margin-bottom: z(0.5 * 1rem);
-  font-size: 14px;
-  line-height: z(1rem);
+    color: $black;
+    display: block;
+    margin-top: z(0.5 * 1rem);
+    margin-bottom: z(0.5 * 1rem);
+    font-size: 14px;
+    line-height: z(1rem);
 }
 
 input, button, select, textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    background-color: $greenLite;
+    border: 1px solid $green;
 }
 
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 input[type="file"] {
-  display: block;
-  font-size: z(12 / $l * 1rem);
-  line-height: z(1rem);
-  height: z(1rem);
-  margin: 0;
-  padding: 0;
+    display: block;
+    font-size: z(12 / $l * 1rem);
+    line-height: z(1rem);
+    height: z(1rem);
+    margin: 0;
+    padding: 0;
 }
 
 textarea {
-  overflow: auto;
-  vertical-align: top;
+    overflow: auto;
+    vertical-align: top;
 }
 
 button, input {
-  line-height: normal;
+    line-height: normal;
 }
 
 button, select {
-  text-transform: none;
+    text-transform: none;
 }
 
 .btn {
-  @include rb-border-radius(3px);
-  display: inline-block;
-  margin: 0;
-  padding: 0 z(0.5 * 1rem);
-  height: z(2rem);
-  border: 0 solid transparent;
-  background-color: $green;
-  background-image: none;
-  color: $white;
-  vertical-align: middle;
-  text-align: center;
-  white-space: nowrap;
-  font-weight: normal;
-  font-size: z(14 / $l * 1rem);
-  line-height: z(2rem);
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+    @include rb-border-radius(3px);
+    display: inline-block;
+    margin: 0;
+    padding: 0 z(0.5 * 1rem);
+    height: z(2rem);
+    border: 0 solid transparent;
+    background-color: $green;
+    background-image: none;
+    color: $white;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: normal;
+    font-size: z(14 / $l * 1rem);
+    line-height: z(2rem);
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 
     &.btn-default {
         background-color: $green;
@@ -224,20 +204,25 @@ button, select {
 }
 
 .radio, .checkbox {
-  display: block;
-  margin: z(0.5 * 1rem) 0;
-  min-height: z(1rem);
-  vertical-align: middle;
+    display: block;
+    margin: z(0.5 * 1rem) 0;
+    min-height: z(1rem);
+    vertical-align: middle;
 }
 
-label {
-    display: inline-block;
+label, .input-info {
+    display: block;
     font-weight: normal;
-
-    margin-bottom: 0;
+    margin-bottom: z(0.5 * 1rem);
     font-size: z(12 / $l * 1rem);
     line-height: z(1rem);
-    height: z(1rem);
+    color: $black;
+}
+
+label { height: z(1rem); }
+.input-info {
+    font-family: $ff-sans-lightitalic;
+    color: $gray2;
 }
 
 .form-inline {
@@ -291,6 +276,24 @@ label {
     }
 }
 
+.form-single {
+    @include clearfix;
+    @include rb-border-radius(3px);
+    overflow: hidden;
+    padding: z(2rem);
+    @include media-query(min-width $tablet-min) {
+        max-width: z(24rem);
+        width: z(24rem);
+    }
+    @include media-query(max-width $mobtab-max) {
+        max-width: z(15rem);
+        width: z(15rem);
+    }
+    background-color: $whiteDark1;
+    color: $black;
+    margin: z(1rem) auto;
+}
+
 .radio-inline,
 .checkbox-inline {
     cursor: pointer;
@@ -299,17 +302,4 @@ label {
     margin-bottom: 0;
     padding: 0 z(0.5 * 1rem);
     vertical-align: middle;
-}
-
-
-.single-forms {
-    @include clearfix;
-    @include rb-border-radius(3px);
-    overflow: hidden;
-    padding: z(2rem);
-    max-width: z(15rem);
-    width: z(15rem);
-    background-color: $black;
-    color: $white;
-    margin: z(1rem) auto;
 }

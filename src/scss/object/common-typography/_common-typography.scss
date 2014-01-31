@@ -15,7 +15,8 @@
     position: relative;
     font-family: $ff-sans-bold;
     margin: z(1rem) 0;
-    height: z(3rem);
+    @include media-query(max-width $mobile-max) { height: auto; }
+    @include media-query(min-width $mobtab-min) { height: z(3rem); }
 
     & > a {
         position: relative;

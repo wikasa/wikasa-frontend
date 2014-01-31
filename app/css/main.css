@@ -2395,55 +2395,17 @@ a {
   margin: 1rem 0 0 0;
   padding: 0 0 1rem 0;
 }
-.form .form-title, .form-inline .form-title, .form-horizontal .form-title {
-  display: block;
-  margin: 0 0 0.5rem 0;
-  height: 1.5rem;
-  line-height: 1.5rem;
-  font-size: 1.125rem;
-}
 
 .form-group:nth-child(n+2) {
   margin-top: 1rem;
 }
 
-.form-go {
+.form-title {
   display: block;
-  margin: 0;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: white;
-}
-.form-go:not(.btn):hover {
-  color: #ea6b53;
-}
-.form-go.connect {
-  -webkit-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  position: relative;
-  display: block;
-  padding: 0 0.5rem 0 0;
+  margin: 0 0 0.5rem 0;
   height: 1.5rem;
-  background-color: #64afb2;
-  text-align: left;
-  font-size: 0.8125rem;
   line-height: 1.5rem;
-  font-family: SansRegular, Arial, sans-serif;
-  color: white;
-  letter-spacing: 0.3px;
-}
-.form-go.connect .fa {
-  font-size: 2rem;
-  margin: 0 0.25rem 0 0.5rem;
-  position: relative;
-  top: 0.25rem;
-}
-.form-go.connect:hover {
-  background-color: #2b2f3a;
+  font-size: 1.125rem;
 }
 
 .form-decos {
@@ -2496,7 +2458,7 @@ a {
   border: 1px solid #c4c4c4;
   background-color: white;
   background-image: none;
-  color: #6f6f6f;
+  color: #2b2f3a;
   font-size: 0.875rem;
   font-family: SansLight, Arial, sans-serif;
   line-height: 2rem;
@@ -2512,6 +2474,16 @@ a {
   opacity: 1;
 }
 
+.form-go {
+  display: block;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.75rem;
+}
+.form-go:hover {
+  color: #ea6b53;
+}
+
 .help-block {
   color: #2b2f3a;
   display: block;
@@ -2525,6 +2497,13 @@ input, button, select, textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #daecec;
+  border: 1px solid #64afb2;
 }
 
 button,
@@ -2610,13 +2589,22 @@ button, select {
   vertical-align: middle;
 }
 
-label {
-  display: inline-block;
+label, .input-info {
+  display: block;
   font-weight: normal;
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
+  color: #2b2f3a;
+}
+
+label {
   height: 1rem;
+}
+
+.input-info {
+  font-family: SansLightItalic, Arial, sans-serif;
+  color: #6f6f6f;
 }
 
 .form-inline .form-group {
@@ -2658,17 +2646,7 @@ label {
   clear: both;
 }
 
-.radio-inline,
-.checkbox-inline {
-  cursor: pointer;
-  display: inline-block;
-  font-weight: normal;
-  margin-bottom: 0;
-  padding: 0 0.5rem;
-  vertical-align: middle;
-}
-
-.single-forms {
+.form-single {
   -webkit-border-radius: 3px;
   -khtml-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2677,16 +2655,36 @@ label {
   border-radius: 3px;
   overflow: hidden;
   padding: 2rem;
-  max-width: 15rem;
-  width: 15rem;
-  background-color: #2b2f3a;
-  color: white;
+  background-color: #f3f3f3;
+  color: #2b2f3a;
   margin: 1rem auto;
 }
-.single-forms:after {
+.form-single:after {
   content: "";
   display: table;
   clear: both;
+}
+@media screen and (min-width: 40em) {
+  .form-single {
+    max-width: 24rem;
+    width: 24rem;
+  }
+}
+@media screen and (max-width: 39.9375em) {
+  .form-single {
+    max-width: 15rem;
+    width: 15rem;
+  }
+}
+
+.radio-inline,
+.checkbox-inline {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 0;
+  padding: 0 0.5rem;
+  vertical-align: middle;
 }
 
 /** ------------------------------------------------------------------------- *\
@@ -9471,12 +9469,21 @@ label {
   position: relative;
   font-family: SansBold, Arial, sans-serif;
   margin: 1rem 0;
-  height: 3rem;
 }
 *[class^="subheads-"]:after {
   content: "";
   display: table;
   clear: both;
+}
+@media screen and (max-width: 29.9375em) {
+  *[class^="subheads-"] {
+    height: auto;
+  }
+}
+@media screen and (min-width: 30em) {
+  *[class^="subheads-"] {
+    height: 3rem;
+  }
 }
 *[class^="subheads-"] > a {
   position: relative;

@@ -52,44 +52,51 @@ Remove this if you use the .htaccess -->
     </header>
     <!-- // common-heads END \\ -->
 
-    <!-- \\ landing-bodies // -->
+    <!-- \\ mains // -->
 
     <div class="mains">
+        
         <div class="main">
             
-            <h2 class="subheads-2"><p class="subhead">Sign up.</p></h2>
+            <h2 class="subheads-2"><p class="subhead">Account Settings</p></h2>
 
-            <form class="form-single">
-
+            <form class="form-single" id="edit_user" action="/users" accept-charset="UTF-8" method="post" role="form">
+                <h3 class="form-title">Change Password</h3>
                 <div class="form-group">
-                    <label for="signupInputUsername">Display Name</label>
-                    <input type="text" class="form-control" id="signupInputUsername" placeholder="Name">
+                    <label for="user_email">Email</label>
+                    <input type="email" class="form-control" id="user_email" name="user[email]" value="" placeholder="address@mail.com">
                 </div>
                 <div class="form-group">
-                    <label for="signinInputEmail">Email</label>
-                    <input type="email" class="form-control" id="signupInputEmail" placeholder="Email">
+                    <label for="user_password">Password</label>
+                    <input type="password" class="form-control" id="user_password" name="user[password]" autocomplete="off" placeholder="Password">
                 </div>
                 <div class="form-group">
-                    <label for="signupInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="signupInputPassword1" placeholder="Password">
+                    <label for="user_current_password">Current Password</label>
+                    <p class="input-info">We need your current password to confirm your changes</p>
+                    <input type="password" class="form-control" id="user_current_password" name="user[current_password]" autocomplete="off" placeholder="Current Password">
                 </div>
                 <div class="form-group">
-                    <label for="signupInputPassword2">Confirm Password</label>
-                    <input type="password" class="form-control" id="signupInputPassword2" placeholder="Retype Password">
+                    <input type="submit" class="btn btn-default btn-sign" name="commit" value="update">
                 </div>
-                <div class="form-group">
-                    <input type="submit" class="btn btn-default btn-sign" value="Sign Up">
-                </div>
-                <div class="form-group"><a href="#" class="form-go">Sign In</a></div>
-                <div class="form-group"><a href="#" class="form-go">Forgot your password?</a></div>
-                <div class="form-group"><a href="#" class="btn btn-default">Sign In with Facebook</a></div>
-
             </form>
 
+            <form class="form-single" action="_" >
+                <h3 class="form-title">Connect Account</h3>
+                <a href="#" class="btn btn-primary" data-no-turbolink="true">Connect Facebook</a>
+            </form>
+            <form class="form-single" action="/users" method="post">
+                <h3 class="form-title">Delete Account</h3>
+                <p class="input-info">We'd hate to see you go.</p>
+                <div class="form-group">
+                    <input type="hidden" name="_method" value="delete">
+                    <input type="submit" class="btn btn-danger" data-confirm="DANGER: Are you sure?" value="Cancel my account">
+                    <input type="hidden" name="authenticity_token" value="u3neBCsc2ZxunlfZcRWsNVd9uDCvmSAzYksXJWbDJk4=">
+                </div>
+            </form>
         </div>
     </div>
 
-    <!-- \\ landing-bodies END// -->
+    <!-- \\ mains END// -->
 
     <!-- \\ common-footers // -->
     <footer class="common-footers">

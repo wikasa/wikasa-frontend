@@ -92,3 +92,29 @@
                     h2
                     p
 
+
+**ACCOUNT SETTINGS**
+
+    div.mains
+        div.main
+            h2.subheads-2>{Account Settings}
+            form.single-forms#edit_user[accept-charset="UTF-8" action="/users" method="post" role="form"]
+                div.form-group
+                    label[for="user_email"]>{Email}
+                    input.form-control#user_email[type="email" name="user[email]" value="riantisilvi@gmail.com"]
+                div.form-group
+                    label[for="user_password"]>{Password}
+                    input.form-control#user_password[type="password" name="user[password]" autocomplete="off"]
+                div.form-group
+                    label[for="user_current_password"]>{Current Password}
+                    input.form-control#user_current_password[type="current_password" name="user[current_password]" autocomplete="off"]
+                div.form-group
+                    input.btn.btn-default.btn-sign[name="commit" type="submit" value="update"]
+            form.single-forms
+                a.btn.btn-primary[data-no-turbolink="true" href="#"]>{Connect Facebook}
+            form.single-forms[action="/users" class="button_to" method="post"]
+                h3>{We'd hate to see you go.}
+                div.form-group
+                    input[name="_method" type="hidden" value="delete"]
+                    input.btn.btn-danger[data-confirm="DANGER: Are you sure?" type="submit" value="Cancel my account"]
+                    input[name="authenticity_token" type="hidden" value="u3neBCsc2ZxunlfZcRWsNVd9uDCvmSAzYksXJWbDJk4="]
