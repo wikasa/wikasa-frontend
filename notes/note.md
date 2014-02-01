@@ -75,6 +75,7 @@
                 span.headmeta-date
             h1.mainhead-title
 
+
 **LANDING**
 
     div.mains
@@ -118,3 +119,56 @@
                     input[name="_method" type="hidden" value="delete"]
                     input.btn.btn-danger[data-confirm="DANGER: Are you sure?" type="submit" value="Cancel my account"]
                     input[name="authenticity_token" type="hidden" value="u3neBCsc2ZxunlfZcRWsNVd9uDCvmSAzYksXJWbDJk4="]
+
+
+**COMMON-DISCUSSION**
+
+    div.common-discussions
+        div.common-discussion
+            article.dis-thread
+                div.dis-questions
+                    div.dis-content.question
+                        p.discon-text>{Lorem16}
+                    div.dis-meta
+                        div.dismeta-tools
+                            p.disvote
+                                span.disvote-sum>{0}
+                                span.disvote-label>{Vote}
+                                a.disvote-btn.voteup[href="#"]>i.fa.fa-plus.distool-icon
+                                a.disvote-btn.voteup[href="#"]>i.fa.fa-minus.distool-icon
+                            p.distool-separator>{&bull;}
+                            a.distool-link.dismeta-comment-trigger.js[href="#"]>{comment}
+                            a.distool-link.dismeta-flag-trigger.js[href="#"]>{flag}
+                        div.dismeta-infos
+                            a.distool-link.dismeta-time>{about 3 hours ago}
+                            p.distool-separator>{by}
+                            a.distool-link.dismeta-username>{Rianti Silvi}
+                            p.distool-separator>{at}
+                            a.distool-link.dismeta-acme>{Technology}
+                    div.dis-comments.js.is-shown
+                        div.dis-content.comment
+                            p.discon-text>{lorem6}
+                        form.dis-inputs.dis-add-comment.js.is-shown
+                            textarea.dis-input.js[placeholder="Comment this question"]
+                            div.disrepl-tools.is-shown
+                                a.distool-link.disinput-cancel.js[href="#"]>{cancel}
+                                p.distool-separator>{or}
+                                input.disinput-btn.disinput-submit[type="submit"]>{Comment}
+                    div.dis-flag.js.is-shown
+                        form.dis-inputs.dis-add-comment.js.is-shown
+                            textarea.dis-input.js[placeholder="Comment this question"]
+                            div.disrepl-tools.is-shown
+                                a.distool-link.disinput-cancel.js[href="#"]>{cancel}
+                                p.distool-separator>{or}
+                                input.disinput-btn.disinput-submit[type="submit"]>{Comment}
+                    div.dis-answers
+                        div.dis-content.answer
+                            p.discon-text>{lorem64}
+                    form.dis-inputs.dis-add-answer.js
+                        textarea.dis-input.js[placeholder="Answer this question"]
+                        div.disrepl-tools.is-shown
+                            a.distool-link.disinput-cancel.js[href="#"]>{cancel}
+                            p.distool-separator>{or}
+                            input.disinput-btn.disinput-submit[type="submit"]>{Answer}
+
+
