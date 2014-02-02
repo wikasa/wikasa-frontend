@@ -2500,9 +2500,22 @@ input, button, select, textarea {
   outline: none;
 }
 
-input:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-lcal"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
 textarea:focus {
-  background-color: #daecec;
+  background-color: #eef6f7;
   border: 1px solid #64afb2;
 }
 
@@ -9928,17 +9941,17 @@ label {
   clear: both;
 }
 .alert.success {
-  background-color: #cfe6e7;
+  background-color: #eef6f7;
   color: #64afb2;
   border: 1px solid #64afb2;
 }
 .alert.info {
-  background-color: #becfdf;
+  background-color: #c8d7e4;
   color: #648cb2;
   border: 1px solid #648cb2;
 }
 .alert.warning {
-  background-color: #f8eabe;
+  background-color: #faf0d1;
   color: #e8b71c;
   border: 1px solid #e8b71c;
 }
@@ -9971,6 +9984,332 @@ label {
   font-size: 0.875rem;
   line-height: 1rem;
   margin: 1rem 1rem 0 0;
+}
+
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-TAB
+ *  
+ *  Discussion object used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.common-discussions {
+  position: relative;
+  padding-top: 1rem;
+  min-width: 100%;
+  width: 100%;
+}
+.common-discussions:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 40em) {
+  .common-discussions {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.common-discussions .subheads-1 {
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.discon-text,
+*[class^="disvote"],
+*[class^="distool"],
+.dis-input {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  margin-bottom: 0;
+}
+
+.distool-separator {
+  color: #c4c4c4;
+}
+
+.distool-link {
+  position: relative;
+  color: #648cb2;
+}
+.distool-link:hover {
+  color: #ea6b53;
+}
+.distool-link .dislink-arrow {
+  display: none;
+}
+.distool-link.is-active .dislink-arrow {
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #eaeaea;
+  position: absolute;
+  top: 100%;
+  margin-top: 0.5rem;
+}
+
+.discon-text:nth-of-type(n+2) {
+  margin-top: 1rem;
+}
+
+.dis-content:nth-of-type(n+2) {
+  margin: 1rem 0 0 0;
+}
+
+.dis-answers,
+.dis-add-answer,
+.dis-more {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  position: relative;
+  padding-left: 2rem;
+}
+.dis-answers:after,
+.dis-add-answer:after,
+.dis-more:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dis-comments,
+.dis-flag {
+  display: none;
+  width: 100%;
+  position: relative;
+  padding: 1rem;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+}
+.dis-comments.is-shown,
+.dis-flag.is-shown {
+  display: block;
+}
+
+.dis-inputs {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 1rem 0 0 0;
+}
+.dis-inputs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.dis-inputs .dis-input {
+  display: block;
+  border: 1px solid #c4c4c4;
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  width: 100%;
+  outline: 0;
+  overflow: auto;
+  resize: none;
+  height: 2rem;
+  padding: 0.5rem;
+}
+.dis-inputs .dis-input.is-active {
+  min-height: 9rem;
+  height: auto;
+  resize: vertical;
+}
+.dis-inputs .disinput-tools {
+  display: none;
+  float: right;
+  text-align: right;
+  padding: 1rem 0 0 0;
+}
+.dis-inputs .disinput-tools:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.dis-inputs .disinput-tools.is-shown {
+  display: block;
+}
+.dis-inputs .disinput-tools > * {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
+}
+
+.dis-meta {
+  padding-bottom: 1rem;
+  margin: 1rem 0 0 0;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #eaeaea;
+}
+.dis-meta:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 50em) {
+  .dis-meta {
+    height: 2rem;
+  }
+}
+.dis-meta .dismeta-tools {
+  display: block;
+  color: #6f6f6f;
+}
+.dis-meta .dismeta-tools:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 49.9375em) {
+  .dis-meta .dismeta-tools {
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  .dis-meta .dismeta-tools {
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+.dis-meta .dismeta-tools > * {
+  display: block;
+  float: left;
+}
+.dis-meta .dismeta-infos {
+  display: block;
+}
+.dis-meta .dismeta-infos:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 50em) {
+  .dis-meta .dismeta-infos {
+    float: right;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+.dis-meta .disvote > *,
+.dis-meta .dismeta-infos > * {
+  display: block;
+  float: left;
+}
+.dis-meta .disvote .disvote-btn {
+  height: 1rem;
+  width: 1rem;
+  color: #6f6f6f;
+}
+.dis-meta .disvote .disvote-btn:hover {
+  color: #ea6b53;
+}
+
+.dis-add-questions {
+  margin-bottom: 3rem;
+  background-color: #f3f3f3;
+  padding: 1rem 1rem 2rem;
+  border-bottom: 1px solid #6f6f6f;
+}
+.dis-add-questions:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dis-questions {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #c4c4c4;
+}
+.dis-questions:nth-of-type(n+2) {
+  margin-top: 2rem;
+}
+
+.dis-answers .answer {
+  display: none;
+  position: relative;
+}
+.dis-answers .answer.is-shown {
+  display: block;
+}
+
+.dis-star {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+  color: #eaeaea;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.dis-star:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.dis-star:hover {
+  color: #c4c4c4;
+}
+.dis-star.is-active {
+  color: #e8b71c;
+}
+
+.dis-more {
+  position: relative;
+  margin-bottom: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+  display: none;
+}
+.dis-more:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.dis-more.is-shown {
+  display: block;
+}
+.dis-more .dismore-text {
+  width: 100%;
+}
+
+.dis-flag .dis-inputs {
+  margin: 0;
+}
+.dis-flag .disinput-tools {
+  display: block;
+  float: left;
+  text-align: left;
+  padding: 0;
+}
+.dis-flag .disinput-tools:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.dis-flag .disinput-tools > * {
+  display: inline-block;
+  margin: 0 0.5rem 0 0;
 }
 
 /** ------------------------------------------------------------------------- *\
