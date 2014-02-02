@@ -1,0 +1,279 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-TAB
+ *  
+ *  Discussion object used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.common-discussions {
+    @include clearfix;
+    position: relative;
+    padding-top: z(1rem);
+    @include media-query(min-width $tablet-min) {
+        padding-right: (2rem);
+        padding-left: (2rem);
+    }
+    min-width: 100%;
+    width: 100%;
+}
+
+.common-discussions {
+    .subheads-1 {
+        padding-bottom: z(1rem);
+        margin-bottom: z(2rem);
+        border-bottom: 1px solid $whiteDark2;
+    }
+}
+
+.discon-text,
+*[class^="disvote"],
+*[class^="distool"],
+.dis-input {
+    font-size: z(13 / $l * 1rem);
+    line-height: z(1rem);
+    margin-bottom: 0;
+}
+
+.distool-separator { color: $gray; }
+
+.distool-link {
+    position: relative;
+    color: $blue;
+    &:hover{ color: $orange; }
+    
+    .dislink-arrow { display: none; }
+    &.is-active {
+        .dislink-arrow {
+            display: block;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid $whiteDark2;
+            position: absolute;
+            top: 100%;
+            margin-top: z(0.5rem);
+        }
+    }
+}
+
+.discon-text {
+    &:nth-of-type(n+2) { margin-top: z(1rem); }
+}
+
+.dis-content {
+    &:nth-of-type(n+2) { margin: z(1rem) 0 0 0; }
+}
+
+.dis-answers,
+.dis-add-answer,
+.dis-more {
+    @include clearfix;
+    margin: z(1rem) 0 0 0;
+    width: 100%;
+    position: relative;
+    padding-left: z(2rem);
+}
+
+.dis-comments,
+.dis-flag {
+    display: none;
+    width: 100%;
+    position: relative;
+    padding: z(1rem);
+    border-right: 1px solid $whiteDark2;
+    border-bottom: 1px solid $whiteDark2;
+    border-left: 1px solid $whiteDark2;
+
+    &.is-shown { display: block; }
+}
+
+// INPUT
+.dis-inputs {
+    @include clearfix;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: z(1rem) 0 0 0;
+
+    .dis-input {
+        display: block;
+        border: 1px solid $gray;
+        @include rb-border-radius(3px);
+        width: 100%;
+        outline: 0;
+        overflow: auto;
+        resize: none;
+        height: z(2rem);
+        padding: z(0.5rem);
+
+        &.is-active {
+            min-height: z(9rem);
+            height: auto;
+            resize: vertical;
+        }
+    }
+
+    .disinput-tools {
+        @include clearfix;
+        display: none;
+        float: right;
+        text-align: right;
+        padding: z(1rem) 0 0 0;
+
+        &.is-shown { display: block; }
+
+        & > * {
+            display: inline-block;
+            margin: 0 z(0.5rem) 0 0;
+        }
+    }
+}
+
+// META
+.dis-meta {
+    @include clearfix;
+    @include media-query(min-width $tabtop-min) { height: z(2rem); }
+    padding-bottom: z(1rem);
+    margin: z(1rem) 0 0 0;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid $whiteDark2;
+
+    .dismeta-tools {
+        @include clearfix;
+
+        @include media-query(max-width $tablet-max) {
+            margin-top: z(1rem);
+        }
+
+        @include media-query(min-width $tabtop-min) {
+            float: left;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        display: block;
+        color: $gray2;
+
+        & > * {
+            display: block;
+            float: left;
+        }
+    }
+
+    .dismeta-infos {
+        @include clearfix;
+        display: block;
+
+        @include media-query(min-width $tabtop-min) {
+            float: right;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .disvote,
+    .dismeta-infos {
+        & > * {
+            display: block;
+            float: left;
+        }
+    }
+
+    .disvote {
+        .disvote-btn {
+            height: z(1rem);
+            width: z(1rem);
+            color: $gray2;
+            &:hover { color: $orange; }
+        }
+    }
+}
+
+// Add Question
+.dis-add-questions {
+    @include clearfix;
+    margin-bottom: z(3rem);
+    background-color: $whiteDark1;
+    padding: z(1rem) z(1rem) z(2rem);
+    border-bottom: 1px solid $gray2;
+}
+
+// Question
+.dis-questions {
+    padding-bottom: z(2rem);
+    border-bottom: 1px solid $gray;
+    &:nth-of-type(n+2) { margin-top: z(2rem); }
+}
+
+// Answer
+.dis-answers {
+    .answer {
+        display: none;
+        position: relative;
+        &.is-shown { display: block; }
+    }
+}
+
+.dis-star {
+    @include clearfix;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: z(-2rem);
+    margin: 0;
+    width: z(1rem);
+    height: z(1rem);
+    color: $whiteDark2;
+    text-align: center;
+    font-size: z(1rem);
+    line-height: z(1rem);
+
+    &:hover { color: $gray; }
+    &.is-active { color: $yellow; }
+}
+
+// More
+.dis-more {
+    @include clearfix;
+    position: relative;
+    margin-bottom: 0;
+    padding-top: z(0.5rem);
+    padding-bottom: z(0.5rem);
+    width: 100%;
+    height: z(2rem);
+    text-align: center;
+    display: none;
+
+    &.is-shown { display: block; }
+
+    .dismore-text {
+        width: 100%;
+    }
+}
+
+// Flag
+.dis-flag {
+    .dis-inputs {
+        margin: 0;
+    }
+    .disinput-tools {
+        @include clearfix;
+        display: block;
+        float: left;
+        text-align: left;
+        padding: 0;
+
+        & > * {
+            display: inline-block;
+            margin: 0 z(0.5rem) 0 0;
+        }
+    }
+}
