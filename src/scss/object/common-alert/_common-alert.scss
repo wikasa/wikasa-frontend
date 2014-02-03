@@ -9,12 +9,12 @@
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 
-.alerts {
+.common-alerts {
     @extend .mains;
     min-height: 0;
 }
 
-.alert {
+.common-alert {
     @extend .main;
     @include clearfix;
     @include rb-border-radius(3px);
@@ -45,7 +45,7 @@
         border: 1px solid $red;
     }
 
-    .alert-text {
+    .comalert-text {
         display: block;
         color: inherit;
         font-size: z(14 / $l * 1rem);
@@ -54,12 +54,12 @@
         position: relative;
         top: 0;
         left: 0;
-        margin-bottom: 0;
+        margin: 0;
 
         &:nth-child(n+2) { margin-top: z(1rem); }
     }
 
-    .alert-icon {
+    .comalert-icon {
         position: absolute;
         top: 0;
         right: 0;

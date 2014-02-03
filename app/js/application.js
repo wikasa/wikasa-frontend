@@ -10097,6 +10097,18 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 }));
 ;( function( $, R ) {
 
+    var $commonAlert = $('.js.common-alert')
+        ;
+
+    $commonAlert.on('click', function() {
+        console.log($(this).attr('class'));
+        $(this).remove();
+    });
+
+})(jQuery, Response);
+
+;( function( $, R ) {
+
     // Input section
     var $disInputs = $('.js.dis-inputs'),
         $inputCancel = $('.js.disinput-cancel'),
