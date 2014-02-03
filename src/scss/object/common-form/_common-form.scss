@@ -206,14 +206,116 @@ button, select {
         color: $white;
     }
 
+    &.btn-blue {
+        background-color: $blue;
+        border-color: $blue;
+        color: $white;
+    }
+
+    &.btn-red {
+        background-color: $red;
+        border-color: $red;
+        color: $white;
+    }
+
     &.btn-orange {
         background-color: $orange;
         border-color: $orange;
         color: $white;
     }
 
+    &.btn-yellow {
+        background-color: $yellow;
+        border-color: $yellow;
+        color: $white;
+    }
+
+    &.btn-black {
+        background-color: $black;
+        border-color: $black;
+        color: $white;
+        &:hover { background-color: $green; }
+    }
+
+    &.btn-disable {
+        background-color: $gray;
+        border-color: $gray;
+        color: $white;
+    }
+
+    &.btn-iconized {
+        padding-left: 2rem;
+        min-width: z(3rem);
+        position: relative;
+
+        &:before {
+            position: absolute;
+            display: block;
+            left: 0;
+            padding-left: z(0.5rem);
+            height: 100%;
+            width: z(1rem);
+            text-align: center;
+            color: inherit;
+            text-decoration: inherit;
+            font-weight: normal;
+            font-style: inherit;
+            font-size: inherit;
+            font-family: $ff-iconfont;
+            line-height: inherit;
+        }
+    }
+
+    &.btn-create {
+        @extend .btn-iconized;
+        background-color: $blue;
+        &:before {
+            content: "\f067";
+        }
+    }
+
+    &.btn-read {
+        @extend .btn-iconized;
+        background-color: $blue;
+        &:before {
+            content: "\f06e";
+        }
+    }
+
+    &.btn-update {
+        @extend .btn-iconized;
+        background-color: $green;
+        &:before {
+            content: "\f021";
+        }
+    }
+
+    &.btn-delete {
+        @extend .btn-iconized;
+        background-color: $red;
+        &:before {
+            content: "\f014";
+        }
+    }
+
+    &.btn-save {
+        @extend .btn-iconized;
+        background-color: $green;
+        &:before {
+            content: "\f02e";
+        }
+    }
+
+    &.btn-soon {
+        @extend .btn-iconized;
+        background-color: $yellow;
+        &:before {
+            content: "\f071";
+        }
+    }
+
     &:hover {
-        background-color: $orange;
+        background-color: $black;
         border: 0 solid transparent;
     }
 }

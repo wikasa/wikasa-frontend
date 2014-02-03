@@ -34,6 +34,31 @@
     &:nth-of-type(n+2) { margin-top: z(1rem); }
 }
 
+/* UNSEMANTIC HELPER LAYOUT -------------------------------------------------------------- */
+
+.unsemantic {
+    &.clearfix {
+        @include clearfix;
+    }
+
+    &.gutter-top {
+        margin-bottom: z(1rem);
+    }
+
+    &.gutter-right {
+        margin-bottom: z(1rem);
+    }
+
+    &.gutter-bottom {
+        margin-bottom: z(1rem);
+    }
+
+    &.gutter-left {
+        margin-bottom: z(1rem);
+    }
+}
+
+
 /* TEST MOCK ---------------------------------------------------------------- */
 .mains.test {
     min-height: 5em;
