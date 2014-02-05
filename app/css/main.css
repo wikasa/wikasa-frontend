@@ -9817,8 +9817,8 @@ label {
 }
 @media screen and (min-width: 60em) and (max-width: 79.9375em) {
   .common-medias {
-    width: 47em;
-    height: 26em;
+    width: 752px;
+    height: 423px;
   }
 }
 @media screen and (min-width: 80em) {

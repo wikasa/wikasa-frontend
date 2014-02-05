@@ -33,8 +33,8 @@
         height: 26.4375em
     }
     @include media-query($desktop) {
-        width: element_width(8);
-        height: element_width(4.5);
+        width: 752px;
+        height: 423px;
     }
     @include media-query($wide)    {
         width: 752px;
