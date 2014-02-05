@@ -168,7 +168,8 @@ module.exports = function (grunt) {
           style: 'expanded',
           // compass: true,
           // debugInfo: true,
-          banner: '<%= tag.banner %>'
+          banner: '<%= tag.banner %>',
+          sourcemap: true
         },
         files: {
           '<%= config.app %>/css/main.css': '<%= config.css[0] %>'

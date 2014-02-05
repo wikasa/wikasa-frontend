@@ -254,7 +254,6 @@ td {
   font-weight: normal;
   font-style: normal;
 }
-
 .fa {
   display: inline-block;
   font-family: FontAwesome;
@@ -350,7 +349,6 @@ td {
     -moz-transform: rotate(359deg);
   }
 }
-
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -360,7 +358,6 @@ td {
     -webkit-transform: rotate(359deg);
   }
 }
-
 @-o-keyframes spin {
   0% {
     -o-transform: rotate(0deg);
@@ -370,7 +367,6 @@ td {
     -o-transform: rotate(359deg);
   }
 }
-
 @-ms-keyframes spin {
   0% {
     -ms-transform: rotate(0deg);
@@ -380,7 +376,6 @@ td {
     -ms-transform: rotate(359deg);
   }
 }
-
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -390,7 +385,6 @@ td {
     transform: rotate(359deg);
   }
 }
-
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
   -webkit-transform: rotate(90deg);
@@ -1998,7 +1992,6 @@ td {
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
   font-family: "SansRegular";
   src: font-url("AkkRg_Pro_1.eot");
@@ -2007,7 +2000,6 @@ td {
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
   font-family: "SansLight";
   src: font-url("AkkLg_Pro_1.eot");
@@ -2016,7 +2008,6 @@ td {
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
   font-family: "SansLightItalic";
   src: font-url("AkkLgIt_Pro_1.eot");
@@ -2025,7 +2016,6 @@ td {
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
   font-family: "SerifBold";
   src: font-url("lucida_bright_demibold-webfont.eot");
@@ -2034,7 +2024,6 @@ td {
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
   font-family: "SerifBoldItalic";
   src: font-url("lucida_bright_demibold_italic-webfont.eot");
@@ -2043,7 +2032,6 @@ td {
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
   font-family: "SerifItalic";
   src: font-url("lucida_bright_italic-webfont.eot");
@@ -2052,7 +2040,6 @@ td {
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
   font-family: "SerifRegular";
   src: font-url("lucida_bright-webfont.eot");
@@ -2061,7 +2048,6 @@ td {
   font-style: normal;
   font-stretch: normal;
 }
-
 @font-face {
   font-family: "IconFont";
   src: font-url("fontawesome-webfont.eot");
@@ -2070,7 +2056,6 @@ td {
   font-style: normal;
   font-stretch: normal;
 }
-
 /** ----------------------------------------------------------------- *\
  *  WIKASA.BASE.SETTING
  *  
@@ -9307,7 +9292,8 @@ label {
   display: block;
   min-height: 3rem;
   text-transform: uppercase;
-  line-height: 3rem;
+  line-height: 1rem;
+  padding: 1rem 1rem 1rem 0;
 }
 .common-sidebar-timeline .comside-link.watched .sidelink-head {
   color: #64afb2;
@@ -10045,7 +10031,7 @@ label {
   clear: both;
 }
 .common-alert.success {
-  background-color: #eef6f7;
+  background-color: #d3f5bd;
   color: #64afb2;
   border: 1px solid #64afb2;
 }
@@ -10674,3 +10660,5 @@ p.styleguide-subhead {
   border-bottom: 1px solid #999;
   color: #999;
 }
+
+/*# sourceMappingURL=main.css.map */
