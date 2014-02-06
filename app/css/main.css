@@ -10015,7 +10015,14 @@ label {
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 .common-alerts {
+  -webkit-animation: alert-start 0.3s linear;
+  -moz-animation: alert-start 0.3s linear;
+  animation: alert-start 0.3s linear;
   min-height: 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 9000;
 }
 
 .common-alert {
@@ -10027,6 +10034,7 @@ label {
   border-radius: 3px;
   display: block;
   position: relative;
+  right: 50%;
   padding: 1rem;
   min-height: 3rem;
   margin: 1rem auto;
@@ -10082,6 +10090,33 @@ label {
   margin: 1rem 1rem 0 0;
 }
 
+@-webkit-keyframes alert-start {
+  from {
+    top: -6rem;
+  }
+
+  to {
+    top: 0;
+  }
+}
+@-moz-keyframes alert-start {
+  from {
+    top: -6rem;
+  }
+
+  to {
+    top: 0;
+  }
+}
+@keyframes alert-start {
+  from {
+    top: -6rem;
+  }
+
+  to {
+    top: 0;
+  }
+}
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-TAB
  *  
