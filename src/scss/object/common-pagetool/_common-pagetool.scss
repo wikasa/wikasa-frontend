@@ -77,6 +77,13 @@
     &:hover    { background-color: $black; }
 
     &.open { width: z(5rem) !important; }
+
+    &.compact {
+        @include media-query(min-width $desktop-min) {
+            min-width: z(3rem);
+            width: z(3rem);
+        }
+    }
 }
 
 .common-siblingnavs {
