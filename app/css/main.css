@@ -9600,6 +9600,10 @@ label {
   color: #ea6b53;
 }
 
+.common-subhead {
+  margin: 1rem 0 2rem 0;
+}
+
 .subheads-1 {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -9614,7 +9618,7 @@ label {
 .subheads-2 {
   font-size: 2.5rem;
   line-height: 3rem;
-  color: #495d73;
+  color: #2b2f3a;
 }
 .subheads-2 > * {
   text-align: center;
