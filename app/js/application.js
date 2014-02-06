@@ -10347,6 +10347,15 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
         $comsideLinkToggle      = $('.js.comside-link.toggle')
         ;
 
+    R.action(function() {
+        if ( R.viewportW() < 959 ) {
+            if( $commonSidebarsNav.hasClass('is-shown') || $commonSidebarsTimeline.hasClass('is-shown') ) {
+                $commonSidebarsNav.removeClass('is-shown');
+                $commonSidebarsTimeline.removeClass('is-shown');
+            }
+        }
+    });
+
     $comsideFloatButton.on('click', function(e) {
         e.preventDefault();
         if( $('.js.common-sidebars-nav').length > 0 ) {
