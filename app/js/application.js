@@ -10348,7 +10348,7 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
         ;
 
     R.action(function() {
-        if ( R.viewportW() < 959 ) {
+        if ( R.viewportW() < 960 ) {
             if( $commonSidebarsNav.hasClass('is-shown') || $commonSidebarsTimeline.hasClass('is-shown') ) {
                 $commonSidebarsNav.removeClass('is-shown');
                 $commonSidebarsTimeline.removeClass('is-shown');
@@ -10356,10 +10356,22 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
         }
     });
 
+    R.resize(function() {
+        if ( R.viewportW() >= 960 ) {
+            if( !$comsideFloatButton.hasClass('is-shown') ) {
+                $comsideFloatButton.addClass('is-shown');
+            }
+        }
+    });
+
     $comsideFloatButton.on('click', function(e) {
         e.preventDefault();
         if( $('.js.common-sidebars-nav').length > 0 ) {
-            $comsideFloatButton.toggleClass('is-shown');
+            if( !$comsideFloatButton.hasClass('is-shown') ) {
+                $comsideFloatButton.addClass('is-shown');
+            } else {
+                $comsideFloatButton.removeClass('is-shown');
+            }
             $commonSidebarsNav.toggleClass('is-shown');
         } else if( $('.js.common-sidebars-timeline').length > 0 ) {
             $comsideFloatButton.toggleClass('is-shown');
