@@ -98,7 +98,7 @@
 
     .comsib-btn {
         @include clearfix;
-        background-color: $black;
+        @extend .btn-black;
         float: left;
         position: relative;
 
@@ -108,6 +108,5 @@
         }
 
         &:nth-of-type(n+2) { margin-left: z(0.5 * 1rem); }
-        &:hover { background-color: $orange; }
     }
 }
