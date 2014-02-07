@@ -9570,10 +9570,14 @@ label {
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 .common-tab {
-  height: 3rem;
-  overflow: hidden;
+  position: relative;
   width: 100%;
   margin-bottom: 2rem;
+}
+.common-tab:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .common-tab:before {
   position: relative;
@@ -9584,7 +9588,7 @@ label {
   border-bottom: 1px solid #eaeaea;
   margin-bottom: -3rem;
 }
-.common-tab > *[class^="comtab-link"] {
+.common-tab .comtab-link, .common-tab .comtab-dropdowns .comtab-dd-link {
   position: relative;
   display: block;
   height: 100%;
@@ -9592,13 +9596,60 @@ label {
   line-height: 3rem;
   float: left;
   border-bottom: 1px solid #eaeaea;
+  z-index: 801;
 }
-.common-tab > *[class^="comtab-link"]:hover {
+.common-tab .comtab-link:hover, .common-tab .comtab-dropdowns .comtab-dd-link:hover, .common-tab .comtab-link.is-active, .common-tab .comtab-dropdowns .is-active.comtab-dd-link {
   color: #ea6b53;
   border-bottom: 1px solid #ea6b53;
 }
-.common-tab > *[class^="comtab-link"]:nth-child(n+1) {
-  margin-right: 2rem;
+.common-tab .comtab-link:nth-child(n+2), .common-tab .comtab-dropdowns .comtab-dd-link:nth-child(n+2) {
+  margin-left: 2rem;
+}
+@media screen and (max-width: 39.9375em) {
+  .common-tab .comtab-link:nth-child(n+2), .common-tab .comtab-dropdowns .comtab-dd-link:nth-child(n+2) {
+    margin-left: 1rem;
+  }
+}
+.common-tab .comtab-dropdowns {
+  display: none;
+  clear: left;
+  position: relative;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  background-color: rgba(234, 234, 234, 0.8);
+  padding: 0 1rem;
+  border-bottom: 1px solid #c4c4c4;
+}
+.common-tab .comtab-dropdowns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.common-tab .comtab-dropdowns.is-shown {
+  display: block;
+}
+.common-tab .comtab-dropdowns .comtab-dropdown {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+.common-tab .comtab-dropdowns .comtab-dropdown:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.common-tab .comtab-dropdowns .comtab-dd-link {
+  border-bottom: 0 solid transparent;
+  padding: 0 1rem;
+}
+.common-tab .comtab-dropdowns .comtab-dd-link:nth-child(n+2) {
+  margin-left: 0;
+}
+.common-tab .comtab-dropdowns .comtab-dd-link:hover {
+  border-bottom: 0 solid transparent;
 }
 
 /** ------------------------------------------------------------------------- *\

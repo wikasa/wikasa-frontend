@@ -10,8 +10,9 @@
  ** ------------------------------------------------------------------------- */
 
 .common-tab {
-    height: z(3rem);
-    overflow: hidden;
+    @include clearfix;
+    position: relative;
+    // height: z(3rem);
     width: 100%;
     margin-bottom: z(2rem);
     
@@ -25,7 +26,7 @@
         margin-bottom: z(-3rem);
     }
 
-    & > *[class^="comtab-link"] {
+    .comtab-link {
         position: relative;
         display: block;
         height: 100%;
@@ -33,14 +34,50 @@
         line-height: z(3rem);
         float: left;
         border-bottom: 1px solid $whiteDark2;
+        z-index: 801;
 
-        &:hover {
+        &:hover,
+        &.is-active {
             color: $orange;
             border-bottom: 1px solid $orange;
         }
 
-        &:nth-child(n+1) {
-            margin-right: z(2rem);
+        &:nth-child(n+2) { margin-left: z(2rem); }
+
+        @include media-query(max-width $mobtab-max) {
+            &:nth-child(n+2) { margin-left: z(1rem); }
+        }
+    }
+
+    .comtab-dropdowns {
+        @include clearfix;
+        display: none;
+        clear: left;
+        position: relative;
+        top: -1px;
+        left: 0;
+        width: 100%;
+        background-color: rgba($whiteDark2, 0.8);
+        padding: 0 z(1rem);
+        border-bottom: 1px solid $gray;
+
+        &.is-shown { display: block; }
+
+        .comtab-dropdown {
+            @include clearfix;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            text-align: center;
+        }
+
+        .comtab-dd-link {
+            @extend .comtab-link;
+            border-bottom: 0 solid transparent;
+            padding: 0 z(1rem);
+            &:nth-child(n+2) { margin-left: 0; }
+            &:hover { border-bottom: 0 solid transparent; }
         }
     }
 }
