@@ -10312,7 +10312,12 @@ label {
   border-bottom: 1px solid #eaeaea;
 }
 
-.discon-text,
+.discon-text, .dis-content p, .dis-content a {
+  font-size: 0.8125rem;
+  line-height: 1rem;
+  margin-bottom: 0;
+}
+
 *[class^="disvote"],
 *[class^="distool"],
 .dis-input {
@@ -10347,12 +10352,11 @@ label {
   margin-top: 0.5rem;
 }
 
-.discon-text:nth-of-type(n+2) {
-  margin-top: 1rem;
-}
-
 .dis-content:nth-of-type(n+2) {
   margin: 1rem 0 0 0;
+}
+.dis-content p:nth-of-type(n+2), .dis-content a:nth-of-type(n+2) {
+  margin-top: 1rem;
 }
 
 .dis-answers,

@@ -29,7 +29,12 @@
     }
 }
 
-.discon-text,
+.discon-text {
+    font-size: z(13 / $l * 1rem);
+    line-height: z(1rem);
+    margin-bottom: 0;
+}
+
 *[class^="disvote"],
 *[class^="distool"],
 .dis-input {
@@ -61,12 +66,14 @@
     }
 }
 
-.discon-text {
-    &:nth-of-type(n+2) { margin-top: z(1rem); }
-}
 
 .dis-content {
     &:nth-of-type(n+2) { margin: z(1rem) 0 0 0; }
+
+    p, a {
+        @extend .discon-text;
+        &:nth-of-type(n+2) { margin-top: z(1rem); }
+    }
 }
 
 .dis-answers,
