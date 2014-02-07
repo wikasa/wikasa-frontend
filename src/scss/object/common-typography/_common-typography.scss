@@ -75,3 +75,14 @@
         }
     }
 }
+
+.align-center {
+    text-align: center !important;
+}
+
+.small {
+    font-size: z(12 / $l * 1rem) !important;
+    a{
+      font-size: z(12 / $l * 1rem) !important;  
+    }
+}
