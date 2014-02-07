@@ -2560,12 +2560,12 @@ button, select {
   -o-user-select: none;
   user-select: none;
 }
-.btn.btn-default, .btn.btn-update, .btn-update.btn-huge, .btn.btn-save, .btn-save.btn-huge, .btn-default.btn-huge {
+.btn.btn-default, .btn.btn-update, .btn-update.btn-huge, .btn.btn-save, .btn-save.btn-huge, .btn-group .btn.btn-child, .btn-group .btn-child.btn-huge, .btn-default.btn-huge {
   background-color: #64afb2;
   border: 1px solid #64afb2;
   color: white;
 }
-.btn.btn-default:hover, .btn.btn-update:hover, .btn-update.btn-huge:hover, .btn.btn-save:hover, .btn-save.btn-huge:hover, .btn-default.btn-huge:hover {
+.btn.btn-default:hover, .btn.btn-update:hover, .btn-update.btn-huge:hover, .btn.btn-save:hover, .btn-save.btn-huge:hover, .btn-group .btn.btn-child:hover, .btn-group .btn-child.btn-huge:hover, .btn-default.btn-huge:hover {
   background-color: #438487;
   color: white;
   border: 1px solid #438487;
@@ -2677,6 +2677,33 @@ button, select {
 }
 .btn.btn-soon:before, .btn-soon.btn-huge:before {
   content: "\f071";
+}
+
+.btn-group {
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #64afb2;
+  overflow: hidden;
+}
+.btn-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn-group .btn, .btn-group .btn-huge {
+  -webkit-border-radius: 0;
+  -khtml-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+.btn-group .btn:nth-of-type(n+2), .btn-group .btn-huge:nth-of-type(n+2) {
+  border-left: 1px solid #97c9cb;
 }
 
 .radio, .checkbox {
@@ -9864,6 +9891,69 @@ label {
 
 .common-medias.test {
   background-color: #eaeaea;
+}
+
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-TAB
+ *  
+ *  Pagination Nav object used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+.common-paginations {
+  position: relative;
+  height: 3rem;
+  overflow: hidden;
+  width: 100%;
+  margin: 1rem 0;
+}
+.common-paginations:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.common-paginations .common-pagination {
+  position: absolute;
+  height: 3rem;
+  width: 100%;
+  top: 0;
+  left: 50%;
+}
+.common-paginations .common-pagination:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.common-paginations .common-pagination .btn-group {
+  position: relative;
+  float: left;
+  right: 25%;
+  left: auto;
+}
+.common-paginations .common-pagination .btn-group:nth-of-type(n+2) {
+  margin-left: 0.5rem;
+}
+.common-paginations .common-pagination .btn-group:first-child .btn-iconized:before, .common-paginations .common-pagination .btn-group:first-child .btn.btn-create:before, .common-paginations .common-pagination .btn-group:first-child .btn-create.btn-huge:before, .common-paginations .common-pagination .btn-group:first-child .btn.btn-read:before, .common-paginations .common-pagination .btn-group:first-child .btn-read.btn-huge:before, .common-paginations .common-pagination .btn-group:first-child .btn.btn-update:before, .common-paginations .common-pagination .btn-group:first-child .btn-update.btn-huge:before, .common-paginations .common-pagination .btn-group:first-child .btn.btn-delete:before, .common-paginations .common-pagination .btn-group:first-child .btn-delete.btn-huge:before, .common-paginations .common-pagination .btn-group:first-child .btn.btn-save:before, .common-paginations .common-pagination .btn-group:first-child .btn-save.btn-huge:before, .common-paginations .common-pagination .btn-group:first-child .btn.btn-soon:before, .common-paginations .common-pagination .btn-group:first-child .btn-soon.btn-huge:before {
+  content: "\f053";
+}
+.common-paginations .common-pagination .btn-group:last-child .btn-iconized, .common-paginations .common-pagination .btn-group:last-child .btn.btn-create, .common-paginations .common-pagination .btn-group:last-child .btn-create.btn-huge, .common-paginations .common-pagination .btn-group:last-child .btn.btn-read, .common-paginations .common-pagination .btn-group:last-child .btn-read.btn-huge, .common-paginations .common-pagination .btn-group:last-child .btn.btn-update, .common-paginations .common-pagination .btn-group:last-child .btn-update.btn-huge, .common-paginations .common-pagination .btn-group:last-child .btn.btn-delete, .common-paginations .common-pagination .btn-group:last-child .btn-delete.btn-huge, .common-paginations .common-pagination .btn-group:last-child .btn.btn-save, .common-paginations .common-pagination .btn-group:last-child .btn-save.btn-huge, .common-paginations .common-pagination .btn-group:last-child .btn.btn-soon, .common-paginations .common-pagination .btn-group:last-child .btn-soon.btn-huge {
+  padding-left: 0.5rem;
+  padding-right: 2rem;
+}
+.common-paginations .common-pagination .btn-group:last-child .btn-iconized:before, .common-paginations .common-pagination .btn-group:last-child .btn.btn-create:before, .common-paginations .common-pagination .btn-group:last-child .btn-create.btn-huge:before, .common-paginations .common-pagination .btn-group:last-child .btn.btn-read:before, .common-paginations .common-pagination .btn-group:last-child .btn-read.btn-huge:before, .common-paginations .common-pagination .btn-group:last-child .btn.btn-update:before, .common-paginations .common-pagination .btn-group:last-child .btn-update.btn-huge:before, .common-paginations .common-pagination .btn-group:last-child .btn.btn-delete:before, .common-paginations .common-pagination .btn-group:last-child .btn-delete.btn-huge:before, .common-paginations .common-pagination .btn-group:last-child .btn.btn-save:before, .common-paginations .common-pagination .btn-group:last-child .btn-save.btn-huge:before, .common-paginations .common-pagination .btn-group:last-child .btn.btn-soon:before, .common-paginations .common-pagination .btn-group:last-child .btn-soon.btn-huge:before {
+  content: "\f054";
+  left: auto;
+  right: 0;
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+@media screen and (max-width: 39.9375em) {
+  .common-paginations .common-pagination .btn-group:nth-of-type(n+2):not(:last-child) {
+    display: none;
+  }
 }
 
 /** ------------------------------------------------------------------------- *\

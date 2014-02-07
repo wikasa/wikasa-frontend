@@ -278,6 +278,20 @@ button, select {
     }
 }
 
+.btn-group {
+    @include clearfix;
+    @include rb-border-radius(3px);
+    border: 1px solid $green;
+    overflow: hidden;
+
+    .btn {
+        @include rb-border-radius(0);
+        &:nth-of-type(n+2) { border-left: 1px solid lighten($green, 15); }
+    }
+
+    .btn-child { @extend .btn-default; }
+}
+
 .radio, .checkbox {
     display: block;
     margin: z(0.5 * 1rem) 0;
