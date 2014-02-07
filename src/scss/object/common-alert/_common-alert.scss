@@ -11,7 +11,12 @@
 
 .common-alerts {
     @extend .mains;
+    @include animation(alert-start 0.3s linear);
     min-height: 0;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    z-index: 9000;
 }
 
 .common-alert {
@@ -20,6 +25,7 @@
     @include rb-border-radius(3px);
     display: block;
     position: relative;
+    right: 50%;
     padding: z(1rem);
     min-height: z(3rem);
     margin: z(1rem) auto;
@@ -70,4 +76,10 @@
         line-height: z(1rem);
         margin: z(1rem) z(1rem) 0 0;
     }
+}
+
+// CSS3 Animation Setup
+@include keyframes(alert-start) {
+    from { top: z(-1 * 6rem); }
+    to { top: 0; }
 }

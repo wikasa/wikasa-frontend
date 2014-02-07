@@ -1,0 +1,10 @@
+@mixin rb-button-color($bgc: $green, $fgc: $white, $bdc: $green, $drk: 15, $alp: .4) {
+    background-color: $bgc;
+    border: 1px solid $bdc;
+    color: $fgc;
+    &:hover {
+        background-color: darken($bgc, $drk);
+        color: $fgc;
+        border: 1px solid darken($bgc, $drk);
+    }
+}

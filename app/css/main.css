@@ -2560,48 +2560,84 @@ button, select {
   -o-user-select: none;
   user-select: none;
 }
-.btn.btn-default, .btn-default.btn-huge {
+.btn.btn-default, .btn.btn-update, .btn-update.btn-huge, .btn.btn-save, .btn-save.btn-huge, .btn-default.btn-huge {
   background-color: #64afb2;
-  border-color: #64afb2;
+  border: 1px solid #64afb2;
   color: white;
 }
-.btn.btn-purple, .btn-purple.btn-huge {
-  background-color: #313CA3;
-  border-color: #313CA3;
+.btn.btn-default:hover, .btn.btn-update:hover, .btn-update.btn-huge:hover, .btn.btn-save:hover, .btn-save.btn-huge:hover, .btn-default.btn-huge:hover {
+  background-color: #438487;
+  color: white;
+  border: 1px solid #438487;
+}
+.btn.btn-purple, .btn-purple.btn-huge, .btn-huge.lancontent-btn, .btn.lancontent-btn {
+  background-color: #313ca3;
+  border: 1px solid #313ca3;
   color: white;
 }
-.btn.btn-blue, .btn-blue.btn-huge {
+.btn.btn-purple:hover, .btn-purple.btn-huge:hover, .btn-huge.lancontent-btn:hover, .btn.lancontent-btn:hover {
+  background-color: #1f2668;
+  color: white;
+  border: 1px solid #1f2668;
+}
+.btn.btn-blue, .btn.btn-create, .btn-create.btn-huge, .btn.btn-read, .btn-read.btn-huge, .btn-blue.btn-huge {
   background-color: #648cb2;
-  border-color: #648cb2;
+  border: 1px solid #648cb2;
   color: white;
 }
-.btn.btn-red, .btn-red.btn-huge {
-  background-color: #ef4b4b;
-  border-color: #ef4b4b;
+.btn.btn-blue:hover, .btn.btn-create:hover, .btn-create.btn-huge:hover, .btn.btn-read:hover, .btn-read.btn-huge:hover, .btn-blue.btn-huge:hover {
+  background-color: #436687;
   color: white;
+  border: 1px solid #436687;
+}
+.btn.btn-red, .btn.btn-delete, .btn-delete.btn-huge, .btn-red.btn-huge {
+  background-color: #ef4b4b;
+  border: 1px solid #ef4b4b;
+  color: white;
+}
+.btn.btn-red:hover, .btn.btn-delete:hover, .btn-delete.btn-huge:hover, .btn-red.btn-huge:hover {
+  background-color: #ab0f0f;
+  color: white;
+  border: 1px solid #ab0f0f;
 }
 .btn.btn-orange, .btn-orange.btn-huge {
   background-color: #ea6b53;
-  border-color: #ea6b53;
+  border: 1px solid #ea6b53;
   color: white;
 }
-.btn.btn-yellow, .btn-yellow.btn-huge {
+.btn.btn-orange:hover, .btn-orange.btn-huge:hover {
+  background-color: #e44426;
+  color: white;
+  border: 1px solid #e44426;
+}
+.btn.btn-yellow, .btn.btn-soon, .btn-soon.btn-huge, .btn-yellow.btn-huge {
   background-color: #e8b71c;
-  border-color: #e8b71c;
+  border: 1px solid #e8b71c;
   color: white;
 }
-.btn.btn-black, .btn-black.btn-huge {
+.btn.btn-yellow:hover, .btn.btn-soon:hover, .btn-soon.btn-huge:hover, .btn-yellow.btn-huge:hover {
+  background-color: #be9513;
+  color: white;
+  border: 1px solid #be9513;
+}
+.btn.btn-black, .common-siblingnavs .btn.comsib-btn, .common-siblingnavs .comsib-btn.btn-huge, .btn-black.btn-huge {
   background-color: #2b2f3a;
-  border-color: #2b2f3a;
+  border: 1px solid #2b2f3a;
   color: white;
 }
-.btn.btn-black:hover, .btn-black.btn-huge:hover {
+.btn.btn-black:hover, .common-siblingnavs .btn.comsib-btn:hover, .common-siblingnavs .comsib-btn.btn-huge:hover, .btn-black.btn-huge:hover {
   background-color: #64afb2;
+  border: 1px solid #64afb2;
 }
 .btn.btn-disable, .btn-disable.btn-huge {
   background-color: #c4c4c4;
-  border-color: #c4c4c4;
+  border: 1px solid #c4c4c4;
   color: white;
+}
+.btn.btn-disable:hover, .btn-disable.btn-huge:hover {
+  background-color: #848484;
+  color: white;
+  border: 1px solid #848484;
 }
 .btn.btn-iconized, .btn.btn-create, .btn-create.btn-huge, .btn.btn-read, .btn-read.btn-huge, .btn.btn-update, .btn-update.btn-huge, .btn.btn-delete, .btn-delete.btn-huge, .btn.btn-save, .btn-save.btn-huge, .btn.btn-soon, .btn-soon.btn-huge, .btn-iconized.btn-huge {
   padding-left: 2rem;
@@ -2624,45 +2660,23 @@ button, select {
   font-family: FontAwesome;
   line-height: inherit;
 }
-.btn.btn-create, .btn-create.btn-huge {
-  background-color: #648cb2;
-}
 .btn.btn-create:before, .btn-create.btn-huge:before {
   content: "\f067";
-}
-.btn.btn-read, .btn-read.btn-huge {
-  background-color: #648cb2;
 }
 .btn.btn-read:before, .btn-read.btn-huge:before {
   content: "\f06e";
 }
-.btn.btn-update, .btn-update.btn-huge {
-  background-color: #64afb2;
-}
 .btn.btn-update:before, .btn-update.btn-huge:before {
   content: "\f021";
-}
-.btn.btn-delete, .btn-delete.btn-huge {
-  background-color: #ef4b4b;
 }
 .btn.btn-delete:before, .btn-delete.btn-huge:before {
   content: "\f014";
 }
-.btn.btn-save, .btn-save.btn-huge {
-  background-color: #64afb2;
-}
 .btn.btn-save:before, .btn-save.btn-huge:before {
   content: "\f02e";
 }
-.btn.btn-soon, .btn-soon.btn-huge {
-  background-color: #e8b71c;
-}
 .btn.btn-soon:before, .btn-soon.btn-huge:before {
   content: "\f071";
-}
-.btn:hover, .btn-huge:hover {
-  background-color: #2b2f3a;
-  border: 0 solid transparent;
 }
 
 .radio, .checkbox {
@@ -9600,6 +9614,10 @@ label {
   color: #ea6b53;
 }
 
+.common-subhead {
+  margin: 1rem 0 2rem 0;
+}
+
 .subheads-1 {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -9614,7 +9632,7 @@ label {
 .subheads-2 {
   font-size: 2.5rem;
   line-height: 3rem;
-  color: #495d73;
+  color: #2b2f3a;
 }
 .subheads-2 > * {
   text-align: center;
@@ -9982,7 +10000,6 @@ label {
   }
 }
 .common-siblingnavs .comsib-btn {
-  background-color: #2b2f3a;
   float: left;
   position: relative;
 }
@@ -10000,9 +10017,6 @@ label {
 .common-siblingnavs .comsib-btn:nth-of-type(n+2) {
   margin-left: 0.5rem;
 }
-.common-siblingnavs .comsib-btn:hover {
-  background-color: #ea6b53;
-}
 
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-CARD
@@ -10015,7 +10029,14 @@ label {
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 .common-alerts {
+  -webkit-animation: alert-start 0.3s linear;
+  -moz-animation: alert-start 0.3s linear;
+  animation: alert-start 0.3s linear;
   min-height: 0;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 9000;
 }
 
 .common-alert {
@@ -10027,6 +10048,7 @@ label {
   border-radius: 3px;
   display: block;
   position: relative;
+  right: 50%;
   padding: 1rem;
   min-height: 3rem;
   margin: 1rem auto;
@@ -10082,6 +10104,33 @@ label {
   margin: 1rem 1rem 0 0;
 }
 
+@-webkit-keyframes alert-start {
+  from {
+    top: -6rem;
+  }
+
+  to {
+    top: 0;
+  }
+}
+@-moz-keyframes alert-start {
+  from {
+    top: -6rem;
+  }
+
+  to {
+    top: 0;
+  }
+}
+@keyframes alert-start {
+  from {
+    top: -6rem;
+  }
+
+  to {
+    top: 0;
+  }
+}
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-TAB
  *  
@@ -10564,11 +10613,6 @@ label {
   line-height: 4rem;
   position: relative;
   left: -50%;
-}
-
-.lancontent-btn {
-  background-color: #313CA3;
-  color: white;
 }
 
 .lancontent-a5 {
