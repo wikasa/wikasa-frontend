@@ -44,6 +44,7 @@
         @include media-query(max-width $tabtop-max) {
             margin-bottom: z(1rem);
         }
+        position: relative;
         display: block;
         overflow: hidden;
         margin-right: z(1rem);

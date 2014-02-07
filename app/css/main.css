@@ -8901,6 +8901,7 @@ label {
   white-space: nowrap;
 }
 .common-head > .comhead-link-user .comhead-userpic {
+  position: relative;
   max-width: 32px;
   max-height: 32px;
   width: 32px;
@@ -8931,6 +8932,10 @@ label {
   border-radius: 50%;
 }
 .userpic > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -16px;
   display: block;
   width: 32px;
   height: 32px;
@@ -9458,7 +9463,7 @@ label {
   max-height: 2rem;
   width: 2rem;
   height: 2rem;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 @media screen and (max-width: 39.9375em) {
   .comcard-images .card-userpics {
@@ -9797,6 +9802,7 @@ label {
   }
 }
 .mainhead-meta .headmeta-userpics {
+  position: relative;
   display: block;
   overflow: hidden;
   margin-right: 1rem;
