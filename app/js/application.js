@@ -10098,25 +10098,10 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
 ;( function( $, R ) {
 
     var $commonAlert = $('.js.common-alert')
-        // alertTimeoutID
-        ;
-
-    // function removeAlertHandler() {
-    //     alertTimeoutID = window.setTimeout(removeAlert, 3000);
-    // }
-
-    // function removeAlert() {
-    //     console.log("xxx");
-    //     $commonAlert.parent().remove();
-    // }
-
-    // function clearAlertTimeout() {
-    //     window.clearTimeout(alertTimeoutID);
-    // }
+    ;
 
     $commonAlert.on('click', function() {
         $(this).parent().remove();
-        // clearAlertTimeout();
     });
 
 })(jQuery, Response);
@@ -10415,6 +10400,19 @@ if ( typeof window === "object" && typeof window.document === "object" ) {
     $comheadLinkUser.on('click', function(e) {
         e.preventDefault();
         $commonSidebarsTool.toggleClass('is-shown');
+    });
+
+})(jQuery, Response);
+
+;( function( $, R ) {
+
+    var $tabTrigger = $('.js.comtab-dd-trigger'),
+        $tabDD = $('.js.comtab-dropdowns')
+    ;
+
+    $tabTrigger.on('click', function() {
+        $tabDD.toggleClass('is-shown');
+        $(this).toggleClass('is-active');
     });
 
 })(jQuery, Response);

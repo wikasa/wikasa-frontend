@@ -146,6 +146,7 @@ $_brand-beta-height: 32px;
         }
 
         .comhead-userpic {
+            position: relative;
             max-width: $lp * 2;
             max-height: $lp * 2;
             width: $lp * 2;

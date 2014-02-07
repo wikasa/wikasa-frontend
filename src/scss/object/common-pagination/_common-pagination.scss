@@ -1,0 +1,63 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-TAB
+ *  
+ *  Pagination Nav object used globally.
+ * 
+ *  @author Bangsawan & Silvia
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+.common-paginations {
+    @include clearfix;
+    position: relative;
+    height: z(3rem);
+    overflow: hidden;
+    width: 100%;
+    margin: z(1rem) 0;
+
+    .common-pagination {
+        @include clearfix;
+        position: absolute;
+        height: z(3rem);
+        width: 100%;
+        top: 0;
+        left: 50%;
+
+        .btn-group {
+            position: relative;
+            float: left;
+            right: 25%;
+            left: auto;
+            &:nth-of-type(n+2) { margin-left: z(0.5rem); }
+        }
+
+        .btn-group:first-child {
+            .btn-iconized:before {
+                content: "\f053";
+            }
+        }
+
+        .btn-group:last-child {
+            .btn-iconized {
+                padding-left: z(0.5rem);
+                padding-right: z(2rem);
+
+                &:before {
+                    content: "\f054";
+                    left: auto;
+                    right: 0;
+                    padding-left: 0;
+                    padding-right: z(0.5rem);
+                }
+            }
+        }
+
+        .btn-group:nth-of-type(n+2):not(:last-child) {
+            @include media-query(max-width $mobtab-max) {
+                display: none;
+            }
+        }
+    }
+}

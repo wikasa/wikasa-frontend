@@ -172,3 +172,13 @@
                             input.disinput-btn.disinput-submit[type="submit"]>{Answer}
 
 
+**Common Pagination**
+
+    nav.common-paginations
+        div.common-pagination
+            div.btn-group
+                a.btn-iconized.btn-compag-prev[href="JavaScrip:void(0)"]
+            div.btn-group
+                (a.btn.btn-default.btn-compag-page[href="JavaScrip:void(0)"]>{9})*6
+            div.btn-group
+                a.btn-iconized.btn-compag-next[href="JavaScrip:void(0)"]
