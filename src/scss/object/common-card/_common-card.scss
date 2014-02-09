@@ -24,8 +24,7 @@
         overflow: hidden;
     }
     @include media-query(min-width $tablet-min) {
-        max-height: z(9rem);
-        height: z(9rem);
+        min-height: z(10rem);
     }
     position: relative;
 
@@ -158,8 +157,7 @@
             margin: 0 0 z(1rem) 0;
         }
         @include media-query(min-width $tablet-min) {
-            position: absolute;
-            bottom: 0;
+            position: relative;
             margin: 0 0 0 0;
         }
         overflow: hidden;
