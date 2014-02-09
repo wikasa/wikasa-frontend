@@ -173,7 +173,7 @@ module.exports = function (grunt) {
         },
         files: {
           '<%= config.app %>/css/main.css': '<%= config.css[0] %>'
-          // , '<%= config.app %>/css/main-ie.css': '<%= config.css[1] %>'
+          , '<%= config.app %>/css/main-ie.css': '<%= config.css[1] %>'
         }
       },
       dist: {
@@ -183,7 +183,7 @@ module.exports = function (grunt) {
         },
         files: {
           '<%= config.app %>/css/main.min.css': '<%= config.css[0] %>'
-          // , '<%= config.app %>/css/main-ie.min.css': '<%= config.css[1] %>'
+          , '<%= config.app %>/css/main-ie.min.css': '<%= config.css[1] %>'
         }
       }
     },
