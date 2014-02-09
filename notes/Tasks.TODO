@@ -1,15 +1,15 @@
 Wikasa frontend:
-    ☐ Develop new Breakpoint for the Grid System. @grid-sys
+    ✔ Develop new Breakpoint for the Grid System. @grid-sys @done (14-02-09 22:22)
         Problem = The current setted breakpoint, seems to make the available space to become too near at certain size.
         Solution = Analyze current breakpoint. Then add the best breakpoint needed.
     --- ✄ -----------------------
-    ☐ Redevelop Common Head Interactivity. @comhead
+    ✔ Redevelop Common Head Interactivity. @comhead @done (14-02-09 22:22)
         Problem = Common Head UI Script still far from excellent
         Solution = Add event handler triggered by browser scroll destination. If current scroll position below the comhead height, then if the user scrolls up, stick the comhead at top of body tag, with absolute positioning.
         ☐ Change Common Head position to absolute. And do the test. @scss
         ☐ Develop UI Script for Common Head. @js-ui
     --- ✄ -----------------------
-    ☐ Redevelop Common Card. @comcard
+    ✔ Redevelop Common Card. @comcard @done (14-02-09 22:22)
         ☐ Tweak the current UI design. @uid
             Problem = Due to the lack of available space, Cover image on the current design, was hidden on tablet and mobile screen.
             Solution = Design new solution, might be to change the position of the Cover image, from left to top of Common Card. So it would not need to be hidden anymore.
