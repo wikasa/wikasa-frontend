@@ -24,7 +24,7 @@
 .form-title {
     display: block;
     margin: 0 0 z(0.5 * 1rem) 0;
-    height: z(1.5 * 1rem);
+    min-height: z(1.5 * 1rem);
     line-height: z(1.5 * 1rem);
     font-size: z(18 / $l * 1rem);
 }
