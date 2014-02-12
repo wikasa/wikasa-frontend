@@ -38,7 +38,7 @@ module.exports = function (grunt) {
       app: 'app',
       css: [
         '<%= config.src %>/scss/main.scss',
-        '<%= config.src %>/scss/main-ie8.scss'
+        '<%= config.src %>/scss/main-ie.scss'
       ],
       js: [
         '<%= config.src %>/js/lib/classie/classie.js',

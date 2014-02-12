@@ -8764,16 +8764,10 @@ label {
   top: 0;
   z-index: 1999;
   overflow: hidden;
-  max-height: 3rem;
   width: 100%;
-  height: 3rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  font-size: 1em;
-}
-.common-heads:after {
-  content: "";
-  display: table;
-  clear: both;
+  min-height: 3rem;
+  border-bottom: 1px solid #eaeaea;
+  background-color: white;
 }
 @media screen and (max-width: 59.9375em) {
   .common-heads {
@@ -8787,124 +8781,162 @@ label {
 }
 
 .common-head {
-  height: 3rem;
-  max-height: 3rem;
-  border-bottom: 1px solid #eaeaea;
-}
-.common-head > *[class^="comhead"] {
-  display: inline-block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  max-height: 3rem;
-  height: 3rem;
   position: relative;
+  width: 100%;
 }
-
-.comhead-brand-alphas {
-  width: 3rem;
-  background-color: #2b2f3a;
-  z-index: 3010;
-}
-.comhead-brand-alphas:hover {
-  background-color: #ea6b53;
-}
-.comhead-brand-alphas > img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -16px 0 0 -16px;
-  width: 32px;
-  height: 32px;
-}
-
-.comhead-brand-betas {
-  z-index: 3000;
-  width: 9rem;
-  background-color: transparent;
-  margin-right: 16px;
-}
-@media screen and (min-width: 1em) and (max-width: 29.9375em) {
-  .comhead-brand-betas {
-    display: none !important;
-  }
-}
-.comhead-brand-betas > img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -16px 0 0 -56px;
-  width: 112px;
-  height: 32px;
-}
-
-.common-head > a[class^="comhead-link"] {
-  font-size: 0.75rem;
-  line-height: 3rem;
-  padding: 0 16px 0 16px;
-  background-color: #FFF;
-  border-bottom: 1px solid #eaeaea;
-}
-.common-head > a[class^="comhead-link"]:hover {
-  background-color: #f3f3f3;
-  color: #ea6b53;
-}
-.common-head > .comhead-link-basic {
-  border-right: 1px solid #f3f3f3;
-  border-left: 1px solid #f3f3f3;
-  z-index: 2010;
-}
-.common-head > .comhead-link-search {
-  text-align: center;
-  width: 3rem;
-  border-right: 1px solid #f3f3f3;
-  border-left: 1px solid #f3f3f3;
-  float: right;
-  z-index: 2020;
-}
-@media screen and (min-width: 1em) and (max-width: 29.9375em) {
-  .common-head > .comhead-link-search {
-    display: none !important;
-  }
-}
-.common-head > .comhead-link-user {
-  float: right;
-  z-index: 2000;
-}
-.common-head > .comhead-link-user:after {
+.common-head:after {
   content: "";
   display: table;
   clear: both;
 }
-@media screen and (max-width: 29.9375em) {
-  .common-head > .comhead-link-user {
-    width: 100%;
+.common-head *[class^="comhead-link"] {
+  display: block;
+  float: left;
+  font-size: 0.75rem;
+  line-height: 3rem;
+  background-color: #FFF;
+}
+.common-head .comhead-brands {
+  display: block;
+  float: left;
+  position: relative;
+  z-index: 3013;
+  max-width: 3rem;
+  max-height: 3rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 4px;
+  background-color: #2b2f3a;
+}
+.common-head .comhead-brands:hover {
+  background-color: #ea6b53;
+}
+@media screen and (max-width: 49.9375em) {
+  .common-head .comhead-brands {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
   }
 }
-@media screen and (min-width: 30em) {
-  .common-head > .comhead-link-user {
+.common-head .comhead-brands > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  margin: -1rem 0 0 -1rem;
+  width: 2rem;
+  height: 2rem;
+}
+.common-head .comhead-link-basics:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (min-width: 50em) {
+  .common-head .comhead-link-basics {
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+  }
+}
+@media screen and (max-width: 49.9375em) {
+  .common-head .comhead-link-basics {
+    border-left: 0 solid transparent;
+    border-right: 0 solid transparent;
     position: relative;
-    width: 13rem;
+    left: 0;
+    top: 0;
+    width: 100%;
   }
 }
-.common-head > .comhead-link-user > * {
-  display: inline-block;
-  float: right;
-}
-.common-head > .comhead-link-user .comhead-username {
-  max-width: 7rem;
-  width: 7rem;
-  overflow: hidden;
+.common-head .comhead-link-basics .comhead-link-trigger {
   height: 3rem;
-  margin-right: 8px;
-  padding-right: 8px;
-  text-align: right;
-  white-space: nowrap;
 }
-.common-head > .comhead-link-user .comhead-userpic {
+@media screen and (min-width: 50em) {
+  .common-head .comhead-link-basics .comhead-link-trigger {
+    display: none;
+  }
+}
+@media screen and (max-width: 49.9375em) {
+  .common-head .comhead-link-basics .comhead-link-trigger {
+    float: none;
+    width: 100%;
+    padding-left: 4rem;
+  }
+}
+.common-head .comhead-link-basics .comhead-link-basic {
+  height: 3rem;
+}
+@media screen and (min-width: 50em) {
+  .common-head .comhead-link-basics .comhead-link-basic {
+    float: left;
+  }
+}
+@media screen and (max-width: 49.9375em) {
+  .common-head .comhead-link-basics .comhead-link-basic {
+    display: none;
+    float: none;
+    width: 100%;
+    padding-left: 4rem;
+  }
+  .common-head .comhead-link-basics .comhead-link-basic.is-shown {
+    display: block;
+  }
+}
+@media screen and (max-width: 49.9375em) {
+  .common-head .comhead-link-basics .comhead-link-basic:nth-child(n+2) {
+    border-top: 1px solid #eaeaea;
+  }
+}
+@media screen and (min-width: 50em) {
+  .common-head .comhead-link-basics .comhead-link-basic:nth-child(n+2) {
+    border-left: 1px solid #eaeaea;
+  }
+}
+.common-head .comhead-link-search {
+  height: 3rem;
+}
+.common-head .comhead-link-basic,
+.common-head .comhead-link-trigger,
+.common-head .comhead-link-search,
+.common-head .comhead-link-user {
+  padding: 0 1rem 0 1rem;
+}
+.common-head .comhead-link-basic:hover,
+.common-head .comhead-link-trigger:hover,
+.common-head .comhead-link-search:hover,
+.common-head .comhead-link-user:hover {
+  background-color: #eaeaea;
+  color: #ea6b53;
+}
+.common-head .comhead-link-user {
+  z-index: 2000;
+  float: right;
+  padding: 0 1rem;
+  height: 3rem;
+}
+.common-head .comhead-link-user:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 49.9375em) {
+  .common-head .comhead-link-user {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: none;
+  }
+}
+.common-head .comhead-link-user > * {
+  display: block;
+  float: left;
+}
+@media screen and (max-width: 29.9375em) {
+  .common-head .comhead-username {
+    display: none;
+  }
+}
+.common-head .comhead-userpic {
   position: relative;
   max-width: 32px;
   max-height: 32px;
@@ -8912,9 +8944,7 @@ label {
   height: 32px;
   overflow: hidden;
   border: 0;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  margin-right: 8px;
+  margin: 0.5rem;
 }
 
 /** ------------------------------------------------------------------------- *\
