@@ -8900,13 +8900,11 @@ select::-ms-expand {
 }
 @media screen and (min-width: 50em) {
   .common-head .comhead-link-basics {
-    border-left: 1px solid #eaeaea;
     border-right: 1px solid #eaeaea;
   }
 }
 @media screen and (max-width: 49.9375em) {
   .common-head .comhead-link-basics {
-    border-left: 0 solid transparent;
     border-right: 0 solid transparent;
     position: relative;
     left: 0;
@@ -9686,12 +9684,13 @@ select::-ms-expand {
 }
 .common-tab:before {
   position: relative;
+  top: 1px;
   display: block;
+  margin-bottom: -3rem;
   width: 100%;
   height: 3rem;
-  content: "";
   border-bottom: 1px solid #eaeaea;
-  margin-bottom: -3rem;
+  content: "";
 }
 .common-tab .comtab-link, .common-tab .comtab-dropdowns .comtab-dd-link {
   position: relative;
@@ -10412,7 +10411,7 @@ select::-ms-expand {
   border-bottom: 1px solid #eaeaea;
 }
 
-.discon-text, .dis-content p, .dis-content a {
+.discon-text, .dis-content > p {
   font-size: 0.8125rem;
   line-height: 1rem;
   margin-bottom: 0;
@@ -10455,7 +10454,7 @@ select::-ms-expand {
 .dis-content:nth-of-type(n+2) {
   margin: 1rem 0 0 0;
 }
-.dis-content p:nth-of-type(n+2), .dis-content a:nth-of-type(n+2) {
+.dis-content > p:nth-of-type(n+2) {
   margin-top: 1rem;
 }
 

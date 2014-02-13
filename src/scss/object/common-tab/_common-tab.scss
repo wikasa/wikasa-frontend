@@ -18,12 +18,13 @@
     
     &:before {
         position: relative;
+        top: 1px;
         display: block;
+        margin-bottom: z(-3rem);
         width: 100%;
         height: z(3rem);
-        content: "";
         border-bottom: 1px solid $whiteDark2;
-        margin-bottom: z(-3rem);
+        content: "";
     }
 
     .comtab-link {

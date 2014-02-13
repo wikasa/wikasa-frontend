@@ -4,7 +4,7 @@
         isCollapsible   = false;
     ;
 
-    R.action( function() {
+    // R.action( function() {
         isCollapsible = (R.viewportW() < 800) ? true : false
 
         if ( !isCollapsible ) {
@@ -12,11 +12,12 @@
         }
 
         $comheadTrigger.on('click', function() {
+            isCollapsible = (R.viewportW() < 800) ? true : false
             if ( isCollapsible ) {
                 console.log($comheadLink.length);
                 $comheadLink.each(function() { $(this).toggleClass('is-shown'); });
             }
         });
-    });
+    // });
 
 })(jQuery, Response);

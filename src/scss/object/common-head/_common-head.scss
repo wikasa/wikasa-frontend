@@ -67,11 +67,9 @@
     .comhead-link-basics {
         @include clearfix;
         @include media-query(min-width $tabtop-min) {
-            border-left: 1px solid $whiteDark2;
             border-right: 1px solid $whiteDark2;
         }
         @include media-query(max-width $tablet-max) {
-            border-left: 0 solid transparent;
             border-right: 0 solid transparent;
             position: relative;
             left: 0;
