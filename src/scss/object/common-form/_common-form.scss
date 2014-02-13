@@ -172,6 +172,26 @@ button, select {
     text-transform: none;
 }
 
+label, .input-info {
+    display: block;
+    font-weight: normal;
+    margin-bottom: z(0.5 * 1rem);
+    font-size: z(12 / $l * 1rem);
+    line-height: z(1rem);
+    color: $black;
+}
+
+label { height: z(1rem); }
+.input-info {
+    font-family: $ff-sans-lightitalic;
+    color: $gray2;
+}
+
+.input-info-inline {
+    @extend .input-info;
+    display: inline-block;
+}
+
 .btn {
     @include rb-border-radius(3px);
     display: inline-block;
@@ -299,19 +319,53 @@ button, select {
     vertical-align: middle;
 }
 
-label, .input-info {
-    display: block;
-    font-weight: normal;
-    margin-bottom: z(0.5 * 1rem);
-    font-size: z(12 / $l * 1rem);
-    line-height: z(1rem);
-    color: $black;
-}
+.selectbox {
+    @include clearfix;
+    position: relative;
+    min-width: z(12rem);
+    width: z(12rem);
 
-label { height: z(1rem); }
-.input-info {
-    font-family: $ff-sans-lightitalic;
-    color: $gray2;
+    &:nth-child(n+2) { margin-top: z(1rem); }
+
+    & > p:first-of-type {
+        float: left;
+        overflow: hidden;
+        margin: 0;
+        max-width: z(3rem);
+        width: z(3rem);
+        height: z(2rem);
+        line-height: z(2rem);
+    }
+    select {
+        @include rb-border-radius(3px);
+        float: left;
+        overflow: hidden;
+        margin: 0;
+        width: 75%;
+        height: z(2rem);
+        border: 0;
+        background-color: $whiteDark2;
+        color: $black;
+        text-indent: 0.01px;
+        text-overflow: "";
+        font-size: z(12 / $l * 1rem);
+        line-height: z(2rem);
+        -webkit-appearance: none;
+        padding: 0 z(0.5rem);
+    }
+    &:before {
+        position: absolute;
+        top: -6px;
+        right: 0;
+        width: z(2rem);
+        height: z(2rem);
+        content: "\f0d7";
+        font-size: z(12 / $l * 1rem);
+        font-family: $ff-iconfont;
+        line-height: z(2rem);
+        text-align: center;
+        padding: 6px;
+    }
 }
 
 .form-inline {
@@ -392,3 +446,7 @@ label { height: z(1rem); }
     padding: 0 z(0.5 * 1rem);
     vertical-align: middle;
 }
+
+select::-ms-expand { display: none; }
+
+
