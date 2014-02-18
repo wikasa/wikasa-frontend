@@ -162,6 +162,7 @@ input[type="file"] {
 textarea {
     overflow: auto;
     vertical-align: top;
+    min-height: z(15rem)
 }
 
 button, input {
@@ -276,6 +277,12 @@ button, select {
         @extend .btn-yellow;
         &:before { content: "\f071"; }
     }
+
+    &.btn-checked {
+        @extend .btn-iconized;
+        @extend .btn-yellow;
+        &:before { content: "\f14a"; }
+    }    
 }
 
 .btn-group {

@@ -31,6 +31,13 @@
     margin: z(1rem) 0 z(2rem) 0;
 }
 
+.common-mainbody {
+    a {
+        color: $green;
+        font-weight: bold
+    }    
+}
+
 .subheads-1 {
     font-size: z(40 / $l * 1rem);
     line-height: z(3rem);
@@ -76,6 +83,39 @@
     }
 }
 
+ul.steps {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li.step{
+        padding: z(1rem) z(1.5rem) z(1rem) z(1.5rem);
+        background-color: $whiteDark2;        
+    }
+    .step-content{
+        margin: 0 0 z(2rem) 0;
+    }
+    .comtab-area-dd-parent.js.is-active{
+        li{
+            background-color: $whiteDark2;
+        }
+        .step-content.js{
+            background-color: $whiteDark2;
+        }
+    }
+}
+
+.boxed {
+    padding: z(1rem) z(1.5rem) z(1rem) z(1.5rem);
+    background-color: $whiteDark2;
+    &.boxed-green{
+        background-color: $green;
+        color: $white;
+    }
+    &.boxed-plain{
+        background-color: $white;
+    }
+}
+
 .align-center {
     text-align: center !important;
 }
@@ -84,5 +124,12 @@
     font-size: z(12 / $l * 1rem) !important;
     a{
       font-size: z(12 / $l * 1rem) !important;  
+    }
+}
+
+ul.vanilla {
+    margin-left: 0 !important;
+    li {
+        list-style-type: none;
     }
 }
