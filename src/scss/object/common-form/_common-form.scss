@@ -159,10 +159,14 @@ input[type="file"] {
     padding: 0;
 }
 
+input[type="number"] {
+    line-height: z(1rem);    
+}
+
 textarea {
     overflow: auto;
     vertical-align: top;
-    min-height: z(15rem)
+    min-height: z(5rem)
 }
 
 button, input {
@@ -201,6 +205,8 @@ button, select {
 
     &.btn-blue { @include rb-button-color($blue, $white, $blue); }
 
+    &.btn-blue2 { @include rb-button-color($blackLite2, $white, $blackLite2); }
+
     &.btn-red { @include rb-button-color($red, $white, $red, 25); }
 
     &.btn-orange { @include rb-button-color($orange, $white, $orange, 10); }
@@ -218,6 +224,8 @@ button, select {
     }
 
     &.btn-disable { @include rb-button-color($gray, $white, $gray, 25); }
+
+    &.btn-gray { @include rb-button-color($gray, $black, $gray, 25); }    
 
     &.btn-iconized {
         padding-left: 2rem;
@@ -283,6 +291,24 @@ button, select {
         @extend .btn-yellow;
         &:before { content: "\f14a"; }
     }    
+
+    &.btn-complete {
+        @extend .btn-iconized;
+        @extend .btn-default;
+        &:before { content: "\f096"; }
+    }    
+
+    &.btn-completed {
+        @extend .btn-iconized;
+        @extend .btn-gray;
+        &:before { content: "\f046"; }
+    }       
+
+    &.btn-remix {
+        @extend .btn-iconized;
+        @extend .btn-default;
+        &:before { content: "\f021"; }
+    }         
 }
 
 .btn-group {

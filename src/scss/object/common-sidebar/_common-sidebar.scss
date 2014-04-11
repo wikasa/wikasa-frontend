@@ -34,7 +34,7 @@
 *[class^="common-sidebar-"] {
     @include clearfix;
     @include media-query(max-width $tabtop-max) { overflow: hidden; }
-    @include media-query(min-width $desktop-min) { overflow: scroll; }
+    @include media-query(min-width $desktop-min) {}
     position: relative;
     display: block;
     margin: 0;
@@ -72,8 +72,8 @@
         .comside-icon-active { display: none; }
 
         &:hover {
-            color: $white;
-            background-color: $blackLite;
+            color: $blackLite;
+            background-color: $whiteDark3;
         }
 
         &.active {

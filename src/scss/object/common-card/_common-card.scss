@@ -166,6 +166,15 @@
         color: $orange;
         font-family: $ff-sans-bold;
     }
+
+    .card-content {
+        font-size: 13px;
+        a {
+            font-size: 13px;
+            font-weight: bold;
+            color: $blackLite2;
+        }
+    }
 }
 
 .common-cards.test {

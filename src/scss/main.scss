@@ -45,6 +45,7 @@ $pixel-base: 16;
 // ----------------------------------------------------------------------------\
 // Object.
 // ----------------------------------------------------------------------------/
+@import "object/common-block/common-block";
 @import "object/common-form/common-form";
 @import "object/common-container/common-container";
 @import "object/common-gridded/common-gridded";

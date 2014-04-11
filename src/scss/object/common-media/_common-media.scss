@@ -13,23 +13,26 @@
     @return $number / ($number * 0 + 1);
 }
 
+$boxed_video_width_list: $total_width_list;
+// $boxed_video_width_list: 18em 26em 37em 46em 58em 70em;
+
 .common-medias {
     font-size: z(1rem);
     
     @include media-query($mobile)  {
-        width: nth($total_width_list, 1);
+        width: nth($boxed_video_width_list, 1);
         height: 10.6875em
     }
     @include media-query($mobtab)  {
-        width: nth($total_width_list, 2);
+        width: nth($boxed_video_width_list, 2);
         height: 15.1875em
     }
     @include media-query($tablet)  {
-        width: nth($total_width_list, 3);
+        width: nth($boxed_video_width_list, 3);
         height: 21.375em
     }
     @include media-query($tabtop)  {
-        width: nth($total_width_list, 4);
+        width: nth($boxed_video_width_list, 4);
         height: 26.4375em
     }
     @include media-query($desktop) {
@@ -38,6 +41,7 @@
     }
     @include media-query($wide)    {
         width: 752px;
+        // width: 704px;
         height: 423px;
     }
 

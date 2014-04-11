@@ -25,7 +25,7 @@
 
 .common-sidebar-timeline {
     @include media-query(max-width $tabtop-max) { background-color: transparent; }
-    @include media-query(min-width $desktop-min) { background-color: $black; }
+    @include media-query(min-width $desktop-min) { background-color: $whiteDark2; }
 }
 
 .common-sidebar-timeline .comside-list {
@@ -40,8 +40,8 @@
 
 .common-sidebar-timeline {
     .comside-link {
-        background-color: $black;
-        color: $white;
+        background-color: $whiteDark2;
+        color: $black;
 
         &:not(.sect) {
             height: z(3rem);
@@ -55,9 +55,6 @@
             padding-bottom: z(1rem);
         }
     }
-
-    .comside-link .fa { background-color: $black; }
-    .comside-link:hover .fa { background-color: $blackLite; }
 
     .comside-link.sect:before {
         position: absolute;
@@ -81,8 +78,6 @@
 
     .comside-link.watched .comside-icon { color: $green; }
     .comside-link.current .comside-icon { color: $orange; }
-
-    .comside-link.toggle:hover .fa { background-color: $green; }
 
     .sidelink-body { text-transform: none; }
 }

@@ -12,20 +12,32 @@
 @include rb-font-face( 'SansLight', 'AkkLg_Pro_1' );
 @include rb-font-face( 'SansLightItalic', 'AkkLgIt_Pro_1' );
 
-$ff-sans-bold: SansBold, Arial, sans-serif;
-$ff-sans-regular: SansRegular, Arial, sans-serif;
-$ff-sans-light: SansLight, Arial, sans-serif;
-$ff-sans-lightitalic: SansLightItalic, Arial, sans-serif;
+// $ff-sans-bold: SansBold, Arial, sans-serif;
+// $ff-sans-regular: SansRegular, Arial, sans-serif;
+// $ff-sans-light: SansLight, Arial, sans-serif;
+// $ff-sans-lightitalic: SansLightItalic, Arial, sans-serif;
+
+$ff-sans-bold: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-sans-regular: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-sans-light: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$ff-sans-lightitalic: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// USE LATO !!!
 
 @include rb-font-face( 'SerifBold',       'lucida_bright_demibold-webfont' );
 @include rb-font-face( 'SerifBoldItalic', 'lucida_bright_demibold_italic-webfont' );
 @include rb-font-face( 'SerifItalic', 'lucida_bright_italic-webfont' );
 @include rb-font-face( 'SerifRegular', 'lucida_bright-webfont' );
 
-$ff-serif-bold: SerifBold, Arial, sans-serif;
-$ff-serif-boldItalic: SerifBoldItalic, Arial, sans-serif;
-$ff-serif-italic: SerifItalic, Arial, sans-serif;
-$ff-serif-regular: SerifRegular, Arial, sans-serif;
+// $ff-serif-bold: SerifBold, Arial, sans-serif;
+// $ff-serif-boldItalic: SerifBoldItalic, Arial, sans-serif;
+// $ff-serif-italic: SerifItalic, Arial, sans-serif;
+// $ff-serif-regular: SerifRegular, Arial, sans-serif;
+
+$ff-serif-bold: "Times New Roman", Times, serif;
+$ff-serif-boldItalic: "Times New Roman", Times, serif;
+$ff-serif-italic: "Times New Roman", Times, serif;
+$ff-serif-regular: "Times New Roman", Times, serif;
 
 @include rb-font-face( 'IconFont', 'fontawesome-webfont' );
 $ff-iconfont: FontAwesome;

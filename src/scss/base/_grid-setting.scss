@@ -9,6 +9,8 @@
  *  Copyright 2014. Free licensed.
  ** ------------------------------------------------------------------------- */
 
+// Temporarily changed tabtop to 50-70, should be 50 to 60 by default, and total width 59
+
 $total_width: 59em; // 944px Default value to be overrided by media query.
 $container_margin: auto;
 $gutter_width: 1em; // 16px
@@ -37,3 +39,4 @@ $breakpoint_list: $mobile, $mobtab, $tablet, $tabtop, $desktop, $wide;
 $breakpoint_min_list: 1em 30em 40em 50em 60em 80em;
 $total_columns_list: 4 4 6 8 10 12;
 $total_width_list: 19em 27em 38em 47em 59em 71em;
+

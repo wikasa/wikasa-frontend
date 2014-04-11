@@ -33,7 +33,7 @@
 
 .common-mainbody {
     a {
-        color: $green;
+        color: $green2;
         font-weight: bold
     }    
 }
@@ -56,7 +56,6 @@
     color: $black;
 
     & > * {
-        text-align: center;
         font-size: inherit;
         line-height: z(3rem);
     }
@@ -87,12 +86,30 @@ ul.steps {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    li.step{
+}
+
+.step {
+    margin: 0 0 z(3rem) 0;
+    line-height: z(2rem);
+    .step-heading{
+        padding: 0 z(1.5rem) z(0.5rem) z(1.5rem);
+        // background-color: $whiteDark2;
+        // background-color: $green;
+        // color: $white  
+    }
+    .step-title{
         padding: z(1rem) z(1.5rem) z(1rem) z(1.5rem);
-        background-color: $whiteDark2;        
+        // margin: 0 0 z(1rem) 0;
+        // background-color: $whiteDark2;
+        background-color: $whiteDark2;
+        // background-color: $blackLite2;
+        // color: $white     
     }
     .step-content{
-        margin: 0 0 z(2rem) 0;
+    }
+    .step-meta{
+        padding: z(1rem) z(1.5rem) z(1rem) z(1.5rem);            
+        background-color: $whiteDark2;
     }
     .comtab-area-dd-parent.js.is-active{
         li{
@@ -102,17 +119,27 @@ ul.steps {
             background-color: $whiteDark2;
         }
     }
-}
+}    
+
 
 .boxed {
     padding: z(1rem) z(1.5rem) z(1rem) z(1.5rem);
-    background-color: $whiteDark2;
+    background-color: $whiteDark1;
     &.boxed-green{
         background-color: $green;
         color: $white;
     }
+    &.boxed-dark{
+        background-color: $whiteDark2;        
+    }
+    &.boxed-red{
+        background-color: $redLite2;
+    }
     &.boxed-plain{
         background-color: $white;
+    }
+    &.boxed-standalone{
+        margin: 0 0 z(2rem) 0;
     }
 }
 
@@ -132,4 +159,42 @@ ul.vanilla {
     li {
         list-style-type: none;
     }
+}
+
+a.vanilla {
+    font-weight: normal;
+    color: $black;
+}
+
+.pull-right{
+    float: right
+}
+
+.small{
+    font-size: z(13 / $l * 1rem);    
+}
+
+.mc-result{
+    margin: 10px 0px 10px 0px;
+    background-color: $whiteDark2;
+    padding: 5px 10px 5px 10px;
+    display: none;
+}
+
+.mc-result-correct{
+    color: $green;
+}
+
+.mc-result-incorrect{
+    color: $red;
+}
+
+.panel{
+    padding: 30px 20px 30px 20px;
+    margin: 0px 0px 20px 0px;
+    background-color: $whiteDark2;
+}
+
+.panel-red{
+    background-color: $gray !important;
 }
