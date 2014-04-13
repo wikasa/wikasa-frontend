@@ -1,0 +1,46 @@
+/** ------------------------------------------------------------------------- *\
+ *  WIKASA.OBJECT.COMMON-COURSE-PAGE
+ *  
+ *  Common typography implementation used globally.
+ * 
+ *  @author Rama
+ *  @version 0.0.1
+ *  
+ *  Copyright 2014. Free licensed.
+ ** ------------------------------------------------------------------------- */
+
+
+.page-header{
+    padding-top: z(2rem);
+    .page-header-creator {
+        padding: 0 0 z(1rem) 0;
+    }
+    .page-header-metas {
+        color: $green2;
+        font-size: 13px;
+        padding: 0 0 z(2rem) 0;
+    }
+    .page-header-subtitle {
+        padding: 0 0 z(1rem) 0;      
+    }
+}
+
+.page-content{
+    margin-top: z(1rem);
+}
+
+ul.blocks {
+    list-style-type: none;
+    margin: 0;
+}
+
+li.block {
+    padding-bottom: z(1rem);
+    margin: 0 0 z(1rem) 0;
+    line-height: z(2rem);
+    // background-color: $gray;
+    &:nth-child(n+2) {
+        border-top: 1px solid $whiteDark2;        
+        padding-top: z(2rem);
+    }    
+}

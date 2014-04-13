@@ -45,7 +45,7 @@ $pixel-base: 16;
 // ----------------------------------------------------------------------------\
 // Object.
 // ----------------------------------------------------------------------------/
-@import "object/common-block/common-block";
+@import "object/common-page/common-page";
 @import "object/common-form/common-form";
 @import "object/common-container/common-container";
 @import "object/common-gridded/common-gridded";
@@ -53,7 +53,6 @@ $pixel-base: 16;
 @import "object/common-head/common-head";
 @import "object/common-userpic/common-userpic";
 @import "object/common-sidebar/common-sidebar";
-@import "object/common-sidebar-nav/common-sidebar-nav";
 @import "object/common-sidebar-tool/common-sidebar-tool";
 @import "object/common-sidebar-timeline/common-sidebar-timeline";
 @import "object/common-card/common-card";
@@ -64,7 +63,6 @@ $pixel-base: 16;
 @import "object/common-pagination/common-pagination";
 @import "object/common-pagetool/common-pagetool";
 @import "object/common-alert/common-alert";
-@import "object/common-discussion/common-discussion";
 @import "object/common-footer/common-footer";
 @import "object/page-landing/page-landing";
 
