@@ -2904,6 +2904,24 @@ li.block:nth-child(n+2) {
   padding-top: 2rem;
 }
 
+/* line 48, ../../src/scss/object/common-page/_common-page.scss */
+.mc-result {
+  margin: 10px 0px 10px 0px;
+  background-color: #eaeaea;
+  padding: 5px 10px 5px 10px;
+  display: none;
+}
+
+/* line 55, ../../src/scss/object/common-page/_common-page.scss */
+.mc-result-correct {
+  color: #64afb2;
+}
+
+/* line 59, ../../src/scss/object/common-page/_common-page.scss */
+.mc-result-incorrect {
+  color: #ef4b4b;
+}
+
 /** ------------------------------------------------------------------------- *\
  *  WIKASA.OBJECT.COMMON-FORM
  *  
@@ -11683,31 +11701,13 @@ a.vanilla {
 }
 
 /* line 177, ../../src/scss/object/common-typography/_common-typography.scss */
-.mc-result {
-  margin: 10px 0px 10px 0px;
-  background-color: #eaeaea;
-  padding: 5px 10px 5px 10px;
-  display: none;
-}
-
-/* line 184, ../../src/scss/object/common-typography/_common-typography.scss */
-.mc-result-correct {
-  color: #64afb2;
-}
-
-/* line 188, ../../src/scss/object/common-typography/_common-typography.scss */
-.mc-result-incorrect {
-  color: #ef4b4b;
-}
-
-/* line 192, ../../src/scss/object/common-typography/_common-typography.scss */
 .panel {
   padding: 30px 20px 30px 20px;
   margin: 0px 0px 20px 0px;
   background-color: #eaeaea;
 }
 
-/* line 198, ../../src/scss/object/common-typography/_common-typography.scss */
+/* line 183, ../../src/scss/object/common-typography/_common-typography.scss */
 .panel-red {
   background-color: #c4c4c4 !important;
 }

@@ -44,3 +44,24 @@ li.block {
         padding-top: z(2rem);
     }    
 }
+
+.mc-result{
+    margin: 10px 0px 10px 0px;
+    background-color: $whiteDark2;
+    padding: 5px 10px 5px 10px;
+    display: none;
+}
+
+.mc-result-show{
+    margin: 10px 0px 10px 0px;
+    background-color: $whiteDark2;
+    padding: 5px 10px 5px 10px;    
+}
+
+.mc-result-correct{
+    color: $green;
+}
+
+.mc-result-incorrect{
+    color: $red;
+}
